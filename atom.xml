@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>JSOPY</title>
+  
+  <subtitle>云缠雾绕雾缠云</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://jsopy.gitee.io/personal_blog_display/"/>
+  <updated>2019-12-02T13:58:04.721Z</updated>
+  <id>https://jsopy.gitee.io/personal_blog_display/</id>
+  
+  <author>
+    <name>雾烟云</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python学习笔记(一)</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/22/pythonbasic1/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/22/pythonbasic1/</id>
+    <published>2019-11-22T13:26:47.000Z</published>
+    <updated>2019-12-02T13:58:04.721Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;留坑&quot;&gt;&lt;a href=&quot;#留坑&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/personal_blog_display/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/personal_blog_display/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python学习笔记</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/21/pythonall/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/21/pythonall/</id>
+    <published>2019-11-21T12:26:47.000Z</published>
+    <updated>2019-12-02T13:05:23.059Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;留坑&quot;&gt;&lt;a href=&quot;#留坑&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/personal_blog_display/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/personal_blog_display/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue中使用数学计算</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/20/vuecha7/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/20/vuecha7/</id>
+    <published>2019-11-20T14:32:47.000Z</published>
+    <updated>2019-11-20T13:00:13.231Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中使用数学计算&quot;&gt;&lt;a href=&quot;#Vue-中使用数学计算&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用数学计算&quot;&gt;&lt;/a&gt;Vue 中使用数学计算&lt;/h1&gt;&lt;h2 id=&quot;计算的话推荐用-Math-js&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue中使用Stripe</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/18/vuecha6/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/18/vuecha6/</id>
+    <published>2019-11-18T14:32:47.000Z</published>
+    <updated>2019-12-02T12:30:02.540Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中使用-Stripe-来验证信用卡&quot;&gt;&lt;a href=&quot;#Vue-中使用-Stripe-来验证信用卡&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用 Stripe 来验证信用卡&quot;&gt;&lt;/a&gt;Vue 中使用 Stripe
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue中使用Ueedit富文本</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/16/vuecha5/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/16/vuecha5/</id>
+    <published>2019-11-16T14:32:47.000Z</published>
+    <updated>2019-11-17T07:57:27.819Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中使用-Ueedit-富文本&quot;&gt;&lt;a href=&quot;#Vue-中使用-Ueedit-富文本&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用 Ueedit 富文本&quot;&gt;&lt;/a&gt;Vue 中使用 Ueedit 富文本&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue中使用无缝滚动</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/15/vuecha4/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/15/vuecha4/</id>
+    <published>2019-11-15T14:32:47.000Z</published>
+    <updated>2019-11-14T12:56:12.502Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-实现无缝滚动-vue-seamless-scroll&quot;&gt;&lt;a href=&quot;#Vue-实现无缝滚动-vue-seamless-scroll&quot; class=&quot;headerlink&quot; title=&quot;Vue 实现无缝滚动
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue中使用图片轮播</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/14/vuecha3/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/14/vuecha3/</id>
+    <published>2019-11-14T14:26:47.000Z</published>
+    <updated>2019-11-14T12:26:58.822Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中使用-vue-awesome-swiper&quot;&gt;&lt;a href=&quot;#Vue-中使用-vue-awesome-swiper&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用 vue-awesome-swiper&quot;&gt;&lt;/a&gt;Vue 中使用
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue中使用vue-lottie动画</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/13/vuecha2/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/13/vuecha2/</id>
+    <published>2019-11-13T14:26:47.000Z</published>
+    <updated>2019-11-13T13:13:01.560Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中的动画&quot;&gt;&lt;a href=&quot;#Vue-中的动画&quot; class=&quot;headerlink&quot; title=&quot;Vue 中的动画&quot;&gt;&lt;/a&gt;Vue 中的动画&lt;/h1&gt;&lt;h2 id=&quot;vue-lottie-使用-这个类库主要就是加载-JSON-形成动画&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue双语</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/12/vuecha1/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/12/vuecha1/</id>
+    <published>2019-11-12T12:26:47.000Z</published>
+    <updated>2019-11-13T12:55:35.428Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;在-Vue-中使用-vue-i18n，配套双语&quot;&gt;&lt;a href=&quot;#在-Vue-中使用-vue-i18n，配套双语&quot; class=&quot;headerlink&quot; title=&quot;在 Vue 中使用 vue-i18n，配套双语&quot;&gt;&lt;/a&gt;在 Vue 中使用
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue技巧和插件合集</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/11/vuehigh/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/11/vuehigh/</id>
+    <published>2019-11-11T12:26:47.000Z</published>
+    <updated>2019-12-02T12:35:02.033Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中使用双语&quot;&gt;&lt;a href=&quot;#Vue-中使用双语&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用双语&quot;&gt;&lt;/a&gt;Vue 中使用双语&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>axios</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/10/axios/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/10/axios/</id>
+    <published>2019-11-10T12:26:47.000Z</published>
+    <updated>2019-11-17T06:44:02.397Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;axios-全攻略&quot;&gt;&lt;a href=&quot;#axios-全攻略&quot; class=&quot;headerlink&quot; title=&quot;axios 全攻略&quot;&gt;&lt;/a&gt;axios 全攻略&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;最早的异步请求用的是源生的，然后进化到 jquery,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="axios" scheme="https://jsopy.gitee.io/personal_blog_display/categories/axios/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+      <category term="axios" scheme="https://jsopy.gitee.io/personal_blog_display/tags/axios/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(八) Vue路由传参数，动画和钩子函数</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/09/vueba/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/09/vueba/</id>
+    <published>2019-11-09T01:54:47.000Z</published>
+    <updated>2019-11-09T02:04:05.645Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-路由传参&quot;&gt;&lt;a href=&quot;#Vue-路由传参&quot; class=&quot;headerlink&quot; title=&quot;Vue 路由传参&quot;&gt;&lt;/a&gt;Vue 路由传参&lt;/h1&gt;&lt;h2 id=&quot;动态路径传参数&quot;&gt;&lt;a href=&quot;#动态路径传参数&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(七) Vue路由</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/08/vueqi/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/08/vueqi/</id>
+    <published>2019-11-08T13:54:47.000Z</published>
+    <updated>2019-11-08T14:47:18.339Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-router&quot;&gt;&lt;a href=&quot;#Vue-router&quot; class=&quot;headerlink&quot; title=&quot;Vue-router&quot;&gt;&lt;/a&gt;Vue-router&lt;/h1&gt;&lt;p&gt;Vue 通过管理 URL 来实现 url 和组件的对应。通过 url
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(六) Vuex</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/07/vueliu/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/07/vueliu/</id>
+    <published>2019-11-07T13:30:45.000Z</published>
+    <updated>2019-11-07T13:24:08.310Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vuex&quot;&gt;&lt;a href=&quot;#Vuex&quot; class=&quot;headerlink&quot; title=&quot;Vuex&quot;&gt;&lt;/a&gt;Vuex&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;可以理解为公共仓库，它只要一刷新数据就清空。负责组件之间传值。父子，兄弟都可以&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(五) 组件</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/06/vuewu/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/06/vuewu/</id>
+    <published>2019-11-06T13:10:45.000Z</published>
+    <updated>2019-11-07T13:01:11.141Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;组件&quot;&gt;&lt;a href=&quot;#组件&quot; class=&quot;headerlink&quot; title=&quot;组件&quot;&gt;&lt;/a&gt;组件&lt;/h1&gt;&lt;p&gt;Vue 的核心就在于组件。组件的作用就是:复用。&lt;/p&gt;
+&lt;p&gt;小到一个按钮，大到一个页面都可以是组件&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(四) computed与watch</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/05/vuesi/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/05/vuesi/</id>
+    <published>2019-11-05T13:10:45.000Z</published>
+    <updated>2019-11-05T12:53:46.216Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中-Computed-与-Watch-区别&quot;&gt;&lt;a href=&quot;#Vue-中-Computed-与-Watch-区别&quot; class=&quot;headerlink&quot; title=&quot;Vue 中 Computed 与 Watch 区别&quot;&gt;&lt;/a&gt;Vue 中
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(三) 生命周期</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/05/vuesan/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/05/vuesan/</id>
+    <published>2019-11-05T12:09:45.000Z</published>
+    <updated>2019-11-05T12:16:51.755Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-生命周期&quot;&gt;&lt;a href=&quot;#Vue-生命周期&quot; class=&quot;headerlink&quot; title=&quot;Vue 生命周期&quot;&gt;&lt;/a&gt;Vue 生命周期&lt;/h1&gt;&lt;h2 id=&quot;什么是生命周期函数&quot;&gt;&lt;a href=&quot;#什么是生命周期函数&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(二) 基本指令</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/04/vue-er-ji-ben-zhi-ling/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/04/vue-er-ji-ben-zhi-ling/</id>
+    <published>2019-11-04T12:01:45.000Z</published>
+    <updated>2019-11-04T13:07:04.279Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-基本指令&quot;&gt;&lt;a href=&quot;#Vue-基本指令&quot; class=&quot;headerlink&quot; title=&quot;Vue 基本指令&quot;&gt;&lt;/a&gt;Vue 基本指令&lt;/h1&gt;&lt;h3 id=&quot;1-v-text&quot;&gt;&lt;a href=&quot;#1-v-text&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(一) 安装</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/02/vue-yi-an-zhuang/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/02/vue-yi-an-zhuang/</id>
+    <published>2019-11-02T12:26:47.000Z</published>
+    <updated>2019-11-09T02:53:58.387Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-介绍&quot;&gt;&lt;a href=&quot;#Vue-介绍&quot; class=&quot;headerlink&quot; title=&quot;Vue 介绍&quot;&gt;&lt;/a&gt;Vue 介绍&lt;/h1&gt;&lt;h2 id=&quot;Vue-概述&quot;&gt;&lt;a href=&quot;#Vue-概述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue基础语法学记笔记</title>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/01/vueall/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/01/vueall/</id>
+    <published>2019-11-01T12:26:47.000Z</published>
+    <updated>2019-11-10T00:09:45.436Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1-Vue-安装&quot;&gt;&lt;a href=&quot;#1-Vue-安装&quot; class=&quot;headerlink&quot; title=&quot;(1) Vue 安装&quot;&gt;&lt;/a&gt;(1) Vue 安装&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
+    
+  </entry>
+  
+</feed>
