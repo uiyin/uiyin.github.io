@@ -5,9 +5,9 @@
   <subtitle>云缠雾绕雾缠云</subtitle>
   <link href="/personal_blog_display/atom.xml" rel="self"/>
   
-  <link href="https://jsopy.gitee.io/"/>
+  <link href="https://jsopy.gitee.io/personal_blog_display/"/>
   <updated>2019-12-02T13:58:04.721Z</updated>
-  <id>https://jsopy.gitee.io/</id>
+  <id>https://jsopy.gitee.io/personal_blog_display/</id>
   
   <author>
     <name>雾烟云</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>python学习笔记(一)</title>
-    <link href="https://jsopy.gitee.io/2019/11/22/pythonbasic1/"/>
-    <id>https://jsopy.gitee.io/2019/11/22/pythonbasic1/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/22/pythonbasic1/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/22/pythonbasic1/</id>
     <published>2019-11-22T13:26:47.000Z</published>
     <updated>2019-12-02T13:58:04.721Z</updated>
     
@@ -36,17 +36,17 @@
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="python" scheme="https://jsopy.gitee.io/personal_blog_display/categories/python/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="python" scheme="https://jsopy.gitee.io/personal_blog_display/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>python学习笔记</title>
-    <link href="https://jsopy.gitee.io/2019/11/21/pythonall/"/>
-    <id>https://jsopy.gitee.io/2019/11/21/pythonall/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/21/pythonall/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/21/pythonall/</id>
     <published>2019-11-21T12:26:47.000Z</published>
     <updated>2019-12-02T13:05:23.059Z</updated>
     
@@ -63,17 +63,17 @@
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="python" scheme="https://jsopy.gitee.io/personal_blog_display/categories/python/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="python" scheme="https://jsopy.gitee.io/personal_blog_display/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>vue中使用数学计算</title>
-    <link href="https://jsopy.gitee.io/2019/11/20/vuecha7/"/>
-    <id>https://jsopy.gitee.io/2019/11/20/vuecha7/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/20/vuecha7/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/20/vuecha7/</id>
     <published>2019-11-20T14:32:47.000Z</published>
     <updated>2019-11-20T13:00:13.231Z</updated>
     
@@ -90,19 +90,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue中使用Stripe</title>
-    <link href="https://jsopy.gitee.io/2019/11/18/vuecha6/"/>
-    <id>https://jsopy.gitee.io/2019/11/18/vuecha6/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/18/vuecha6/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/18/vuecha6/</id>
     <published>2019-11-18T14:32:47.000Z</published>
     <updated>2019-12-02T12:30:02.540Z</updated>
     
@@ -119,19 +119,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue中使用Ueedit富文本</title>
-    <link href="https://jsopy.gitee.io/2019/11/16/vuecha5/"/>
-    <id>https://jsopy.gitee.io/2019/11/16/vuecha5/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/16/vuecha5/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/16/vuecha5/</id>
     <published>2019-11-16T14:32:47.000Z</published>
     <updated>2019-11-17T07:57:27.819Z</updated>
     
@@ -148,19 +148,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue中使用无缝滚动</title>
-    <link href="https://jsopy.gitee.io/2019/11/15/vuecha4/"/>
-    <id>https://jsopy.gitee.io/2019/11/15/vuecha4/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/15/vuecha4/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/15/vuecha4/</id>
     <published>2019-11-15T14:32:47.000Z</published>
     <updated>2019-11-14T12:56:12.502Z</updated>
     
@@ -177,19 +177,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue中使用图片轮播</title>
-    <link href="https://jsopy.gitee.io/2019/11/14/vuecha3/"/>
-    <id>https://jsopy.gitee.io/2019/11/14/vuecha3/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/14/vuecha3/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/14/vuecha3/</id>
     <published>2019-11-14T14:26:47.000Z</published>
     <updated>2019-11-14T12:26:58.822Z</updated>
     
@@ -206,19 +206,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue中使用vue-lottie动画</title>
-    <link href="https://jsopy.gitee.io/2019/11/13/vuecha2/"/>
-    <id>https://jsopy.gitee.io/2019/11/13/vuecha2/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/13/vuecha2/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/13/vuecha2/</id>
     <published>2019-11-13T14:26:47.000Z</published>
     <updated>2019-11-13T13:13:01.560Z</updated>
     
@@ -235,19 +235,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue双语</title>
-    <link href="https://jsopy.gitee.io/2019/11/12/vuecha1/"/>
-    <id>https://jsopy.gitee.io/2019/11/12/vuecha1/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/12/vuecha1/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/12/vuecha1/</id>
     <published>2019-11-12T12:26:47.000Z</published>
     <updated>2019-11-13T12:55:35.428Z</updated>
     
@@ -264,19 +264,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue技巧和插件合集</title>
-    <link href="https://jsopy.gitee.io/2019/11/11/vuehigh/"/>
-    <id>https://jsopy.gitee.io/2019/11/11/vuehigh/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/11/vuehigh/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/11/vuehigh/</id>
     <published>2019-11-11T12:26:47.000Z</published>
     <updated>2019-12-02T12:35:02.033Z</updated>
     
@@ -293,19 +293,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>axios</title>
-    <link href="https://jsopy.gitee.io/2019/11/10/axios/"/>
-    <id>https://jsopy.gitee.io/2019/11/10/axios/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/10/axios/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/10/axios/</id>
     <published>2019-11-10T12:26:47.000Z</published>
     <updated>2019-11-17T06:44:02.397Z</updated>
     
@@ -323,19 +323,19 @@
     </summary>
     
     
-      <category term="axios" scheme="https://jsopy.gitee.io/categories/axios/"/>
+      <category term="axios" scheme="https://jsopy.gitee.io/personal_blog_display/categories/axios/"/>
     
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
-      <category term="axios" scheme="https://jsopy.gitee.io/tags/axios/"/>
+      <category term="axios" scheme="https://jsopy.gitee.io/personal_blog_display/tags/axios/"/>
     
   </entry>
   
   <entry>
     <title>vue学记笔记(八) Vue路由传参数，动画和钩子函数</title>
-    <link href="https://jsopy.gitee.io/2019/11/09/vueba/"/>
-    <id>https://jsopy.gitee.io/2019/11/09/vueba/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/09/vueba/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/09/vueba/</id>
     <published>2019-11-09T01:54:47.000Z</published>
     <updated>2019-11-09T02:04:05.645Z</updated>
     
@@ -352,19 +352,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue学记笔记(七) Vue路由</title>
-    <link href="https://jsopy.gitee.io/2019/11/08/vueqi/"/>
-    <id>https://jsopy.gitee.io/2019/11/08/vueqi/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/08/vueqi/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/08/vueqi/</id>
     <published>2019-11-08T13:54:47.000Z</published>
     <updated>2019-11-08T14:47:18.339Z</updated>
     
@@ -381,19 +381,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue学记笔记(六) Vuex</title>
-    <link href="https://jsopy.gitee.io/2019/11/07/vueliu/"/>
-    <id>https://jsopy.gitee.io/2019/11/07/vueliu/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/07/vueliu/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/07/vueliu/</id>
     <published>2019-11-07T13:30:45.000Z</published>
     <updated>2019-11-07T13:24:08.310Z</updated>
     
@@ -413,19 +413,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue学记笔记(五) 组件</title>
-    <link href="https://jsopy.gitee.io/2019/11/06/vuewu/"/>
-    <id>https://jsopy.gitee.io/2019/11/06/vuewu/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/06/vuewu/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/06/vuewu/</id>
     <published>2019-11-06T13:10:45.000Z</published>
     <updated>2019-11-07T13:01:11.141Z</updated>
     
@@ -444,19 +444,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue学记笔记(四) computed与watch</title>
-    <link href="https://jsopy.gitee.io/2019/11/05/vuesi/"/>
-    <id>https://jsopy.gitee.io/2019/11/05/vuesi/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/05/vuesi/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/05/vuesi/</id>
     <published>2019-11-05T13:10:45.000Z</published>
     <updated>2019-11-05T12:53:46.216Z</updated>
     
@@ -473,19 +473,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue学记笔记(三) 生命周期</title>
-    <link href="https://jsopy.gitee.io/2019/11/05/vuesan/"/>
-    <id>https://jsopy.gitee.io/2019/11/05/vuesan/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/05/vuesan/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/05/vuesan/</id>
     <published>2019-11-05T12:09:45.000Z</published>
     <updated>2019-11-05T12:16:51.755Z</updated>
     
@@ -502,19 +502,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue学记笔记(二) 基本指令</title>
-    <link href="https://jsopy.gitee.io/2019/11/04/vue-er-ji-ben-zhi-ling/"/>
-    <id>https://jsopy.gitee.io/2019/11/04/vue-er-ji-ben-zhi-ling/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/04/vue-er-ji-ben-zhi-ling/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/04/vue-er-ji-ben-zhi-ling/</id>
     <published>2019-11-04T12:01:45.000Z</published>
     <updated>2019-11-04T13:07:04.279Z</updated>
     
@@ -531,19 +531,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue学记笔记(一) 安装</title>
-    <link href="https://jsopy.gitee.io/2019/11/02/vue-yi-an-zhuang/"/>
-    <id>https://jsopy.gitee.io/2019/11/02/vue-yi-an-zhuang/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/02/vue-yi-an-zhuang/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/02/vue-yi-an-zhuang/</id>
     <published>2019-11-02T12:26:47.000Z</published>
     <updated>2019-11-09T02:53:58.387Z</updated>
     
@@ -560,19 +560,19 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>vue基础语法学记笔记</title>
-    <link href="https://jsopy.gitee.io/2019/11/01/vueall/"/>
-    <id>https://jsopy.gitee.io/2019/11/01/vueall/</id>
+    <link href="https://jsopy.gitee.io/personal_blog_display/2019/11/01/vueall/"/>
+    <id>https://jsopy.gitee.io/personal_blog_display/2019/11/01/vueall/</id>
     <published>2019-11-01T12:26:47.000Z</published>
     <updated>2019-11-10T00:09:45.436Z</updated>
     
@@ -589,12 +589,12 @@
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/categories/Vue/"/>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="Vue" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Vue/"/>
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/personal_blog_display/tags/Javascript/"/>
     
   </entry>
   
