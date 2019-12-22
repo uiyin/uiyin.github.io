@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2019-12-22T08:05:22.309Z</updated>
+  <updated>2019-12-22T08:28:23.646Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>TypeScript(十一) TS 中的类与 ES 标准的差异</title>
-    <link href="https://jsopy.gitee.io/2019/12/21/typescriptbasic11/"/>
-    <id>https://jsopy.gitee.io/2019/12/21/typescriptbasic11/</id>
-    <published>2019-12-21T12:26:47.000Z</published>
-    <updated>2019-12-22T08:05:22.309Z</updated>
+    <link href="https://jsopy.gitee.io/2019/12/24/typescriptbasic11/"/>
+    <id>https://jsopy.gitee.io/2019/12/24/typescriptbasic11/</id>
+    <published>2019-12-24T12:26:47.000Z</published>
+    <updated>2019-12-22T08:28:23.646Z</updated>
     
     <summary type="html">
     
@@ -46,40 +46,11 @@
   </entry>
   
   <entry>
-    <title>TypeScript(九) 为函数和函数参数定义类型</title>
-    <link href="https://jsopy.gitee.io/2019/12/21/typescriptbasic9/"/>
-    <id>https://jsopy.gitee.io/2019/12/21/typescriptbasic9/</id>
-    <published>2019-12-21T12:26:47.000Z</published>
-    <updated>2019-12-22T08:02:01.982Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;为函数和函数参数定义类型&quot;&gt;&lt;a href=&quot;#为函数和函数参数定义类型&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="TypeScript" scheme="https://jsopy.gitee.io/categories/TypeScript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="TypeScript" scheme="https://jsopy.gitee.io/tags/TypeScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>TypeScript(十) 使用泛型拯救你的any</title>
-    <link href="https://jsopy.gitee.io/2019/12/21/typescriptbasic10/"/>
-    <id>https://jsopy.gitee.io/2019/12/21/typescriptbasic10/</id>
-    <published>2019-12-21T12:26:47.000Z</published>
-    <updated>2019-12-22T08:03:40.830Z</updated>
+    <link href="https://jsopy.gitee.io/2019/12/23/typescriptbasic10/"/>
+    <id>https://jsopy.gitee.io/2019/12/23/typescriptbasic10/</id>
+    <published>2019-12-23T12:26:47.000Z</published>
+    <updated>2019-12-22T08:28:15.642Z</updated>
     
     <summary type="html">
     
@@ -104,11 +75,40 @@
   </entry>
   
   <entry>
+    <title>TypeScript(九) 为函数和函数参数定义类型</title>
+    <link href="https://jsopy.gitee.io/2019/12/22/typescriptbasic9/"/>
+    <id>https://jsopy.gitee.io/2019/12/22/typescriptbasic9/</id>
+    <published>2019-12-22T12:26:47.000Z</published>
+    <updated>2019-12-22T08:28:10.197Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;为函数和函数参数定义类型&quot;&gt;&lt;a href=&quot;#为函数和函数参数定义类型&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="TypeScript" scheme="https://jsopy.gitee.io/categories/TypeScript/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="TypeScript" scheme="https://jsopy.gitee.io/tags/TypeScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>TypeScript(八) 接口的高阶用法</title>
-    <link href="https://jsopy.gitee.io/2019/12/20/typescriptbasic8/"/>
-    <id>https://jsopy.gitee.io/2019/12/20/typescriptbasic8/</id>
-    <published>2019-12-20T12:26:47.000Z</published>
-    <updated>2019-12-22T08:00:34.566Z</updated>
+    <link href="https://jsopy.gitee.io/2019/12/21/typescriptbasic8/"/>
+    <id>https://jsopy.gitee.io/2019/12/21/typescriptbasic8/</id>
+    <published>2019-12-21T12:26:47.000Z</published>
+    <updated>2019-12-22T08:28:04.918Z</updated>
     
     <summary type="html">
     
@@ -134,10 +134,10 @@
   
   <entry>
     <title>TypeScript(七) 使用接口几乎可以定义任何结构</title>
-    <link href="https://jsopy.gitee.io/2019/12/19/typescriptbasic7/"/>
-    <id>https://jsopy.gitee.io/2019/12/19/typescriptbasic7/</id>
-    <published>2019-12-19T12:26:47.000Z</published>
-    <updated>2019-12-22T07:58:54.216Z</updated>
+    <link href="https://jsopy.gitee.io/2019/12/20/typescriptbasic7/"/>
+    <id>https://jsopy.gitee.io/2019/12/20/typescriptbasic7/</id>
+    <published>2019-12-20T12:26:47.000Z</published>
+    <updated>2019-12-22T08:27:59.555Z</updated>
     
     <summary type="html">
     
@@ -146,6 +146,35 @@
         
         
           &lt;h1 id=&quot;使用接口几乎可以定义任何结构&quot;&gt;&lt;a href=&quot;#使用接口几乎可以定义任何结构&quot; class=&quot;headerlink&quot; title=&quot;使用接口几乎可以定义任何结构&quot;&gt;&lt;/a&gt;使用接口几乎可以定义任何结构&lt;/h1&gt;&lt;h2 id=&quot;基本用法&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="TypeScript" scheme="https://jsopy.gitee.io/categories/TypeScript/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="TypeScript" scheme="https://jsopy.gitee.io/tags/TypeScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TypeScript(六) 使用类型断言达到预期</title>
+    <link href="https://jsopy.gitee.io/2019/12/19/typescriptbasic6/"/>
+    <id>https://jsopy.gitee.io/2019/12/19/typescriptbasic6/</id>
+    <published>2019-12-19T14:26:47.000Z</published>
+    <updated>2019-12-22T08:27:51.478Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用类型断言达到预期&quot;&gt;&lt;a href=&quot;#使用类型断言达到预期&quot; class=&quot;headerlink&quot; title=&quot;使用类型断言达到预期&quot;&gt;&lt;/a&gt;使用类型断言达到预期&lt;/h1&gt;&lt;h2 id=&quot;类型断言&quot;&gt;&lt;a href=&quot;#类型断言&quot;
         
       
     
@@ -175,35 +204,6 @@
         
         
           &lt;h1 id=&quot;Typescript-深入学习枚举&quot;&gt;&lt;a href=&quot;#Typescript-深入学习枚举&quot; class=&quot;headerlink&quot; title=&quot;Typescript 深入学习枚举&quot;&gt;&lt;/a&gt;Typescript 深入学习枚举&lt;/h1&gt;&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="TypeScript" scheme="https://jsopy.gitee.io/categories/TypeScript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="TypeScript" scheme="https://jsopy.gitee.io/tags/TypeScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TypeScript(六) 使用类型断言达到预期</title>
-    <link href="https://jsopy.gitee.io/2019/12/18/typescriptbasic6/"/>
-    <id>https://jsopy.gitee.io/2019/12/18/typescriptbasic6/</id>
-    <published>2019-12-18T14:26:47.000Z</published>
-    <updated>2019-12-22T07:57:39.033Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;使用类型断言达到预期&quot;&gt;&lt;a href=&quot;#使用类型断言达到预期&quot; class=&quot;headerlink&quot; title=&quot;使用类型断言达到预期&quot;&gt;&lt;/a&gt;使用类型断言达到预期&lt;/h1&gt;&lt;h2 id=&quot;类型断言&quot;&gt;&lt;a href=&quot;#类型断言&quot;
         
       
     

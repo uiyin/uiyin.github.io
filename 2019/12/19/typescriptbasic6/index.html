@@ -4,15 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TypeScript(九) 为函数和函数参数定义类型, Javascript Python Js">
-    <meta name="description" content="为函数和函数参数定义类型
-函数类型
+    <meta name="keywords" content="TypeScript(六) 使用类型断言达到预期, Javascript Python Js">
+    <meta name="description" content="使用类型断言达到预期类型断言
+类型断言可以理解为把一个类型强制转化为另一个类型
+
+断言使用方法就是 value as type
 
 
-函数类型分成三种, 可选参数,默认参数和剩余参数
-
-为函数定型(1) 为函数类型定义function add(arg1: number, arg2: number): number {
-  retur">
+起因const getLength = (target: string | number): number ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>TypeScript(九) 为函数和函数参数定义类型 | JSOPY</title>
+    <title>TypeScript(六) 使用类型断言达到预期 | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,13 +309,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        TypeScript(九) 为函数和函数参数定义类型
+                        TypeScript(六) 使用类型断言达到预期
                     </div>
                 </div>
             </div>
@@ -456,7 +455,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-21
+                    2019-12-19
                 </div>
                 
                 
@@ -470,14 +469,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        986
+                        234
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        1 分
                     </div>
                     
                 
@@ -493,99 +492,32 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="为函数和函数参数定义类型"><a href="#为函数和函数参数定义类型" class="headerlink" title="为函数和函数参数定义类型"></a>为函数和函数参数定义类型</h1><blockquote>
-<p>函数类型</p>
-</blockquote>
-<blockquote>
-<p>函数类型分成三种, 可选参数,默认参数和剩余参数</p>
-</blockquote>
-<h2 id="为函数定型"><a href="#为函数定型" class="headerlink" title="为函数定型"></a>为函数定型</h2><h3 id="1-为函数类型定义"><a href="#1-为函数类型定义" class="headerlink" title="(1) 为函数类型定义"></a>(1) 为函数类型定义</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> x <span class="token operator">+</span> y
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">//或者</span>
-<span class="token keyword">const</span> add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> x <span class="token operator">+</span> y
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这里我们规定 arg1 和 arg2 都是数值类型的,最后相加得到结果也是数值类型的</p>
-<blockquote>
-<p>如果忽略参数的类型,Typescript 会默认这个参数就是 any 类型,如果省略返回值类型，那 Typescript 会自己推断出返回类型,如果函数无返回值,那么 Typescript 会默认函数返回值为 void 类型</p>
-</blockquote>
-<h3 id="2-完整的函数类型"><a href="#2-完整的函数类型" class="headerlink" title="(2) 完整的函数类型"></a>(2) 完整的函数类型</h3><blockquote>
-<p>一个函数的定义包括 函数名,参数,逻辑和返回值。我们为一个函数定义类型时,完整的定义应该包括参数类型和返回值类型。</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> add<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token punctuation">:</span> number <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> number
-add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token operator">=</span><span class="token operator">></span> arg1 <span class="token operator">+</span> arg2
-add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> string<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> string<span class="token punctuation">)</span><span class="token punctuation">:</span> string <span class="token operator">=</span><span class="token operator">></span> arg1 <span class="token operator">+</span> arg2 <span class="token comment" spellcheck="true">//error</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-使用接口定义函数类型"><a href="#3-使用接口定义函数类型" class="headerlink" title="(3) 使用接口定义函数类型"></a>(3) 使用接口定义函数类型</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">interface</span> <span class="token class-name">Add</span><span class="token punctuation">{</span>
-   <span class="token punctuation">(</span>x<span class="token punctuation">:</span>number<span class="token punctuation">,</span>y<span class="token punctuation">:</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>number
-   <span class="token comment" spellcheck="true">//他里面就是个函数返回值是number</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">let</span> add<span class="token punctuation">:</span>Add <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>arg1<span class="token punctuation">:</span>string<span class="token punctuation">,</span>arg2<span class="token punctuation">:</span>string<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>string<span class="token operator">=</span><span class="token operator">></span> arg1<span class="token operator">+</span>arg2<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//erroe类型不对</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>我们通过接口的形式定义函数类型,而这个接口 Add 定义了这个结构是一个函数,这两个参数都是 number 类型,返回值也是 number 类型,当我们指定变量 add 类型为 add 时,再给 add 赋值就必须是一个函数,而且参数类型和返回值都要满足 Add，显然上面不满足,所以报错了</p>
-</blockquote>
-<h3 id="4-使用类型别名"><a href="#4-使用类型别名" class="headerlink" title="(4) 使用类型别名"></a>(4) 使用类型别名</h3><pre class="line-numbers language-javascript"><code class="language-javascript">type Add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token punctuation">:</span> number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> number
-<span class="token keyword">let</span> add<span class="token punctuation">:</span> Add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> string<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> string<span class="token punctuation">)</span><span class="token punctuation">:</span> string <span class="token operator">=</span><span class="token operator">></span> arg1 <span class="token operator">+</span> arg2 <span class="token comment" spellcheck="true">//error</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<blockquote>
-<p>使用 type 关键字可以为原始值,元祖,以及任何类型起一个别名.</p>
-</blockquote>
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><h3 id="1-可选参数"><a href="#1-可选参数" class="headerlink" title="(1) 可选参数"></a>(1) 可选参数</h3><blockquote>
-<p>必选参数必须要放到可选参数之后</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript">type Add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span>number<span class="token punctuation">,</span>y<span class="token punctuation">:</span>number<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token operator">></span>number<span class="token punctuation">;</span>
-<span class="token keyword">let</span> add<span class="token punctuation">:</span>Add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span>number<span class="token punctuation">,</span>arg2<span class="token punctuation">:</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>number <span class="token operator">=</span> <span class="token operator">></span>arg1<span class="token operator">+</span>arg2<span class="token punctuation">;</span>
-
-<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//right</span>
-<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//error应该有两个参数，但实际上传了3个参数</span>
-<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//error应该有两个参数,但实际获得1个</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>有的时候参数不是必要的，所以会出现可选参数，这里和可选属性一样，只不过位置不一样</p>
-<blockquote>
-<p>必填的参数必须要在可选参数的前面</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript">type Add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token operator">?</span><span class="token punctuation">:</span> number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> number <span class="token comment" spellcheck="true">//这样才对</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>如果顺序错了</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">type Add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token operator">?</span><span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token punctuation">:</span> number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> number <span class="token comment" spellcheck="true">//直接报错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="2-默认参数"><a href="#2-默认参数" class="headerlink" title="(2) 默认参数"></a>(2) 默认参数</h3><p>Typescript 会自动识别参数的类型，要是不符合,则会报错误</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> x <span class="token operator">+</span> y
-<span class="token punctuation">}</span>
-<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//这样会直接报错,因为默认值类型是数字</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>也可以显视给 Y 设置类型</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token punctuation">:</span> number <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> x <span class="token operator">+</span> y
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-剩余参数"><a href="#3-剩余参数" class="headerlink" title="(3) 剩余参数"></a>(3) 剩余参数</h3><blockquote>
-<p>也可以为剩余参数指定类型</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> handleData <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> <span class="token operator">...</span>arg<span class="token punctuation">:</span> number<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-
-<span class="token function">handleData</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//error直接报错</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h2><blockquote>
-<p>在 TypeScript 中重载通过一个函数指定多个函数类型定义:从而对函数调用的返回值进行检查.</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">handleData</span><span class="token punctuation">(</span>x<span class="token punctuation">:</span>string<span class="token punctuation">)</span><span class="token punctuation">:</span>string<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">// 这就是重载指定类型为 string时,返回值为string类型的元素构成的数组</span>
-<span class="token keyword">function</span> <span class="token function">handleData</span><span class="token punctuation">(</span>x<span class="token punctuation">:</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>string<span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">//当指定的参数类型为number时,返回值是string</span>
-<span class="token keyword">function</span> <span class="token function">handleData</span><span class="token punctuation">(</span>x<span class="token punctuation">:</span> any<span class="token punctuation">)</span><span class="token punctuation">:</span> any <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 这个就是重载的内容了，他是实体函数，不算做重载的部分</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> x <span class="token operator">===</span> <span class="token string">"string"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> x<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <h1 id="使用类型断言达到预期"><a href="#使用类型断言达到预期" class="headerlink" title="使用类型断言达到预期"></a>使用类型断言达到预期</h1><h2 id="类型断言"><a href="#类型断言" class="headerlink" title="类型断言"></a>类型断言</h2><ul>
+<li><p>类型断言可以理解为把一个类型强制转化为另一个类型</p>
+</li>
+<li><p>断言使用方法就是 value as type</p>
+</li>
+</ul>
+<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> getLength <span class="token operator">=</span> <span class="token punctuation">(</span>target<span class="token punctuation">:</span> string <span class="token operator">|</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>target<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//error因为string或者number都没有length属性</span>
+    <span class="token keyword">return</span> target<span class="token punctuation">.</span>length
   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> x
-      <span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-      <span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span>
-      <span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">"_"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> target<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length
   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token function">handleData</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">"_"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token function">handleData</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">"_"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// error 类型"string"上不存在属性"join"</span>
-<span class="token function">handleData</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// error 类型"boolean"的参数不能赋给类型"number"的参数。</span>
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p>第二个之所以错 是因为他调用了数组里面的 join 方法。而字符串无法调用这个方法</p>
+<p>这里我们接受了一个函数返回他的长度,我们可以传入字符串,数组,数值的类型.如果有 length 属性。说明参数是数组或者字符串,如果数值类型没有 length 属性。所以需要把数值类型转变为字符串类型然后在获取 length,所以我们这里限定传入的值只能是字符串后者数值类型</p>
 </blockquote>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>1.基本类型 2.接口类型 3.类型别名 4.可选参数 5.默认参数 6.剩余参数 可以用…参数名来获取任意多个参数,获取的是一个数组</p>
+<h2 id="正确的做法"><a href="#正确的做法" class="headerlink" title="正确的做法"></a>正确的做法</h2><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> getLength <span class="token operator">=</span> <span class="token punctuation">(</span>target<span class="token punctuation">:</span>string<span class="token operator">|</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>number<span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>target <span class="token keyword">as</span> string<span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//error因为string或者number都没有length属性</span>
+  <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> target<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> target<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>断言的使用方法类似转换</p>
 
             </div>
             <hr/>
@@ -611,7 +543,7 @@ add <span class="token operator">=</span> <span class="token punctuation">(</spa
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2019/12/21/typescriptbasic9/">https://jsopy.gitee.io/2019/12/21/typescriptbasic9/</a>
+                    <a href="https://jsopy.gitee.io/2019/12/19/typescriptbasic6/">https://jsopy.gitee.io/2019/12/19/typescriptbasic6/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -699,24 +631,24 @@ add <span class="token operator">=</span> <span class="token punctuation">(</spa
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/12/21/typescriptbasic11/">
+                <a href="/2019/12/20/typescriptbasic7/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="TypeScript(十一) TS 中的类与 ES 标准的差异">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="TypeScript(七) 使用接口几乎可以定义任何结构">
                         
-                        <span class="card-title">TypeScript(十一) TS 中的类与 ES 标准的差异</span>
+                        <span class="card-title">TypeScript(七) 使用接口几乎可以定义任何结构</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript(十) TS 中的类与 ES 标准的差异
+                            TypeScript(七) 使用接口几乎可以定义任何结构
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-20
                         </span>
                         <span class="publish-author">
                             
@@ -752,24 +684,24 @@ add <span class="token operator">=</span> <span class="token punctuation">(</spa
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/21/typescriptbasic10/">
+                <a href="/2019/12/18/typescriptbasic5/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="TypeScript(十) 使用泛型拯救你的any">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="TypeScript(五) Typescript 深入学习枚举">
                         
-                        <span class="card-title">TypeScript(十) 使用泛型拯救你的any</span>
+                        <span class="card-title">TypeScript(五) Typescript 深入学习枚举</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript(十) 使用泛型拯救你的any
+                            TypeScript(五) Typescript 深入学习枚举
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-18
                             </span>
                         <span class="publish-author">
                             

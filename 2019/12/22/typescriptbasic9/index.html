@@ -4,15 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TypeScript(八) 接口的高阶用法, Javascript Python Js">
-    <meta name="description" content="接口的高阶用法索引类型
-比如一个接口索引是数字的话,就不能在改变索引的类型
+    <meta name="keywords" content="TypeScript(九) 为函数和函数参数定义类型, Javascript Python Js">
+    <meta name="description" content="为函数和函数参数定义类型
+函数类型
 
-interface RoleDic{
-  [id:number]:string
-}
-const role1:RoleDic={
-  0:&#34;super_admin&#34;">
+
+函数类型分成三种, 可选参数,默认参数和剩余参数
+
+为函数定型(1) 为函数类型定义function add(arg1: number, arg2: number): number {
+  retur">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +20,7 @@ const role1:RoleDic={
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>TypeScript(八) 接口的高阶用法 | JSOPY</title>
+    <title>TypeScript(九) 为函数和函数参数定义类型 | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,13 +310,13 @@ const role1:RoleDic={
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        TypeScript(八) 接口的高阶用法
+                        TypeScript(九) 为函数和函数参数定义类型
                     </div>
                 </div>
             </div>
@@ -456,28 +456,23 @@ const role1:RoleDic={
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-20
-                </div>
-                
-                
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
                     2019-12-22
                 </div>
+                
                 
 
                 
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        499
+                        986
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        3 分
                     </div>
                     
                 
@@ -493,97 +488,99 @@ const role1:RoleDic={
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="接口的高阶用法"><a href="#接口的高阶用法" class="headerlink" title="接口的高阶用法"></a>接口的高阶用法</h1><h2 id="索引类型"><a href="#索引类型" class="headerlink" title="索引类型"></a>索引类型</h2><ul>
-<li>比如一个接口索引是数字的话,就不能在改变索引的类型</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">interface</span> <span class="token class-name">RoleDic</span><span class="token punctuation">{</span>
-  <span class="token punctuation">[</span>id<span class="token punctuation">:</span>number<span class="token punctuation">]</span><span class="token punctuation">:</span>string
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> role1<span class="token punctuation">:</span>RoleDic<span class="token operator">=</span><span class="token punctuation">{</span>
-  <span class="token number">0</span><span class="token punctuation">:</span><span class="token string">"super_admin"</span><span class="token punctuation">,</span>
-  <span class="token number">1</span><span class="token punctuation">:</span><span class="token string">"admin"</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> role2<span class="token punctuation">:</span>RoleDic<span class="token punctuation">{</span>
-  s<span class="token punctuation">:</span><span class="token string">"super_admin"</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//error 不能将类型{s:string}分配给RoleDic</span>
-  a<span class="token punctuation">:</span><span class="token string">"admin"</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> role3<span class="token punctuation">:</span>RoleDic <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"super_admin"</span><span class="token punctuation">,</span><span class="token string">"admin"</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面的例子中 role3 定义了一个数组,索引为数值类型,值为字符串类型</p>
-<p>当然了也可以给索引设置 readonly,从而防止索引返回值被修改</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">interface</span> <span class="token class-name">RoleDic</span><span class="token punctuation">{</span>
-  readonly <span class="token punctuation">[</span>id<span class="token punctuation">:</span>number<span class="token punctuation">]</span><span class="token punctuation">:</span>string
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> role<span class="token punctuation">:</span>RoleDic <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token number">0</span><span class="token punctuation">:</span><span class="token string">"super_admin"</span>
-<span class="token punctuation">}</span>
-role<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"admin"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//error错误,因为签名只允许读</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="为函数和函数参数定义类型"><a href="#为函数和函数参数定义类型" class="headerlink" title="为函数和函数参数定义类型"></a>为函数和函数参数定义类型</h1><blockquote>
+<p>函数类型</p>
+</blockquote>
 <blockquote>
-<p>这里要特别注意的就是索引序号值绝对不能相等,否则后面的会把前面的覆盖掉比如</p>
+<p>函数类型分成三种, 可选参数,默认参数和剩余参数</p>
 </blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token number">123</span><span class="token punctuation">:</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//这里定义了一个数值类型的123这个属性</span>
-  <span class="token string">'123'</span><span class="token punctuation">:</span> <span class="token string">'b'</span> <span class="token comment" spellcheck="true">//这里定义了一个字符串类型的123属性,标识符123重复</span>
+<h2 id="为函数定型"><a href="#为函数定型" class="headerlink" title="为函数定型"></a>为函数定型</h2><h3 id="1-为函数类型定义"><a href="#1-为函数类型定义" class="headerlink" title="(1) 为函数类型定义"></a>(1) 为函数类型定义</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x <span class="token operator">+</span> y
 <span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// {"123","b"}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="继承接口"><a href="#继承接口" class="headerlink" title="继承接口"></a>继承接口</h2><blockquote>
-<p>接口可以继承,这和类一样，提高接口复用性</p>
-</blockquote>
-<ul>
-<li>举个例子:我们定义 Vegetables 接口,他会对 color 属性进行限制。再定义两个接口,一个为 Tomato,一个为 Carrot,这两个类都对 color 进行限制</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">interface</span> <span class="token class-name">Vegetables</span> <span class="token punctuation">{</span>
-  color<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">interface</span> <span class="token class-name">Tomato</span> <span class="token punctuation">{</span>
-  color<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
-  radius<span class="token punctuation">:</span> number<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">interface</span> <span class="token class-name">Carrot</span> <span class="token punctuation">{</span>
-  color<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
-  length<span class="token punctuation">:</span> number<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>三个接口都对 color 有定义,但这样很繁琐,所以我们可以改为继承</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">interface</span> <span class="token class-name">Vegetables</span><span class="token punctuation">{</span>
-  color<span class="token punctuation">:</span>string<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">interface</span> <span class="token class-name">Tomato</span> <span class="token keyword">extends</span> <span class="token class-name">Vegetables</span><span class="token punctuation">{</span>
-  radius<span class="token punctuation">:</span>number<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">interface</span> <span class="token class-name">Carrot</span> <span class="token keyword">extends</span> <span class="token class-name">Vegetables</span><span class="token punctuation">{</span>
-  length<span class="token punctuation">:</span>number<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> tomato<span class="token punctuation">:</span>Tomato<span class="token punctuation">{</span>
-  radius<span class="token punctuation">:</span><span class="token number">1.2</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//error colormissing</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> carrot<span class="token punctuation">:</span>Carrot<span class="token operator">=</span><span class="token punctuation">{</span>
-  color<span class="token punctuation">:</span><span class="token string">"orange"</span><span class="token punctuation">,</span>
-  length<span class="token punctuation">:</span><span class="token number">20</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment" spellcheck="true">//或者</span>
+<span class="token keyword">const</span> add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x <span class="token operator">+</span> y
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这里我们规定 arg1 和 arg2 都是数值类型的,最后相加得到结果也是数值类型的</p>
 <blockquote>
-<p>一个接口可以被多个接口继承,同样一个接口可以继承了多个接口,多个接口用逗号隔开,比如我们在定义一个 Food 接口,Tomato 继承 Food</p>
+<p>如果忽略参数的类型,Typescript 会默认这个参数就是 any 类型,如果省略返回值类型，那 Typescript 会自己推断出返回类型,如果函数无返回值,那么 Typescript 会默认函数返回值为 void 类型</p>
 </blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">interface</span> <span class="token class-name">Vegetables</span> <span class="token punctuation">{</span>
-  color<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+<h3 id="2-完整的函数类型"><a href="#2-完整的函数类型" class="headerlink" title="(2) 完整的函数类型"></a>(2) 完整的函数类型</h3><blockquote>
+<p>一个函数的定义包括 函数名,参数,逻辑和返回值。我们为一个函数定义类型时,完整的定义应该包括参数类型和返回值类型。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> add<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token punctuation">:</span> number <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> number
+add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token operator">=</span><span class="token operator">></span> arg1 <span class="token operator">+</span> arg2
+add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> string<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> string<span class="token punctuation">)</span><span class="token punctuation">:</span> string <span class="token operator">=</span><span class="token operator">></span> arg1 <span class="token operator">+</span> arg2 <span class="token comment" spellcheck="true">//error</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="3-使用接口定义函数类型"><a href="#3-使用接口定义函数类型" class="headerlink" title="(3) 使用接口定义函数类型"></a>(3) 使用接口定义函数类型</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">interface</span> <span class="token class-name">Add</span><span class="token punctuation">{</span>
+   <span class="token punctuation">(</span>x<span class="token punctuation">:</span>number<span class="token punctuation">,</span>y<span class="token punctuation">:</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>number
+   <span class="token comment" spellcheck="true">//他里面就是个函数返回值是number</span>
 <span class="token punctuation">}</span>
-<span class="token keyword">interface</span> <span class="token class-name">Food</span> <span class="token punctuation">{</span>
-  type<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+<span class="token keyword">let</span> add<span class="token punctuation">:</span>Add <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>arg1<span class="token punctuation">:</span>string<span class="token punctuation">,</span>arg2<span class="token punctuation">:</span>string<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>string<span class="token operator">=</span><span class="token operator">></span> arg1<span class="token operator">+</span>arg2<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//erroe类型不对</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>我们通过接口的形式定义函数类型,而这个接口 Add 定义了这个结构是一个函数,这两个参数都是 number 类型,返回值也是 number 类型,当我们指定变量 add 类型为 add 时,再给 add 赋值就必须是一个函数,而且参数类型和返回值都要满足 Add，显然上面不满足,所以报错了</p>
+</blockquote>
+<h3 id="4-使用类型别名"><a href="#4-使用类型别名" class="headerlink" title="(4) 使用类型别名"></a>(4) 使用类型别名</h3><pre class="line-numbers language-javascript"><code class="language-javascript">type Add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token punctuation">:</span> number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> number
+<span class="token keyword">let</span> add<span class="token punctuation">:</span> Add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> string<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> string<span class="token punctuation">)</span><span class="token punctuation">:</span> string <span class="token operator">=</span><span class="token operator">></span> arg1 <span class="token operator">+</span> arg2 <span class="token comment" spellcheck="true">//error</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<blockquote>
+<p>使用 type 关键字可以为原始值,元祖,以及任何类型起一个别名.</p>
+</blockquote>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><h3 id="1-可选参数"><a href="#1-可选参数" class="headerlink" title="(1) 可选参数"></a>(1) 可选参数</h3><blockquote>
+<p>必选参数必须要放到可选参数之后</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript">type Add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span>number<span class="token punctuation">,</span>y<span class="token punctuation">:</span>number<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token operator">></span>number<span class="token punctuation">;</span>
+<span class="token keyword">let</span> add<span class="token punctuation">:</span>Add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span>number<span class="token punctuation">,</span>arg2<span class="token punctuation">:</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>number <span class="token operator">=</span> <span class="token operator">></span>arg1<span class="token operator">+</span>arg2<span class="token punctuation">;</span>
+
+<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//right</span>
+<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//error应该有两个参数，但实际上传了3个参数</span>
+<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//error应该有两个参数,但实际获得1个</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>有的时候参数不是必要的，所以会出现可选参数，这里和可选属性一样，只不过位置不一样</p>
+<blockquote>
+<p>必填的参数必须要在可选参数的前面</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript">type Add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token operator">?</span><span class="token punctuation">:</span> number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> number <span class="token comment" spellcheck="true">//这样才对</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>如果顺序错了</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">type Add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token operator">?</span><span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token punctuation">:</span> number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> number <span class="token comment" spellcheck="true">//直接报错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="2-默认参数"><a href="#2-默认参数" class="headerlink" title="(2) 默认参数"></a>(2) 默认参数</h3><p>Typescript 会自动识别参数的类型，要是不符合,则会报错误</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x <span class="token operator">+</span> y
 <span class="token punctuation">}</span>
-<span class="token keyword">interface</span> <span class="token class-name">Tomato</span> <span class="token keyword">extends</span> <span class="token class-name">Food</span><span class="token punctuation">,</span> Vegetabls <span class="token punctuation">{</span>
-  radius<span class="token punctuation">:</span> number<span class="token punctuation">;</span>
+<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//这样会直接报错,因为默认值类型是数字</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>也可以显视给 Y 设置类型</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> add <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">:</span> number<span class="token punctuation">,</span> y<span class="token punctuation">:</span> number <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x <span class="token operator">+</span> y
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="3-剩余参数"><a href="#3-剩余参数" class="headerlink" title="(3) 剩余参数"></a>(3) 剩余参数</h3><blockquote>
+<p>也可以为剩余参数指定类型</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> handleData <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> <span class="token operator">...</span>arg<span class="token punctuation">:</span> number<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token function">handleData</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//error直接报错</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h2><blockquote>
+<p>在 TypeScript 中重载通过一个函数指定多个函数类型定义:从而对函数调用的返回值进行检查.</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">handleData</span><span class="token punctuation">(</span>x<span class="token punctuation">:</span>string<span class="token punctuation">)</span><span class="token punctuation">:</span>string<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 这就是重载指定类型为 string时,返回值为string类型的元素构成的数组</span>
+<span class="token keyword">function</span> <span class="token function">handleData</span><span class="token punctuation">(</span>x<span class="token punctuation">:</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>string<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//当指定的参数类型为number时,返回值是string</span>
+<span class="token keyword">function</span> <span class="token function">handleData</span><span class="token punctuation">(</span>x<span class="token punctuation">:</span> any<span class="token punctuation">)</span><span class="token punctuation">:</span> any <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 这个就是重载的内容了，他是实体函数，不算做重载的部分</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> x <span class="token operator">===</span> <span class="token string">"string"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> x<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> x
+      <span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">"_"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span class="token keyword">const</span> tomato<span class="token punctuation">:</span> Tomato <span class="token operator">=</span> <span class="token punctuation">{</span>
-  type<span class="token punctuation">:</span> <span class="token string">'vegetables'</span><span class="token punctuation">,</span>
-  color<span class="token punctuation">:</span> <span class="token string">'red'</span><span class="token punctuation">,</span>
-  radius<span class="token punctuation">:</span> <span class="token number">1.2</span>
-<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">//在定义tomato变量时将继承过来的color和type属性共同声明</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li><p>限定索引的类型</p>
-</li>
-<li><p>使用:type 来指定索引的类型。</p>
-</li>
-<li><p>接口的继承</p>
-</li>
-</ul>
+<span class="token function">handleData</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">"_"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">handleData</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">"_"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// error 类型"string"上不存在属性"join"</span>
+<span class="token function">handleData</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// error 类型"boolean"的参数不能赋给类型"number"的参数。</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>第二个之所以错 是因为他调用了数组里面的 join 方法。而字符串无法调用这个方法</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>1.基本类型 2.接口类型 3.类型别名 4.可选参数 5.默认参数 6.剩余参数 可以用…参数名来获取任意多个参数,获取的是一个数组</p>
 
             </div>
             <hr/>
@@ -609,7 +606,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2019/12/20/typescriptbasic8/">https://jsopy.gitee.io/2019/12/20/typescriptbasic8/</a>
+                    <a href="https://jsopy.gitee.io/2019/12/22/typescriptbasic9/">https://jsopy.gitee.io/2019/12/22/typescriptbasic9/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -697,7 +694,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/12/21/typescriptbasic10/">
+                <a href="/2019/12/23/typescriptbasic10/">
                     <div class="card-image">
                         
                         
@@ -714,7 +711,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-23
                         </span>
                         <span class="publish-author">
                             
@@ -750,24 +747,24 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/19/typescriptbasic7/">
+                <a href="/2019/12/21/typescriptbasic8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="TypeScript(七) 使用接口几乎可以定义任何结构">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="TypeScript(八) 接口的高阶用法">
                         
-                        <span class="card-title">TypeScript(七) 使用接口几乎可以定义任何结构</span>
+                        <span class="card-title">TypeScript(八) 接口的高阶用法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript(七) 使用接口几乎可以定义任何结构
+                            TypeScript(八) 接口的高阶用法
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-21
                             </span>
                         <span class="publish-author">
                             
