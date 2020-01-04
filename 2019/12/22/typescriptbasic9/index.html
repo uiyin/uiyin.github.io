@@ -460,6 +460,11 @@
                 </div>
                 
                 
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-01-04
+                </div>
+                
 
                 
                     
@@ -495,11 +500,11 @@
 <p>函数类型分成三种, 可选参数,默认参数和剩余参数</p>
 </blockquote>
 <h2 id="为函数定型"><a href="#为函数定型" class="headerlink" title="为函数定型"></a>为函数定型</h2><h3 id="1-为函数类型定义"><a href="#1-为函数类型定义" class="headerlink" title="(1) 为函数类型定义"></a>(1) 为函数类型定义</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> x <span class="token operator">+</span> y
+  <span class="token keyword">return</span> arg1 <span class="token operator">+</span> arg2
 <span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true">//或者</span>
 <span class="token keyword">const</span> add <span class="token operator">=</span> <span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> number<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> x <span class="token operator">+</span> y
+  <span class="token keyword">return</span> arg1 <span class="token operator">+</span> arg2
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这里我们规定 arg1 和 arg2 都是数值类型的,最后相加得到结果也是数值类型的</p>
 <blockquote>

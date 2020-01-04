@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-22
+                    2020-01-04
                 </div>
                 
 
@@ -511,13 +511,13 @@
 <li><p>config: 配置文件</p>
 </li>
 </ul>
-<h4 id="ii-typings-模块声明文件"><a href="#ii-typings-模块声明文件" class="headerlink" title="(ii) typings: 模块声明文件"></a>(ii) typings: 模块声明文件</h4><h4 id="iii-builds-webpack-构建配置"><a href="#iii-builds-webpack-构建配置" class="headerlink" title="(iii) builds: webpack 构建配置"></a>(iii) builds: webpack 构建配置</h4><h3 id="6-全局安装-typescript-全局安装后你可以在任意文件夹使用-tsc-命令"><a href="#6-全局安装-typescript-全局安装后你可以在任意文件夹使用-tsc-命令" class="headerlink" title="(6) 全局安装 typescript,全局安装后你可以在任意文件夹使用 tsc 命令"></a>(6) 全局安装 typescript,全局安装后你可以在任意文件夹使用 tsc 命令</h3><pre class="line-numbers language-javascript"><code class="language-javascript">npm i typescript <span class="token operator">-</span>g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="ii-typings-模块声明文件"><a href="#ii-typings-模块声明文件" class="headerlink" title="(ii) typings: 模块声明文件"></a>(ii) typings: 模块声明文件</h4><h4 id="iii-build-webpack-构建配置"><a href="#iii-build-webpack-构建配置" class="headerlink" title="(iii) build: webpack 构建配置"></a>(iii) build: webpack 构建配置</h4><h3 id="6-全局安装-typescript-全局安装后你可以在任意文件夹使用-tsc-命令"><a href="#6-全局安装-typescript-全局安装后你可以在任意文件夹使用-tsc-命令" class="headerlink" title="(6) 全局安装 typescript,全局安装后你可以在任意文件夹使用 tsc 命令"></a>(6) 全局安装 typescript,全局安装后你可以在任意文件夹使用 tsc 命令</h3><pre class="line-numbers language-javascript"><code class="language-javascript">npm i typescript <span class="token operator">-</span>g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ul>
 <li>安装完成后我们进入项目的根目录,利用 typescript 初始化</li>
 </ul>
 <pre class="line-numbers language-javascript"><code class="language-javascript">tsc <span class="token operator">--</span>init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
-<p>这个时候我们会发现在项目的根目录多了一个 tsconfig.json 文件,在这个文件下有个属性被注释掉了, 我们需要开启他，然后在这个数组里面添加”es6”和”dom”其它的暂时不用修改</p>
+<p>这个时候我们会发现在项目的根目录多了一个 tsconfig.json 文件,在这个文件下有个属性 lib 被注释掉了, 我们需要开启他，然后在这个数组里面添加”es6”和”dom”其它的暂时不用修改</p>
 </blockquote>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">;</span><span class="token punctuation">[</span><span class="token string">'dom'</span><span class="token punctuation">,</span> <span class="token string">'es6'</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ul>

@@ -461,7 +461,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-22
+                    2020-01-04
                 </div>
                 
 
@@ -469,7 +469,7 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        234
+                        236
                     </div>
                     
 
@@ -512,7 +512,7 @@
 <h2 id="正确的做法"><a href="#正确的做法" class="headerlink" title="正确的做法"></a>正确的做法</h2><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> getLength <span class="token operator">=</span> <span class="token punctuation">(</span>target<span class="token punctuation">:</span>string<span class="token operator">|</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>number<span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>target <span class="token keyword">as</span> string<span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//error因为string或者number都没有length属性</span>
   <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> target<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>target <span class="token keyword">as</span> string<span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
   <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
     <span class="token keyword">return</span> target<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
