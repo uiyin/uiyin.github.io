@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2019-12-22T08:28:23.646Z</updated>
+  <updated>2020-02-22T13:14:33.114Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>TypeScript(十二) Vue中使用TS</title>
+    <link href="https://jsopy.gitee.io/2019/12/25/typescriptbasic12/"/>
+    <id>https://jsopy.gitee.io/2019/12/25/typescriptbasic12/</id>
+    <published>2019-12-25T12:26:47.000Z</published>
+    <updated>2020-02-22T13:14:33.114Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中使用-TsLint-备注&quot;&gt;&lt;a href=&quot;#Vue-中使用-TsLint-备注&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用 TsLint 备注&quot;&gt;&lt;/a&gt;Vue 中使用 TsLint
+        
+      
+    
+    </summary>
+    
+    
+      <category term="TypeScript" scheme="https://jsopy.gitee.io/categories/TypeScript/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="TypeScript" scheme="https://jsopy.gitee.io/tags/TypeScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>TypeScript(十一) TS 中的类与 ES 标准的差异</title>
     <link href="https://jsopy.gitee.io/2019/12/24/typescriptbasic11/"/>
     <id>https://jsopy.gitee.io/2019/12/24/typescriptbasic11/</id>
     <published>2019-12-24T12:26:47.000Z</published>
-    <updated>2019-12-22T08:28:23.646Z</updated>
+    <updated>2020-02-22T13:14:35.169Z</updated>
     
     <summary type="html">
     
@@ -552,35 +581,6 @@
         
         
           &lt;h1 id=&quot;React-基础笔记-Redux-thunk-版本-十五&quot;&gt;&lt;a href=&quot;#React-基础笔记-Redux-thunk-版本-十五&quot; class=&quot;headerlink&quot; title=&quot;React 基础笔记(Redux thunk
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React 基础笔记(Redux 基础版本)(十四)</title>
-    <link href="https://jsopy.gitee.io/2019/12/06/reactbasic14/"/>
-    <id>https://jsopy.gitee.io/2019/12/06/reactbasic14/</id>
-    <published>2019-12-06T13:26:47.000Z</published>
-    <updated>2019-12-08T08:49:19.453Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Redux-就是存放公共数据的地方&quot;&gt;&lt;a href=&quot;#Redux-就是存放公共数据的地方&quot; class=&quot;headerlink&quot; title=&quot;Redux 就是存放公共数据的地方&quot;&gt;&lt;/a&gt;Redux
         
       
     
