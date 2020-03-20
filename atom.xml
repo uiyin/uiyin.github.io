@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-03-19T14:06:12.182Z</updated>
+  <updated>2020-03-20T23:04:19.101Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue 中使用 iframe</title>
+    <link href="https://jsopy.gitee.io/2020/01/12/vuecha9/"/>
+    <id>https://jsopy.gitee.io/2020/01/12/vuecha9/</id>
+    <published>2020-01-12T13:26:47.000Z</published>
+    <updated>2020-03-20T23:04:19.101Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中使用-iframe&quot;&gt;&lt;a href=&quot;#Vue-中使用-iframe&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用 iframe&quot;&gt;&lt;/a&gt;Vue 中使用
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 基础(十一)单元测试</title>
@@ -530,35 +559,6 @@
         
         
           &lt;h1 id=&quot;使用类型断言达到预期&quot;&gt;&lt;a href=&quot;#使用类型断言达到预期&quot; class=&quot;headerlink&quot; title=&quot;使用类型断言达到预期&quot;&gt;&lt;/a&gt;使用类型断言达到预期&lt;/h1&gt;&lt;h2 id=&quot;类型断言&quot;&gt;&lt;a href=&quot;#类型断言&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="TypeScript" scheme="https://jsopy.gitee.io/categories/TypeScript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="TypeScript" scheme="https://jsopy.gitee.io/tags/TypeScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TypeScript(五) Typescript 深入学习枚举</title>
-    <link href="https://jsopy.gitee.io/2019/12/18/typescriptbasic5/"/>
-    <id>https://jsopy.gitee.io/2019/12/18/typescriptbasic5/</id>
-    <published>2019-12-18T14:26:47.000Z</published>
-    <updated>2019-12-22T07:56:09.804Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Typescript-深入学习枚举&quot;&gt;&lt;a href=&quot;#Typescript-深入学习枚举&quot; class=&quot;headerlink&quot; title=&quot;Typescript 深入学习枚举&quot;&gt;&lt;/a&gt;Typescript 深入学习枚举&lt;/h1&gt;&lt;h2
         
       
     
