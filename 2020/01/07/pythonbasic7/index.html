@@ -30,9 +30,9 @@
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
+<link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-19
+                    2020-03-24
                 </div>
                 
 
@@ -463,7 +463,7 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        403
+                        474
                     </div>
                     
 
@@ -550,7 +550,10 @@ result <span class="token operator">=</span> <span class="token string">""</span
 
 <span class="token comment" spellcheck="true"># 结果</span>
 只有当用户输入了quit 这个时候才退出<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="使用-break-退出"><a href="#使用-break-退出" class="headerlink" title="使用 break 退出"></a>使用 break 退出</h3><pre class="line-numbers language-python"><code class="language-python">
+<h3 id="使用-break-退出"><a href="#使用-break-退出" class="headerlink" title="使用 break 退出"></a>使用 break 退出</h3><ul>
+<li>这样使用 break 就直接条春循环</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
 message <span class="token operator">=</span> <span class="token string">"请输入用户名"</span>
 result <span class="token operator">=</span> <span class="token string">""</span>
 <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
@@ -561,6 +564,21 @@ result <span class="token operator">=</span> <span class="token string">""</span
         <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"显示刚才用户输入的"</span><span class="token operator">+</span>result<span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"结束了"</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="continue-中断循环"><a href="#continue-中断循环" class="headerlink" title="continue 中断循环"></a>continue 中断循环</h3><pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Who are you?"</span><span class="token punctuation">)</span>
+    name <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"请输入你的名字"</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> name <span class="token operator">!=</span> <span class="token string">"YJ"</span><span class="token punctuation">:</span>
+        <span class="token keyword">continue</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello end Please enter your password :"</span><span class="token punctuation">)</span>
+    password <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> password <span class="token operator">==</span> <span class="token string">"123456"</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Over"</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果只有当用户输入了YJ的时候</span>
+<span class="token comment" spellcheck="true"># 他才跳出循环</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -905,7 +923,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >48.9k</span
+        >50.1k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span

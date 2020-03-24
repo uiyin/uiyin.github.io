@@ -33,9 +33,9 @@
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
+<link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -458,7 +458,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-19
+                    2020-03-24
                 </div>
                 
 
@@ -466,14 +466,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        640
+                        864
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        3 分
                     </div>
                     
                 
@@ -557,6 +557,24 @@ Love Python<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 输出结果就是
 LOVE PYTHON<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
+<li>isupper()判断是不是都是大写</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str <span class="token operator">=</span> <span class="token string">"Hello"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>isupper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#结果</span>
+<span class="token comment" spellcheck="true"># False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>islower 判断是不是都是小写</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str <span class="token operator">=</span> <span class="token string">"Hello"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>islower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
 <li>lower 方法(全部小写)</li>
 </ul>
 <pre class="line-numbers language-python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">"LOVE PYTHON"</span>
@@ -564,6 +582,57 @@ LOVE PYTHON<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 输出结果就是
 love python<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>startswith() 和 endswitch()</li>
+</ul>
+<p>以什么开头 和 以什么结尾</p>
+<pre class="line-numbers language-python"><code class="language-python"> str <span class="token operator">=</span> <span class="token string">"Hello , JSON! See The World!"</span>
+ <span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startswith<span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+ <span class="token triple-quoted-string string">'''
+  结果就是True
+ '''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>以什么结尾</p>
+<pre class="line-numbers language-python"><code class="language-python">
+str <span class="token operator">=</span> <span class="token string">"Hello , JSON! See The World!"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">'World!'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+结果就是True
+'''</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>join()</li>
+</ul>
+<p>字符串拼接 join 就是把前面的字符串插入到后面每个字符串的中间</p>
+<pre class="line-numbers language-python"><code class="language-python">
+str2 <span class="token operator">=</span> <span class="token string">"kai"</span>
+
+endstr <span class="token operator">=</span> <span class="token string">"end"</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>str2<span class="token punctuation">.</span>join<span class="token punctuation">(</span>endstr<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># ekainkaid</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>第二种开始</p>
+<pre class="line-numbers language-python"><code class="language-python">
+str <span class="token operator">=</span> <span class="token string">"||"</span>
+arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"start"</span><span class="token punctuation">,</span> <span class="token string">"over"</span><span class="token punctuation">,</span> <span class="token string">"end"</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>join<span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># start||over||end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>split()他是把字符串的每个字符变成列表</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str <span class="token operator">=</span> <span class="token string">"Hello World "</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+
+<span class="token comment" spellcheck="true"># ['Hello', 'World']</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="合并-拼接-字符串"><a href="#合并-拼接-字符串" class="headerlink" title="合并(拼接)字符串"></a>合并(拼接)字符串</h4><ul>
 <li>在很多情况下我们都需要合并</li>
 </ul>
@@ -604,6 +673,12 @@ mes <span class="token operator">=</span> <span class="token string">"Hello "</s
 <span class="token keyword">print</span><span class="token punctuation">(</span>mes<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 这样两边的空格就都没了<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="有一种连接不属于而是直接赋值"><a href="#有一种连接不属于而是直接赋值" class="headerlink" title="有一种连接不属于而是直接赋值"></a>有一种连接不属于而是直接赋值</h4><pre class="line-numbers language-python"><code class="language-python">
+span<span class="token operator">+=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span<span class="token operator">+</span><span class="token number">1</span>
+span<span class="token operator">-=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span <span class="token operator">-</span><span class="token number">1</span>
+span<span class="token operator">*=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span<span class="token operator">*</span><span class="token number">1</span>
+span<span class="token operator">/=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span<span class="token operator">/</span><span class="token number">1</span>
+span<span class="token operator">%=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span<span class="token operator">%</span><span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -952,7 +1027,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >48.9k</span
+        >50.1k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span

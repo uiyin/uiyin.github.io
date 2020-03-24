@@ -5,17 +5,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Python 基础(二)数字类型和注释, Javascript Python Js">
-    <meta name="description" content="Python 基础(二) ——— 数字类型和注释
+    <meta name="description" content="Python 基础(二) ——— 数字类型,布尔类型和注释
 阅读使人充实,会谈使人敏捷,写作使人精确 ———-培根
 
-整数在 Python 中,可对整数执行加(+)减(一)乘(x)除(/)运算
+整数
+在 Python 中,可对整数执行加(+)减(一)乘(x)除(/)运算
+
 如下代码
 2+3
 ----
 结果5
-3-2
----
-结果">
+3-2">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -36,9 +36,9 @@
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
+<link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -461,7 +461,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-19
+                    2020-03-24
                 </div>
                 
 
@@ -469,14 +469,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        321
+                        763
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -492,10 +492,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Python-基础-二-———-数字类型和注释"><a href="#Python-基础-二-———-数字类型和注释" class="headerlink" title="Python 基础(二) ——— 数字类型和注释"></a>Python 基础(二) ——— 数字类型和注释</h1><blockquote>
+                <h1 id="Python-基础-二-———-数字类型-布尔类型和注释"><a href="#Python-基础-二-———-数字类型-布尔类型和注释" class="headerlink" title="Python 基础(二) ——— 数字类型,布尔类型和注释"></a>Python 基础(二) ——— 数字类型,布尔类型和注释</h1><blockquote>
 <p>阅读使人充实,会谈使人敏捷,写作使人精确 ———-培根</p>
 </blockquote>
-<h2 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h2><p>在 Python 中,可对整数执行加(+)减(一)乘(x)除(/)运算</p>
+<h2 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h2><ul>
+<li>在 Python 中,可对整数执行加(+)减(一)乘(x)除(/)运算</li>
+</ul>
 <p>如下代码</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token number">2</span><span class="token operator">+</span><span class="token number">3</span>
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
@@ -511,7 +513,9 @@
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 结果<span class="token number">1.5</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>在终端会话中,Python 直接返回运算结果,Python 使用两个乘号表示乘方运算</p>
+<ul>
+<li>在终端会话中,Python 直接返回运算结果,Python 使用两个乘号表示乘方运算</li>
+</ul>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token number">3</span><span class="token operator">**</span><span class="token number">2</span>
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 结果就是<span class="token number">9</span>
@@ -521,7 +525,9 @@ message2 <span class="token operator">=</span> <span class="token number">3</spa
 结果<span class="token number">27</span>
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Python 还支持运算次序,可以指定优先级</p>
+<ul>
+<li>Python 还支持运算次序,可以指定优先级</li>
+</ul>
 <pre class="line-numbers language-python"><code class="language-python">message <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">+</span><span class="token number">3</span><span class="token operator">**</span><span class="token number">2</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span>
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
@@ -531,7 +537,53 @@ message <span class="token operator">=</span> <span class="token punctuation">(<
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 结果就是<span class="token number">25</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><p>小数点可出现在数字的任何位置.</p>
+<ul>
+<li>使用 int()可以把字符串变成整数</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+message <span class="token operator">=</span> <span class="token string">"00042"</span>
+message2 <span class="token operator">=</span> <span class="token number">42.00</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>int<span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>int<span class="token punctuation">(</span>message2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># 42</span>
+<span class="token comment" spellcheck="true"># 42</span>
+<span class="token comment" spellcheck="true"># message = "42.000"或者message = "adadada42"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>使用 random(),randint 随机</li>
+</ul>
+<blockquote>
+<p>生成一个随机数 0-1 之间,random.random()</p>
+</blockquote>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">import</span> random
+message <span class="token operator">=</span> random<span class="token punctuation">.</span>random<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>randint,random,uniform,choice,randrange</p>
+</blockquote>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">import</span> random
+
+<span class="token comment" spellcheck="true"># 产生1到10的一个整数随机数</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 产生 0 到 1 之间的随机浮点数</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>random<span class="token punctuation">.</span>random<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 产生区间的随机浮点数,区间可以不是整数</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>random<span class="token punctuation">.</span>uniform<span class="token punctuation">(</span><span class="token number">2.1</span><span class="token punctuation">,</span> <span class="token number">55.3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 生成1到100的间隔为2的随机整数</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>random<span class="token punctuation">.</span>randrange<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><ul>
+<li>小数点可出现在数字的任何位置.</li>
+</ul>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token number">0.1</span><span class="token operator">+</span><span class="token number">0.1</span>
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 结果<span class="token number">0.2</span>
@@ -545,6 +597,30 @@ message <span class="token operator">=</span> <span class="token punctuation">(<
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 结果就是<span class="token number">0.4</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>使用 float()可以转换 这里要特别注意的就是要是字符串的浮点数，必须先转化成浮点数然后在转化成整型</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+message <span class="token operator">=</span> <span class="token string">"42.000"</span>
+message2 <span class="token operator">=</span> int<span class="token punctuation">(</span>float<span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>float<span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>message2<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># 42.0</span>
+<span class="token comment" spellcheck="true"># 42</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>在 Python 中 虽然数字的字符串被认为与整形值和浮点值完全不同,但是整形值可以和浮点值相等</p>
+</blockquote>
+<pre class="line-numbers language-python"><code class="language-python">
+result1 <span class="token operator">=</span> <span class="token number">42</span> <span class="token operator">==</span> <span class="token string">"42"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result1<span class="token punctuation">)</span>
+result2 <span class="token operator">=</span> <span class="token number">42</span> <span class="token operator">==</span> <span class="token number">42.0</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result2<span class="token punctuation">)</span>
+result3 <span class="token operator">=</span> <span class="token number">42</span><span class="token operator">==</span><span class="token number">0042.00</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result3<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># 一个 false 一个true ,一个true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="数字变成字符串"><a href="#数字变成字符串" class="headerlink" title="数字变成字符串"></a>数字变成字符串</h2><ul>
 <li>必须使用函数 str()把数字变成字符串,必须放在开头</li>
 </ul>
@@ -562,8 +638,49 @@ message <span class="token operator">=</span> <span class="token string">"Happy"
 <pre class="line-numbers language-python"><code class="language-python">age <span class="token operator">=</span> <span class="token number">23</span>
 message <span class="token operator">=</span> <span class="token string">"Happy"</span><span class="token operator">+</span> str<span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token operator">+</span> <span class="token string">"rd Birthday"</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h2><h3 id="在-Python-中-布尔值必须是大写开头"><a href="#在-Python-中-布尔值必须是大写开头" class="headerlink" title="在 Python 中 布尔值必须是大写开头"></a>在 Python 中 布尔值必须是大写开头</h3><p>True False</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">if</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"这是对的"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 必须是大写</span>
+<span class="token keyword">if</span> true<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"这是对的"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 小写的话会报错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="比较操作符"><a href="#比较操作符" class="headerlink" title="比较操作符"></a>比较操作符</h3><ul>
+<li><p>==,!=,&lt;,&gt;,&lt;=,&gt;=</p>
+</li>
+<li><p>相等和不相等的判断</p>
+</li>
+</ul>
+<p>在 Python 中整数和浮点数值一样的话是可以相等的</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">if</span> <span class="token number">42</span> <span class="token operator">==</span> <span class="token number">42.000</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Yes"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># Yes</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>不相等</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">if</span> <span class="token number">42</span> <span class="token operator">!=</span> <span class="token number">99</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"No"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># No</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>大于小于,&lt;=,&gt;=</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">if</span> <span class="token number">52</span> <span class="token operator">>=</span> <span class="token number">32</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Yes"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果 Yes</span>
+
+<span class="token keyword">if</span> <span class="token number">52</span> <span class="token operator">&lt;=</span> <span class="token number">32</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Yes"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"No"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果 No</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ul>
-<li>注释用(#)标识</li>
+<li>注释用(#)标识,单行</li>
 </ul>
 <p>如下:</p>
 <pre class="line-numbers language-python"><code class="language-python">
@@ -574,6 +691,22 @@ message <span class="token operator">=</span> <span class="token string">"Happy"
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 最后结果就是Hello
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>多行注释可以用 3 个’(单引号)或者 3 个”(双引号)</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token triple-quoted-string string">'''
+多行注释
+'''</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">"""
+多行注释
+"""</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"测试开始"</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="Python-之禅"><a href="#Python-之禅" class="headerlink" title="Python 之禅"></a>Python 之禅</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> this
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 这样就会输出Python之禅<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -921,7 +1054,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >48.9k</span
+        >50.1k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span

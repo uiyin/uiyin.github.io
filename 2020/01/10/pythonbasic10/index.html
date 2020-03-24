@@ -8,14 +8,12 @@
     <meta name="description" content="Python 基础(十) ——— 文件和异常
 意志坚强的人能把世界放在手中像泥块一样任意揉捏。——歌德
 
-从文件中读取数据
-win open
+路径必须要用 os
+在 python 中比如路径 user\bin\spanm
 
-要是读出所有必须加 xxxx.read()
+import os
 
-要是逐行读出 必须用 for 循环
-
-要是想把数据">
+result = os.pat">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -36,9 +34,9 @@ win open
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
+<link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -461,7 +459,7 @@ win open
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-19
+                    2020-03-24
                 </div>
                 
 
@@ -469,7 +467,7 @@ win open
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        977
+                        1.1k
                     </div>
                     
 
@@ -495,6 +493,51 @@ win open
                 <h1 id="Python-基础-十-———-文件和异常"><a href="#Python-基础-十-———-文件和异常" class="headerlink" title="Python 基础(十) ——— 文件和异常"></a>Python 基础(十) ——— 文件和异常</h1><blockquote>
 <p>意志坚强的人能把世界放在手中像泥块一样任意揉捏。——歌德</p>
 </blockquote>
+<h2 id="路径必须要用-os"><a href="#路径必须要用-os" class="headerlink" title="路径必须要用 os"></a>路径必须要用 os</h2><ul>
+<li>在 python 中比如路径 user\bin\spanm</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> os
+
+result <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span> <span class="token string">'bin'</span><span class="token punctuation">,</span> <span class="token string">'spanm'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># user\bin\spanm</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>getcwd() 获取当前文件所在的路径</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">import</span> os
+
+result <span class="token operator">=</span> os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+
+<span class="token comment" spellcheck="true"># E:\TextCode\Python\PythonTwo</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>查看文件大小 os.path.getsize()</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">import</span> os
+
+path <span class="token operator">=</span> <span class="token string">'E:\TextCode\Python\PythonTwo\PythonBasicOne.py'</span>
+result <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>getsize<span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token number">311</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>检查路径有效性 os.path.exists()</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">import</span> os
+
+path <span class="token operator">=</span> <span class="token string">'E:\TextCode\Python\PythonTwo\PythonBasicOne.py'</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="从文件中读取数据"><a href="#从文件中读取数据" class="headerlink" title="从文件中读取数据"></a>从文件中读取数据</h2><ul>
 <li><p>win open</p>
 </li>
@@ -666,7 +709,8 @@ filename <span class="token operator">=</span> <span class="token string">"numbe
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"没有这个文件"</span><span class="token punctuation">)</span>
 
 <span class="token comment" spellcheck="true"># 结果</span>
-<span class="token comment" spellcheck="true"># 没有这个文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment" spellcheck="true"># 没有这个文件</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -1011,7 +1055,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >48.9k</span
+        >50.1k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span

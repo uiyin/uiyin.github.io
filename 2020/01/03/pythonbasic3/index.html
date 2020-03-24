@@ -30,9 +30,9 @@
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
+<link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-19
+                    2020-03-24
                 </div>
                 
 
@@ -463,14 +463,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        960
+                        1.1k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        4 分
                     </div>
                     
                 
@@ -505,6 +505,16 @@
 
 <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
 结果hello
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="通过-index-方法在列表中查找值"><a href="#通过-index-方法在列表中查找值" class="headerlink" title="通过 index()方法在列表中查找值"></a>通过 index()方法在列表中查找值</h3><ul>
+<li>index()方法</li>
+<li>arr.index(‘hello’)</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+spanm <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"11"</span><span class="token punctuation">,</span> <span class="token string">'22'</span><span class="token punctuation">,</span> <span class="token string">'33'</span><span class="token punctuation">,</span> <span class="token string">'44'</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>spanm<span class="token punctuation">.</span>index<span class="token punctuation">(</span><span class="token string">"22"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># 1</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="获取列表元素"><a href="#获取列表元素" class="headerlink" title="获取列表元素"></a>获取列表元素</h3><ul>
 <li>在 Python 中 第一个列表元素的索引为 0,而不是 1</li>
@@ -677,6 +687,56 @@ arr<span class="token punctuation">.</span>reverse<span class="token punctuation
 arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'d'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">"b"</span><span class="token punctuation">]</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="用-list-和-tuple-来转换类型"><a href="#用-list-和-tuple-来转换类型" class="headerlink" title="用 list()和 tuple()来转换类型"></a>用 list()和 tuple()来转换类型</h3><ul>
+<li>tuple 将 类型变成元祖</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">print</span><span class="token punctuation">(</span>tuple<span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># ('h', 'e', 'l', 'l', 'o')</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>list 将类型变成数组</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">(</span><span class="token string">'hello2'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># ['h', 'e', 'l', 'l', 'o', '2']</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="引入-copy-模块和-deepcopy"><a href="#引入-copy-模块和-deepcopy" class="headerlink" title="引入 copy 模块和 deepcopy()"></a>引入 copy 模块和 deepcopy()</h3><pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">import</span> copy
+
+result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">]</span>
+
+cheese <span class="token operator">=</span> copy<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+cheese<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'42'</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>cheese<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># ['A', '42', 'C', 'D']</span>
+<span class="token comment" spellcheck="true"># ['A', 'B', 'C', 'D']</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>deepcopy 就是复制的列表中包含了列表,这个时候就必须用 deepcopy</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">import</span> copy
+
+result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">]</span>
+
+cheese <span class="token operator">=</span> copy<span class="token punctuation">.</span>deepcopy<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+cheese<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">]</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>cheese<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># ['A', [5, 6, 7], 'C', 'D']</span>
+<span class="token comment" spellcheck="true"># ['A', [2, 3, 4], 'C', 'D']</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -1021,7 +1081,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >48.9k</span
+        >50.1k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span

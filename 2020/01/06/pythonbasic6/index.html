@@ -36,9 +36,9 @@ alien = {&#34;color&#34;:&#34;green&#34;,&#34;point">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
+<link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -461,7 +461,7 @@ alien = {&#34;color&#34;:&#34;green&#34;,&#34;point">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-19
+                    2020-03-24
                 </div>
                 
 
@@ -469,14 +469,14 @@ alien = {&#34;color&#34;:&#34;green&#34;,&#34;point">
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        626
+                        749
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        3 分
                     </div>
                     
                 
@@ -551,6 +551,30 @@ alien <span class="token operator">=</span> <span class="token punctuation">{</s
 
 <span class="token comment" spellcheck="true"># 结果</span>
 <span class="token punctuation">{</span><span class="token string">'color'</span><span class="token punctuation">:</span> <span class="token string">'green'</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="get-方法就是当取不到值的时候-返回备用值"><a href="#get-方法就是当取不到值的时候-返回备用值" class="headerlink" title="get 方法就是当取不到值的时候 返回备用值"></a>get 方法就是当取不到值的时候 返回备用值</h3><pre class="line-numbers language-python"><code class="language-python">arrobj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"color"</span><span class="token punctuation">:</span> <span class="token string">"red"</span><span class="token punctuation">}</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>arrobj<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"color"</span><span class="token punctuation">,</span> <span class="token string">"有值"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>arrobj<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"name"</span><span class="token punctuation">,</span> <span class="token string">"名字"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># red</span>
+<span class="token comment" spellcheck="true"># 名字</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="setdefault-设置默认值"><a href="#setdefault-设置默认值" class="headerlink" title="setdefault()设置默认值"></a>setdefault()设置默认值</h3><ul>
+<li>第一个参数 就是要检查的键。第二个键就是该键不存在的时候，要设置的值</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+arrobj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+arrobj<span class="token punctuation">.</span>setdefault<span class="token punctuation">(</span><span class="token string">"color"</span><span class="token punctuation">,</span> <span class="token string">"red"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>arrobj<span class="token punctuation">)</span>
+
+arrobj2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"color"</span><span class="token punctuation">:</span> <span class="token string">"green"</span><span class="token punctuation">}</span>
+
+arrobj2<span class="token punctuation">.</span>setdefault<span class="token punctuation">(</span><span class="token string">"color"</span><span class="token punctuation">,</span> <span class="token string">"blue"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>arrobj2<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># {'color': 'red'}  第一次是没有属性,所以起作用</span>
+<span class="token comment" spellcheck="true"># {'color': 'green'} 第二次是有属性 所以不起作用</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="遍历字典"><a href="#遍历字典" class="headerlink" title="遍历字典"></a>遍历字典</h3><ul>
 <li><p>通过 for in 循环来做</p>
 </li>
@@ -1010,7 +1034,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >48.9k</span
+        >50.1k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
