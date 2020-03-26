@@ -152,6 +152,60 @@
   </entry>
   
   <entry>
+    <title>Mysql 基础(一)什么是数据库</title>
+    <link href="https://jsopy.gitee.io/2020/01/14/mysqlbasic1/"/>
+    <id>https://jsopy.gitee.io/2020/01/14/mysqlbasic1/</id>
+    <published>2020-01-14T13:26:47.000Z</published>
+    <updated>2020-03-26T13:20:08.536Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Mysql-基础-一-什么是数据库&quot;&gt;&lt;a href=&quot;#Mysql-基础-一-什么是数据库&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(一) 什么是数据库&quot;&gt;&lt;/a&gt;Mysql 基础(一)
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySql基础学习笔记(SQL基础教程第二版)</title>
+    <link href="https://jsopy.gitee.io/2020/01/13/mysqlall/"/>
+    <id>https://jsopy.gitee.io/2020/01/13/mysqlall/</id>
+    <published>2020-01-13T12:26:47.000Z</published>
+    <updated>2020-03-26T13:20:04.069Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;目录分类&quot;&gt;&lt;a href=&quot;#目录分类&quot; class=&quot;headerlink&quot; title=&quot;目录分类&quot;&gt;&lt;/a&gt;目录分类&lt;/h2&gt;&lt;h3 id=&quot;什么是数据库-一&quot;&gt;&lt;a href=&quot;#什么是数据库-一&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vue 中使用 iframe</title>
     <link href="https://jsopy.gitee.io/2020/01/12/vuecha9/"/>
     <id>https://jsopy.gitee.io/2020/01/12/vuecha9/</id>
@@ -451,33 +505,6 @@
   </entry>
   
   <entry>
-    <title>Mysql 基础(一)什么是数据库</title>
-    <link href="https://jsopy.gitee.io/2020/01/01/mysqlbasic1/"/>
-    <id>https://jsopy.gitee.io/2020/01/01/mysqlbasic1/</id>
-    <published>2020-01-01T13:26:47.000Z</published>
-    <updated>2020-03-26T12:41:41.222Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Mysql-基础-一-什么是数据库&quot;&gt;&lt;a href=&quot;#Mysql-基础-一-什么是数据库&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(一) 什么是数据库&quot;&gt;&lt;/a&gt;Mysql 基础(一)
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Python 基础(一)数据类型和变量(开篇之字符串)</title>
     <link href="https://jsopy.gitee.io/2020/01/01/pythonbasic1/"/>
     <id>https://jsopy.gitee.io/2020/01/01/pythonbasic1/</id>
@@ -530,35 +557,6 @@
       <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
       <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TypeScript(十二) Vue中使用TS</title>
-    <link href="https://jsopy.gitee.io/2019/12/25/typescriptbasic12/"/>
-    <id>https://jsopy.gitee.io/2019/12/25/typescriptbasic12/</id>
-    <published>2019-12-25T12:26:47.000Z</published>
-    <updated>2020-02-22T13:14:33.114Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Vue-中使用-TsLint-备注&quot;&gt;&lt;a href=&quot;#Vue-中使用-TsLint-备注&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用 TsLint 备注&quot;&gt;&lt;/a&gt;Vue 中使用 TsLint
-        
-      
-    
-    </summary>
-    
-    
-      <category term="TypeScript" scheme="https://jsopy.gitee.io/categories/TypeScript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="TypeScript" scheme="https://jsopy.gitee.io/tags/TypeScript/"/>
     
   </entry>
   

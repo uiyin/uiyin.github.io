@@ -129,6 +129,56 @@
     
     
     <entry>
+      <title>Mysql 基础(一)什么是数据库</title>
+      <link href="/2020/01/14/mysqlbasic1/"/>
+      <url>/2020/01/14/mysqlbasic1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mysql-基础-一-什么是数据库"><a href="#Mysql-基础-一-什么是数据库" class="headerlink" title="Mysql 基础(一) 什么是数据库"></a>Mysql 基础(一) 什么是数据库</h1><blockquote><p>一个人即使已登上顶峰，也仍要自强不息。——罗素·贝克</p></blockquote><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul><li>数据库是将大量的数据保存起来,通过计算机加工而成的可以进行搞笑访问的数据集合</li><li>用来管理数据库的计算机系统统称为数据库管理系统(DBMS)</li><li>通过使用 DBMS,多个用户可以安全简单的操作大量数据</li></ul><h2 id="数据库的种类"><a href="#数据库的种类" class="headerlink" title="数据库的种类"></a>数据库的种类</h2><ul><li>层级数据库(HDB)</li></ul><p>最古老的数据库之一,他把数据通过层次结构(数据结构)的方式表现出来,层次数据库曾经是数据库的主流,但是随着关系数据库的数显和普及，现在已经很少使用</p><ul><li>关系数据库(RDB)</li></ul><p>关系数据库是现在应用最广泛的数据库.关系数据库由很多张表构成。每张表类似表格,由行和列组成.同时他还使用专门的 SQL 语言操作.</p><p>类似下面的表格</p><table><thead><tr><th>商品编号</th><th>商品名称</th><th>销售单价</th></tr></thead><tbody><tr><td>001</td><td>衣服</td><td>280.00</td></tr><tr><td>002</td><td>鞋子</td><td>290.00</td></tr><tr><td>003</td><td>化妆品</td><td>1000.00</td></tr></tbody></table><p>这种类型的 DBMS 称为关系数据库管理系统,主要是 5 种</p><ul><li>1.Oracle 甲骨文</li><li>2.SQL 微软</li><li>3.DB2 IBM</li><li>4.PostgreSQL 开源</li><li>5.Mysql 甲骨文</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySql基础学习笔记(SQL基础教程第二版)</title>
+      <link href="/2020/01/13/mysqlall/"/>
+      <url>/2020/01/13/mysqlall/</url>
+      
+        <content type="html"><![CDATA[<h2 id="目录分类"><a href="#目录分类" class="headerlink" title="目录分类"></a>目录分类</h2><h3 id="什么是数据库-一"><a href="#什么是数据库-一" class="headerlink" title="什么是数据库(一)"></a><a href="https://jsopy.gitee.io/2020/01/14/Mysqlbasic1/">什么是数据库(一)</a></h3><h3 id="数据库的结构-二"><a href="#数据库的结构-二" class="headerlink" title="数据库的结构(二)"></a><a href="https://jsopy.gitee.io/2020/01/15/Mysqlbasic2/">数据库的结构(二)</a></h3><h3 id="SQL-概要-三"><a href="#SQL-概要-三" class="headerlink" title="SQL 概要(三)"></a><a href="https://jsopy.gitee.io/2020/01/16/Mysqlbasic3/">SQL 概要(三)</a></h3><h3 id="表的创建-四"><a href="#表的创建-四" class="headerlink" title="表的创建(四)"></a><a href="https://jsopy.gitee.io/2020/01/17/Mysqlbasic4/">表的创建(四)</a></h3><h3 id="表的删除和更新-五"><a href="#表的删除和更新-五" class="headerlink" title="表的删除和更新(五)"></a><a href="https://jsopy.gitee.io/2020/01/18/Mysqlbasic5/">表的删除和更新(五)</a></h3><h3 id="SELECT-语句基础-六"><a href="#SELECT-语句基础-六" class="headerlink" title="SELECT 语句基础(六)"></a><a href="https://jsopy.gitee.io/2020/01/19/Mysqlbasic6/">SELECT 语句基础(六)</a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue 中使用 iframe</title>
       <link href="/2020/01/12/vuecha9/"/>
       <url>/2020/01/12/vuecha9/</url>
@@ -398,31 +448,6 @@
         <tags>
             
             <tag> python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mysql 基础(一)什么是数据库</title>
-      <link href="/2020/01/01/mysqlbasic1/"/>
-      <url>/2020/01/01/mysqlbasic1/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Mysql-基础-一-什么是数据库"><a href="#Mysql-基础-一-什么是数据库" class="headerlink" title="Mysql 基础(一) 什么是数据库"></a>Mysql 基础(一) 什么是数据库</h1><blockquote><p>一个人即使已登上顶峰，也仍要自强不息。——罗素·贝克</p></blockquote><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul><li>数据库是将大量的数据保存起来,通过计算机加工而成的可以进行搞笑访问的数据集合</li><li>用来管理数据库的计算机系统统称为数据库管理系统(DBMS)</li><li>通过使用 DBMS,多个用户可以安全简单的操作大量数据</li></ul><h2 id="数据库的种类"><a href="#数据库的种类" class="headerlink" title="数据库的种类"></a>数据库的种类</h2><ul><li>层级数据库(HDB)</li></ul><p>最古老的数据库之一,他把数据通过层次结构(数据结构)的方式表现出来,层次数据库曾经是数据库的主流,但是随着关系数据库的数显和普及，现在已经很少使用</p><ul><li>关系数据库(RDB)</li></ul><p>关系数据库是现在应用最广泛的数据库.关系数据库由很多张表构成。每张表类似表格,由行和列组成.同时他还使用专门的 SQL 语言操作.</p><p>类似下面的表格</p><table><thead><tr><th>商品编号</th><th>商品名称</th><th>销售单价</th></tr></thead><tbody><tr><td>001</td><td>衣服</td><td>280.00</td></tr><tr><td>002</td><td>鞋子</td><td>290.00</td></tr><tr><td>003</td><td>化妆品</td><td>1000.00</td></tr></tbody></table><p>这种类型的 DBMS 称为关系数据库管理系统,主要是 5 种</p><ul><li>1.Oracle 甲骨文</li><li>2.SQL 微软</li><li>3.DB2 IBM</li><li>4.PostgreSQL 开源</li><li>5.Mysql 甲骨文</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Mysql </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Mysql </tag>
             
         </tags>
       
@@ -1931,31 +1956,6 @@
             <tag> Javascript </tag>
             
             <tag> Vue </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MySql基础学习笔记(SQL基础教程第二版)</title>
-      <link href="/2019/01/13/mysqlall/"/>
-      <url>/2019/01/13/mysqlall/</url>
-      
-        <content type="html"><![CDATA[<h2 id="目录分类"><a href="#目录分类" class="headerlink" title="目录分类"></a>目录分类</h2><h3 id="什么是数据库-一"><a href="#什么是数据库-一" class="headerlink" title="什么是数据库(一)"></a><a href="https://jsopy.gitee.io/2020/01/14/Mysqlbasic1/">什么是数据库(一)</a></h3><h3 id="数据库的结构-二"><a href="#数据库的结构-二" class="headerlink" title="数据库的结构(二)"></a><a href="https://jsopy.gitee.io/2020/01/15/Mysqlbasic2/">数据库的结构(二)</a></h3><h3 id="SQL-概要-三"><a href="#SQL-概要-三" class="headerlink" title="SQL 概要(三)"></a><a href="https://jsopy.gitee.io/2020/01/16/Mysqlbasic3/">SQL 概要(三)</a></h3><h3 id="表的创建-四"><a href="#表的创建-四" class="headerlink" title="表的创建(四)"></a><a href="https://jsopy.gitee.io/2020/01/17/Mysqlbasic4/">表的创建(四)</a></h3><h3 id="表的删除和更新-五"><a href="#表的删除和更新-五" class="headerlink" title="表的删除和更新(五)"></a><a href="https://jsopy.gitee.io/2020/01/18/Mysqlbasic5/">表的删除和更新(五)</a></h3><h3 id="SELECT-语句基础-六"><a href="#SELECT-语句基础-六" class="headerlink" title="SELECT 语句基础(六)"></a><a href="https://jsopy.gitee.io/2020/01/19/Mysqlbasic6/">SELECT 语句基础(六)</a></h3>]]></content>
-      
-      
-      <categories>
-          
-          <category> Mysql </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Mysql </tag>
             
         </tags>
       
