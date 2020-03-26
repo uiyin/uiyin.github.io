@@ -4,6 +4,131 @@
   
     
     <entry>
+      <title>Mysql 基础(六) SELECT 语句基础</title>
+      <link href="/2020/01/19/mysqlbasic6/"/>
+      <url>/2020/01/19/mysqlbasic6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mysql-基础-六-SELECT-语句基础"><a href="#Mysql-基础-六-SELECT-语句基础" class="headerlink" title="Mysql 基础(六) SELECT 语句基础"></a>Mysql 基础(六) SELECT 语句基础</h1><blockquote><p>要知道对好事的称颂过于夸大，也会招来人们的反感轻蔑和嫉妒。——培根</p></blockquote><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul><li><p>使用 SELECT 语句从表中选取数据</p></li><li><p>为列设定显示用的别名</p></li><li><p>SELECT 语句中可以使用常数或者表达式</p></li><li><p>通过指定 DISTINCT 可以删除重复的行</p></li><li><p>SQL 语句种可以使用注释</p></li><li><p>可以通过 WHERE 语句从表中选出符合查询条件的数据</p></li></ul><h3 id="列的查询"><a href="#列的查询" class="headerlink" title="列的查询"></a>列的查询</h3><blockquote><p>从表中选取数据时需要使用 SELECT 语句,也就是只从表中选出 SELECT 必要数据的意思.通过 SELECT 语句查询并选出必要数据的过程称为匹配查询或查询(query)</p></blockquote><ul><li>通勤语句</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT <列名>,...FROM <表名>;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>SELECT 语句包含了 SELECT 和 FROM 两个子句.子句是 SQL 语句的组成要素,是以 SELECT 或者 FROM 等作为起始的短语</p><p>SELECT 子句列举了希望从表中查询出的列的名称,而 FROM 子句则指定了选取出数据的表的名称</p><ul><li>举例</li></ul><p>我们从上一单元输出 3 列分别是 product_id,product_name,sale_price</p><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id,product_name,sale_price FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>结果输出就是</p><table><thead><tr><th>product_id</th><th>product_name</th><th>sale_price</th></tr></thead><tbody><tr><td>001</td><td>T 恤衫</td><td>1000</td></tr><tr><td>002</td><td>打孔器</td><td>500</td></tr><tr><td>003</td><td>运动 T 恤衫</td><td>4000</td></tr><tr><td>004</td><td>菜刀</td><td>3000</td></tr><tr><td>005</td><td>高压锅</td><td>6800</td></tr><tr><td>006</td><td>叉子</td><td>500</td></tr><tr><td>007</td><td>擦菜板</td><td>880</td></tr><tr><td>008</td><td>圆珠笔</td><td>100</td></tr></tbody></table><h3 id="查询列表中所有的列"><a href="#查询列表中所有的列" class="headerlink" title="查询列表中所有的列"></a>查询列表中所有的列</h3><ul><li>要想查出全部列,可以使用代表所有列的型号(*)</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT *  FROM <表名><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>用在上单元的例子</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>等价于</p><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id,product_name,product_type,sale_price,purchase_price,regist_date FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>最后的结果</p><table><thead><tr><th>product_id</th><th>product_name</th><th>sale_price</th><th>product_type</th><th>purchase_price</th><th>regist_date</th></tr></thead><tbody><tr><td>001</td><td>T 恤衫</td><td>1000</td><td>衣服</td><td>500</td><td>2009-09-20</td></tr><tr><td>002</td><td>打孔器</td><td>500</td><td>办公用品</td><td>320</td><td>2009-09-11</td></tr><tr><td>003</td><td>运动 T 恤衫</td><td>4000</td><td>衣服</td><td>2800</td><td>NULL</td></tr><tr><td>004</td><td>菜刀</td><td>3000</td><td>厨房用具</td><td>2800</td><td>2009-09-20</td></tr><tr><td>005</td><td>高压锅</td><td>6800</td><td>厨房用具</td><td>5000</td><td>2009-01-15</td></tr><tr><td>006</td><td>叉子</td><td>500</td><td>厨房用具</td><td>NULL</td><td>2009-09-20</td></tr><tr><td>007</td><td>擦菜板</td><td>880</td><td>厨房用具</td><td>790</td><td>2008-04-28</td></tr><tr><td>008</td><td>圆珠笔</td><td>100</td><td>办公用品</td><td>NULL</td><td>2009-11-11</td></tr></tbody></table><h3 id="为列设置别名"><a href="#为列设置别名" class="headerlink" title="为列设置别名"></a>为列设置别名</h3><ul><li>SQL 语句可以使用 AS 关键字为列设定别名</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id AS id,product_name AS name,sale_price AS price FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>最后的结果</p><table><thead><tr><th>id</th><th>name</th><th>price</th></tr></thead><tbody><tr><td>001</td><td>T 恤衫</td><td>1000</td></tr><tr><td>002</td><td>打孔器</td><td>500</td></tr><tr><td>003</td><td>运动 T 恤衫</td><td>4000</td></tr><tr><td>004</td><td>菜刀</td><td>3000</td></tr><tr><td>005</td><td>高压锅</td><td>6800</td></tr><tr><td>006</td><td>叉子</td><td>500</td></tr><tr><td>007</td><td>擦菜板</td><td>880</td></tr><tr><td>008</td><td>圆珠笔</td><td>100</td></tr></tbody></table><ul><li>设置成中文名称也可以,但是必须要加引号</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id AS '商品编号', product_name AS '商品名称', sale_price  AS '进货单价' FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>最后的结果</p><table><thead><tr><th>商品编号</th><th>商品名称</th><th>进货单价</th></tr></thead><tbody><tr><td>001</td><td>T 恤衫</td><td>1000</td></tr><tr><td>002</td><td>打孔器</td><td>500</td></tr><tr><td>003</td><td>运动 T 恤衫</td><td>4000</td></tr><tr><td>004</td><td>菜刀</td><td>3000</td></tr><tr><td>005</td><td>高压锅</td><td>6800</td></tr><tr><td>006</td><td>叉子</td><td>500</td></tr><tr><td>007</td><td>擦菜板</td><td>880</td></tr><tr><td>008</td><td>圆珠笔</td><td>100</td></tr></tbody></table><h3 id="常数的查询"><a href="#常数的查询" class="headerlink" title="常数的查询"></a>常数的查询</h3><ul><li>有的时候为了方便阅读，我们会在查询后的结果中显示我们自定义的列，这个列只是显示用，不影响表的结构</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT '商品名称' AS string,28 AS number,product_id AS id,product_name AS '商品名称',sale_price  AS '进货单价' FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>最后的结果</p><table><thead><tr><th>string</th><th>number</th><th>id</th><th>商品名称</th><th>进货单价</th></tr></thead><tbody><tr><td>商品名称</td><td>28</td><td>001</td><td>T 恤衫</td><td>1000</td></tr><tr><td>商品名称</td><td>28</td><td>002</td><td>打孔器</td><td>500</td></tr><tr><td>商品名称</td><td>28</td><td>003</td><td>运动 T 恤衫</td><td>4000</td></tr><tr><td>商品名称</td><td>28</td><td>004</td><td>菜刀</td><td>3000</td></tr><tr><td>商品名称</td><td>28</td><td>005</td><td>高压锅</td><td>6800</td></tr><tr><td>商品名称</td><td>28</td><td>006</td><td>叉子</td><td>500</td></tr><tr><td>商品名称</td><td>28</td><td>007</td><td>擦菜板</td><td>880</td></tr><tr><td>商品名称</td><td>28</td><td>008</td><td>圆珠笔</td><td>100</td></tr></tbody></table><h3 id="从结果中筛选掉重复的数据"><a href="#从结果中筛选掉重复的数据" class="headerlink" title="从结果中筛选掉重复的数据"></a>从结果中筛选掉重复的数据</h3><ul><li>可以通过 DISTINCT 筛选掉重复的数据</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT DISTINCT <列名> FROM <表名>;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>上面单元的例子</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT DISTINCT product_type FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>最后的结果</p><table><thead><tr><th>product_type</th></tr></thead><tbody><tr><td>衣服</td></tr><tr><td>办公用品</td></tr><tr><td>厨房用具</td></tr></tbody></table><ul><li>在使用 DISTINCT 时候 NULL 也被视为同一类数据,NULL 存在于多行时候,也会被合并为一条 NULL 数据</li></ul><p>比如上面单元的例子</p><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT DISTINCT purchase_price FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>最后的结果</p><table><thead><tr><th>purchase_price</th></tr></thead><tbody><tr><td>500</td></tr><tr><td>320</td></tr><tr><td>2800</td></tr><tr><td>5000</td></tr><tr><td>NULL</td></tr><tr><td>790</td></tr></tbody></table><ul><li>多列使用 DISTINCT</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT DISTINCT product_type,regist_date FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>最后结果,这样就过滤了一条数据</p><table><thead><tr><th>product_type</th><th>regist_date</th></tr></thead><tbody><tr><td>衣服</td><td>2009-09-20</td></tr><tr><td>办公用品</td><td>2009-09-11</td></tr><tr><td>衣服</td><td>NULL</td></tr><tr><td>厨房用具</td><td>2009-09-20</td></tr><tr><td>厨房用具</td><td>2009-01-15</td></tr><tr><td>厨房用具</td><td>2008-04-28</td></tr><tr><td>办公用品</td><td>2009-11-11</td></tr></tbody></table><h3 id="依据-WHERE-语句来选择记录"><a href="#依据-WHERE-语句来选择记录" class="headerlink" title="依据 WHERE 语句来选择记录"></a>依据 WHERE 语句来选择记录</h3><p>SELECT 语句通过 WHERE 子句来指定查询条件，在 WHERE 子句中可以指定”某一列的值和这个字符串相等”或者”某一列的值大于这个数字”等条件</p><ul><li>通勤代码</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT <列名>,...FROM <表名>WHERE<条件表达式>;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>拿上个单元 查询出 product_name,product_type,并且 product_type 是衣服的</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_name AS '商品名称', product_type AS '商品类型' FROM Product WHERE product_type='衣服'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>最后结果</p><table><thead><tr><th>商品名称</th><th>商品类型</th></tr></thead><tbody><tr><td>T 恤衫</td><td>衣服</td></tr><tr><td>运动 T 恤衫</td><td>衣服</td></tr></tbody></table><blockquote><p>他执行顺序是首先通过 WHERE 子查询查询出符合条件的记录，然后在取出 SELECT 语句指定的列,也就受从后往前的顺序</p></blockquote><p><strong>特别注意</strong></p><blockquote><p>SQL 中子句的书写顺序是固定的,不能随意更改,WHERE 子句必须紧跟在 FROM 的子句后面</p></blockquote><h3 id="注释的书写方法"><a href="#注释的书写方法" class="headerlink" title="注释的书写方法"></a>注释的书写方法</h3><ul><li>单行注释</li></ul><p>书写在’–’之后,只能写在同一行</p><pre class="line-numbers language-mysql"><code class="language-mysql">-- 本SELECT语句会从结果中删除重复行SELECT DISTINCT product_type,regist_date FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><ul><li>多行注释</li></ul><p>书写在”/<em>“和”</em>/“之间,可以跨行</p><pre class="line-numbers language-mysql"><code class="language-mysql">/* 这就是测试是否跨行 测试跨行没有 结束跨行*/SELECT DISTINCT product_type,regist_date FROM Product;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mysql 基础(五) 表的删除和更新</title>
+      <link href="/2020/01/18/mysqlbasic5/"/>
+      <url>/2020/01/18/mysqlbasic5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mysql-基础-五-表的删除和更新"><a href="#Mysql-基础-五-表的删除和更新" class="headerlink" title="Mysql 基础(五) 表的删除和更新"></a>Mysql 基础(五) 表的删除和更新</h1><blockquote><p>要掌握书，莫被书掌握；要为生而读，莫为读而生。——布尔沃</p></blockquote><h2 id="学习要点"><a href="#学习要点" class="headerlink" title="学习要点"></a>学习要点</h2><ul><li><p>使用 DROP TABLE 语句来删除</p></li><li><p>使用 ALTER TABLE 向表中添加里或者删除列</p></li></ul><h3 id="表的删除-DROP-TABLE-语句"><a href="#表的删除-DROP-TABLE-语句" class="headerlink" title="表的删除(DROP TABLE 语句)"></a>表的删除(DROP TABLE 语句)</h3><ul><li>删除 SQL 语句很简单 就一句话</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">DROP TABLE <表名>;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>删除上单元的 Product 表，只需要如下代码</p><pre class="line-numbers language-mysql"><code class="language-mysql">DROP TABLE Product<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><blockquote><p>删除了的表是无法恢复的,在执行 DROP TABLE 前请仔细确认</p></blockquote><h3 id="表定义的更新-ALTER-TABLE-语句"><a href="#表定义的更新-ALTER-TABLE-语句" class="headerlink" title="表定义的更新(ALTER TABLE 语句)"></a>表定义的更新(ALTER TABLE 语句)</h3><ul><li>ALTER 在英语里就表示改变的意思,想要改变表就必须用 ALTER 语句</li></ul><h4 id="添加列"><a href="#添加列" class="headerlink" title="添加列"></a>添加列</h4><ul><li>通勤语句</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE <表名> ADD COLUMN <列的定义><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>上个单元增加一列</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE Product ADD COLUMN product_name_pinyi     VARCHAR(200);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="删除列"><a href="#删除列" class="headerlink" title="删除列"></a>删除列</h4><ul><li>通勤语句</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE <表名> DROP COLUMN <列名><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>上个单元删除一列</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE Product DROP COLUMN product_name_pinyin<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="向-Product-表中插入数据"><a href="#向-Product-表中插入数据" class="headerlink" title="向 Product 表中插入数据"></a>向 Product 表中插入数据</h4><ul><li>通勤语句</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">INSERT INTO Product VALUES('0009','旅游鞋','衣服',100,NULL,'2019-11-11')<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="表名字的修改"><a href="#表名字的修改" class="headerlink" title="表名字的修改"></a>表名字的修改</h4><ul><li>表名字的修改</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">RENAME TABLE Product to Product2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>-</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mysql 基础(四) 表的创建</title>
+      <link href="/2020/01/17/mysqlbasic4/"/>
+      <url>/2020/01/17/mysqlbasic4/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mysql-基础-四-表的创建"><a href="#Mysql-基础-四-表的创建" class="headerlink" title="Mysql 基础(四) 表的创建"></a>Mysql 基础(四) 表的创建</h1><blockquote><p>自己活着，就是为了使别人过得更美好。——雷锋</p></blockquote><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul><li>表通过 CREATE,TABLE 语句创建而成</li><li>表和列的命名要使用有意义的文字</li><li>指定列的数据类型(整数型,字符型,和日期型等等)</li><li>可以在表中设置约束(主键约束和 NOT NULL 约束等)</li></ul><h3 id="表内容的创建"><a href="#表内容的创建" class="headerlink" title="表内容的创建"></a>表内容的创建</h3><blockquote><p>这是一个商家的进货表</p></blockquote><table><thead><tr><th>商品编号</th><th>商品名称</th><th>商品种类</th><th>销售单价</th><th>进货单价</th><th>登记日期</th></tr></thead><tbody><tr><td>001</td><td>T 恤衫</td><td>衣服</td><td>1000</td><td>500</td><td>2009-09-20</td></tr><tr><td>002</td><td>打孔器</td><td>办公用品</td><td>500</td><td>320</td><td>2009-09-11</td></tr><tr><td>003</td><td>运动 T 恤</td><td>衣服</td><td>4000</td><td>2800</td><td></td></tr><tr><td>004</td><td>菜刀</td><td>厨房用具</td><td>3000</td><td>2800</td><td>2009-09-20</td></tr><tr><td>005</td><td>高压锅</td><td>厨房用具</td><td>6800</td><td>5000</td><td>2009-01-15</td></tr><tr><td>006</td><td>叉子</td><td>厨房用具</td><td>500</td><td></td><td>2009-09-20</td></tr><tr><td>007</td><td>擦菜板</td><td>厨房用具</td><td>880</td><td>790</td><td>2008-04-28</td></tr><tr><td>008</td><td>圆珠笔</td><td>办公用品</td><td>100</td><td></td><td>2009-11-11</td></tr></tbody></table><p>可以看到上面这个表格是由 8 行 6 列组成</p><h3 id="1-数据库的创建-CREATE-DATABASE-语句"><a href="#1-数据库的创建-CREATE-DATABASE-语句" class="headerlink" title="(1) 数据库的创建(CREATE DATABASE 语句)"></a>(1) 数据库的创建(CREATE DATABASE 语句)</h3><h4 id="在创建表之前-一定要先创建数据库"><a href="#在创建表之前-一定要先创建数据库" class="headerlink" title="在创建表之前 一定要先创建数据库"></a>在创建表之前 一定要先创建数据库</h4><ul><li>CREATE DATABASE</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE DATABASE <数据库名称>;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这里我们将数据库命名为 shop,然后执行代码中的语句</p><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE DATABASE shop;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>此外 数据库名称,表名以及列名都需要使用半角字符(英文字母,数字,符号),具体内容以后会介绍</p><h3 id="2-表的创建-CREATE-TABLE"><a href="#2-表的创建-CREATE-TABLE" class="headerlink" title="(2) 表的创建(CREATE TABLE)"></a>(2) 表的创建(CREATE TABLE)</h3><ul><li>创建好数据库之后,我们使用 CREATE TABLE 创建表.具体如下</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE TABLE <表名>(  <列名1> <数据类型> <该列所有的需求>,  <列名2> <数据类型> <该列所有的需求>,  <列名3> <数据类型> <该列所有的需求>,  <列名4> <数据类型> <该列所有的需求>,         ....   <该表的约束1>,<该表的约束2>,         ...);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>该语法清楚的描述了 我们要创建一个包含&lt;列名 1&gt;,&lt;列名 2&gt;的名称为表名的表.每一列的数据类型(后述)是必须要指定的,还需要为需要的列设置约束.约束可以在定义列的时候进行设置,也可以在语句的末尾设置<br>例如</p><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE TABLE Produce(  product_id   CHAR(4)   NOT NULL,  product_name VARCHAR(100)  NOT NULL,  product_type VARCHAR(32)   NOT NULL,  sale_price   INTEGER        ,  purchase_price  INTEGER     ,  regist_date     Date        ,  PRIMARY KEY (product_id));<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h3><ul><li>命名</li></ul><p><strong>我们只能使用</strong></p><ol><li>半角英文字母</li><li>数字</li><li>下划线(_)<br>作为数据库,表和列的名称</li></ol><p>标准的 SQL 不允许使用特殊符号例如$ # ? 等等作为名称使用(列名同样不允许)</p><blockquote><p>此外名称必须以半角英文字母开头</p></blockquote><blockquote><p>表名绝对不能重复</p></blockquote><h3 id="数据类型的指定"><a href="#数据类型的指定" class="headerlink" title="数据类型的指定"></a>数据类型的指定</h3><p>刚才我们创建了一张表 名称后面比如 CHAR ,VARCHAR 这一列关键字,是用来声明列的数据类型的</p><p><strong>所有列必须指定数据类型</strong></p><p>数据类型表示数据的种类,包括数字型,字符型和日期型.每一列都不能存储与该列数据类型不符的数据.比如声明整数型的列不能存储’abc’这样的字符串,声明字符串类型的列也不能存储 1234</p><p>下面是最基本的四种数据类型</p><ul><li>INTEGER 型</li></ul><p>用来指定存储整数的列的数据类型(数字型),不能存小数</p><ul><li>CHAR 型</li></ul><p>CHAR 是用来存字符类型的比如像 CHAR(10) 或者 CHAR(200)<br>在括号中指定该列可以存储的字符串的长度(最大长度),字符串超出最大长度的部分是无法输入到该列中</p><p>字符串是定长字符串的形式存储在指定的 CHAR 类型中,所谓定长就是当字符串达不到最大长度的时候。使用半角空格进行补足,例如 CHAR(8) 存的时候就变成 ‘abc ‘ (abc 后面 5 个半角空格)的形式保存起来</p><ul><li>VARCHAR 型</li></ul><p>VARCHAR 也是用来存储字符串的,只不过它是变量类型的.即使字符数未达到最大长度,也不会用半角补足.例如 VARCHAR(8)<br>存’abc’ 它保存的就是’abc’</p><ul><li><p>Date</p><p>用来指定存储日期(年月日)的列的数据类型(日期型)</p></li></ul><h3 id="约束的设置"><a href="#约束的设置" class="headerlink" title="约束的设置"></a>约束的设置</h3><p>约束是除了数据类型之外 ,对列中存储的数据进行限制或者追加条件的功能.Product 表中设置了两种约束</p><ul><li>第一种:有 3 列不能为空</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql"> product_id   CHAR(4)   NOT NULL product_name VARCHAR(100)  NOT NULL product_type VARCHAR(32)   NOT NULL<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><ul><li>第二种:主键</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql"> PRIMARY KEY (product_id)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>所谓键 就是在指定特定数据时使用的列的组合,键种类多样,主键可以特定一行数据的列。也就是说如果把 product_id 列指定为主键,就可以通过该列取出特定的商品数据</p><p>反之 如果 product_id 输入了重复数据。就无法取出唯一的特定数据了</p><blockquote><p>主键必须唯一</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mysql 基础(三) SQL 概要</title>
+      <link href="/2020/01/16/mysqlbasic3/"/>
+      <url>/2020/01/16/mysqlbasic3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mysql-基础-三-SQL-概要"><a href="#Mysql-基础-三-SQL-概要" class="headerlink" title="Mysql 基础(三) SQL 概要"></a>Mysql 基础(三) SQL 概要</h1><blockquote><p>最大的挑战和突破在于用人，而用人最大的突破在于信任人。——马云</p></blockquote><h2 id="学习要点"><a href="#学习要点" class="headerlink" title="学习要点"></a>学习要点</h2><ul><li><p>SQL 是为操作数据库而开发的语言</p></li><li><p>虽然 SQL 也有标准,但实际上不同的 DBMS,SQL 也不相同</p></li><li><p>SQL 通过一条语句来描述想要进行的操作,发送给 RDBMS</p></li><li><p>原则上 SQL 都会用分号结尾</p></li><li><p>SQL 根据操作目的可分为 DDL,DML,DCL</p></li></ul><h3 id="标准-SQL"><a href="#标准-SQL" class="headerlink" title="标准 SQL"></a>标准 SQL</h3><p>SQL 是操作关系数据库的语言。他是为了提高数据库查询效率而开发的语言，现在增，删，改，查都可以完成</p><ul><li>大部分 RDBMS 都是标准的 SQL 语句,如果有不一样的地方稍后我会写备注,写出来</li></ul><h3 id="SQL-语句及其种类"><a href="#SQL-语句及其种类" class="headerlink" title="SQL 语句及其种类"></a>SQL 语句及其种类</h3><p>SQL 用关键字,表名,列名等组合成一条 SQL 语句来描述操作内容</p><p>依据指令种类的不同,SQL 可以分成三大类</p><h4 id="DDL-数据定义语言"><a href="#DDL-数据定义语言" class="headerlink" title="DDL(数据定义语言)"></a>DDL(数据定义语言)</h4><p>用来创建或者删除存储数据,数据用的数据库以及数据库中的表等对象.DDL 包含以下指令</p><ul><li>CREATE: 创建数据库和表等对象</li><li>DROP: 删除数据库和表等对象</li><li>ALTER: 修改数据库和表等对象的结构</li></ul><h4 id="DML-数据操纵语言"><a href="#DML-数据操纵语言" class="headerlink" title="DML(数据操纵语言)"></a>DML(数据操纵语言)</h4><p>用来查询或者变更表中的记录</p><ul><li><p>SELECT: 查询表中的数据</p></li><li><p>INSERT: 向表中插入新数据</p></li><li><p>UPDATE: 更新表中的数据</p></li><li><p>DELETE: 删除表中的数据</p></li></ul><h4 id="DCL-数据控制语言"><a href="#DCL-数据控制语言" class="headerlink" title="DCL(数据控制语言)"></a>DCL(数据控制语言)</h4><p>用来确认或者取消对数据库中的数据变更.除此之外还可以对 RDBMS 的用户是否有权限操作数据库中的对象(数据库表等)进行设定.DCL 包含以下几种指令:</p><ul><li><p>COMMIT :确认对数据库中的数据进行的变更</p></li><li><p>ROLLBACK:取消对数据库的数据进行的变更</p></li><li><p>GRANT:赋予用户操作权限</p></li><li><p>REVOKE: 取消用户的操作权限</p></li></ul><blockquote><p>SQL 依据功能分成三类其中最多的事 DML</p></blockquote><h3 id="SQL-的基本书写规则"><a href="#SQL-的基本书写规则" class="headerlink" title="SQL 的基本书写规则"></a>SQL 的基本书写规则</h3><ul><li>SQL 语句必须要以分号(;)结尾</li></ul><p>一条 SQL 语句可以描述一个数据库操作,在 RDBMS 中 SQL 语句也是逐条进行的,分号代表语句结束</p><ul><li>SQL 的语句不分区大小写</li></ul><p>SQL 语句不区分关键字的大小写.例如 SELECT 还是 select 解释都是一样的,表名和列名也是如此</p><ul><li>规则</li></ul><p>虽然 可以依据个人喜好来制定,但是为了更好的理解,方便阅读,制定了下面的规则</p><ol><li>关键字大写</li><li>表名的首字母大写</li><li>其余(列名等)小写</li></ol><blockquote><p>关键字不区分大小写,但是插入表中的数据事要区分大小写的</p></blockquote><p>例如 数据 Computer,COMPUTER,computer 三者事不一样的</p><h3 id="常数的书写方式事固定的"><a href="#常数的书写方式事固定的" class="headerlink" title="常数的书写方式事固定的"></a>常数的书写方式事固定的</h3><ul><li><p>SQL 语句常常需要直接书写字符串,日期,或者数字.例如书写向表中插入字符串,日期,或者数字等数据的 SQL 语句</p></li><li><p>在 SQL 语句中直接书写的字符串,日期,或者数字等称为常数,常数的书写方式如下所示</p></li><li><p>SQL 语句中还有字符串的时候,需要像’abc’这样,使用单引号(‘)将字符串括起来,用来标识这是一个字符串</p></li><li><p>SQL 语句中含有日期的时候同样需要使用单引号(‘)将其括起来例如(‘26 Jan 2010’)或者(‘10/01/26’等),个人比较喜欢(‘2010-01-26’)这样</p></li><li><p>数字的话可以不需要单引号直接填写 1000 这样的数字即可</p></li></ul><h3 id="单词需要半角空格或者换行来分隔"><a href="#单词需要半角空格或者换行来分隔" class="headerlink" title="单词需要半角空格或者换行来分隔"></a>单词需要半角空格或者换行来分隔</h3><p>SQL 语句的单词之间 需使用半角空格或者换行符来分隔,如下这种未加分隔的语句会发生错误,无法执行</p><ul><li>例如: CREATE TABLE Product</li></ul><blockquote><p>不能使用全角空格作为单词的分隔符,否则会发生错误,出现无法预期的结果</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mysql 基础(二) 数据库的结构</title>
+      <link href="/2020/01/15/mysqlbasic2/"/>
+      <url>/2020/01/15/mysqlbasic2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mysql-基础-二-数据库的结构"><a href="#Mysql-基础-二-数据库的结构" class="headerlink" title="Mysql 基础(二) 数据库的结构"></a>Mysql 基础(二) 数据库的结构</h1><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul><li><p>DBMS 通常使用客户端/服务端这样的系统结构</p></li><li><p>通过从客户端向服务端发送 SQL 语句来实现数据库的读写操作</p></li><li><p>关系数据库采用被称为数据库表的二维表来管理数据</p></li><li><p>数据库表由表示数据项目的列(字段)和表示一条数据的行(记录)所组成,以记录为单位进行数据读写</p></li><li><p>行和列交互的方格称为单元格,每个单元格只能输入一个数据</p></li></ul><h2 id="常见的系统结构和流程"><a href="#常见的系统结构和流程" class="headerlink" title="常见的系统结构和流程"></a>常见的系统结构和流程</h2><ul><li>1.客户端发送 sql 语句到服务器</li><li>2.服务器收到后，操作数据库</li><li>3.操作完成后把返回的结果返回给客户端</li></ul><h2 id="数据库的结构"><a href="#数据库的结构" class="headerlink" title="数据库的结构"></a>数据库的结构</h2><p>数据库是由很多张二维表组成。每张表由行和列组成</p><p>结构如下</p><table><thead><tr><th>商品编号</th><th>商品名称</th><th>销售单价</th></tr></thead><tbody><tr><td>001</td><td>衣服</td><td>280.00</td></tr><tr><td>002</td><td>鞋子</td><td>290.00</td></tr><tr><td>003</td><td>化妆品</td><td>1000.00</td></tr></tbody></table><blockquote><p>这里特别注意的就是 SQL 语句返回的数据同样必须是二维表的形式.</p></blockquote><p>拿上面那个举例子</p><ul><li><p>列: 商品编号 里面有 3 个值 001 002 003 这些称之为一列,商品编号叫字段</p></li><li><p>行: 而数据 001 衣服 280.00 这些组成的数据为一行,一行叫做一条记录</p></li><li><p>单元格:而 001 这样的数据称为单元格</p></li></ul><blockquote><p>关系数据库必须以行为单位读写数据</p></blockquote><ul><li>一个单元格只能输入一个数据.在一个单元格数据两个或者两个以上的数据是不允许的</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue 中使用 iframe</title>
       <link href="/2020/01/12/vuecha9/"/>
       <url>/2020/01/12/vuecha9/</url>
@@ -273,6 +398,31 @@
         <tags>
             
             <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mysql 基础(一)什么是数据库</title>
+      <link href="/2020/01/01/mysqlbasic1/"/>
+      <url>/2020/01/01/mysqlbasic1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mysql-基础-一-什么是数据库"><a href="#Mysql-基础-一-什么是数据库" class="headerlink" title="Mysql 基础(一) 什么是数据库"></a>Mysql 基础(一) 什么是数据库</h1><blockquote><p>一个人即使已登上顶峰，也仍要自强不息。——罗素·贝克</p></blockquote><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul><li>数据库是将大量的数据保存起来,通过计算机加工而成的可以进行搞笑访问的数据集合</li><li>用来管理数据库的计算机系统统称为数据库管理系统(DBMS)</li><li>通过使用 DBMS,多个用户可以安全简单的操作大量数据</li></ul><h2 id="数据库的种类"><a href="#数据库的种类" class="headerlink" title="数据库的种类"></a>数据库的种类</h2><ul><li>层级数据库(HDB)</li></ul><p>最古老的数据库之一,他把数据通过层次结构(数据结构)的方式表现出来,层次数据库曾经是数据库的主流,但是随着关系数据库的数显和普及，现在已经很少使用</p><ul><li>关系数据库(RDB)</li></ul><p>关系数据库是现在应用最广泛的数据库.关系数据库由很多张表构成。每张表类似表格,由行和列组成.同时他还使用专门的 SQL 语言操作.</p><p>类似下面的表格</p><table><thead><tr><th>商品编号</th><th>商品名称</th><th>销售单价</th></tr></thead><tbody><tr><td>001</td><td>衣服</td><td>280.00</td></tr><tr><td>002</td><td>鞋子</td><td>290.00</td></tr><tr><td>003</td><td>化妆品</td><td>1000.00</td></tr></tbody></table><p>这种类型的 DBMS 称为关系数据库管理系统,主要是 5 种</p><ul><li>1.Oracle 甲骨文</li><li>2.SQL 微软</li><li>3.DB2 IBM</li><li>4.PostgreSQL 开源</li><li>5.Mysql 甲骨文</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
             
         </tags>
       
@@ -1781,6 +1931,31 @@
             <tag> Javascript </tag>
             
             <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySql基础学习笔记(SQL基础教程第二版)</title>
+      <link href="/2019/01/13/mysqlall/"/>
+      <url>/2019/01/13/mysqlall/</url>
+      
+        <content type="html"><![CDATA[<h2 id="目录分类"><a href="#目录分类" class="headerlink" title="目录分类"></a>目录分类</h2><h3 id="什么是数据库-一"><a href="#什么是数据库-一" class="headerlink" title="什么是数据库(一)"></a><a href="https://jsopy.gitee.io/2020/01/14/Mysqlbasic1/">什么是数据库(一)</a></h3><h3 id="数据库的结构-二"><a href="#数据库的结构-二" class="headerlink" title="数据库的结构(二)"></a><a href="https://jsopy.gitee.io/2020/01/15/Mysqlbasic2/">数据库的结构(二)</a></h3><h3 id="SQL-概要-三"><a href="#SQL-概要-三" class="headerlink" title="SQL 概要(三)"></a><a href="https://jsopy.gitee.io/2020/01/16/Mysqlbasic3/">SQL 概要(三)</a></h3><h3 id="表的创建-四"><a href="#表的创建-四" class="headerlink" title="表的创建(四)"></a><a href="https://jsopy.gitee.io/2020/01/17/Mysqlbasic4/">表的创建(四)</a></h3><h3 id="表的删除和更新-五"><a href="#表的删除和更新-五" class="headerlink" title="表的删除和更新(五)"></a><a href="https://jsopy.gitee.io/2020/01/18/Mysqlbasic5/">表的删除和更新(五)</a></h3><h3 id="SELECT-语句基础-六"><a href="#SELECT-语句基础-六" class="headerlink" title="SELECT 语句基础(六)"></a><a href="https://jsopy.gitee.io/2020/01/19/Mysqlbasic6/">SELECT 语句基础(六)</a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
             
         </tags>
       
