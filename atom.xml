@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-03-26T13:09:34.799Z</updated>
+  <updated>2020-03-29T12:47:23.567Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql 基础(七) 算术预算符和比较运算符</title>
+    <link href="https://jsopy.gitee.io/2020/01/20/mysqlbasic7/"/>
+    <id>https://jsopy.gitee.io/2020/01/20/mysqlbasic7/</id>
+    <published>2020-01-20T13:26:47.000Z</published>
+    <updated>2020-03-29T12:47:23.567Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Mysql-基础-七-算术预算符和比较运算符&quot;&gt;&lt;a href=&quot;#Mysql-基础-七-算术预算符和比较运算符&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(七) 算术预算符和比较运算符&quot;&gt;&lt;/a&gt;Mysql 基础(七)
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Mysql 基础(六) SELECT 语句基础</title>
@@ -183,7 +210,7 @@
     <link href="https://jsopy.gitee.io/2020/01/13/mysqlall/"/>
     <id>https://jsopy.gitee.io/2020/01/13/mysqlall/</id>
     <published>2020-01-13T12:26:47.000Z</published>
-    <updated>2020-03-26T13:20:04.069Z</updated>
+    <updated>2020-03-29T12:46:23.754Z</updated>
     
     <summary type="html">
     
@@ -528,35 +555,6 @@
     
     
       <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue中动画使用Velocity</title>
-    <link href="https://jsopy.gitee.io/2019/12/26/vuecha8/"/>
-    <id>https://jsopy.gitee.io/2019/12/26/vuecha8/</id>
-    <published>2019-12-26T14:32:47.000Z</published>
-    <updated>2020-02-23T10:02:12.222Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;VUE-中动画使用-Velocity&quot;&gt;&lt;a href=&quot;#VUE-中动画使用-Velocity&quot; class=&quot;headerlink&quot; title=&quot;VUE 中动画使用 Velocity&quot;&gt;&lt;/a&gt;VUE 中动画使用 Velocity&lt;/h1&gt;&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
     
   </entry>
   

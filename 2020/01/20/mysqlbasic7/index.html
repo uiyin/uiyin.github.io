@@ -4,14 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue学记笔记(四) computed与watch, Javascript Python Js">
-    <meta name="description" content="Vue 中 Computed 与 Watch 区别Computed
-computed 是一个计算属性，类似过滤器，对绑定的 view 的数据进行处理
+    <meta name="keywords" content="Mysql 基础(七) 算术预算符和比较运算符, Javascript Python Js">
+    <meta name="description" content="Mysql 基础(七) 算术预算符和比较运算符
+学习是劳动，是充满思想的劳动。——乌申斯基
 
-computed get 里面必有 return 如果没有直接报错
+学习重点
+运算符就是对两边的列或者值进行运算(计算或者比较大小等)的符号
 
+使用算数运算符可以进行四则运算
 
-get 用法da">
+括号可以提升运算的优先顺序(优先进行">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +21,7 @@ get 用法da">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>vue学记笔记(四) computed与watch | JSOPY</title>
+    <title>Mysql 基础(七) 算术预算符和比较运算符 | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,13 +311,13 @@ get 用法da">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        vue学记笔记(四) computed与watch
+                        Mysql 基础(七) 算术预算符和比较运算符
                     </div>
                 </div>
             </div>
@@ -427,12 +429,8 @@ get 用法da">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Javascript/">
-                                <span class="chip bg-color">Javascript</span>
-                            </a>
-                        
-                            <a href="/tags/Vue/">
-                                <span class="chip bg-color">Vue</span>
+                            <a href="/tags/Mysql/">
+                                <span class="chip bg-color">Mysql</span>
                             </a>
                         
                     </div>
@@ -443,8 +441,8 @@ get 用法da">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Vue/" class="post-category">
-                                Vue
+                            <a href="/categories/Mysql/" class="post-category">
+                                Mysql
                             </a>
                         
                     </div>
@@ -455,23 +453,28 @@ get 用法da">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-05
+                    2020-01-20
                 </div>
                 
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-03-29
+                </div>
                 
 
                 
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        388
+                        1k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -487,84 +490,340 @@ get 用法da">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Vue-中-Computed-与-Watch-区别"><a href="#Vue-中-Computed-与-Watch-区别" class="headerlink" title="Vue 中 Computed 与 Watch 区别"></a>Vue 中 Computed 与 Watch 区别</h1><h2 id="Computed"><a href="#Computed" class="headerlink" title="Computed"></a>Computed</h2><ul>
-<li><p>computed 是一个计算属性，类似过滤器，对绑定的 view 的数据进行处理</p>
+                <h1 id="Mysql-基础-七-算术预算符和比较运算符"><a href="#Mysql-基础-七-算术预算符和比较运算符" class="headerlink" title="Mysql 基础(七) 算术预算符和比较运算符"></a>Mysql 基础(七) 算术预算符和比较运算符</h1><blockquote>
+<p>学习是劳动，是充满思想的劳动。——乌申斯基</p>
+</blockquote>
+<h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul>
+<li><p>运算符就是对两边的列或者值进行运算(计算或者比较大小等)的符号</p>
 </li>
-<li><p>computed get 里面必有 return 如果没有直接报错</p>
+<li><p>使用算数运算符可以进行四则运算</p>
+</li>
+<li><p>括号可以提升运算的优先顺序(优先进行运算)</p>
+</li>
+<li><p>包含 NULL 的运算其结果也是 NULL</p>
+</li>
+<li><p>比较运算符可以用来判断列或者值是否相等,还可以用来比较大小</p>
+</li>
+<li><p>判断是否为 NULL,需要使用 IS NULL 或者 IS NOT NULL 运算符</p>
 </li>
 </ul>
-<h3 id="get-用法"><a href="#get-用法" class="headerlink" title="get 用法"></a>get 用法</h3><pre class="line-numbers language-javascript"><code class="language-javascript">data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    firstName<span class="token punctuation">:</span> <span class="token string">'Foo'</span><span class="token punctuation">,</span>
-    lastName<span class="token punctuation">:</span> <span class="token string">'Bar'</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    fullName<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lastName
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h2><ul>
+<li>SQL 语句中使用计算表达式,比如上个单元的例子 把 sale_price 的单价 2 倍以”sale_price_x2”列的形式读取出来</li>
+</ul>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_name,sale_price,sale_price*2 AS '翻倍价格' from Product
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
-<li>fullName 不能在 data 里面定义,因为 computed 作为计算属性定义的 fullName 并返回对应的结果给这个变量,变量不可以重复定义和赋值</li>
+<li>最后结果</li>
 </ul>
-<h3 id="get-和-set-用法"><a href="#get-和-set-用法" class="headerlink" title="get 和 set 用法"></a>get 和 set 用法</h3><pre class="line-numbers language-javascript"><code class="language-javascript">data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    firstName<span class="token punctuation">:</span> <span class="token string">'Foo'</span><span class="token punctuation">,</span>
-    lastName<span class="token punctuation">:</span> <span class="token string">'Bar'</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-  fullName：<span class="token punctuation">{</span>
-   <span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//回调函数 当需要读取当前属性值是执行，根据相关数据计算并返回当前属性的值</span>
-      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lastName
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-   <span class="token keyword">set</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//监视当前属性值的变化，当属性值发生变化时执行，更新相关的属性数据</span>
-       <span class="token comment" spellcheck="true">//val就是fullName的最新属性值</span>
-       console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span>
-        <span class="token keyword">const</span> names <span class="token operator">=</span> val<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>names<span class="token punctuation">)</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">=</span> names<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>lastName <span class="token operator">=</span> names<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-   <span class="token punctuation">}</span>
-   <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Watch"><a href="#Watch" class="headerlink" title="Watch"></a>Watch</h2><ul>
-<li>watch 就是一个观察动作</li>
+<table>
+<thead>
+<tr>
+<th>product_name</th>
+<th>sale_price</th>
+<th>翻倍价格</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T 恤衫</td>
+<td>1000</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>打孔器</td>
+<td>500</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>运动 T 恤</td>
+<td>4000</td>
+<td>8000</td>
+</tr>
+<tr>
+<td>菜刀</td>
+<td>3000</td>
+<td>6000</td>
+</tr>
+<tr>
+<td>高压锅</td>
+<td>6800</td>
+<td>13600</td>
+</tr>
+<tr>
+<td>叉子</td>
+<td>500</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>擦菜板</td>
+<td>880</td>
+<td>1760</td>
+</tr>
+<tr>
+<td>圆珠笔</td>
+<td>100</td>
+<td>200</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>四则运算是以+,-,x,/为基准 SQL 除了算术运算符之外还有其他各种各样的运算符</p>
+</blockquote>
+<p><strong>SELECT 子句中也可以使用常数或者表达式</strong></p>
+<p>当然 SQL 中也可以像平常的运算表达式那样使用括号(),括号中的运算表达式的优先级会得到提升,优先运算例如(1+2)<em>3 会先计算 1+2 的值然后在对其结果</em>3 运算</p>
+<p>括号的使用并不仅仅局限于四则运算,还可以用在 SQL 语句的任何表达式</p>
+<h2 id="需要注意-NULL"><a href="#需要注意-NULL" class="headerlink" title="需要注意 NULL"></a>需要注意 NULL</h2><ul>
+<li>SQL 语句进行运算的时候,需要特别注意含有 NULL 的运算。</li>
 </ul>
-<h3 id="监听简单类型"><a href="#监听简单类型" class="headerlink" title="监听简单类型"></a>监听简单类型</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-      <span class="token keyword">return</span><span class="token punctuation">{</span>
-        <span class="token string">'first'</span><span class="token punctuation">:</span><span class="token number">2</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    watch<span class="token punctuation">:</span><span class="token punctuation">{</span>
-      <span class="token function">first</span><span class="token punctuation">(</span>newvalue<span class="token punctuation">,</span>oldvalue<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newvalue<span class="token punctuation">)</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>oldvalue<span class="token punctuation">)</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>first<span class="token punctuation">)</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="监听复杂类型"><a href="#监听复杂类型" class="headerlink" title="监听复杂类型"></a>监听复杂类型</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-      <span class="token keyword">return</span><span class="token punctuation">{</span>
-        <span class="token string">'first'</span><span class="token punctuation">:</span><span class="token punctuation">{</span>
-          second<span class="token punctuation">:</span><span class="token number">0</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    watch<span class="token punctuation">:</span><span class="token punctuation">{</span>
-      first<span class="token punctuation">.</span>second<span class="token punctuation">:</span><span class="token keyword">function</span><span class="token punctuation">(</span>newVal<span class="token punctuation">,</span>oldVal<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newVal<span class="token punctuation">,</span>oldVal<span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="computed-与-watch-区别"><a href="#computed-与-watch-区别" class="headerlink" title="computed 与 watch 区别"></a>computed 与 watch 区别</h2><h3 id="computed-特性"><a href="#computed-特性" class="headerlink" title="computed 特性"></a>computed 特性</h3><ul>
-<li><p>计算值</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+5+NULL
+10-NULL
+1*NULL
+4/NULL
+NULL/9
+NULL/0
+
+# 这样所有的结果都是NULL
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>包含 NULL 的计算,结果肯定都是 NULL</p>
+</blockquote>
+<h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><ul>
+<li><blockquote>
+<p>,&lt;, = ,&lt;&gt; 表示不等于,&gt;=,&lt;=</p>
+</blockquote>
 </li>
-<li><p>应用:就是相当于对 data 数据里面的二次封装</p>
-</li>
-<li><p>具有缓存性质。页面重新渲染值不变化。计算属性会立即返回之间的计算结果,而不必在执行函数</p>
-</li>
 </ul>
-<h3 id="watch-特性"><a href="#watch-特性" class="headerlink" title="watch 特性"></a>watch 特性</h3><ul>
-<li>观察</li>
-<li>应用: 监听 props $emit 或本组件的值执行异步操作</li>
-<li>无缓存性 : 页面重新渲染时值不变化也会执行</li>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_name,product_type from Product WHERE sale_price>50
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>最后结果</p>
+<table>
+<thead>
+<tr>
+<th>product_name</th>
+<th>product_type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T 恤衫</td>
+<td>衣服</td>
+</tr>
+<tr>
+<td>打孔器</td>
+<td>办公用品</td>
+</tr>
+<tr>
+<td>运动 T 恤</td>
+<td>衣服</td>
+</tr>
+<tr>
+<td>菜刀</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>高压锅</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>叉子</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>擦菜板</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>圆珠笔</td>
+<td>办公用品</td>
+</tr>
+</tbody></table>
+<p>像符号=这样用来比较其两边的列或者值的符号称为比较运算符.符号=就是比较运算符,在 where 子句中通过使用比较运算符可以组合各种条件表达式</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_name,product_type from Product WHERE sale_price <> 50
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>最后结果</p>
+<table>
+<thead>
+<tr>
+<th>product_name</th>
+<th>product_type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T 恤衫</td>
+<td>衣服</td>
+</tr>
+<tr>
+<td>打孔器</td>
+<td>办公用品</td>
+</tr>
+<tr>
+<td>运动 T 恤</td>
+<td>衣服</td>
+</tr>
+<tr>
+<td>菜刀</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>高压锅</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>叉子</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>擦菜板</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>圆珠笔</td>
+<td>办公用品</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_name,product_type from Product WHERE regist_date < '2009-09-27'
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>最后结果</p>
+<table>
+<thead>
+<tr>
+<th>product_name</th>
+<th>product_type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T 恤衫</td>
+<td>衣服</td>
+</tr>
+<tr>
+<td>打孔器</td>
+<td>办公用品</td>
+</tr>
+<tr>
+<td>菜刀</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>高压锅</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>叉子</td>
+<td>厨房用具</td>
+</tr>
+<tr>
+<td>擦菜板</td>
+<td>厨房用具</td>
+</tr>
+</tbody></table>
+<ul>
+<li>也可以使用计算表达式</li>
 </ul>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_name,sale_price,purchase_price from Product WHERE sale_price - purchase_price >= 500
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>最后结果</p>
+<table>
+<thead>
+<tr>
+<th>product_name</th>
+<th>sale_price</th>
+<th>purchase_price</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T 恤衫</td>
+<td>1000</td>
+<td>500</td>
+</tr>
+<tr>
+<td>运动 T 恤衫</td>
+<td>4000</td>
+<td>2800</td>
+</tr>
+<tr>
+<td>高压锅</td>
+<td>6800</td>
+<td>5000</td>
+</tr>
+</tbody></table>
+<h2 id="对字符串使用比较运算的注意事项"><a href="#对字符串使用比较运算的注意事项" class="headerlink" title="对字符串使用比较运算的注意事项"></a>对字符串使用比较运算的注意事项</h2><ul>
+<li>字符串类型的数据原则上按照字典顺序进行排序，不能与数字大小顺序混淆</li>
+</ul>
+<p>比如字符串要是个字符串的数字比如’10’ ‘2’ 那么它不会变成数字来比较,而是按照一定的顺序来比较<br>这里的’10’和’2’比较 最后的结果是’2’大</p>
+<h2 id="不能对-NULL-使用比较运算符"><a href="#不能对-NULL-使用比较运算符" class="headerlink" title="不能对 NULL 使用比较运算符"></a>不能对 NULL 使用比较运算符</h2><ul>
+<li>数据里面只要有 NULL 那么 不能使用运算符比较</li>
+</ul>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_name,purchase_price from Product WHERE purchase_price = NULL
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>这样最后结果一条也取不出来,即使使用&lt;&gt;也没有用</p>
+<ul>
+<li>必须使用 IS NULL 或者 IS NOT NULL</li>
+</ul>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_name,purchase_price FROM Product WHERE purchase_price IS NULL
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>最后结果</p>
+<table>
+<thead>
+<tr>
+<th>product_name</th>
+<th>purchase_price</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>叉子</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>圆珠笔</td>
+<td>NULL</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_name,purchase_price FROM Product WHERE purchase_price IS NOT NULL
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>最后结果</p>
+<table>
+<thead>
+<tr>
+<th>product_name</th>
+<th>purchase_price</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T 恤衫</td>
+<td>500</td>
+</tr>
+<tr>
+<td>打孔器</td>
+<td>320</td>
+</tr>
+<tr>
+<td>运动 T 恤</td>
+<td>2800</td>
+</tr>
+<tr>
+<td>菜刀</td>
+<td>2800</td>
+</tr>
+<tr>
+<td>高压锅</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>擦菜板</td>
+<td>790</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>希望选取 NULL 时,必须使用 IS NULL 或者 NOT NULL</p>
+</blockquote>
 
             </div>
             <hr/>
@@ -590,7 +849,7 @@ get 用法da">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2019/11/05/vuesi/">https://jsopy.gitee.io/2019/11/05/vuesi/</a>
+                    <a href="https://jsopy.gitee.io/2020/01/20/mysqlbasic7/">https://jsopy.gitee.io/2020/01/20/mysqlbasic7/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -628,12 +887,8 @@ get 用法da">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Javascript/">
-                                    <span class="chip bg-color">Javascript</span>
-                                </a>
-                            
-                                <a href="/tags/Vue/">
-                                    <span class="chip bg-color">Vue</span>
+                                <a href="/tags/Mysql/">
+                                    <span class="chip bg-color">Mysql</span>
                                 </a>
                             
                         </div>
@@ -674,50 +929,48 @@ get 用法da">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/11/06/vuewu/">
+                <a href="/2020/01/20/mysqlbasic7/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="vue学记笔记(五) 组件">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Mysql 基础(七) 算术预算符和比较运算符">
                         
-                        <span class="card-title">vue学记笔记(五) 组件</span>
+                        <span class="card-title">Mysql 基础(七) 算术预算符和比较运算符</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            vue 组件
+                            本文主要是记录Mysql基础学习笔记
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue/" class="post-category">
-                                    Vue
+                            <a href="/categories/Mysql/" class="post-category">
+                                    Mysql
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
+                    <a href="/tags/Mysql/">
+                        <span class="chip bg-color">Mysql</span>
                     </a>
                     
                 </div>
@@ -731,31 +984,31 @@ get 用法da">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/05/vuesan/">
+                <a href="/2020/01/19/mysqlbasic6/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="vue学记笔记(三) 生命周期">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Mysql 基础(六) SELECT 语句基础">
                         
-                        <span class="card-title">vue学记笔记(三) 生命周期</span>
+                        <span class="card-title">Mysql 基础(六) SELECT 语句基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            vue生命周期
+                            本文主要是记录Mysql基础学习笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue/" class="post-category">
-                                    Vue
+                            <a href="/categories/Mysql/" class="post-category">
+                                    Mysql
                                 </a>
                             
                             
@@ -765,12 +1018,8 @@ get 用法da">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
+                    <a href="/tags/Mysql/">
+                        <span class="chip bg-color">Mysql</span>
                     </a>
                     
                 </div>
