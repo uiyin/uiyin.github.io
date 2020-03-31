@@ -4,12 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TypeScript(三) TS中补充的六个类型, Javascript Python Js">
-    <meta name="description" content="TS 中补充的六个类型(1)元祖
-元祖可以是看作数组的拓展,他表示已知元素数量和类型的数组。确切的说,是已知数组中每一个位置上的元素的类型
+    <meta name="keywords" content="Mysql 基础(九) 表进行分组, Javascript Python Js">
+    <meta name="description" content="对表进行分组学习重点
+使用 GROUP BY 子句可以像切蛋糕那样将表分隔,通过使用聚合函数和 GROUP BY 子句,可以依据”商品种类”或者”日期”等将表分隔后在汇总
 
-let tuple: [string, number, boolean]
-tuple = [&#39;a&#39;">
+聚合键中包含 NULL 时,在结果中会以”不确定”行(空行)的形式">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +16,7 @@ tuple = [&#39;a&#39;">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>TypeScript(三) TS中补充的六个类型 | JSOPY</title>
+    <title>Mysql 基础(九) 表进行分组 | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -307,13 +306,13 @@ tuple = [&#39;a&#39;">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        TypeScript(三) TS中补充的六个类型
+                        Mysql 基础(九) 表进行分组
                     </div>
                 </div>
             </div>
@@ -425,12 +424,8 @@ tuple = [&#39;a&#39;">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Javascript/">
-                                <span class="chip bg-color">Javascript</span>
-                            </a>
-                        
-                            <a href="/tags/TypeScript/">
-                                <span class="chip bg-color">TypeScript</span>
+                            <a href="/tags/Mysql/">
+                                <span class="chip bg-color">Mysql</span>
                             </a>
                         
                     </div>
@@ -441,8 +436,8 @@ tuple = [&#39;a&#39;">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/TypeScript/" class="post-category">
-                                TypeScript
+                            <a href="/categories/Mysql/" class="post-category">
+                                Mysql
                             </a>
                         
                     </div>
@@ -453,13 +448,13 @@ tuple = [&#39;a&#39;">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-16
+                    2020-01-27
                 </div>
                 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-22
+                    2020-03-31
                 </div>
                 
 
@@ -467,14 +462,14 @@ tuple = [&#39;a&#39;">
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.3k
+                        694
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        5 分
+                        2 分
                     </div>
                     
                 
@@ -490,134 +485,171 @@ tuple = [&#39;a&#39;">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="TS-中补充的六个类型"><a href="#TS-中补充的六个类型" class="headerlink" title="TS 中补充的六个类型"></a>TS 中补充的六个类型</h1><h2 id="1-元祖"><a href="#1-元祖" class="headerlink" title="(1)元祖"></a>(1)元祖</h2><ul>
-<li>元祖可以是看作数组的拓展,他表示已知元素数量和类型的数组。确切的说,是已知数组中每一个位置上的元素的类型</li>
+                <h1 id="对表进行分组"><a href="#对表进行分组" class="headerlink" title="对表进行分组"></a>对表进行分组</h1><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul>
+<li><p>使用 GROUP BY 子句可以像切蛋糕那样将表分隔,通过使用聚合函数和 GROUP BY 子句,可以依据”商品种类”或者”日期”等将表分隔后在汇总</p>
+</li>
+<li><p>聚合键中包含 NULL 时,在结果中会以”不确定”行(空行)的形式表现出来.</p>
+</li>
+<li><p>使用聚合函数或者 GROOUP BY 需要注意以下 4 点</p>
+</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> tuple<span class="token punctuation">:</span> <span class="token punctuation">[</span>string<span class="token punctuation">,</span> number<span class="token punctuation">,</span> boolean<span class="token punctuation">]</span>
-tuple <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">]</span>
-tuple <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">]</span> <span class="token comment" spellcheck="true">//会报错误类型对不上</span>
-tuple <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token comment" spellcheck="true">//会报错误因为少了个元素</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p>上面我们定义了一个元祖 tuple，它包含了三个元素,每个元素都是固定的.当我们为 tuple 赋值的时候,各个位置上的元素类型都要对应,元素个数也要一致</p>
+<p>特别注意</p>
 </blockquote>
-<p>我们还可以给单个元素赋值</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">tuple<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
-<p>元祖的序号也是从 0 开始的,因为第二个类型是 number,所以我们赋值 3 没有问题</p>
+<blockquote>
+<p>1.只能写在 select 子句中<br>2.GROUP BY 子句中不能使用 SELECT 子句中列的别名<br>3.GROUP BY 子句中的聚合结果是无序的<br>4.where 子句中不能使用聚合函数</p>
 </blockquote>
-<h2 id="2-枚举"><a href="#2-枚举" class="headerlink" title="(2) 枚举"></a>(2) 枚举</h2><ul>
-<li>enum 枚举类型 就是比如我们要定义一组角色，每一个角色用一个数字代表，就可以用枚举类型来定义</li>
+</blockquote>
+<h2 id="GROUP-BY-子句"><a href="#GROUP-BY-子句" class="headerlink" title="GROUP BY 子句"></a>GROUP BY 子句</h2><ul>
+<li>基本语法</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Roles<span class="token punctuation">{</span>
-  SUPER_ADMIN<span class="token punctuation">,</span>
-  ADMIN<span class="token punctuation">,</span>
-  USER
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面定义枚举类型里面有三个值,TypeScript 会为他们的每个值都编号,默认从 0 开始,依次排列，所以它们对应的值是</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Roles<span class="token punctuation">{</span>
-  SUPER_ADMIN <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>
-  ADMIN<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>
-  USER<span class="token operator">=</span><span class="token number">2</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>当我们使用的时候就可以使用名字而不需要记住数字和名称的对照关系</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> superAdmin <span class="token operator">=</span> Roles<span class="token punctuation">.</span>SUPER_ADMIN
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>superAdmin<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT <列名>,<列名>,<列名>,...FROM <表名> GROUP BY <列名一>,<列名二>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
-<li>要是不想从 0 开始也可以从任何数开始</li>
+<li>实际操作,以上个单元来举例</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Roles<span class="token punctuation">{</span>
-   SUPER_ADMIN <span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>
-  ADMIN<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span>
-  USER<span class="token operator">=</span><span class="token number">7</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>通过名字 Roles.SUPER_ADMIN 可以获取到它对应的值 1,同时你也可以通过值获取到它的名字,以上面任意数值这个例子</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Roles<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//ADMIN</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="3-Any"><a href="#3-Any" class="headerlink" title="(3) Any"></a>(3) Any</h2><ul>
-<li>有的时候我们不能清楚的知道数据的类型这个时候就要用到 any 类型，即任何类型</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> value<span class="token punctuation">:</span> any
-value <span class="token operator">=</span> <span class="token number">123</span>
-value <span class="token operator">=</span> <span class="token string">'abc'</span>
-value <span class="token operator">=</span> <span class="token boolean">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>我们定义变量 value 制定他的类型为 any,接下来赋予任何类型的值</p>
-<p>我们还可以在定义数组类型的时候使用 any 来指定数组中任意的值</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> arr<span class="token punctuation">:</span> any<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="4-void"><a href="#4-void" class="headerlink" title="(4) void"></a>(4) void</h2><p>void 和 any 正相反,any 表示任意类型,而 void 表示没有任意类型,就是什么类型都不是.在这里我们定义函数,函数没有返回值的时候会用到</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> consoleText <span class="token operator">=</span> <span class="token punctuation">(</span>text<span class="token punctuation">:</span> string<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>这个函数没有返回任何的值,所以他的返回类型是 void，现在你只需要知道 void 表达的含义即可</p>
-<blockquote>
-<p>void 类型的变量只能赋值为 undefined 和 null,其他类型不能赋值给 void 类型</p>
-</blockquote>
-<h2 id="5-never"><a href="#5-never" class="headerlink" title="(5) never"></a>(5) never</h2><blockquote>
-<p>never 类型指的是那些永不存在的值的类型,它是那些会抛出异常或根本不会有返回值的函数表达式的返回值类型,当变量被永不为真的类型保护所约束,该变量是 never 类型</p>
-</blockquote>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_name,product_type,COUNT(*) FROM Product GROUP BY product_type
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
-<li>例如</li>
+<li>最后结果</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> errorFunc <span class="token operator">=</span> <span class="token punctuation">(</span>message<span class="token punctuation">:</span> string<span class="token punctuation">)</span><span class="token punctuation">:</span> never <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<table>
+<thead>
+<tr>
+<th>product_type</th>
+<th>COUNT(*)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>办公用品</td>
+<td>2</td>
+</tr>
+<tr>
+<td>厨房厨具</td>
+<td>4</td>
+</tr>
+<tr>
+<td>衣服</td>
+<td>2</td>
+</tr>
+</tbody></table>
 <blockquote>
-<p>这个 errorFunc 函数总是会抛出异常,所以他的返回值类型是 never,用来表明他的返回值是永远不存在</p>
+<p>在 GROUP BY 子句中指定的列称为聚合键或者分组列,Group BY 一般和聚合函数一起使用,因为它一定会求组中的聚合属性</p>
 </blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> infiniteFunc <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> never <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>infiniteFunc 也是根本不会有返回值的函数,它和之前讲 void 类型的 consoleText 函数不同,consoleText 函数没有返回值,是我们在定义函数的时候没有给他返回值,而 infiniteFunc 是死循环根本不会有返回值。所以二者还是有区别的</p>
-<blockquote>
-<p>never 可以赋值给任何类型。但是任何类型不能赋值给 never</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> neverVariable <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-neverVariable <span class="token operator">=</span> <span class="token number">123</span> <span class="token comment" spellcheck="true">// error 不能将类型"number"分配给类型"never"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="6-unknow-类型表示未知类型"><a href="#6-unknow-类型表示未知类型" class="headerlink" title="(6) unknow 类型表示未知类型"></a>(6) unknow 类型表示未知类型</h2><blockquote>
-<p>从结果上看 unknow 和 any 类型差不多。但是 unknow 类型的值是不可以随便操作的.</p>
-</blockquote>
-<h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><h3 id="1-交叉类型"><a href="#1-交叉类型" class="headerlink" title="(1) 交叉类型"></a>(1) 交叉类型</h3><blockquote>
-<p>交叉类型就是取多个类型的并集,并用&amp;符号定义,被&amp;符连接的多个类型构成一个交叉类型.表示这个类型同时具备这几个链接起来的类型的特点(类似与)</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token keyword">const</span> merge <span class="token operator">=</span> <span class="token operator">&lt;</span>T<span class="token punctuation">,</span> U<span class="token operator">></span><span class="token punctuation">(</span>arg1<span class="token punctuation">:</span> T<span class="token punctuation">,</span> arg2<span class="token punctuation">:</span> U<span class="token punctuation">)</span><span class="token punctuation">:</span> T <span class="token operator">&amp;</span> U <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token operator">&lt;</span>T <span class="token operator">&amp;</span> U<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token comment" spellcheck="true">// 这里指定返回值的类型兼备T和U两个类型变量代表的类型的特点</span>
-  res <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>arg1<span class="token punctuation">,</span> arg2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token comment" spellcheck="true">// 这里使用Object.assign方法，返回一个合并后的对象</span>
-  <span class="token keyword">return</span> res<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> info1 <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token punctuation">:</span> <span class="token string">"lison"</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> info2 <span class="token operator">=</span> <span class="token punctuation">{</span>
-  age<span class="token punctuation">:</span> <span class="token number">18</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> lisonInfo <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>info1<span class="token punctuation">,</span> info2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<h3 id="GROUP-BY-子句的书写位置"><a href="#GROUP-BY-子句的书写位置" class="headerlink" title="GROUP BY 子句的书写位置"></a>GROUP BY 子句的书写位置</h3><ul>
+<li>GROUP BY 书写位置有严格要求,一定要写在 FROM 之后(如果有 WHERE，一定要写在 WHERE 之后)</li>
+</ul>
+<h4 id="书写顺序"><a href="#书写顺序" class="headerlink" title="书写顺序"></a>书写顺序</h4><p>1.SELECT-&gt;2.FROM -&gt;3.WHERE-&gt;4.GROUP BY</p>
+<h3 id="聚合键中包含-NULL-的情况"><a href="#聚合键中包含-NULL-的情况" class="headerlink" title="聚合键中包含 NULL 的情况"></a>聚合键中包含 NULL 的情况</h3><p>GROUP BY 分组里面有 NULL，它也会划分</p>
+<ul>
+<li>代码</li>
+</ul>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT COUNT(*), purchase_price from product GROUP BY purchase_price;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ul>
+<li>这样当结果中包含 NULL 时,也会将 NULL 作为一组特定的数据</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>COUNT(*)</th>
+<th>purchase_price</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>1</td>
+<td>320</td>
+</tr>
+<tr>
+<td>1</td>
+<td>500</td>
+</tr>
+<tr>
+<td>1</td>
+<td>790</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2800</td>
+</tr>
+<tr>
+<td>1</td>
+<td>5000</td>
+</tr>
+</tbody></table>
+<h3 id="使用-WHERE-子句时-GROUP-BY-的执行结果"><a href="#使用-WHERE-子句时-GROUP-BY-的执行结果" class="headerlink" title="使用 WHERE 子句时 GROUP BY 的执行结果"></a>使用 WHERE 子句时 GROUP BY 的执行结果</h3><ul>
+<li>在使用了 GROUP BY 子句的 SELECT 子句中,也可以正常使用 WHERE 子句</li>
+</ul>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT <列名>,<列名2>,....
+FROM <表名>
+WHERE
+GROUP BY <列名1>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这样使用的时候会先依据 WHERE 子句对记录过滤</p>
+<ul>
+<li>具体使用</li>
+</ul>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT purchase_price,COUNT(*)
+FROM Product
+WHERE product_type = '衣服'
+GROUP BY purchase_price;
 
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>lisonInfo<span class="token punctuation">.</span>address<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// error 类型“{ name: string; } &amp; { age: number; }”上不存在属性“address”</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>可以看到传入的两个参数分别带有 name 和 age 的两个对象,所以它俩的交叉类型要求返回的对象既有 name 属性也得有 age 属性</p>
-<h3 id="2-联合类型"><a href="#2-联合类型" class="headerlink" title="(2) 联合类型"></a>(2) 联合类型</h3><ul>
-<li>联合类型的要求只要符合联合类型中任意一种类型即可，他用| 来定义.当我们的程序具有多样性，元素类型不唯一的时候,使用联合类型(类似或)</li>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>结果</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> getLength <span class="token operator">=</span> <span class="token punctuation">(</span>content<span class="token punctuation">:</span> string <span class="token operator">|</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> content <span class="token operator">===</span> <span class="token string">'string'</span><span class="token punctuation">)</span> <span class="token keyword">return</span> content<span class="token punctuation">.</span>length
-  <span class="token keyword">else</span> <span class="token keyword">return</span> content<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">getLength</span><span class="token punctuation">(</span><span class="token string">'abc'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 3</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">getLength</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这里我们指定了参数既可以是字符串类型也可以是数值类型</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>元祖[xx,xxx]</li>
-<li>枚举 enum</li>
-<li>Any 任意</li>
-<li>void 没有返回值</li>
-<li>never 永远不存在返回值</li>
-<li>unknown 不确定类型,值不可以随意操作</li>
+<table>
+<thead>
+<tr>
+<th>purchase_price</th>
+<th>COUNT(*)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>500</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2800</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<ul>
+<li>有了 GROUP BY 执行的顺序</li>
 </ul>
 <blockquote>
-<p>void 与 never 区别 void return void 而 never 就是 never never return</p>
+<p>FROM - WHERE - GROUP BY - SELECT</p>
 </blockquote>
+<h3 id="GROUP-BY-特别注意"><a href="#GROUP-BY-特别注意" class="headerlink" title="GROUP BY 特别注意"></a>GROUP BY 特别注意</h3><h4 id="在使用-GROUP-BY-的时候-SELECT-子句中不能出现聚合键之外的列名"><a href="#在使用-GROUP-BY-的时候-SELECT-子句中不能出现聚合键之外的列名" class="headerlink" title="在使用 GROUP BY 的时候,SELECT 子句中不能出现聚合键之外的列名"></a>在使用 GROUP BY 的时候,SELECT 子句中不能出现聚合键之外的列名</h4><ul>
+<li>MYSQL 中没事,但是其他的数据库不行</li>
+</ul>
+<p>因为使用 GROUP BY 就已经分组了,所以 就会出现有的时候并不一定是一对一关系的.<br>比如按照价格来分类的话,名称会非常多.做不到一对一</p>
+<h4 id="在-GROUP-BY-子句中不能使用-SELECT-子句中定义的别名"><a href="#在-GROUP-BY-子句中不能使用-SELECT-子句中定义的别名" class="headerlink" title="在 GROUP BY 子句中不能使用 SELECT 子句中定义的别名"></a>在 GROUP BY 子句中不能使用 SELECT 子句中定义的别名</h4><ul>
+<li>GROUP BY 中 写了列的别名</li>
+</ul>
+<p>比如</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECT product_type AS PT,COUNT(*) FROM Product GROUP BY PT;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="GROUP-BY-不能对结果排序-所以它是无序的"><a href="#GROUP-BY-不能对结果排序-所以它是无序的" class="headerlink" title="GROUP BY 不能对结果排序,所以它是无序的"></a>GROUP BY 不能对结果排序,所以它是无序的</h4><h4 id="WHERE-子句中绝对不能使用聚合函数"><a href="#WHERE-子句中绝对不能使用聚合函数" class="headerlink" title="WHERE 子句中绝对不能使用聚合函数"></a>WHERE 子句中绝对不能使用聚合函数</h4><ul>
+<li>比如错误的</li>
+</ul>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+SELECR * FROM Product WHERE COUNT(*) =2 ;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ul>
+<li>只有 SELECT 子句和 HAVING 子句(以及 ORDER BY 子句) 中能够使用聚合函数</li>
+</ul>
 
             </div>
             <hr/>
@@ -643,7 +675,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2019/12/16/typescriptbasic3/">https://jsopy.gitee.io/2019/12/16/typescriptbasic3/</a>
+                    <a href="https://jsopy.gitee.io/2020/01/27/mysqlbasic9/">https://jsopy.gitee.io/2020/01/27/mysqlbasic9/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -681,12 +713,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Javascript/">
-                                    <span class="chip bg-color">Javascript</span>
-                                </a>
-                            
-                                <a href="/tags/TypeScript/">
-                                    <span class="chip bg-color">TypeScript</span>
+                                <a href="/tags/Mysql/">
+                                    <span class="chip bg-color">Mysql</span>
                                 </a>
                             
                         </div>
@@ -727,50 +755,48 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/12/17/typescriptbasic4/">
+                <a href="/2020/01/27/mysqlbasic9/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="TypeScript(四) Symbol-ES6 新基础类型">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Mysql 基础(九) 表进行分组">
                         
-                        <span class="card-title">TypeScript(四) Symbol-ES6 新基础类型</span>
+                        <span class="card-title">Mysql 基础(九) 表进行分组</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript(四) Symbol-ES6 新基础类型
+                            本文主要是记录Mysql基础学习笔记
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/TypeScript/" class="post-category">
-                                    TypeScript
+                            <a href="/categories/Mysql/" class="post-category">
+                                    Mysql
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/TypeScript/">
-                        <span class="chip bg-color">TypeScript</span>
+                    <a href="/tags/Mysql/">
+                        <span class="chip bg-color">Mysql</span>
                     </a>
                     
                 </div>
@@ -784,31 +810,31 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/15/typescriptbasic2/">
+                <a href="/2020/01/26/headinpython4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="TypeScript(二) 基本语法">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="文件与异常和 JSON">
                         
-                        <span class="card-title">TypeScript(二) 基本语法</span>
+                        <span class="card-title">文件与异常和 JSON</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript(二) 基本语法
+                            本系列主要是看深入浅出学Python的复习笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-26
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/TypeScript/" class="post-category">
-                                    TypeScript
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
                                 </a>
                             
                             
@@ -818,12 +844,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/TypeScript/">
-                        <span class="chip bg-color">TypeScript</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
                 </div>
