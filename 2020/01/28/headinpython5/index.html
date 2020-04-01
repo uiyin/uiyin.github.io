@@ -4,15 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python 基础(一)数据类型和变量(开篇之字符串), Javascript Python Js">
-    <meta name="description" content="Python 基础(一) ——— 数据类型和变量(开篇之字符串)
-与肝胆人共事,无字句处读书。—–周恩来
+    <meta name="keywords" content="集合 和推倒数据,处理数据, Javascript Python Js">
+    <meta name="description" content="推倒数据,处理数据例子体育老师需要检测 4 个学生最好的数据
+数据格式如下
+One.txt
 
-提示在 python 中用冒号来代替大括号,用空格来区分结束
-变量
-变量就是存粹一个不确定的数
+2-34,3:21,2.34,2.45,3.01,3:41,2:01,3:10,2-22
+Two.txt
 
-在 Python 中使用变量要遵守">
+2.59,2.11,2:11,2:23">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python 基础(一)数据类型和变量(开篇之字符串) | JSOPY</title>
+    <title>集合 和推倒数据,处理数据 | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,13 +310,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Python 基础(一)数据类型和变量(开篇之字符串)
+                        集合 和推倒数据,处理数据
                     </div>
                 </div>
             </div>
@@ -428,8 +428,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
                             </a>
                         
                     </div>
@@ -440,8 +440,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/python/" class="post-category">
-                                python
+                            <a href="/categories/Python/" class="post-category">
+                                Python
                             </a>
                         
                     </div>
@@ -452,13 +452,13 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-01
+                    2020-01-28
                 </div>
                 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-24
+                    2020-04-01
                 </div>
                 
 
@@ -466,7 +466,7 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        864
+                        632
                     </div>
                     
 
@@ -489,196 +489,216 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Python-基础-一-———-数据类型和变量-开篇之字符串"><a href="#Python-基础-一-———-数据类型和变量-开篇之字符串" class="headerlink" title="Python 基础(一) ——— 数据类型和变量(开篇之字符串)"></a>Python 基础(一) ——— 数据类型和变量(开篇之字符串)</h1><blockquote>
-<p>与肝胆人共事,无字句处读书。—–周恩来</p>
-</blockquote>
-<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>在 python 中用冒号来代替大括号,用空格来区分结束</p>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote>
-<p>变量就是存粹一个不确定的数</p>
-</blockquote>
-<p>在 Python 中使用变量要遵守一些规则</p>
+                <h1 id="推倒数据-处理数据"><a href="#推倒数据-处理数据" class="headerlink" title="推倒数据,处理数据"></a>推倒数据,处理数据</h1><h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><p>体育老师需要检测 4 个学生最好的数据</p>
+<p>数据格式如下</p>
+<p>One.txt</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+2-34,3:21,2.34,2.45,3.01,3:41,2:01,3:10,2-22<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>Two.txt</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+2.59,2.11,2:11,2:23,3-10,2-23,3:10,3.21,3-21
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>Three.txt</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+2:58,2.58,2:39,2-25,2-55,2:54,2.18,2:55,2:55
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>Four.txt</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">
+2:22,3.01,3:01,3.02,3:02,3.02,3:22,2.49,2:38
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
-<li><p>变量名只能包含字母,数字,下划线,变量名可以字母或者下划线开头,但是不能以数字开头,例如变量名为 message_1 但是不能命名为 1_message</p>
-</li>
-<li><p>变量名不能包含空格,但可以使用下划线来分隔其中的单词.例如变量名 message_box 可以，但是要 message box 就会引发错误</p>
-</li>
-<li><p>不要将 Python 的关键字和函数名作为关键字比如 print,class 等等</p>
-</li>
-<li><p>变量名应该简短又有描述性 .例如 name 比 n 好,student_name 比 s_n 好</p>
-</li>
-<li><p>慎用小写字母 i 和大写字母 O 因为有的时候会被看错成 0 和 1</p>
-</li>
-</ul>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><blockquote>
-<p>在 Python 中有八种数据类型</p>
-</blockquote>
-<ul>
-<li><p>Number 数字</p>
-</li>
-<li><p>String 字符串</p>
-</li>
-<li><p>Boolean 布尔值</p>
-</li>
-<li><p>None 空</p>
-</li>
-<li><p>List 列表</p>
-</li>
-<li><p>tuple 元祖</p>
-</li>
-<li><p>dict 字典</p>
-</li>
-<li><p>set 集合</p>
-</li>
-</ul>
-<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串就是一系列字符,在 Python 种用引号引来的都是字符串,其中的引号可以是单引号,也可以是双引号</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token string">"THis is Python"</span>
-<span class="token string">"This is String"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>当然可以使用单引号，单引号可以包含双引号，双引号也可以包含单引号 但是两个不能穿插</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token string">'This is "Hello" Python'</span>
-<span class="token string">"Come on 'Babay' "</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ul>
-<li>上面的都没问题 下面的不行</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token string">" Hello 'world! "</span>'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="使用方法修改字符串的大小写"><a href="#使用方法修改字符串的大小写" class="headerlink" title="使用方法修改字符串的大小写"></a>使用方法修改字符串的大小写</h4><ul>
-<li>title 方法(首字母大写)</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">"love python"</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
-输出结果就是
-Love Python<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>upper 方法(全部大写)</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">"love python"</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
-输出结果就是
-LOVE PYTHON<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>isupper()判断是不是都是大写</li>
+<li>下面就是统计数据 然后分析数据</li>
 </ul>
 <pre class="line-numbers language-python"><code class="language-python">
-str <span class="token operator">=</span> <span class="token string">"Hello"</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>isupper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 引入正则模块</span>
+<span class="token keyword">import</span> re
 
-<span class="token comment" spellcheck="true">#结果</span>
-<span class="token comment" spellcheck="true"># False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>islower 判断是不是都是小写</li>
+
+<span class="token keyword">def</span> <span class="token function">printresult</span><span class="token punctuation">(</span>filename<span class="token punctuation">,</span> arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">with</span> open<span class="token punctuation">(</span>filename<span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> result<span class="token punctuation">:</span>
+        content <span class="token operator">=</span> result<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> item <span class="token keyword">in</span> content<span class="token punctuation">:</span>
+            splitestr<span class="token punctuation">(</span>item<span class="token punctuation">,</span> arr<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># arr变化了</span>
+        findbetter<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 最后的结果</span>
+
+
+<span class="token keyword">def</span> <span class="token function">splitestr</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    resultall <span class="token operator">=</span> item<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> item <span class="token keyword">in</span> resultall<span class="token punctuation">:</span>
+        finalresult <span class="token operator">=</span> <span class="token string">''</span>
+        result <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">'(\d+)'</span><span class="token punctuation">,</span> item<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 找到数字</span>
+        <span class="token keyword">for</span> _item <span class="token keyword">in</span> result<span class="token punctuation">:</span>
+            finalresult <span class="token operator">+=</span> str<span class="token punctuation">(</span>_item<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 变成字符串</span>
+        arr<span class="token punctuation">.</span>append<span class="token punctuation">(</span>finalresult<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 比大小</span>
+
+
+<span class="token keyword">def</span> <span class="token function">findbetter</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    maxitem <span class="token operator">=</span> int<span class="token punctuation">(</span>arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">&lt;</span> len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            itemnext <span class="token operator">=</span> int<span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            itemnext <span class="token operator">=</span> int<span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> itemnext <span class="token operator">></span> maxitem<span class="token punctuation">:</span>
+            maxitem <span class="token operator">=</span> itemnext
+    result <span class="token operator">=</span> str<span class="token punctuation">(</span>maxitem<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"最好的成绩就是"</span><span class="token operator">+</span>result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">"分"</span><span class="token operator">+</span>result<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>result<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">"秒"</span><span class="token punctuation">)</span>
+
+
+arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+printresult<span class="token punctuation">(</span><span class="token string">'One.txt'</span><span class="token punctuation">,</span> arr1<span class="token punctuation">)</span>
+arr2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+printresult<span class="token punctuation">(</span><span class="token string">'Two.txt'</span><span class="token punctuation">,</span> arr2<span class="token punctuation">)</span>
+arr3 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+printresult<span class="token punctuation">(</span><span class="token string">'Three.txt'</span><span class="token punctuation">,</span> arr3<span class="token punctuation">)</span>
+arr4 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+printresult<span class="token punctuation">(</span><span class="token string">'Four.txt'</span><span class="token punctuation">,</span> arr4<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><ul>
+<li><p>集合里面不能有重复的值</p>
+</li>
+<li><p>集合使用{}来表示</p>
+</li>
+<li><p>通过 set()函数来制造集合</p>
+</li>
 </ul>
 <pre class="line-numbers language-python"><code class="language-python">
-str <span class="token operator">=</span> <span class="token string">"Hello"</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>islower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"1"</span><span class="token punctuation">,</span><span class="token string">"2"</span><span class="token punctuation">,</span><span class="token string">"3"</span><span class="token punctuation">]</span>
 
-<span class="token comment" spellcheck="true"># 结果</span>
-<span class="token comment" spellcheck="true"># False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>lower 方法(全部小写)</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">"LOVE PYTHON"</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
-输出结果就是
-love python<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>startswith() 和 endswitch()</li>
-</ul>
-<p>以什么开头 和 以什么结尾</p>
-<pre class="line-numbers language-python"><code class="language-python"> str <span class="token operator">=</span> <span class="token string">"Hello , JSON! See The World!"</span>
- <span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startswith<span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
- <span class="token triple-quoted-string string">'''
-  结果就是True
- '''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>以什么结尾</p>
-<pre class="line-numbers language-python"><code class="language-python">
-str <span class="token operator">=</span> <span class="token string">"Hello , JSON! See The World!"</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">'World!'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-<span class="token triple-quoted-string string">'''
-结果就是True
-'''</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>join()</li>
-</ul>
-<p>字符串拼接 join 就是把前面的字符串插入到后面每个字符串的中间</p>
-<pre class="line-numbers language-python"><code class="language-python">
-str2 <span class="token operator">=</span> <span class="token string">"kai"</span>
-
-endstr <span class="token operator">=</span> <span class="token string">"end"</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span>str2<span class="token punctuation">.</span>join<span class="token punctuation">(</span>endstr<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 结果</span>
-<span class="token comment" spellcheck="true"># ekainkaid</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>第二种开始</p>
-<pre class="line-numbers language-python"><code class="language-python">
-str <span class="token operator">=</span> <span class="token string">"||"</span>
-arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"start"</span><span class="token punctuation">,</span> <span class="token string">"over"</span><span class="token punctuation">,</span> <span class="token string">"end"</span><span class="token punctuation">]</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>join<span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 结果</span>
-<span class="token comment" spellcheck="true"># start||over||end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>split()他是把字符串的每个字符变成列表</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python">
-str <span class="token operator">=</span> <span class="token string">"Hello World "</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>set<span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>
 
 <span class="token comment" spellcheck="true"># 结果</span>
 
-<span class="token comment" spellcheck="true"># ['Hello', 'World']</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="合并-拼接-字符串"><a href="#合并-拼接-字符串" class="headerlink" title="合并(拼接)字符串"></a>合并(拼接)字符串</h4><ul>
-<li>在很多情况下我们都需要合并</li>
+<span class="token comment" spellcheck="true"># 集合{}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="集合内部操作"><a href="#集合内部操作" class="headerlink" title="集合内部操作"></a>集合内部操作</h3><ul>
+<li>in 判断是否在里面</li>
 </ul>
-<p>Python 中 使用(+)号 来合并字符串.</p>
-<pre class="line-numbers language-python"><code class="language-python">first_name <span class="token operator">=</span> <span class="token string">"love"</span>
-last_name <span class="token operator">=</span> <span class="token string">"python"</span>
-result <span class="token operator">=</span> first_name <span class="token operator">+</span> last_name
+<pre class="line-numbers language-python"><code class="language-python">
+str <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> <span class="token string">'a'</span> <span class="token keyword">in</span> str
 <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
-<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
-输出结果就是
-love python<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="使用制表符或换行符来添加空白"><a href="#使用制表符或换行符来添加空白" class="headerlink" title="使用制表符或换行符来添加空白"></a>使用制表符或换行符来添加空白</h4><ul>
-<li>\r\n 表示回车换行</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello \r\nWorld"</span><span class="token punctuation">)</span>
-<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>输出结果
-Hello
-World<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="删除空白"><a href="#删除空白" class="headerlink" title="删除空白"></a>删除空白</h4><ul>
-<li>rstrip() 删除字符串末尾的空白</li>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>添加元素 add</li>
 </ul>
 <pre class="line-numbers language-python"><code class="language-python">
-mes <span class="token operator">=</span> <span class="token string">"Hello "</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>mes<span class="token punctuation">.</span>rstrip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
-这样右边的空格就没了<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str1<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">'e'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># {'a', 'c', 'd', 'e', 'b'}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>lstrip() 删除字符串左边的空白</li>
+<li>移除元素 remove (这样元素不存在,则会发生错误)</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python">mes <span class="token operator">=</span> <span class="token string">" Hello"</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>mes<span class="token punctuation">.</span>lstrip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
-这样左边的空格就没了<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str1<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">'e'</span><span class="token punctuation">)</span>
+str1<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">'e'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># {'b', 'd', 'a', 'c'}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>strip() 同时删除左右两侧空白</li>
+<li>移除元素 2 discard() (这样即使元素不存在,也不会发生错误)</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python">mes <span class="token operator">=</span> <span class="token string">" Hello "</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>mes<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
-这样两边的空格就都没了<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="有一种连接不属于而是直接赋值"><a href="#有一种连接不属于而是直接赋值" class="headerlink" title="有一种连接不属于而是直接赋值"></a>有一种连接不属于而是直接赋值</h4><pre class="line-numbers language-python"><code class="language-python">
-span<span class="token operator">+=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span<span class="token operator">+</span><span class="token number">1</span>
-span<span class="token operator">-=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span <span class="token operator">-</span><span class="token number">1</span>
-span<span class="token operator">*=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span<span class="token operator">*</span><span class="token number">1</span>
-span<span class="token operator">/=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span<span class="token operator">/</span><span class="token number">1</span>
-span<span class="token operator">%=</span><span class="token number">1</span>  等价于 span <span class="token operator">=</span> span<span class="token operator">%</span><span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str1<span class="token punctuation">.</span>discard<span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># {'b', 'd', 'c'}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>随机删除一个元素 pop()</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str1<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果随机删除</span>
+<span class="token comment" spellcheck="true"># {'b', 'd', 'c'}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>计算集合的个数</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+
+length <span class="token operator">=</span> len<span class="token punctuation">(</span>str1<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>length<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># 4</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>清空集合</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str1<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># set()</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>集合复制</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str2 <span class="token operator">=</span> str1<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str2<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果 {'a', 'c', 'b', 'd'}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="两个集合之间的操作"><a href="#两个集合之间的操作" class="headerlink" title="两个集合之间的操作"></a>两个集合之间的操作</h3><ul>
+<li>取差集 (a 包含而 b 不包含)</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str2 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'bbbcde'</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> str1<span class="token operator">-</span>str2
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># {'a'}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>取并集 a | b</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str2 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'bbbcde'</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> str1 <span class="token operator">|</span> str2
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># {'a','b','c','d','e'}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>取交集 a&amp;b</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str2 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'bbbcde'</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> str1 <span class="token operator">&amp;</span> str2
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># {'c','b','d'}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>不同时包含 a 和 b 的元素(b 中 a 没有的元素,a 中 b 没有的元素)</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+str1 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'abccddadada'</span><span class="token punctuation">)</span>
+str2 <span class="token operator">=</span> set<span class="token punctuation">(</span><span class="token string">'bbbcde'</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> str1 <span class="token operator">^</span> str2
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+<span class="token comment" spellcheck="true"># {'e','a'}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -704,7 +724,7 @@ span<span class="token operator">%=</span><span class="token number">1</span>  �
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2020/01/01/pythonbasic1/">https://jsopy.gitee.io/2020/01/01/pythonbasic1/</a>
+                    <a href="https://jsopy.gitee.io/2020/01/28/headinpython5/">https://jsopy.gitee.io/2020/01/28/headinpython5/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -742,8 +762,8 @@ span<span class="token operator">%=</span><span class="token number">1</span>  �
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
                                 </a>
                             
                         </div>
@@ -784,46 +804,48 @@ span<span class="token operator">%=</span><span class="token number">1</span>  �
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/01/02/pythonbasic2/">
+                <a href="/2020/01/28/headinpython5/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Python 基础(二)数字类型和注释">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="集合 和推倒数据,处理数据">
                         
-                        <span class="card-title">Python 基础(二)数字类型和注释</span>
+                        <span class="card-title">集合 和推倒数据,处理数据</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文主要是记录python基础学习笔记
+                            本系列主要是看深入浅出学Python的复习笔记
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/python/" class="post-category">
-                                    python
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
                 </div>
@@ -837,31 +859,31 @@ span<span class="token operator">%=</span><span class="token number">1</span>  �
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/26/vuecha8/">
+                <a href="/2020/01/27/mysqlbasic9/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="vue中动画使用Velocity">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Mysql 基础(九) 表进行分组">
                         
-                        <span class="card-title">vue中动画使用Velocity</span>
+                        <span class="card-title">Mysql 基础(九) 表进行分组</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            vue中动画使用Velocity
+                            本文主要是记录Mysql基础学习笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue/" class="post-category">
-                                    Vue
+                            <a href="/categories/Mysql/" class="post-category">
+                                    Mysql
                                 </a>
                             
                             
@@ -871,12 +893,8 @@ span<span class="token operator">%=</span><span class="token number">1</span>  �
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
+                    <a href="/tags/Mysql/">
+                        <span class="chip bg-color">Mysql</span>
                     </a>
                     
                 </div>

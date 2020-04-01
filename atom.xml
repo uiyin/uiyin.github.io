@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-03-31T13:19:10.455Z</updated>
+  <updated>2020-04-01T13:31:52.085Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>集合 和推倒数据,处理数据</title>
+    <link href="https://jsopy.gitee.io/2020/01/28/headinpython5/"/>
+    <id>https://jsopy.gitee.io/2020/01/28/headinpython5/</id>
+    <published>2020-01-28T13:26:47.000Z</published>
+    <updated>2020-04-01T13:31:52.085Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;推倒数据-处理数据&quot;&gt;&lt;a href=&quot;#推倒数据-处理数据&quot; class=&quot;headerlink&quot; title=&quot;推倒数据,处理数据&quot;&gt;&lt;/a&gt;推倒数据,处理数据&lt;/h1&gt;&lt;h2 id=&quot;例子&quot;&gt;&lt;a href=&quot;#例子&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Mysql 基础(九) 表进行分组</title>
@@ -183,7 +210,7 @@
     <link href="https://jsopy.gitee.io/2020/01/21/headinpython/"/>
     <id>https://jsopy.gitee.io/2020/01/21/headinpython/</id>
     <published>2020-01-21T12:26:47.000Z</published>
-    <updated>2020-03-31T13:17:30.501Z</updated>
+    <updated>2020-04-01T14:05:47.399Z</updated>
     
     <summary type="html">
     
@@ -518,33 +545,6 @@
         
         
           &lt;h1 id=&quot;Python-基础-九-———-类&quot;&gt;&lt;a href=&quot;#Python-基础-九-———-类&quot; class=&quot;headerlink&quot; title=&quot;Python 基础(九) ——— 类&quot;&gt;&lt;/a&gt;Python 基础(九) ———
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 基础(八)函数</title>
-    <link href="https://jsopy.gitee.io/2020/01/08/pythonbasic8/"/>
-    <id>https://jsopy.gitee.io/2020/01/08/pythonbasic8/</id>
-    <published>2020-01-08T13:26:47.000Z</published>
-    <updated>2020-03-24T14:25:57.067Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python-基础-八-———-函数&quot;&gt;&lt;a href=&quot;#Python-基础-八-———-函数&quot; class=&quot;headerlink&quot; title=&quot;Python 基础(八) ——— 函数&quot;&gt;&lt;/a&gt;Python 基础(八) ———
         
       
     
