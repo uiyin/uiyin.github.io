@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-01T13:31:52.085Z</updated>
+  <updated>2020-04-07T13:34:19.741Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,401 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>处理 Excel 电子表格</title>
+    <link href="https://jsopy.gitee.io/2020/02/11/pythonresult13/"/>
+    <id>https://jsopy.gitee.io/2020/02/11/pythonresult13/</id>
+    <published>2020-02-11T13:26:47.000Z</published>
+    <updated>2020-04-07T13:34:19.741Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;处理-Excel-电子表格&quot;&gt;&lt;a href=&quot;#处理-Excel-电子表格&quot; class=&quot;headerlink&quot; title=&quot;处理 Excel 电子表格&quot;&gt;&lt;/a&gt;处理 Excel
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从 Web 中抓取信息</title>
+    <link href="https://jsopy.gitee.io/2020/02/10/pythonresult12/"/>
+    <id>https://jsopy.gitee.io/2020/02/10/pythonresult12/</id>
+    <published>2020-02-10T13:26:47.000Z</published>
+    <updated>2020-04-07T13:27:09.395Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;从-Web-中抓取信息&quot;&gt;&lt;a href=&quot;#从-Web-中抓取信息&quot; class=&quot;headerlink&quot; title=&quot;从 Web 中抓取信息&quot;&gt;&lt;/a&gt;从 Web
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>调试</title>
+    <link href="https://jsopy.gitee.io/2020/02/09/pythonresult11/"/>
+    <id>https://jsopy.gitee.io/2020/02/09/pythonresult11/</id>
+    <published>2020-02-09T13:26:47.000Z</published>
+    <updated>2020-04-07T13:26:45.554Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;调试&quot;&gt;&lt;a href=&quot;#调试&quot; class=&quot;headerlink&quot; title=&quot;调试&quot;&gt;&lt;/a&gt;调试&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;学问是异常珍贵的东西，从任何源泉吸收都不可耻。——阿卜·日·法拉兹&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>组织文件</title>
+    <link href="https://jsopy.gitee.io/2020/02/08/pythonresult10/"/>
+    <id>https://jsopy.gitee.io/2020/02/08/pythonresult10/</id>
+    <published>2020-02-08T13:26:47.000Z</published>
+    <updated>2020-04-07T13:26:24.041Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;组织文件&quot;&gt;&lt;a href=&quot;#组织文件&quot; class=&quot;headerlink&quot; title=&quot;组织文件&quot;&gt;&lt;/a&gt;组织文件&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;我这个人走得很慢，但是我从不后退。——亚伯拉罕·林肯&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>读写文件</title>
+    <link href="https://jsopy.gitee.io/2020/02/07/pythonresult9/"/>
+    <id>https://jsopy.gitee.io/2020/02/07/pythonresult9/</id>
+    <published>2020-02-07T13:26:47.000Z</published>
+    <updated>2020-04-07T13:26:00.226Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;读写文件&quot;&gt;&lt;a href=&quot;#读写文件&quot; class=&quot;headerlink&quot; title=&quot;读写文件&quot;&gt;&lt;/a&gt;读写文件&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;我们唯一不会改正的缺点是软弱。——拉罗什福科&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模式匹配和正则表达式</title>
+    <link href="https://jsopy.gitee.io/2020/02/06/pythonresult8/"/>
+    <id>https://jsopy.gitee.io/2020/02/06/pythonresult8/</id>
+    <published>2020-02-06T13:26:47.000Z</published>
+    <updated>2020-04-05T06:39:57.220Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;正则表达式&quot;&gt;&lt;a href=&quot;#正则表达式&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字典和结构化数据</title>
+    <link href="https://jsopy.gitee.io/2020/02/05/pythonresult7/"/>
+    <id>https://jsopy.gitee.io/2020/02/05/pythonresult7/</id>
+    <published>2020-02-05T13:26:47.000Z</published>
+    <updated>2020-04-04T12:21:42.668Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;字典&quot;&gt;&lt;a href=&quot;#字典&quot; class=&quot;headerlink&quot; title=&quot;字典&quot;&gt;&lt;/a&gt;字典&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;简单来说 字典类似对象。字典是一系列
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>列表和元组</title>
+    <link href="https://jsopy.gitee.io/2020/02/04/pythonresult6/"/>
+    <id>https://jsopy.gitee.io/2020/02/04/pythonresult6/</id>
+    <published>2020-02-04T13:26:47.000Z</published>
+    <updated>2020-04-07T13:25:05.306Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python-———-列表&quot;&gt;&lt;a href=&quot;#Python-———-列表&quot; class=&quot;headerlink&quot; title=&quot;Python ——— 列表&quot;&gt;&lt;/a&gt;Python ———
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>异常</title>
+    <link href="https://jsopy.gitee.io/2020/02/03/pythonresult5/"/>
+    <id>https://jsopy.gitee.io/2020/02/03/pythonresult5/</id>
+    <published>2020-02-03T13:26:47.000Z</published>
+    <updated>2020-04-04T04:42:07.698Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;异常&quot;&gt;&lt;a href=&quot;#异常&quot; class=&quot;headerlink&quot; title=&quot;异常&quot;&gt;&lt;/a&gt;异常&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;形成天才的决定因素应该是勤奋。——郭沫若&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;异常就是代码出问题的时候
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>函数</title>
+    <link href="https://jsopy.gitee.io/2020/02/02/pythonresult4/"/>
+    <id>https://jsopy.gitee.io/2020/02/02/pythonresult4/</id>
+    <published>2020-02-02T13:26:47.000Z</published>
+    <updated>2020-04-04T04:16:47.627Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;函数&quot;&gt;&lt;a href=&quot;#函数&quot; class=&quot;headerlink&quot; title=&quot;函数&quot;&gt;&lt;/a&gt;函数&lt;/h2&gt;&lt;p&gt;希望是人生的乳母。—— 科策布&lt;/p&gt;
+&lt;h3 id=&quot;函数的定义&quot;&gt;&lt;a href=&quot;#函数的定义&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模块</title>
+    <link href="https://jsopy.gitee.io/2020/02/01/pythonresult3/"/>
+    <id>https://jsopy.gitee.io/2020/02/01/pythonresult3/</id>
+    <published>2020-02-01T13:26:47.000Z</published>
+    <updated>2020-04-04T03:49:25.768Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;模块&quot;&gt;&lt;a href=&quot;#模块&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python中的if和循环</title>
+    <link href="https://jsopy.gitee.io/2020/01/31/pythonresult2/"/>
+    <id>https://jsopy.gitee.io/2020/01/31/pythonresult2/</id>
+    <published>2020-01-31T13:26:47.000Z</published>
+    <updated>2020-04-04T03:00:16.917Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;控制流&quot;&gt;&lt;a href=&quot;#控制流&quot; class=&quot;headerlink&quot; title=&quot;控制流&quot;&gt;&lt;/a&gt;控制流&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;希望的灯一旦熄灭，生活刹那间变成了一片黑暗。——普列姆昌德&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python数据类型</title>
+    <link href="https://jsopy.gitee.io/2020/01/30/pythonresult1/"/>
+    <id>https://jsopy.gitee.io/2020/01/30/pythonresult1/</id>
+    <published>2020-01-30T13:26:47.000Z</published>
+    <updated>2020-04-04T03:55:21.214Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python-基础&quot;&gt;&lt;a href=&quot;#Python-基础&quot; class=&quot;headerlink&quot; title=&quot;Python 基础&quot;&gt;&lt;/a&gt;Python
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python学习汇总版本笔记</title>
+    <link href="https://jsopy.gitee.io/2020/01/29/pythonresultall/"/>
+    <id>https://jsopy.gitee.io/2020/01/29/pythonresultall/</id>
+    <published>2020-01-29T12:26:47.000Z</published>
+    <updated>2020-04-07T13:34:41.648Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;目录分类&quot;&gt;&lt;a href=&quot;#目录分类&quot; class=&quot;headerlink&quot; title=&quot;目录分类&quot;&gt;&lt;/a&gt;目录分类&lt;/h2&gt;&lt;h3 id=&quot;Python-数据类型-一&quot;&gt;&lt;a href=&quot;#Python-数据类型-一&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>集合 和推倒数据,处理数据</title>
@@ -175,386 +570,6 @@
     
     
       <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>列表的概念</title>
-    <link href="https://jsopy.gitee.io/2020/01/22/headinpython1/"/>
-    <id>https://jsopy.gitee.io/2020/01/22/headinpython1/</id>
-    <published>2020-01-22T13:26:47.000Z</published>
-    <updated>2020-03-30T13:12:57.454Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;初识-Python&quot;&gt;&lt;a href=&quot;#初识-Python&quot; class=&quot;headerlink&quot; title=&quot;初识 Python&quot;&gt;&lt;/a&gt;初识
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深入浅出学Python</title>
-    <link href="https://jsopy.gitee.io/2020/01/21/headinpython/"/>
-    <id>https://jsopy.gitee.io/2020/01/21/headinpython/</id>
-    <published>2020-01-21T12:26:47.000Z</published>
-    <updated>2020-04-01T14:05:47.399Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;目录分类&quot;&gt;&lt;a href=&quot;#目录分类&quot; class=&quot;headerlink&quot; title=&quot;目录分类&quot;&gt;&lt;/a&gt;目录分类&lt;/h2&gt;&lt;h3 id=&quot;列表的概念-一&quot;&gt;&lt;a href=&quot;#列表的概念-一&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql 基础(七) 算术预算符和比较运算符</title>
-    <link href="https://jsopy.gitee.io/2020/01/20/mysqlbasic7/"/>
-    <id>https://jsopy.gitee.io/2020/01/20/mysqlbasic7/</id>
-    <published>2020-01-20T13:26:47.000Z</published>
-    <updated>2020-03-29T12:47:23.567Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Mysql-基础-七-算术预算符和比较运算符&quot;&gt;&lt;a href=&quot;#Mysql-基础-七-算术预算符和比较运算符&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(七) 算术预算符和比较运算符&quot;&gt;&lt;/a&gt;Mysql 基础(七)
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql 基础(六) SELECT 语句基础</title>
-    <link href="https://jsopy.gitee.io/2020/01/19/mysqlbasic6/"/>
-    <id>https://jsopy.gitee.io/2020/01/19/mysqlbasic6/</id>
-    <published>2020-01-19T13:26:47.000Z</published>
-    <updated>2020-03-26T13:09:34.799Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Mysql-基础-六-SELECT-语句基础&quot;&gt;&lt;a href=&quot;#Mysql-基础-六-SELECT-语句基础&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(六) SELECT 语句基础&quot;&gt;&lt;/a&gt;Mysql 基础(六) SELECT
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql 基础(五) 表的删除和更新</title>
-    <link href="https://jsopy.gitee.io/2020/01/18/mysqlbasic5/"/>
-    <id>https://jsopy.gitee.io/2020/01/18/mysqlbasic5/</id>
-    <published>2020-01-18T13:26:47.000Z</published>
-    <updated>2020-03-26T13:08:12.495Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Mysql-基础-五-表的删除和更新&quot;&gt;&lt;a href=&quot;#Mysql-基础-五-表的删除和更新&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(五) 表的删除和更新&quot;&gt;&lt;/a&gt;Mysql 基础(五)
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql 基础(四) 表的创建</title>
-    <link href="https://jsopy.gitee.io/2020/01/17/mysqlbasic4/"/>
-    <id>https://jsopy.gitee.io/2020/01/17/mysqlbasic4/</id>
-    <published>2020-01-17T13:26:47.000Z</published>
-    <updated>2020-03-26T12:47:04.579Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Mysql-基础-四-表的创建&quot;&gt;&lt;a href=&quot;#Mysql-基础-四-表的创建&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(四) 表的创建&quot;&gt;&lt;/a&gt;Mysql 基础(四)
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql 基础(三) SQL 概要</title>
-    <link href="https://jsopy.gitee.io/2020/01/16/mysqlbasic3/"/>
-    <id>https://jsopy.gitee.io/2020/01/16/mysqlbasic3/</id>
-    <published>2020-01-16T13:26:47.000Z</published>
-    <updated>2020-03-26T12:45:03.056Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Mysql-基础-三-SQL-概要&quot;&gt;&lt;a href=&quot;#Mysql-基础-三-SQL-概要&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(三) SQL 概要&quot;&gt;&lt;/a&gt;Mysql 基础(三) SQL
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql 基础(二) 数据库的结构</title>
-    <link href="https://jsopy.gitee.io/2020/01/15/mysqlbasic2/"/>
-    <id>https://jsopy.gitee.io/2020/01/15/mysqlbasic2/</id>
-    <published>2020-01-15T13:26:47.000Z</published>
-    <updated>2020-03-26T12:43:07.733Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Mysql-基础-二-数据库的结构&quot;&gt;&lt;a href=&quot;#Mysql-基础-二-数据库的结构&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(二) 数据库的结构&quot;&gt;&lt;/a&gt;Mysql 基础(二) 数据库的结构&lt;/h1&gt;&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql 基础(一)什么是数据库</title>
-    <link href="https://jsopy.gitee.io/2020/01/14/mysqlbasic1/"/>
-    <id>https://jsopy.gitee.io/2020/01/14/mysqlbasic1/</id>
-    <published>2020-01-14T13:26:47.000Z</published>
-    <updated>2020-03-26T13:20:08.536Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Mysql-基础-一-什么是数据库&quot;&gt;&lt;a href=&quot;#Mysql-基础-一-什么是数据库&quot; class=&quot;headerlink&quot; title=&quot;Mysql 基础(一) 什么是数据库&quot;&gt;&lt;/a&gt;Mysql 基础(一)
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySql基础学习笔记(SQL基础教程第二版)</title>
-    <link href="https://jsopy.gitee.io/2020/01/13/mysqlall/"/>
-    <id>https://jsopy.gitee.io/2020/01/13/mysqlall/</id>
-    <published>2020-01-13T12:26:47.000Z</published>
-    <updated>2020-03-31T13:20:46.248Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;目录分类&quot;&gt;&lt;a href=&quot;#目录分类&quot; class=&quot;headerlink&quot; title=&quot;目录分类&quot;&gt;&lt;/a&gt;目录分类&lt;/h2&gt;&lt;h3 id=&quot;什么是数据库-一&quot;&gt;&lt;a href=&quot;#什么是数据库-一&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue 中使用 iframe</title>
-    <link href="https://jsopy.gitee.io/2020/01/12/vuecha9/"/>
-    <id>https://jsopy.gitee.io/2020/01/12/vuecha9/</id>
-    <published>2020-01-12T13:26:47.000Z</published>
-    <updated>2020-03-20T23:04:19.101Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Vue-中使用-iframe&quot;&gt;&lt;a href=&quot;#Vue-中使用-iframe&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用 iframe&quot;&gt;&lt;/a&gt;Vue 中使用
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 基础(十一)单元测试</title>
-    <link href="https://jsopy.gitee.io/2020/01/11/pythonbasic11/"/>
-    <id>https://jsopy.gitee.io/2020/01/11/pythonbasic11/</id>
-    <published>2020-01-11T13:26:47.000Z</published>
-    <updated>2020-03-24T14:27:01.452Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python-基础-十-———-单元测试&quot;&gt;&lt;a href=&quot;#Python-基础-十-———-单元测试&quot; class=&quot;headerlink&quot; title=&quot;Python 基础(十) ——— 单元测试&quot;&gt;&lt;/a&gt;Python 基础(十) ———
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 基础(十)文件和异常</title>
-    <link href="https://jsopy.gitee.io/2020/01/10/pythonbasic10/"/>
-    <id>https://jsopy.gitee.io/2020/01/10/pythonbasic10/</id>
-    <published>2020-01-10T13:26:47.000Z</published>
-    <updated>2020-03-24T14:26:39.361Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python-基础-十-———-文件和异常&quot;&gt;&lt;a href=&quot;#Python-基础-十-———-文件和异常&quot; class=&quot;headerlink&quot; title=&quot;Python 基础(十) ——— 文件和异常&quot;&gt;&lt;/a&gt;Python 基础(十) ———
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 基础(九)类</title>
-    <link href="https://jsopy.gitee.io/2020/01/09/pythonbasic9/"/>
-    <id>https://jsopy.gitee.io/2020/01/09/pythonbasic9/</id>
-    <published>2020-01-09T13:26:47.000Z</published>
-    <updated>2020-03-24T14:26:18.236Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python-基础-九-———-类&quot;&gt;&lt;a href=&quot;#Python-基础-九-———-类&quot; class=&quot;headerlink&quot; title=&quot;Python 基础(九) ——— 类&quot;&gt;&lt;/a&gt;Python 基础(九) ———
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
     
   </entry>
   
