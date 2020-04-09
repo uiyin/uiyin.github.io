@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-07T13:34:19.741Z</updated>
+  <updated>2020-04-09T12:14:10.980Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>多线程(了解)和打开其他应用程序</title>
+    <link href="https://jsopy.gitee.io/2020/02/14/pythonresult16/"/>
+    <id>https://jsopy.gitee.io/2020/02/14/pythonresult16/</id>
+    <published>2020-02-14T13:26:47.000Z</published>
+    <updated>2020-04-09T12:14:10.980Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;多线程-了解-和打开其他应用程序&quot;&gt;&lt;a href=&quot;#多线程-了解-和打开其他应用程序&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>时间,计划任务和启动程序</title>
+    <link href="https://jsopy.gitee.io/2020/02/13/pythonresult15/"/>
+    <id>https://jsopy.gitee.io/2020/02/13/pythonresult15/</id>
+    <published>2020-02-13T13:26:47.000Z</published>
+    <updated>2020-04-09T12:13:59.937Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;时间-计划任务和启动程序&quot;&gt;&lt;a href=&quot;#时间-计划任务和启动程序&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>处理 PDF 和 Word 文档</title>
+    <link href="https://jsopy.gitee.io/2020/02/12/pythonresult14/"/>
+    <id>https://jsopy.gitee.io/2020/02/12/pythonresult14/</id>
+    <published>2020-02-12T13:26:47.000Z</published>
+    <updated>2020-04-09T12:11:13.641Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;处理-PDF-和-Word-文档&quot;&gt;&lt;a href=&quot;#处理-PDF-和-Word-文档&quot; class=&quot;headerlink&quot; title=&quot;处理 PDF 和 Word 文档&quot;&gt;&lt;/a&gt;处理 PDF 和 Word
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>处理 Excel 电子表格</title>
@@ -389,7 +470,7 @@
     <link href="https://jsopy.gitee.io/2020/01/29/pythonresultall/"/>
     <id>https://jsopy.gitee.io/2020/01/29/pythonresultall/</id>
     <published>2020-01-29T12:26:47.000Z</published>
-    <updated>2020-04-07T13:41:14.620Z</updated>
+    <updated>2020-04-09T12:18:44.586Z</updated>
     
     <summary type="html">
     
@@ -479,87 +560,6 @@
         
         
           &lt;h1 id=&quot;文件与异常和-JSON&quot;&gt;&lt;a href=&quot;#文件与异常和-JSON&quot; class=&quot;headerlink&quot; title=&quot;文件与异常和 JSON&quot;&gt;&lt;/a&gt;文件与异常和
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql 基础(八) 聚合函数</title>
-    <link href="https://jsopy.gitee.io/2020/01/25/mysqlbasic8/"/>
-    <id>https://jsopy.gitee.io/2020/01/25/mysqlbasic8/</id>
-    <published>2020-01-25T13:26:47.000Z</published>
-    <updated>2020-03-30T13:20:11.330Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;聚合与排序&quot;&gt;&lt;a href=&quot;#聚合与排序&quot; class=&quot;headerlink&quot; title=&quot;聚合与排序&quot;&gt;&lt;/a&gt;聚合与排序&lt;/h1&gt;&lt;h2 id=&quot;学习重点&quot;&gt;&lt;a href=&quot;#学习重点&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模块</title>
-    <link href="https://jsopy.gitee.io/2020/01/24/headinpython3/"/>
-    <id>https://jsopy.gitee.io/2020/01/24/headinpython3/</id>
-    <published>2020-01-24T13:26:47.000Z</published>
-    <updated>2020-03-30T13:15:32.939Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;模块&quot;&gt;&lt;a href=&quot;#模块&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="https://jsopy.gitee.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="https://jsopy.gitee.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>处理列表的数据</title>
-    <link href="https://jsopy.gitee.io/2020/01/23/headinpython2/"/>
-    <id>https://jsopy.gitee.io/2020/01/23/headinpython2/</id>
-    <published>2020-01-23T13:26:47.000Z</published>
-    <updated>2020-03-30T13:13:29.680Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;处理列表数据&quot;&gt;&lt;a href=&quot;#处理列表数据&quot; class=&quot;headerlink&quot;
         
       
     
