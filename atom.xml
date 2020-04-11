@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-11T00:22:47.806Z</updated>
+  <updated>2020-04-11T11:58:55.200Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 邮件</title>
+    <link href="https://jsopy.gitee.io/2020/02/16/pythonresult18/"/>
+    <id>https://jsopy.gitee.io/2020/02/16/pythonresult18/</id>
+    <published>2020-02-16T13:26:47.000Z</published>
+    <updated>2020-04-11T11:58:55.200Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Python-邮件&quot;&gt;&lt;a href=&quot;#Python-邮件&quot; class=&quot;headerlink&quot; title=&quot;Python 邮件&quot;&gt;&lt;/a&gt;Python 邮件&lt;/h2&gt;&lt;h2 id=&quot;邮件的三种协议&quot;&gt;&lt;a href=&quot;#邮件的三种协议&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 操作图像</title>
@@ -497,7 +524,7 @@
     <link href="https://jsopy.gitee.io/2020/01/29/pythonresultall/"/>
     <id>https://jsopy.gitee.io/2020/01/29/pythonresultall/</id>
     <published>2020-01-29T12:26:47.000Z</published>
-    <updated>2020-04-11T00:24:20.676Z</updated>
+    <updated>2020-04-11T11:59:49.222Z</updated>
     
     <summary type="html">
     
@@ -543,33 +570,6 @@
     
     
       <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql 基础(九) 表进行分组</title>
-    <link href="https://jsopy.gitee.io/2020/01/27/mysqlbasic9/"/>
-    <id>https://jsopy.gitee.io/2020/01/27/mysqlbasic9/</id>
-    <published>2020-01-27T13:26:47.000Z</published>
-    <updated>2020-03-31T13:19:10.455Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;对表进行分组&quot;&gt;&lt;a href=&quot;#对表进行分组&quot; class=&quot;headerlink&quot; title=&quot;对表进行分组&quot;&gt;&lt;/a&gt;对表进行分组&lt;/h1&gt;&lt;h2 id=&quot;学习重点&quot;&gt;&lt;a href=&quot;#学习重点&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
     
   </entry>
   
