@@ -4,15 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue学记笔记(八) Vue路由传参数，动画和钩子函数, Javascript Python Js">
-    <meta name="description" content="Vue 路由传参动态路径传参数
-比如我们要传递的路径 /hi/hahah/123 第一个是组件名 第二个，第三个是参数
+    <meta name="keywords" content="Python 操作图像, Javascript Python Js">
+    <meta name="description" content="Python 操作图像
+我的努力求学没有得到别的好处，只不过是愈来愈发觉自己的无知 ——笛卡儿
 
-(1) 路由里面配置参数
-看路径 利用冒号绑定好参数
+操作图像
+python 要是想操作图像 必须要安装 pillow 模块
 
-{
-      path:&#39;/Hi/:username/:id">
+安装 pillow 模块
+pip install pillow
+
+解">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +22,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>vue学记笔记(八) Vue路由传参数，动画和钩子函数 | JSOPY</title>
+    <title>Python 操作图像 | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,13 +312,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        vue学记笔记(八) Vue路由传参数，动画和钩子函数
+                        Python 操作图像
                     </div>
                 </div>
             </div>
@@ -428,12 +430,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Javascript/">
-                                <span class="chip bg-color">Javascript</span>
-                            </a>
-                        
-                            <a href="/tags/Vue/">
-                                <span class="chip bg-color">Vue</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -444,8 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Vue/" class="post-category">
-                                Vue
+                            <a href="/categories/python/" class="post-category">
+                                python
                             </a>
                         
                     </div>
@@ -456,16 +454,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-09
+                    2020-02-15
                 </div>
                 
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-04-11
+                </div>
                 
 
                 
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        747
+                        813
                     </div>
                     
 
@@ -488,161 +491,184 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Vue-路由传参"><a href="#Vue-路由传参" class="headerlink" title="Vue 路由传参"></a>Vue 路由传参</h1><h2 id="动态路径传参数"><a href="#动态路径传参数" class="headerlink" title="动态路径传参数"></a>动态路径传参数</h2><blockquote>
-<p>比如我们要传递的路径 /hi/hahah/123 第一个是组件名 第二个，第三个是参数</p>
+                <h1 id="Python-操作图像"><a href="#Python-操作图像" class="headerlink" title="Python 操作图像"></a>Python 操作图像</h1><blockquote>
+<p>我的努力求学没有得到别的好处，只不过是愈来愈发觉自己的无知 ——笛卡儿</p>
 </blockquote>
-<h3 id="1-路由里面配置参数"><a href="#1-路由里面配置参数" class="headerlink" title="(1) 路由里面配置参数"></a>(1) 路由里面配置参数</h3><blockquote>
-<p>看路径 利用冒号绑定好参数</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
-      path<span class="token punctuation">:</span><span class="token string">'/Hi/:username/:id'</span><span class="token punctuation">,</span>
-      name<span class="token punctuation">:</span><span class="token string">"Hi"</span><span class="token punctuation">,</span>
-      component<span class="token punctuation">:</span>Hi<span class="token punctuation">,</span>
-      children<span class="token punctuation">:</span><span class="token punctuation">[</span>
-
-        <span class="token punctuation">{</span>path<span class="token punctuation">:</span><span class="token string">"hi1"</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">"Hi1"</span><span class="token punctuation">,</span>component<span class="token punctuation">:</span>Hi1<span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span>path<span class="token punctuation">:</span><span class="token string">"hi2"</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">"Hi2"</span><span class="token punctuation">,</span>component<span class="token punctuation">:</span>Hi2<span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">]</span>
-    <span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-组件里面输出"><a href="#2-组件里面输出" class="headerlink" title="(2) 组件里面输出"></a>(2) 组件里面输出</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
-  <span class="token punctuation">{</span>
-    $route<span class="token punctuation">.</span>params<span class="token punctuation">.</span>username
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token punctuation">{</span>
-  <span class="token punctuation">{</span>
-    $route<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="路由跳转参数的两种方法"><a href="#路由跳转参数的两种方法" class="headerlink" title="路由跳转参数的两种方法"></a>路由跳转参数的两种方法</h2><ul>
-<li><p>是利用 query 方式传递参数</p>
-</li>
-<li><p>是利用 params 方式传递参数</p>
-</li>
+<h2 id="操作图像"><a href="#操作图像" class="headerlink" title="操作图像"></a>操作图像</h2><ul>
+<li>python 要是想操作图像 必须要安装 pillow 模块</li>
 </ul>
-<h3 id="利用-query-方式传递参数"><a href="#利用-query-方式传递参数" class="headerlink" title="利用 query 方式传递参数"></a>利用 query 方式传递参数</h3><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
-  传参<span class="token punctuation">:</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-          path<span class="token punctuation">:</span><span class="token string">'/xxx'</span>
-          query<span class="token punctuation">:</span><span class="token punctuation">{</span>
-            id<span class="token punctuation">:</span>id
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span>
-
-  接收参数<span class="token punctuation">:</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>query<span class="token punctuation">.</span>id
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="利用-params-方式传递参数"><a href="#利用-params-方式传递参数" class="headerlink" title="利用 params 方式传递参数"></a>利用 params 方式传递参数</h3><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
-  传参<span class="token punctuation">:</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-          name<span class="token punctuation">:</span><span class="token string">'xxx'</span>
-          params<span class="token punctuation">:</span><span class="token punctuation">{</span>
-            id<span class="token punctuation">:</span>id
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span>
-
-  接收参数<span class="token punctuation">:</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>注意:params 传参，push 里面只能是 name:’xxxx’,不能是 path:’/xxx’,因为 params 只能用 name 来引入路由，如果这里写成了 path，接收参数页面会是 undefined！！！另外，二者还有点区别，直白的来说 query 相当于 get 请求，页面跳转的时候，可以在地址栏看到请求参数，而 params 相当于 post 请求，参数不会再地址栏中显示.另外要是通过 query 传值，页面刷新的话参数不丢失</p>
-</blockquote>
-<h1 id="Vue-动画"><a href="#Vue-动画" class="headerlink" title="Vue 动画"></a>Vue 动画</h1><ul>
-<li>想要路由有过度动画效果只需要在 router-view 外部加载一个 transition 标签即可</li>
+<h3 id="安装-pillow-模块"><a href="#安装-pillow-模块" class="headerlink" title="安装 pillow 模块"></a>安装 pillow 模块</h3><pre class="line-numbers language-python"><code class="language-python">
+pip install pillow
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="解析颜色-获取图片信息-另存为图片"><a href="#解析颜色-获取图片信息-另存为图片" class="headerlink" title="解析颜色,获取图片信息,另存为图片"></a>解析颜色,获取图片信息,另存为图片</h3><ul>
+<li>getcolor</li>
 </ul>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transition</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gotop<span class="token punctuation">"</span></span> <span class="token attr-name">model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>out-in<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>allcontent<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-view</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>transition</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> ImageColor
+
+result <span class="token operator">=</span> ImageColor<span class="token punctuation">.</span>getcolor<span class="token punctuation">(</span><span class="token string">'red'</span><span class="token punctuation">,</span> <span class="token string">'RGBA'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果</span>
+
+<span class="token comment" spellcheck="true"># (255, 0, 0, 255)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p>name 就是 css 类前面开头制定的名称，model 就是执行的顺序，他有两个。第一个是 out-in 第二个是 in-out</p>
+<p>Pillow 函数和方法需要一个矩形元祖参数。所以 Pillow 需要一个有四个整坐标的元祖.表示图像中一个矩形区域。四个整数按顺序分别是</p>
 </blockquote>
+<p>1.左 该矩形的最左边的 X 坐标</p>
+<p>2.顶 该矩形的顶边 y 坐标</p>
+<p>3.右 该矩形的最右边右面一个像素的 X 坐标。此整数必须比左边大</p>
+<p>4.底 该矩形的底边下面一个像素的 Y 坐标,此整数必须比顶边整数大</p>
 <ul>
-<li>然后在 css 里面写</li>
+<li>Image.open() 打开图片</li>
 </ul>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
-  <span class="token selector"><span class="token class">.gotop-enter-active</span>,
-  <span class="token class">.gotop-leave-active</span> </span><span class="token punctuation">{</span>
-    <span class="token property">transition</span><span class="token punctuation">:</span> all <span class="token number">0.4</span>s linear<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-  <span class="token selector"><span class="token class">.gotop-enter</span>,
-  <span class="token class">.gotop-leave-to</span> </span><span class="token punctuation">{</span>
-    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">100%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-  <span class="token selector"><span class="token class">.gotop-leave</span>,
-  <span class="token class">.gotop-enter-to</span> </span><span class="token punctuation">{</span>
-    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="Vue-导航里面的钩子函数"><a href="#Vue-导航里面的钩子函数" class="headerlink" title="Vue 导航里面的钩子函数"></a>Vue 导航里面的钩子函数</h1><ul>
-<li><p>第一种就是全局匹配 beforeeach</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+picall <span class="token operator">=</span> Image<span class="token punctuation">.</span>open<span class="token punctuation">(</span><span class="token string">'lazyimg.jpg'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 打开图片</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>picall<span class="token punctuation">.</span>size<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 一个元祖 获取到图片的宽度和高度</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>picall<span class="token punctuation">.</span>size<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 宽度</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>picall<span class="token punctuation">.</span>size<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 高度</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>picall<span class="token punctuation">.</span>filename<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 文件名</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>picall<span class="token punctuation">.</span>format<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true"># 后缀名</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>picall<span class="token punctuation">.</span>format_description<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 描述</span>
+
+picall<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'222.jpg'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 另存为其他名字的图片</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="画图片"><a href="#画图片" class="headerlink" title="画图片"></a>画图片</h3><ul>
+<li>画图片 new save</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+im <span class="token operator">=</span> Image<span class="token punctuation">.</span>new<span class="token punctuation">(</span><span class="token string">'RGBA'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'purple'</span><span class="token punctuation">)</span>
+
+im<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'123232.png'</span><span class="token punctuation">)</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>我们创建了一个图像 它有 100 像素宽,200 像素高,带有紫色背景</p>
+</blockquote>
+<h3 id="裁剪图片"><a href="#裁剪图片" class="headerlink" title="裁剪图片"></a>裁剪图片</h3><ul>
+<li><p>裁剪图片值得是在图像里面选择一个矩形区域，删除矩形区域以外的内容</p>
 </li>
-<li><p>第二种就是单个路由下面写配置,beforeEnter</p>
-</li>
-<li><p>第三种就是组件里面写钩子函数 beforeRouterEnter</p>
+<li><p>crop() 矩形元祖</p>
 </li>
 </ul>
-<h2 id="1-全局匹配"><a href="#1-全局匹配" class="headerlink" title="(1) 全局匹配"></a>(1) 全局匹配</h2><blockquote>
-<p>一般情况我们管这个叫路由守卫，简称全拦，他一般有 3 个参数 to from next 表示通过才跳转,一般写在 main.js 里面</p>
-</blockquote>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+picall <span class="token operator">=</span> Image<span class="token punctuation">.</span>open<span class="token punctuation">(</span><span class="token string">'lazyimg.jpg'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 打开图片</span>
+
+imgcrop <span class="token operator">=</span> picall<span class="token punctuation">.</span>crop<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">335</span><span class="token punctuation">,</span> <span class="token number">345</span><span class="token punctuation">,</span> <span class="token number">565</span><span class="token punctuation">,</span> <span class="token number">560</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 开始裁剪</span>
+
+imgcrop<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'裁剪.png'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果生成</span>
+
+<span class="token comment" spellcheck="true"># 生咸新的图片</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="复制和粘贴图像到其他图像"><a href="#复制和粘贴图像到其他图像" class="headerlink" title="复制和粘贴图像到其他图像"></a>复制和粘贴图像到其他图像</h3><ul>
+<li>copy()</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+picall <span class="token operator">=</span> Image<span class="token punctuation">.</span>open<span class="token punctuation">(</span><span class="token string">'lazyimg.jpg'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 打开图片</span>
+
+catimgall <span class="token operator">=</span> picall<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 获取到拷贝</span>
+
+cropimg <span class="token operator">=</span> Image<span class="token punctuation">.</span>open<span class="token punctuation">(</span><span class="token string">'裁剪.png'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 获取到裁剪的图片</span>
+
+catimgall<span class="token punctuation">.</span>paste<span class="token punctuation">(</span>cropimg<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+catimgall<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'新的图片.png'</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>paste()粘贴</li>
+</ul>
 <blockquote>
-<p>to 表示要跳转的路径信息,from 表示从哪里来的,next 表示路由控制的参数,通过与否</p>
+<p>特别注意的就是 paste 是在原图上粘贴复制 修改原图,所以使用前一定要先拷贝一份</p>
 </blockquote>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+picall <span class="token operator">=</span> Image<span class="token punctuation">.</span>open<span class="token punctuation">(</span><span class="token string">'lazyimg.jpg'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 打开图片</span>
+
+catimgall <span class="token operator">=</span> picall<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 获取到拷贝</span>
+
+cropimg <span class="token operator">=</span> Image<span class="token punctuation">.</span>open<span class="token punctuation">(</span><span class="token string">'裁剪.png'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 获取到裁剪的图片</span>
+
+catimgall<span class="token punctuation">.</span>paste<span class="token punctuation">(</span>cropimg<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+catimgall<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'新的图片.png'</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="调整图片大小"><a href="#调整图片大小" class="headerlink" title="调整图片大小"></a>调整图片大小</h3><ul>
+<li>resize() 方法 里面传递的必须是元祖</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+picall <span class="token operator">=</span> Image<span class="token punctuation">.</span>open<span class="token punctuation">(</span><span class="token string">'lazyimg.jpg'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 打开图片</span>
+
+width <span class="token operator">=</span> picall<span class="token punctuation">.</span>size<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>   <span class="token comment" spellcheck="true"># 宽度</span>
+
+height <span class="token operator">=</span> picall<span class="token punctuation">.</span>size<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 高度</span>
+
+
+picall_item <span class="token operator">=</span> picall<span class="token punctuation">.</span>resize<span class="token punctuation">(</span><span class="token punctuation">(</span>int<span class="token punctuation">(</span>width<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> int<span class="token punctuation">(</span>height<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+picall_item<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">"缩小版本.png"</span><span class="token punctuation">)</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="旋转和翻转图像"><a href="#旋转和翻转图像" class="headerlink" title="旋转和翻转图像"></a>旋转和翻转图像</h3><ul>
+<li>rotate()</li>
+</ul>
 <blockquote>
-<p>代码如下</p>
+<p>旋转后宽度和高度肯定变了,这个时候如果需要填充像素就需要加入 expand=True</p>
 </blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript">router<span class="token punctuation">.</span><span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>to<span class="token punctuation">,</span> <span class="token keyword">from</span><span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  <span class="token comment" spellcheck="true">// 设置延时器让created先执行在进行路由跳转</span>
-  <span class="token comment" spellcheck="true">// 取出token值</span>
-  <span class="token keyword">let</span> value <span class="token operator">=</span> storgeMemery<span class="token punctuation">.</span><span class="token function">getvalue</span><span class="token punctuation">(</span><span class="token string">'token'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 取出来token</span>
-  <span class="token function">setTimeout</span><span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">// 判断该路由是否需要登录权限</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>to<span class="token punctuation">.</span>name <span class="token operator">===</span> <span class="token string">'Login'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-          path<span class="token punctuation">:</span> <span class="token string">'/login'</span><span class="token punctuation">,</span>
-          query<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            redirect<span class="token punctuation">:</span> to<span class="token punctuation">.</span>fullPath
-          <span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// 将跳转的路由path作为参数，登录成功后跳转到该路由</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="2-单个路由下配置"><a href="#2-单个路由下配置" class="headerlink" title="(2) 单个路由下配置"></a>(2) 单个路由下配置</h2><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
-      path<span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
-      name<span class="token punctuation">:</span> <span class="token string">'HelloWorld'</span><span class="token punctuation">,</span>
-      components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token keyword">default</span><span class="token punctuation">:</span> HelloWorld<span class="token punctuation">,</span>
-        left<span class="token punctuation">:</span> Hi1<span class="token punctuation">,</span>
-        right<span class="token punctuation">:</span> Hi2<span class="token punctuation">,</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-beforeEnter<span class="token punctuation">:</span><span class="token punctuation">(</span>to<span class="token punctuation">,</span><span class="token keyword">from</span><span class="token punctuation">,</span>next<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"我进来了"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>to<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">from</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="3-组件里面写钩子函数-beforeRouterEnter-beforeRouterLeave"><a href="#3-组件里面写钩子函数-beforeRouterEnter-beforeRouterLeave" class="headerlink" title="(3)组件里面写钩子函数 beforeRouterEnter,beforeRouterLeave"></a>(3)组件里面写钩子函数 beforeRouterEnter,beforeRouterLeave</h2><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-      name<span class="token punctuation">:</span><span class="token string">"Hi2"</span><span class="token punctuation">,</span>
-      <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-         <span class="token keyword">return</span> <span class="token punctuation">{</span>
-           message2<span class="token punctuation">:</span><span class="token string">"这个就是Hi2页面"</span>
-         <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-beforeRouterEnter<span class="token punctuation">:</span><span class="token punctuation">(</span>to<span class="token punctuation">,</span><span class="token keyword">from</span><span class="token punctuation">,</span>next<span class="token punctuation">)</span><span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"我进来了"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">.</span>
-beforeRouterLeave<span class="token punctuation">:</span><span class="token punctuation">(</span>to<span class="token punctuation">,</span>form<span class="token punctuation">,</span>next<span class="token punctuation">)</span><span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"我离开了"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+picall <span class="token operator">=</span> Image<span class="token punctuation">.</span>open<span class="token punctuation">(</span><span class="token string">'lazyimg.jpg'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 打开图片</span>
+
+picall<span class="token punctuation">.</span>rotate<span class="token punctuation">(</span><span class="token number">90</span><span class="token punctuation">,</span> expand<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'lazyimg222.jpg'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 旋转 90deg</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="更改单个像素"><a href="#更改单个像素" class="headerlink" title="更改单个像素"></a>更改单个像素</h3><ul>
+<li>单个像素的颜色可以通过 getpixel()和 putpixel()方法他们都接受一个元祖.表示像素 x 和 y 的坐标</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> ImageColor
+
+im <span class="token operator">=</span> Image<span class="token punctuation">.</span>new<span class="token punctuation">(</span><span class="token string">'RGBA'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+im<span class="token punctuation">.</span>getpixel<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> x <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> y <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        im<span class="token punctuation">.</span>putpixel<span class="token punctuation">(</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">210</span><span class="token punctuation">,</span> <span class="token number">210</span><span class="token punctuation">,</span> <span class="token number">210</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> n <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> m <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        im<span class="token punctuation">.</span>putpixel<span class="token punctuation">(</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">,</span> ImageColor<span class="token punctuation">.</span>getcolor<span class="token punctuation">(</span><span class="token string">'black'</span><span class="token punctuation">,</span> <span class="token string">'RGBA'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+im<span class="token punctuation">.</span>getpixel<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+im<span class="token punctuation">.</span>getpixel<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+im<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'画图.png'</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -668,7 +694,7 @@ beforeRouterLeave<span class="token punctuation">:</span><span class="token punc
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2019/11/09/vueba/">https://jsopy.gitee.io/2019/11/09/vueba/</a>
+                    <a href="https://jsopy.gitee.io/2020/02/15/pythonresult17/">https://jsopy.gitee.io/2020/02/15/pythonresult17/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -706,12 +732,8 @@ beforeRouterLeave<span class="token punctuation">:</span><span class="token punc
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Javascript/">
-                                    <span class="chip bg-color">Javascript</span>
-                                </a>
-                            
-                                <a href="/tags/Vue/">
-                                    <span class="chip bg-color">Vue</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -752,50 +774,48 @@ beforeRouterLeave<span class="token punctuation">:</span><span class="token punc
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/11/10/axios/">
+                <a href="/2020/02/15/pythonresult17/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="axios">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Python 操作图像">
                         
-                        <span class="card-title">axios</span>
+                        <span class="card-title">Python 操作图像</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文主要是记录axios的学习
+                            本系列主要是学Python的复习笔记
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/axios/" class="post-category">
-                                    axios
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/axios/">
-                        <span class="chip bg-color">axios</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -809,31 +829,31 @@ beforeRouterLeave<span class="token punctuation">:</span><span class="token punc
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/08/vueqi/">
+                <a href="/2020/02/14/pythonresult16/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="vue学记笔记(七) Vue路由">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="多线程(了解)和打开其他应用程序">
                         
-                        <span class="card-title">vue学记笔记(七) Vue路由</span>
+                        <span class="card-title">多线程(了解)和打开其他应用程序</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文就是记录Vue里面的路由
+                            本系列主要是学Python的复习笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue/" class="post-category">
-                                    Vue
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
@@ -843,12 +863,8 @@ beforeRouterLeave<span class="token punctuation">:</span><span class="token punc
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>

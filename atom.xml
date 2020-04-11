@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-09T13:39:30.322Z</updated>
+  <updated>2020-04-11T00:22:47.806Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 操作图像</title>
+    <link href="https://jsopy.gitee.io/2020/02/15/pythonresult17/"/>
+    <id>https://jsopy.gitee.io/2020/02/15/pythonresult17/</id>
+    <published>2020-02-15T13:26:47.000Z</published>
+    <updated>2020-04-11T00:22:47.806Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python-操作图像&quot;&gt;&lt;a href=&quot;#Python-操作图像&quot; class=&quot;headerlink&quot; title=&quot;Python 操作图像&quot;&gt;&lt;/a&gt;Python
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>多线程(了解)和打开其他应用程序</title>
@@ -470,7 +497,7 @@
     <link href="https://jsopy.gitee.io/2020/01/29/pythonresultall/"/>
     <id>https://jsopy.gitee.io/2020/01/29/pythonresultall/</id>
     <published>2020-01-29T12:26:47.000Z</published>
-    <updated>2020-04-09T13:39:38.969Z</updated>
+    <updated>2020-04-11T00:24:20.676Z</updated>
     
     <summary type="html">
     
@@ -543,33 +570,6 @@
     
     
       <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>文件与异常和 JSON</title>
-    <link href="https://jsopy.gitee.io/2020/01/26/headinpython4/"/>
-    <id>https://jsopy.gitee.io/2020/01/26/headinpython4/</id>
-    <published>2020-01-26T13:26:47.000Z</published>
-    <updated>2020-04-09T13:35:15.946Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;文件与异常和-JSON&quot;&gt;&lt;a href=&quot;#文件与异常和-JSON&quot; class=&quot;headerlink&quot; title=&quot;文件与异常和 JSON&quot;&gt;&lt;/a&gt;文件与异常和
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
     
   </entry>
   
