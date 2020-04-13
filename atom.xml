@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-12T13:54:02.110Z</updated>
+  <updated>2020-04-13T12:13:34.197Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql 基础(十一) 对查询结果进行排序</title>
+    <link href="https://jsopy.gitee.io/2020/02/19/mysqlbasic11/"/>
+    <id>https://jsopy.gitee.io/2020/02/19/mysqlbasic11/</id>
+    <published>2020-02-19T13:26:47.000Z</published>
+    <updated>2020-04-13T12:13:34.197Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;对查询结果进行排序&quot;&gt;&lt;a href=&quot;#对查询结果进行排序&quot; class=&quot;headerlink&quot; title=&quot;对查询结果进行排序&quot;&gt;&lt;/a&gt;对查询结果进行排序&lt;/h1&gt;&lt;h2 id=&quot;学习重点&quot;&gt;&lt;a href=&quot;#学习重点&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql 基础(十) 为聚合结果指定条件</title>
+    <link href="https://jsopy.gitee.io/2020/02/18/mysqlbasic10/"/>
+    <id>https://jsopy.gitee.io/2020/02/18/mysqlbasic10/</id>
+    <published>2020-02-18T13:26:47.000Z</published>
+    <updated>2020-04-13T12:13:06.211Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;为聚合结果指定条件&quot;&gt;&lt;a href=&quot;#为聚合结果指定条件&quot; class=&quot;headerlink&quot; title=&quot;为聚合结果指定条件&quot;&gt;&lt;/a&gt;为聚合结果指定条件&lt;/h1&gt;&lt;h2 id=&quot;学习重点&quot;&gt;&lt;a href=&quot;#学习重点&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Yarn学习笔记</title>
@@ -506,60 +560,6 @@
 &lt;p&gt;希望的灯一旦熄灭，生活刹那间变成了一片黑暗。——普列姆昌德&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python数据类型</title>
-    <link href="https://jsopy.gitee.io/2020/01/30/pythonresult1/"/>
-    <id>https://jsopy.gitee.io/2020/01/30/pythonresult1/</id>
-    <published>2020-01-30T13:26:47.000Z</published>
-    <updated>2020-04-12T03:47:15.954Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python-基础&quot;&gt;&lt;a href=&quot;#Python-基础&quot; class=&quot;headerlink&quot; title=&quot;Python 基础&quot;&gt;&lt;/a&gt;Python
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python学习汇总版本笔记</title>
-    <link href="https://jsopy.gitee.io/2020/01/29/pythonresultall/"/>
-    <id>https://jsopy.gitee.io/2020/01/29/pythonresultall/</id>
-    <published>2020-01-29T12:26:47.000Z</published>
-    <updated>2020-04-11T11:59:49.222Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;目录分类&quot;&gt;&lt;a href=&quot;#目录分类&quot; class=&quot;headerlink&quot; title=&quot;目录分类&quot;&gt;&lt;/a&gt;目录分类&lt;/h2&gt;&lt;h3 id=&quot;python-数据类型-一&quot;&gt;&lt;a href=&quot;#python-数据类型-一&quot;
         
       
     

@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Mysql 基础(十一) 对查询结果进行排序</title>
+      <link href="/2020/02/19/mysqlbasic11/"/>
+      <url>/2020/02/19/mysqlbasic11/</url>
+      
+        <content type="html"><![CDATA[<h1 id="对查询结果进行排序"><a href="#对查询结果进行排序" class="headerlink" title="对查询结果进行排序"></a>对查询结果进行排序</h1><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul><li><p>ORDER BY 子句对查询结果进行排序</p></li><li><p>在 ORDER BY 子句中列名的后面使用关键字 ASC 可以进行升序排列,使用 DESC 关键字可以降序排列</p></li><li><p>ORDER BY 子句中可以指定多个排序键</p></li><li><p>排序键中包含 NULL 时,会在开头或者末尾进行汇总</p></li><li><p>ORDER BY 子句中可以使用 SELECT 子句中定义的列的别名</p></li><li><p>ORDER BY 子句中可以使用 SELECT 子句中未出现的列或者聚合函数</p></li><li><p>ORDER BY 子句中不能使用列的编号</p></li></ul><h2 id="ORDER-BY-子句"><a href="#ORDER-BY-子句" class="headerlink" title="ORDER BY 子句"></a>ORDER BY 子句</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT <列名1>,<列名2>,<列名3>....FROM <表名>ORDER BY <排序基准列1>,<排序基准列2><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="子句的书写顺序"><a href="#子句的书写顺序" class="headerlink" title="子句的书写顺序"></a>子句的书写顺序</h3><p>SELECT 子句-&gt; FROM 子句 -&gt; WHERE 子句 -&gt; GROUP BY 子句 -&gt; HAVING 子句 -&gt; ORDER BY 子句</p><blockquote><p>ORDER BY 通常写在 SELECT 语句的末尾</p></blockquote><h3 id="指定升序或者降序"><a href="#指定升序或者降序" class="headerlink" title="指定升序或者降序"></a>指定升序或者降序</h3><p>与上述示例相反 想要按照销售单价由高到低,也就是降序排列时,在列的名字后面使用 DESC 关键字</p><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id,product_name,sale_price,purchase_priceFROM productORDER BY sale_price DESC;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>未指定 ORDER BY 子句中排列顺序会默认以升序进行排列</li></ul><h3 id="指定多个排序键"><a href="#指定多个排序键" class="headerlink" title="指定多个排序键"></a>指定多个排序键</h3><ul><li>当多个排序 他优先使用最左侧的键,如果该列存在相同的值 在参考右边的值</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id,product_name,sale_price,purchase_priceFROM productORDER BY sale_price,product_id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这样的话 它是先按照 sale_price 排序 如果相等的话他在按照 product_id 排序</p><h3 id="NULL-的顺序"><a href="#NULL-的顺序" class="headerlink" title="NULL 的顺序"></a>NULL 的顺序</h3><p>当排序的键存在 NULL 值的时候,Mysql 一般都会在结果的开头或者末尾汇总</p><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id, product_name, sale_price, purchase_priceFROM ProductORDER BY purchase_price;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><ul><li>结果，NULL 结果不在头就在尾</li></ul><table><thead><tr><th>product_id</th><th>product_name</th><th>sale_price</th><th>purchase_price</th></tr></thead><tbody><tr><td>0002</td><td>打孔器</td><td>500</td><td>320</td></tr><tr><td>0001</td><td>T 恤衫</td><td>1000</td><td>500</td></tr><tr><td>0007</td><td>擦菜板</td><td>880</td><td>790</td></tr><tr><td>0003</td><td>运动 T 恤</td><td>4000</td><td>2800</td></tr><tr><td>0004</td><td>菜刀</td><td>3000</td><td>2800</td></tr><tr><td>0005</td><td>高压锅</td><td>6800</td><td>5000</td></tr><tr><td>0006</td><td>叉子</td><td>500</td><td></td></tr><tr><td>0008</td><td>圆珠笔</td><td>100</td><td></td></tr></tbody></table><h3 id="在排序中使用显示用的别名"><a href="#在排序中使用显示用的别名" class="headerlink" title="在排序中使用显示用的别名"></a>在排序中使用显示用的别名</h3><ul><li>GROUP BY 不能使用别名 ORDER BY 可以使用别名</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id AS id, product_name, sale_price AS sp, purchase_priceFROM ProductORDER BY sp, id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>结果</li></ul><table><thead><tr><th>id</th><th>product_name</th><th>sp</th><th>purchase_price</th></tr></thead><tbody><tr><td>0008</td><td>圆珠笔</td><td>100</td><td>NULL</td></tr><tr><td>0002</td><td>打孔器</td><td>500</td><td>320</td></tr><tr><td>0006</td><td>叉子</td><td>500</td><td>NULL</td></tr><tr><td>0007</td><td>擦菜板</td><td>880</td><td>790</td></tr><tr><td>0001</td><td>T 恤衫</td><td>1000</td><td>500</td></tr><tr><td>0009</td><td>筷子</td><td>2800</td><td>2800</td></tr><tr><td>0004</td><td>菜刀</td><td>3000</td><td>2800</td></tr><tr><td>0003</td><td>运动 T 恤</td><td>4000</td><td>2800</td></tr><tr><td>0005</td><td>高压锅</td><td>6800</td><td>5000</td></tr></tbody></table><h3 id="ORDER-BY-子句中可以使用不查询的列和聚合函数"><a href="#ORDER-BY-子句中可以使用不查询的列和聚合函数" class="headerlink" title="ORDER BY 子句中可以使用不查询的列和聚合函数"></a>ORDER BY 子句中可以使用不查询的列和聚合函数</h3><blockquote><p>Order BY 子句中也可以使用存在于表中,但并不包含在 select 子句中的列</p></blockquote><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_name, sale_price, purchase_priceFROM ProductORDER BY product_id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><ul><li>也可以使用聚合函数</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_type, COUNT(*) FROM Product GROUP BY product_typeORDER BY COUNT(*);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mysql 基础(十) 为聚合结果指定条件</title>
+      <link href="/2020/02/18/mysqlbasic10/"/>
+      <url>/2020/02/18/mysqlbasic10/</url>
+      
+        <content type="html"><![CDATA[<h1 id="为聚合结果指定条件"><a href="#为聚合结果指定条件" class="headerlink" title="为聚合结果指定条件"></a>为聚合结果指定条件</h1><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul><li><p>使用 COUNT 函数等对表中数据进行汇总操作的时候,为其指定条件的不是 WHERE 子句,而是 Having 子句</p></li><li><p>聚合函数可以在 SELECT 子句,HAVING 子句和 ORDER BY 子句中使用</p></li><li><p>HAVING 子句要写在 GROUP BY 子句之后</p></li><li><p>WHERE 子句 用来指定数据行的条件 HAVING 子句用来指定分组的条件</p></li></ul><h2 id="Having-子句"><a href="#Having-子句" class="headerlink" title="Having 子句"></a>Having 子句</h2><ul><li>Having 子句是用来和 Group BY 子句一起配套使用,它是用来帮助 GROUP BY 在分组的</li></ul><blockquote><p>Having 子句必须要写在 GroupBy 子句的后面</p></blockquote><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT <列名1>,<列名2>,<列名3> ....FROM  <表名>GROUP BY <列名1>,<列名2>,<列名3>Having <分组结果的对应条件><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="使用-Having-子句的时候-SELECT-顺序是这样的"><a href="#使用-Having-子句的时候-SELECT-顺序是这样的" class="headerlink" title="使用 Having 子句的时候 SELECT 顺序是这样的"></a>使用 Having 子句的时候 SELECT 顺序是这样的</h3><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT-> FROM -> WHERE-> GROUP BY -> HAVING<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_type,COUNT(*) FROM Product GROUP BY product_type HAVING COUNT(*) = 2;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>Having 是对 GROUP BY 的 第二次筛选，筛选出符合条件的</p><h3 id="HAVING-子句的构成要素"><a href="#HAVING-子句的构成要素" class="headerlink" title="HAVING 子句的构成要素"></a>HAVING 子句的构成要素</h3><p>Having 子句能够使用的三种要素如下:</p><ul><li><p>常数</p></li><li><p>聚合函数</p></li><li><p>GROUP BY 子句中指定的列名(聚合键)</p></li></ul><p>比如下面的就是错误的示范</p><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_type,COUNT(*) FROM Product GROUP BY product_type HAVING product_name = '打孔器'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>因为 product_type COUNT(*)根本没有 product_name 这个列 所以这样查询根本出不来,会直接报错</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Yarn学习笔记</title>
       <link href="/2020/02/17/yarn/"/>
       <url>/2020/02/17/yarn/</url>
