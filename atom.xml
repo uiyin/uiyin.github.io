@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-13T12:13:34.197Z</updated>
+  <updated>2020-04-14T12:54:14.935Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql 基础(十二) 数据的更新</title>
+    <link href="https://jsopy.gitee.io/2020/02/20/mysqlbasic12/"/>
+    <id>https://jsopy.gitee.io/2020/02/20/mysqlbasic12/</id>
+    <published>2020-02-20T13:26:47.000Z</published>
+    <updated>2020-04-14T12:54:14.935Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;数据的更新&quot;&gt;&lt;a href=&quot;#数据的更新&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Mysql 基础(十一) 对查询结果进行排序</title>
@@ -530,36 +557,6 @@
         
         
           &lt;h1 id=&quot;模块&quot;&gt;&lt;a href=&quot;#模块&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python中的if和循环</title>
-    <link href="https://jsopy.gitee.io/2020/01/31/pythonresult2/"/>
-    <id>https://jsopy.gitee.io/2020/01/31/pythonresult2/</id>
-    <published>2020-01-31T13:26:47.000Z</published>
-    <updated>2020-04-09T13:37:32.139Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;控制流&quot;&gt;&lt;a href=&quot;#控制流&quot; class=&quot;headerlink&quot; title=&quot;控制流&quot;&gt;&lt;/a&gt;控制流&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;希望的灯一旦熄灭，生活刹那间变成了一片黑暗。——普列姆昌德&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2
         
       
     
