@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-19T10:38:32.656Z</updated>
+  <updated>2020-04-19T14:13:37.308Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql函数</title>
+    <link href="https://jsopy.gitee.io/2020/02/24/mysqlbasic14/"/>
+    <id>https://jsopy.gitee.io/2020/02/24/mysqlbasic14/</id>
+    <published>2020-02-24T12:26:47.000Z</published>
+    <updated>2020-04-19T14:13:37.308Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Mysql-中各种各样的函数&quot;&gt;&lt;a href=&quot;#Mysql-中各种各样的函数&quot; class=&quot;headerlink&quot; title=&quot;Mysql 中各种各样的函数&quot;&gt;&lt;/a&gt;Mysql 中各种各样的函数&lt;/h1&gt;&lt;h2 id=&quot;学习重点&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 集合</title>
@@ -526,33 +553,6 @@
         
           &lt;h2 id=&quot;字典&quot;&gt;&lt;a href=&quot;#字典&quot; class=&quot;headerlink&quot; title=&quot;字典&quot;&gt;&lt;/a&gt;字典&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;简单来说 字典类似对象。字典是一系列
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>列表和元组</title>
-    <link href="https://jsopy.gitee.io/2020/02/04/pythonresult6/"/>
-    <id>https://jsopy.gitee.io/2020/02/04/pythonresult6/</id>
-    <published>2020-02-04T13:26:47.000Z</published>
-    <updated>2020-04-09T13:38:09.903Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python-———-列表&quot;&gt;&lt;a href=&quot;#Python-———-列表&quot; class=&quot;headerlink&quot; title=&quot;Python ——— 列表&quot;&gt;&lt;/a&gt;Python ———
         
       
     
