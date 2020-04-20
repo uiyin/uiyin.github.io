@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-19T14:13:37.308Z</updated>
+  <updated>2020-04-20T13:58:48.725Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql CASE 表达式</title>
+    <link href="https://jsopy.gitee.io/2020/02/26/mysqlbasic16/"/>
+    <id>https://jsopy.gitee.io/2020/02/26/mysqlbasic16/</id>
+    <published>2020-02-26T12:26:47.000Z</published>
+    <updated>2020-04-20T13:58:48.725Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;CASE-表达式-用的比较少&quot;&gt;&lt;a href=&quot;#CASE-表达式-用的比较少&quot; class=&quot;headerlink&quot; title=&quot;CASE 表达式(用的比较少)&quot;&gt;&lt;/a&gt;CASE
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql 谓词</title>
+    <link href="https://jsopy.gitee.io/2020/02/25/mysqlbasic15/"/>
+    <id>https://jsopy.gitee.io/2020/02/25/mysqlbasic15/</id>
+    <published>2020-02-25T12:26:47.000Z</published>
+    <updated>2020-04-20T13:57:56.439Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;谓词&quot;&gt;&lt;a href=&quot;#谓词&quot; class=&quot;headerlink&quot; title=&quot;谓词&quot;&gt;&lt;/a&gt;谓词&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;你想成为幸福的人吗？但愿你首先学会吃得起苦。——屠格涅夫&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Mysql函数</title>
@@ -498,61 +555,6 @@
 &lt;p&gt;我们唯一不会改正的缺点是软弱。——拉罗什福科&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模式匹配和正则表达式</title>
-    <link href="https://jsopy.gitee.io/2020/02/06/pythonresult8/"/>
-    <id>https://jsopy.gitee.io/2020/02/06/pythonresult8/</id>
-    <published>2020-02-06T13:26:47.000Z</published>
-    <updated>2020-04-09T13:38:29.841Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;正则表达式&quot;&gt;&lt;a href=&quot;#正则表达式&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字典和结构化数据</title>
-    <link href="https://jsopy.gitee.io/2020/02/05/pythonresult7/"/>
-    <id>https://jsopy.gitee.io/2020/02/05/pythonresult7/</id>
-    <published>2020-02-05T13:26:47.000Z</published>
-    <updated>2020-04-09T13:38:18.149Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;字典&quot;&gt;&lt;a href=&quot;#字典&quot; class=&quot;headerlink&quot; title=&quot;字典&quot;&gt;&lt;/a&gt;字典&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;简单来说 字典类似对象。字典是一系列
         
       
     
