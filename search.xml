@@ -4,7 +4,57 @@
   
     
     <entry>
-      <title>Mysql CASE 表达式</title>
+      <title>Mysql 联结(以列为单位对表进行联结)</title>
+      <link href="/2020/02/28/mysqlbasic18/"/>
+      <url>/2020/02/28/mysqlbasic18/</url>
+      
+        <content type="html"><![CDATA[<h1 id="联结-以列为单位对表进行联结"><a href="#联结-以列为单位对表进行联结" class="headerlink" title="联结(以列为单位对表进行联结)"></a>联结(以列为单位对表进行联结)</h1><h2 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h2><ul><li><p>联结(JOIN)就是将其他表中的列添加过来,进行添加列的集合运算</p></li><li><p>UNION 是增减行数,JOIN 是增减列数</p></li><li><p>联结大体上分为内联结和外联结两种</p></li></ul><h3 id="什么是联结"><a href="#什么是联结" class="headerlink" title="什么是联结"></a>什么是联结</h3><p>简单来说就就是将其他表中的列添加过来,所以使用联结就可以从多张表(3 张以上的表也没关系)选取数据</p><h3 id="内联结"><a href="#内联结" class="headerlink" title="内联结"></a>内联结</h3><ul><li>INNER JOIN</li></ul><p>简单来说就是 两张表只有 product_id 是相同的,其他的都不相同.这时候需要把两个表联结起来,获取到两个表中的所有列</p><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT SP.shop_id, SP.shop_name, SP.product_id, P.product_name,P.sale_priceFROM ShopProduct AS SP INNER JOIN Product AS P ON SP.product_id = P.product_id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h4 id="内联结的要点-1-FROM-子句"><a href="#内联结的要点-1-FROM-子句" class="headerlink" title="内联结的要点 1:FROM 子句"></a>内联结的要点 1:FROM 子句</h4><pre class="line-numbers language-mysql"><code class="language-mysql">FROM ShopProduct AS SP INNER JOIN Product AS P<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>使用关键字 INNER JOIN 就可以将两张表联结在在一起了,SP 和 P 分别是这两张表的别名,但是别名并不是必须的,它只是为了好读</p><h4 id="内联结的要点-2-ON-子句"><a href="#内联结的要点-2-ON-子句" class="headerlink" title="内联结的要点 2:ON 子句"></a>内联结的要点 2:ON 子句</h4><ul><li>第二点 ON 后面的联结条件</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">ON SP.product_id = P.product_id<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><blockquote><p>我们可以在 ON 之后指定两张表联结所使用的列(联结键) ON 是专门指定联结条件的在进行内联结的时候 ON 必不可少 并且要书写在 FROM 和 WHERE 之间</p></blockquote><h4 id="内联结的要点-3-SELECT-子句"><a href="#内联结的要点-3-SELECT-子句" class="headerlink" title="内联结的要点 3:SELECT 子句"></a>内联结的要点 3:SELECT 子句</h4><ul><li>在 SELECT 子句中指定的列</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT SP.shop_id, SP.shop_name, SP.product_id, P.product_name,P.sale_price<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><blockquote><p>使用联结的时候 SELECT 子句中的列需要按照”&lt;表的别名&gt;.&lt;列名&gt;” 的格式进行书写</p></blockquote><h4 id="内联结和-WHERE-子句结合使用"><a href="#内联结和-WHERE-子句结合使用" class="headerlink" title="内联结和 WHERE 子句结合使用"></a>内联结和 WHERE 子句结合使用</h4><ul><li>比如</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT SP.shop_id, SP.shop_name, SP.product_id, P.product_name, P.sale_priceFROM ShopProduct AS SP INNER JOIN Product AS P ①ON SP.product_id = P.product_idWHERE SP.shop_id = '000A';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>可以理解为将联结之后的结果想象为新创建出来的一张表,对这张表使用 WHERE 子句.当然这样表只是在 SELECT 执行时候存在 要是以后想用的话还是将他创建成视图。</p></blockquote><h3 id="外联结-–-OUTER-JOIN"><a href="#外联结-–-OUTER-JOIN" class="headerlink" title="外联结 – OUTER JOIN"></a>外联结 – OUTER JOIN</h3><ul><li><p>内联结只能选取出同时存在两张表中的数据,如果第一张表内的数据 null 它则不会出现</p></li><li><p>外联结就是获取全部的数据 两张表的并集(外链接用的多)</p></li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT SP.shop_id, SP.shop_name, SP.product_id, P.product_name, P.sale_priceFROM ShopProduct AS SP RIGHT OUTER JOIN Product AS P ①ON SP.product_id = P.product_id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="外联结要点"><a href="#外联结要点" class="headerlink" title="外联结要点"></a>外联结要点</h4><ul><li><p>主表就是你需要数据多的表</p></li><li><p>哪张表是主表,最终的结果中包含主表所有的数据指定主表的关键字是 LEFT 和 RIGHT</p></li></ul><p>顾名思义使用 LEFT 时 FROM 子句中写在左侧的就是主表,使用 Right 时候右侧就是主表</p><ul><li>下面这个就是右边表是主表</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT SP.shop_id, SP.shop_name, SP.product_id, P.product_name, P.sale_priceFROM ShopProduct AS SP RIGHT OUTER JOIN Product AS P ①ON SP.product_id = P.product_id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mysql 表的加减法</title>
+      <link href="/2020/02/27/mysqlbasic17/"/>
+      <url>/2020/02/27/mysqlbasic17/</url>
+      
+        <content type="html"><![CDATA[<h1 id="表的加减法"><a href="#表的加减法" class="headerlink" title="表的加减法"></a>表的加减法</h1><blockquote><p>抛弃时间的人，时间也抛弃他。——莎士比亚</p></blockquote><h2 id="表的加减法-1"><a href="#表的加减法-1" class="headerlink" title="表的加减法"></a>表的加减法</h2><h3 id="学习重点"><a href="#学习重点" class="headerlink" title="学习重点"></a>学习重点</h3><ul><li><p>集合运算就是对满足同一规则的记录进行的加减等四则运算</p></li><li><p>使用 UNION(并集),INTERSECT(交集),EXCEPT(差集)等集合运算符来进行集合运算</p></li><li><p>集合运算可以去除重复行</p></li><li><p>如果希望集合运算符保留重复行,就需要使用 ALL 选项</p></li></ul><h3 id="什么是集合运算"><a href="#什么是集合运算" class="headerlink" title="什么是集合运算"></a>什么是集合运算</h3><ul><li><p>集合运算就是对满足同一规则的记录进行的加减等四则运算.</p></li><li><p>通过集合运算,可以得到两张表中记录的集合或者公共记录的集合</p></li></ul><h3 id="集合运算的注意事项"><a href="#集合运算的注意事项" class="headerlink" title="集合运算的注意事项"></a>集合运算的注意事项</h3><ul><li>作为运算对象的记录的列数必须相同</li></ul><p>如果一部分包含 2 列,另一部分包含 3 列就会发生错误,无法进行加法运算</p><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id,product_name FROM Product UNION SELECT product_id,product_name,sale_price FROM Product2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>作为运算对象的记录中列的类型必须一致</li></ul><p>从左侧开始,相同位置上的列必须是同一数据类型.例如下面的 SQL 语句.虽然列数相同,但是第 2 列的数据类型并不一致(一个数值类型,一个是日期类型),所以会发生错误</p><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id, sale_priceFROM ProductUNIONSELECT product_id, regist_dateFROM Product2;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>列数 类型 必须一致</p></blockquote><ul><li>可以使用任何 SELECT 语句,但是 ORDER BY 子句只能在最后使用一次</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id,product_name FROM Product WHERE product_type='厨房用具' UNION SELECT product_id,product_name FROM Product2 WHERE product_type='厨房用具' ORDER BY product_id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="表的加法-并集"><a href="#表的加法-并集" class="headerlink" title="表的加法(并集)"></a>表的加法(并集)</h3><ul><li><p>两张表的结果合并在一起</p></li><li><p>实例</p></li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id,product_name FROM Product UNION SELECT product_id,product_name FROM Product2;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><blockquote><p>比如两个表中有重复的元素,UNION 会除去重复的记录</p></blockquote><h3 id="包含重复行的集合运算—-ALL-选项"><a href="#包含重复行的集合运算—-ALL-选项" class="headerlink" title="包含重复行的集合运算—-ALL 选项"></a>包含重复行的集合运算—-ALL 选项</h3><ul><li>语法保留重复行 UNION ALL</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id, product_nameFROM ProductUNION ALLSELECT product_id, product_nameFROM Product2;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这样的 Product 和 Product2 里面的重复行就都会出来</p><blockquote><p>在集合运算符中使用 ALL ，可以保留重复行</p></blockquote><h3 id="表的交集"><a href="#表的交集" class="headerlink" title="表的交集"></a>表的交集</h3><ul><li>INTERSECT (用法同 UNION 一样)</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id, product_nameFROM ProductINTERSECTSELECT product_id, product_nameFROM Product2ORDER BY product_id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>求表的交集,选取出公共记录,当然希望保留重复行时同样需要使用 INTERSECT ALL</p></blockquote><h3 id="记录的减法-求差集-——-EXCEPT"><a href="#记录的减法-求差集-——-EXCEPT" class="headerlink" title="记录的减法(求差集)—— EXCEPT"></a>记录的减法(求差集)—— EXCEPT</h3><ul><li>EXCEPT (其语法与 UNION)相同</li></ul><pre class="line-numbers language-mysql"><code class="language-mysql">SELECT product_id, product_nameFROM ProductEXCEPTSELECT product_id, product_nameFROM Product2ORDER BY product_id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>它的意思就是从 Product 中除去和 Product2 相同的部分</p></blockquote><p>特别注意的就是</p><blockquote><p>减法的位置写的不一样,结果也不一样 4-2 和 2-4 结果不一样</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mysql CASE 表达式(用的比较少)</title>
       <link href="/2020/02/26/mysqlbasic16/"/>
       <url>/2020/02/26/mysqlbasic16/</url>
       
@@ -29,7 +79,7 @@
     
     
     <entry>
-      <title>Mysql 谓词</title>
+      <title>Mysql谓词</title>
       <link href="/2020/02/25/mysqlbasic15/"/>
       <url>/2020/02/25/mysqlbasic15/</url>
       
@@ -54,7 +104,7 @@
     
     
     <entry>
-      <title>Mysql函数</title>
+      <title>Mysql 中各种各样的函数</title>
       <link href="/2020/02/24/mysqlbasic14/"/>
       <url>/2020/02/24/mysqlbasic14/</url>
       
@@ -1108,7 +1158,7 @@
       <link href="/2020/01/13/mysqlall/"/>
       <url>/2020/01/13/mysqlall/</url>
       
-        <content type="html"><![CDATA[<h2 id="目录分类"><a href="#目录分类" class="headerlink" title="目录分类"></a>目录分类</h2><h3 id="什么是数据库-一"><a href="#什么是数据库-一" class="headerlink" title="什么是数据库(一)"></a><a href="https://jsopy.gitee.io/2020/01/14/mysqlbasic1/">什么是数据库(一)</a></h3><h3 id="数据库的结构-二"><a href="#数据库的结构-二" class="headerlink" title="数据库的结构(二)"></a><a href="https://jsopy.gitee.io/2020/01/15/mysqlbasic2/">数据库的结构(二)</a></h3><h3 id="SQL-概要-三"><a href="#SQL-概要-三" class="headerlink" title="SQL 概要(三)"></a><a href="https://jsopy.gitee.io/2020/01/16/mysqlbasic3/">SQL 概要(三)</a></h3><h3 id="表的创建-四"><a href="#表的创建-四" class="headerlink" title="表的创建(四)"></a><a href="https://jsopy.gitee.io/2020/01/17/mysqlbasic4/">表的创建(四)</a></h3><h3 id="表的删除和更新-五"><a href="#表的删除和更新-五" class="headerlink" title="表的删除和更新(五)"></a><a href="https://jsopy.gitee.io/2020/01/18/mysqlbasic5/">表的删除和更新(五)</a></h3><h3 id="SELECT-语句基础-六"><a href="#SELECT-语句基础-六" class="headerlink" title="SELECT 语句基础(六)"></a><a href="https://jsopy.gitee.io/2020/01/19/mysqlbasic6/">SELECT 语句基础(六)</a></h3><h3 id="算术预算符和比较运算符-七"><a href="#算术预算符和比较运算符-七" class="headerlink" title="算术预算符和比较运算符(七)"></a><a href="https://jsopy.gitee.io/2020/01/20/mysqlbasic7/">算术预算符和比较运算符(七)</a></h3><h3 id="聚合和排序-八"><a href="#聚合和排序-八" class="headerlink" title="聚合和排序(八)"></a><a href="https://jsopy.gitee.io/2020/01/25/mysqlbasic8/">聚合和排序(八)</a></h3><h3 id="表进行分组-九"><a href="#表进行分组-九" class="headerlink" title="表进行分组(九)"></a><a href="https://jsopy.gitee.io/2020/01/27/mysqlbasic9/">表进行分组(九)</a></h3><h3 id="为聚合结果指定条件-十"><a href="#为聚合结果指定条件-十" class="headerlink" title="为聚合结果指定条件(十)"></a><a href="https://jsopy.gitee.io/2020/02/18/mysqlbasic10/">为聚合结果指定条件(十)</a></h3><h3 id="对查询结果进行排序-十一"><a href="#对查询结果进行排序-十一" class="headerlink" title="对查询结果进行排序(十一)"></a><a href="https://jsopy.gitee.io/2020/02/19/mysqlbasic11/">对查询结果进行排序(十一)</a></h3><h3 id="数据的更新-十二"><a href="#数据的更新-十二" class="headerlink" title="数据的更新(十二)"></a><a href="https://jsopy.gitee.io/2020/02/20/mysqlbasic12/">数据的更新(十二)</a></h3><h3 id="复杂查询-十三"><a href="#复杂查询-十三" class="headerlink" title="复杂查询(十三)"></a><a href="https://jsopy.gitee.io/2020/02/21/mysqlbasic13/">复杂查询(十三)</a></h3><h3 id="Mysql-中的函数-十四"><a href="#Mysql-中的函数-十四" class="headerlink" title="Mysql 中的函数(十四)"></a><a href="https://jsopy.gitee.io/2020/02/24/mysqlbasic14/">Mysql 中的函数(十四)</a></h3><h3 id="Mysql-中的谓词-十五"><a href="#Mysql-中的谓词-十五" class="headerlink" title="Mysql 中的谓词(十五)"></a><a href="https://jsopy.gitee.io/2020/02/25/mysqlbasic15/">Mysql 中的谓词(十五)</a></h3><h3 id="Mysql-CASE-表达式-十六"><a href="#Mysql-CASE-表达式-十六" class="headerlink" title="Mysql CASE 表达式(十六)"></a><a href="https://jsopy.gitee.io/2020/02/26/mysqlbasic16/">Mysql CASE 表达式(十六)</a></h3>]]></content>
+        <content type="html"><![CDATA[<h2 id="目录分类"><a href="#目录分类" class="headerlink" title="目录分类"></a>目录分类</h2><h3 id="什么是数据库-一"><a href="#什么是数据库-一" class="headerlink" title="什么是数据库(一)"></a><a href="https://jsopy.gitee.io/2020/01/14/mysqlbasic1/">什么是数据库(一)</a></h3><h3 id="数据库的结构-二"><a href="#数据库的结构-二" class="headerlink" title="数据库的结构(二)"></a><a href="https://jsopy.gitee.io/2020/01/15/mysqlbasic2/">数据库的结构(二)</a></h3><h3 id="SQL-概要-三"><a href="#SQL-概要-三" class="headerlink" title="SQL 概要(三)"></a><a href="https://jsopy.gitee.io/2020/01/16/mysqlbasic3/">SQL 概要(三)</a></h3><h3 id="表的创建-四"><a href="#表的创建-四" class="headerlink" title="表的创建(四)"></a><a href="https://jsopy.gitee.io/2020/01/17/mysqlbasic4/">表的创建(四)</a></h3><h3 id="表的删除和更新-五"><a href="#表的删除和更新-五" class="headerlink" title="表的删除和更新(五)"></a><a href="https://jsopy.gitee.io/2020/01/18/mysqlbasic5/">表的删除和更新(五)</a></h3><h3 id="SELECT-语句基础-六"><a href="#SELECT-语句基础-六" class="headerlink" title="SELECT 语句基础(六)"></a><a href="https://jsopy.gitee.io/2020/01/19/mysqlbasic6/">SELECT 语句基础(六)</a></h3><h3 id="算术预算符和比较运算符-七"><a href="#算术预算符和比较运算符-七" class="headerlink" title="算术预算符和比较运算符(七)"></a><a href="https://jsopy.gitee.io/2020/01/20/mysqlbasic7/">算术预算符和比较运算符(七)</a></h3><h3 id="聚合和排序-八"><a href="#聚合和排序-八" class="headerlink" title="聚合和排序(八)"></a><a href="https://jsopy.gitee.io/2020/01/25/mysqlbasic8/">聚合和排序(八)</a></h3><h3 id="表进行分组-九"><a href="#表进行分组-九" class="headerlink" title="表进行分组(九)"></a><a href="https://jsopy.gitee.io/2020/01/27/mysqlbasic9/">表进行分组(九)</a></h3><h3 id="为聚合结果指定条件-十"><a href="#为聚合结果指定条件-十" class="headerlink" title="为聚合结果指定条件(十)"></a><a href="https://jsopy.gitee.io/2020/02/18/mysqlbasic10/">为聚合结果指定条件(十)</a></h3><h3 id="对查询结果进行排序-十一"><a href="#对查询结果进行排序-十一" class="headerlink" title="对查询结果进行排序(十一)"></a><a href="https://jsopy.gitee.io/2020/02/19/mysqlbasic11/">对查询结果进行排序(十一)</a></h3><h3 id="数据的更新-十二"><a href="#数据的更新-十二" class="headerlink" title="数据的更新(十二)"></a><a href="https://jsopy.gitee.io/2020/02/20/mysqlbasic12/">数据的更新(十二)</a></h3><h3 id="复杂查询-十三"><a href="#复杂查询-十三" class="headerlink" title="复杂查询(十三)"></a><a href="https://jsopy.gitee.io/2020/02/21/mysqlbasic13/">复杂查询(十三)</a></h3><h3 id="Mysql-中的函数-十四"><a href="#Mysql-中的函数-十四" class="headerlink" title="Mysql 中的函数(十四)"></a><a href="https://jsopy.gitee.io/2020/02/24/mysqlbasic14/">Mysql 中的函数(十四)</a></h3><h3 id="Mysql-中的谓词-十五"><a href="#Mysql-中的谓词-十五" class="headerlink" title="Mysql 中的谓词(十五)"></a><a href="https://jsopy.gitee.io/2020/02/25/mysqlbasic15/">Mysql 中的谓词(十五)</a></h3><h3 id="Mysql-CASE-表达式-十六"><a href="#Mysql-CASE-表达式-十六" class="headerlink" title="Mysql CASE 表达式(十六)"></a><a href="https://jsopy.gitee.io/2020/02/26/mysqlbasic16/">Mysql CASE 表达式(十六)</a></h3><h3 id="Mysql-表的加减法-十七"><a href="#Mysql-表的加减法-十七" class="headerlink" title="Mysql 表的加减法(十七)"></a><a href="https://jsopy.gitee.io/2020/02/27/mysqlbasic17/">Mysql 表的加减法(十七)</a></h3><h3 id="Mysql-联结-以列为单位对表进行联结-十八"><a href="#Mysql-联结-以列为单位对表进行联结-十八" class="headerlink" title="Mysql 联结(以列为单位对表进行联结)(十八)"></a><a href="https://jsopy.gitee.io/2020/02/28/mysqlbasic18/">Mysql 联结(以列为单位对表进行联结)(十八)</a></h3>]]></content>
       
       
       <categories>
