@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-22T11:03:06.715Z</updated>
+  <updated>2020-04-25T02:49:41.131Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pycharm 安装</title>
+    <link href="https://jsopy.gitee.io/2020/02/29/pycharm/"/>
+    <id>https://jsopy.gitee.io/2020/02/29/pycharm/</id>
+    <published>2020-02-29T13:26:47.000Z</published>
+    <updated>2020-04-25T02:49:41.131Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Pycharm-的安装&quot;&gt;&lt;a href=&quot;#Pycharm-的安装&quot; class=&quot;headerlink&quot; title=&quot;Pycharm 的安装&quot;&gt;&lt;/a&gt;Pycharm 的安装&lt;/h1&gt;&lt;h2 id=&quot;第一步-下载文件&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Pycharm" scheme="https://jsopy.gitee.io/categories/Pycharm/"/>
+    
+    
+      <category term="Pycharm" scheme="https://jsopy.gitee.io/tags/Pycharm/"/>
+    
+  </entry>
   
   <entry>
     <title>Mysql 联结(以列为单位对表进行联结)</title>
@@ -522,36 +549,6 @@
         
         
           &lt;h1 id=&quot;从-Web-中抓取信息&quot;&gt;&lt;a href=&quot;#从-Web-中抓取信息&quot; class=&quot;headerlink&quot; title=&quot;从 Web 中抓取信息&quot;&gt;&lt;/a&gt;从 Web
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>调试</title>
-    <link href="https://jsopy.gitee.io/2020/02/09/pythonresult11/"/>
-    <id>https://jsopy.gitee.io/2020/02/09/pythonresult11/</id>
-    <published>2020-02-09T13:26:47.000Z</published>
-    <updated>2020-04-09T13:38:51.945Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;调试&quot;&gt;&lt;a href=&quot;#调试&quot; class=&quot;headerlink&quot; title=&quot;调试&quot;&gt;&lt;/a&gt;调试&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;学问是异常珍贵的东西，从任何源泉吸收都不可耻。——阿卜·日·法拉兹&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2
         
       
     
