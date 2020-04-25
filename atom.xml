@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-25T03:00:30.676Z</updated>
+  <updated>2020-04-25T14:22:09.640Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -17,11 +17,69 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PIPENV隔断</title>
+    <link href="https://jsopy.gitee.io/2020/03/02/flaskone/"/>
+    <id>https://jsopy.gitee.io/2020/03/02/flaskone/</id>
+    <published>2020-03-02T12:26:47.000Z</published>
+    <updated>2020-04-25T14:22:09.640Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;起步&quot;&gt;&lt;a href=&quot;#起步&quot; class=&quot;headerlink&quot; title=&quot;起步&quot;&gt;&lt;/a&gt;起步&lt;/h2&gt;&lt;h3 id=&quot;为什么使用-pipenv&quot;&gt;&lt;a href=&quot;#为什么使用-pipenv&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python之Flask框架</title>
+    <link href="https://jsopy.gitee.io/2020/03/01/flask/"/>
+    <id>https://jsopy.gitee.io/2020/03/01/flask/</id>
+    <published>2020-03-01T12:26:47.000Z</published>
+    <updated>2020-04-25T13:25:47.762Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;目录分类&quot;&gt;&lt;a href=&quot;#目录分类&quot; class=&quot;headerlink&quot; title=&quot;目录分类&quot;&gt;&lt;/a&gt;目录分类&lt;/h2&gt;&lt;h3 id=&quot;起步分隔断-一&quot;&gt;&lt;a href=&quot;#起步分隔断-一&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Pycharm 安装</title>
     <link href="https://jsopy.gitee.io/2020/02/29/pycharm/"/>
     <id>https://jsopy.gitee.io/2020/02/29/pycharm/</id>
     <published>2020-02-29T13:26:47.000Z</published>
-    <updated>2020-04-25T03:00:30.676Z</updated>
+    <updated>2020-04-25T14:23:39.046Z</updated>
     
     <summary type="html">
     
@@ -495,60 +553,6 @@
         
         
           &lt;h1 id=&quot;处理-PDF-和-Word-文档&quot;&gt;&lt;a href=&quot;#处理-PDF-和-Word-文档&quot; class=&quot;headerlink&quot; title=&quot;处理 PDF 和 Word 文档&quot;&gt;&lt;/a&gt;处理 PDF 和 Word
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>处理 Excel 电子表格</title>
-    <link href="https://jsopy.gitee.io/2020/02/11/pythonresult13/"/>
-    <id>https://jsopy.gitee.io/2020/02/11/pythonresult13/</id>
-    <published>2020-02-11T13:26:47.000Z</published>
-    <updated>2020-04-09T13:39:06.432Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;处理-Excel-电子表格&quot;&gt;&lt;a href=&quot;#处理-Excel-电子表格&quot; class=&quot;headerlink&quot; title=&quot;处理 Excel 电子表格&quot;&gt;&lt;/a&gt;处理 Excel
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从 Web 中抓取信息</title>
-    <link href="https://jsopy.gitee.io/2020/02/10/pythonresult12/"/>
-    <id>https://jsopy.gitee.io/2020/02/10/pythonresult12/</id>
-    <published>2020-02-10T13:26:47.000Z</published>
-    <updated>2020-04-09T13:38:59.207Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;从-Web-中抓取信息&quot;&gt;&lt;a href=&quot;#从-Web-中抓取信息&quot; class=&quot;headerlink&quot; title=&quot;从 Web 中抓取信息&quot;&gt;&lt;/a&gt;从 Web
         
       
     
