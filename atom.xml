@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-04-26T10:51:49.986Z</updated>
+  <updated>2020-04-29T12:47:40.944Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flask 程序的基本结构</title>
+    <link href="https://jsopy.gitee.io/2020/03/05/flask3/"/>
+    <id>https://jsopy.gitee.io/2020/03/05/flask3/</id>
+    <published>2020-03-05T12:26:47.000Z</published>
+    <updated>2020-04-29T12:47:40.944Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;程序的基本结构&quot;&gt;&lt;a href=&quot;#程序的基本结构&quot; class=&quot;headerlink&quot; title=&quot;程序的基本结构&quot;&gt;&lt;/a&gt;程序的基本结构&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;当我活着，我要做生命的主宰，而不做它的奴隶。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flask 安装虚拟环境和 Flask</title>
+    <link href="https://jsopy.gitee.io/2020/03/04/flask2/"/>
+    <id>https://jsopy.gitee.io/2020/03/04/flask2/</id>
+    <published>2020-03-04T12:26:47.000Z</published>
+    <updated>2020-04-29T12:46:44.063Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Flask-安装虚拟环境和-Flask&quot;&gt;&lt;a href=&quot;#Flask-安装虚拟环境和-Flask&quot; class=&quot;headerlink&quot; title=&quot;Flask 安装虚拟环境和 Flask&quot;&gt;&lt;/a&gt;Flask 安装虚拟环境和
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 装饰器</title>
@@ -45,10 +104,10 @@
   
   <entry>
     <title>PIPENV隔断</title>
-    <link href="https://jsopy.gitee.io/2020/03/02/flaskone/"/>
-    <id>https://jsopy.gitee.io/2020/03/02/flaskone/</id>
+    <link href="https://jsopy.gitee.io/2020/03/02/flask1/"/>
+    <id>https://jsopy.gitee.io/2020/03/02/flask1/</id>
     <published>2020-03-02T12:26:47.000Z</published>
-    <updated>2020-04-26T13:31:11.374Z</updated>
+    <updated>2020-04-29T12:56:14.335Z</updated>
     
     <summary type="html">
     
@@ -77,7 +136,7 @@
     <link href="https://jsopy.gitee.io/2020/03/01/flask/"/>
     <id>https://jsopy.gitee.io/2020/03/01/flask/</id>
     <published>2020-03-01T12:26:47.000Z</published>
-    <updated>2020-04-25T14:34:37.169Z</updated>
+    <updated>2020-04-29T12:56:27.620Z</updated>
     
     <summary type="html">
     
@@ -499,60 +558,6 @@
         
         
           &lt;h1 id=&quot;Python-操作图像&quot;&gt;&lt;a href=&quot;#Python-操作图像&quot; class=&quot;headerlink&quot; title=&quot;Python 操作图像&quot;&gt;&lt;/a&gt;Python
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>多线程(了解)和打开其他应用程序</title>
-    <link href="https://jsopy.gitee.io/2020/02/14/pythonresult16/"/>
-    <id>https://jsopy.gitee.io/2020/02/14/pythonresult16/</id>
-    <published>2020-02-14T13:26:47.000Z</published>
-    <updated>2020-04-09T13:39:30.322Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;多线程-了解-和打开其他应用程序&quot;&gt;&lt;a href=&quot;#多线程-了解-和打开其他应用程序&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>时间,计划任务和启动程序</title>
-    <link href="https://jsopy.gitee.io/2020/02/13/pythonresult15/"/>
-    <id>https://jsopy.gitee.io/2020/02/13/pythonresult15/</id>
-    <published>2020-02-13T13:26:47.000Z</published>
-    <updated>2020-04-09T13:39:22.242Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;时间-计划任务和启动程序&quot;&gt;&lt;a href=&quot;#时间-计划任务和启动程序&quot; class=&quot;headerlink&quot;
         
       
     
