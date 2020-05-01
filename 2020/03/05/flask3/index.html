@@ -464,7 +464,7 @@ Flas">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-29
+                    2020-05-01
                 </div>
                 
 
@@ -701,7 +701,7 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <span class="token keyword">def</span> <span class="token function">rediectPage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">return</span> redirect<span class="token punctuation">(</span><span class="token string">'http://www.baidu.com'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>还有一种特殊的响应,用于处理错误 about 函数生成,在下面例子中如果 URL 中动态参数 id 对应的用户不存在,就返回状态码 404</li>
+<li>还有一种特殊的响应,用于处理错误 about 函数生成,在下面例子中如果 URL 中动态参数 id 对应的用户不存在,就返回状态码 404,请看代码</li>
 </ul>
 <pre class="line-numbers language-python"><code class="language-python">
 @app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/test5/&lt;int:id>'</span><span class="token punctuation">)</span>
