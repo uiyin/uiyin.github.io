@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-05-01T22:30:36.809Z</updated>
+  <updated>2020-05-02T13:16:30.217Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用宝塔面板将hexo部署到阿里云</title>
+    <link href="https://jsopy.gitee.io/2020/03/08/setuphexo/"/>
+    <id>https://jsopy.gitee.io/2020/03/08/setuphexo/</id>
+    <published>2020-03-08T12:26:47.000Z</published>
+    <updated>2020-05-02T13:16:30.217Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;起因是因为码云给我发来邮件,说我的仓库已经 500M 了,要么花钱扩充,要么不能增加。而自己的网站却有 40G
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://jsopy.gitee.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://jsopy.gitee.io/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Flask 知识点小汇总</title>
@@ -548,33 +575,6 @@
     
     
       <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Yarn学习笔记</title>
-    <link href="https://jsopy.gitee.io/2020/02/17/yarn/"/>
-    <id>https://jsopy.gitee.io/2020/02/17/yarn/</id>
-    <published>2020-02-17T12:26:47.000Z</published>
-    <updated>2020-05-02T09:59:07.146Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Yarn-学习汇总笔记&quot;&gt;&lt;a href=&quot;#Yarn-学习汇总笔记&quot; class=&quot;headerlink&quot; title=&quot;Yarn 学习汇总笔记&quot;&gt;&lt;/a&gt;Yarn
-        
-      
-    
-    </summary>
-    
-    
-      <category term="yarn" scheme="https://jsopy.gitee.io/categories/yarn/"/>
-    
-    
-      <category term="yarn" scheme="https://jsopy.gitee.io/tags/yarn/"/>
     
   </entry>
   
