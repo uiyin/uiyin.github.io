@@ -436,6 +436,10 @@ reduce
                                 <span class="chip bg-color">ES6</span>
                             </a>
                         
+                            <a href="/tags/Javascript/">
+                                <span class="chip bg-color">Javascript</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -470,14 +474,14 @@ reduce
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.1k
+                        1.3k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        5 分
+                        6 分
                     </div>
                     
                 
@@ -506,7 +510,7 @@ reduce
  for(var i=0;i&lt;arr.length;i++)
 {
   console.log(arr[i]);
-}</code></pre><h2 id="ES6的方法"><a href="#ES6的方法" class="headerlink" title="ES6的方法"></a>ES6的方法</h2><h4 id="1-forEach方法"><a href="#1-forEach方法" class="headerlink" title="(1)forEach方法"></a>(1)forEach方法</h4><pre><code>//第一种写法:
+}</code></pre><h2 id="ES6-的方法"><a href="#ES6-的方法" class="headerlink" title="ES6 的方法"></a>ES6 的方法</h2><h4 id="1-forEach-方法"><a href="#1-forEach-方法" class="headerlink" title="(1)forEach 方法"></a>(1)forEach 方法</h4><pre><code>//第一种写法:
 let arr = [1, 2, 3, 4, 5, 6];
 arr.forEach((item, index) =&gt; {
     console.log(item + &quot;||&quot; + index);
@@ -516,50 +520,165 @@ let arr = [1, 2, 3, 4, 5, 6];
 function abc(item, index) {
     console.log(item + &quot;||&quot; + index);
 }
-arr.forEach(abc);</code></pre><h4 id="2-map方法"><a href="#2-map方法" class="headerlink" title="(2)map方法"></a>(2)map方法</h4><ul>
-<li>有map必有return否则和foreach一样,因为map有返回值,要是不写新的数组存的就是undefined<br>map 第一种写法<pre><code>let arr = [1, 2, 3, 4, 5, 6];
-</code></pre></li>
+arr.forEach(abc);</code></pre><h4 id="2-map-方法"><a href="#2-map-方法" class="headerlink" title="(2)map 方法"></a>(2)map 方法</h4><ul>
+<li>有 map 必有 return 否则和 foreach 一样,因为 map 有返回值,要是不写新的数组存的就是 undefined<br>map 第一种写法</li>
 </ul>
-<p>function abc(item, index) {<br>    return item + 1;<br>}<br>let arr1 = arr.map(abc);<br>console.log(arr1);</p>
-<pre><code>
-map第二种写法
-</code></pre><p>let arr2 = [3, 4, 5, 6, 7];<br>let arr3 = arr2.map((item, index) =&gt; {<br>    return item * 2;<br>})<br>console.log(arr3);</p>
-<pre><code>
-map第三种写法
-</code></pre><p>let arr4 = [<br>    { id: 1, age: 23, name: “哈哈”, sex: “男” },<br>    { id: 2, age: 20, name: “呵呵”, sex: “女” },<br>    { id: 3, age: 15, name: “嘿嘿”, sex: “女” },<br>    { id: 4, age: 11, name: “啪啪”, sex: “男” },<br>];</p>
-<p>let arr5 = arr4.map((item, index) =&gt; {<br>    return item.name;<br>})<br>console.log(arr5);</p>
-<pre><code>
-#### (3)filter过滤器
+<pre><code>let arr = [1, 2, 3, 4, 5, 6];
 
-* filter必有return
-</code></pre><p>//场景一<br>//假定有一个对象数组(A)获取数组中指令类型的对象放到数组B中<br>let arr = [<br>    { id: 1, age: 23, name: “哈哈”, sex: “男” },<br>    { id: 2, age: 20, name: “呵呵”, sex: “女” },<br>    { id: 3, age: 15, name: “嘿嘿”, sex: “女” },<br>    { id: 4, age: 11, name: “啪啪”, sex: “男” },<br>];</p>
-<p>let arr2 = arr.filter((content, index) =&gt; {<br>    return content.sex == “男”<br>})<br>console.log(arr2);<br>//场景 二<br>//假定有一个数组(A)过滤掉不满足一下条件的。<br>//条件：性别男，并且年龄大于20的<br>let arr = [<br>    { id: 1, age: 23, name: “哈哈”, sex: “男” },<br>    { id: 2, age: 20, name: “呵呵”, sex: “女” },<br>    { id: 3, age: 15, name: “嘿嘿”, sex: “女” },<br>    { id: 4, age: 11, name: “啪啪”, sex: “男” },<br>];<br>let arr3 = arr.filter((item, index) =&gt; {<br>    return item.sex === “男” &amp;&amp; item.age &gt; 20<br>})<br>console.log(arr3);</p>
-<p>//场景三<br>//假定两个数组(a,b)根据A中id值，过滤掉B数组中不符合的数据<br>let arr = [<br>    { id: 1, age: 23, name: “哈哈”, sex: “男” },<br>    { id: 2, age: 20, name: “呵呵”, sex: “女” }<br>];<br>let arr2 = [<br>    { id: 1, age: 23, name: “哈哈”, sex: “男” },<br>    { id: 2, age: 20, name: “呵呵”, sex: “女” },<br>    { id: 3, age: 15, name: “嘿嘿2”, sex: “女” },<br>    { id: 4, age: 11, name: “啪啪2”, sex: “男” },<br>];</p>
-<p>function filter(arr, arr2) {<br>    let result = [];<br>    arr2.filter((content, index) =&gt; {<br>        result.push(arr.filter((item, index2) =&gt; {<br>            return item.age == content.age &amp;&amp; item.name == content.name;<br>        })[0]);<br>    })<br>    let result2 = result.filter((item, index) =&gt; {<br>        return item<br>    })<br>    return result2;<br>}<br>console.log(filter(arr, arr2));<br>//场景四<br>//去掉undefined<br>let arr4 = [1, 2, 3, undefined, undefined];<br>let arr3 = arr4.filter((content, index) =&gt; {<br>    return content;<br>})<br>console.log(arr3);</p>
-<pre><code>&gt; 无论是map还是filter他返回的都是一个新的数组
+function abc(item, index) {
+    return item + 1;
+}
+let arr1 = arr.map(abc);
+console.log(arr1);</code></pre><p>map 第二种写法</p>
+<pre><code>let arr2 = [3, 4, 5, 6, 7];
+let arr3 = arr2.map((item, index) =&gt; {
+    return item * 2;
+})
+console.log(arr3);</code></pre><p>map 第三种写法</p>
+<pre><code>let arr4 = [
+    { id: 1, age: 23, name: &quot;哈哈&quot;, sex: &quot;男&quot; },
+    { id: 2, age: 20, name: &quot;呵呵&quot;, sex: &quot;女&quot; },
+    { id: 3, age: 15, name: &quot;嘿嘿&quot;, sex: &quot;女&quot; },
+    { id: 4, age: 11, name: &quot;啪啪&quot;, sex: &quot;男&quot; },
+];
 
-#### (4) find 找到符合条件的
+let arr5 = arr4.map((item, index) =&gt; {
+    return item.name;
+})
+console.log(arr5);</code></pre><h4 id="3-filter-过滤器"><a href="#3-filter-过滤器" class="headerlink" title="(3)filter 过滤器"></a>(3)filter 过滤器</h4><ul>
+<li>filter 必有 return</li>
+</ul>
+<pre><code>//场景一
+//假定有一个对象数组(A)获取数组中指令类型的对象放到数组B中
+let arr = [
+    { id: 1, age: 23, name: &quot;哈哈&quot;, sex: &quot;男&quot; },
+    { id: 2, age: 20, name: &quot;呵呵&quot;, sex: &quot;女&quot; },
+    { id: 3, age: 15, name: &quot;嘿嘿&quot;, sex: &quot;女&quot; },
+    { id: 4, age: 11, name: &quot;啪啪&quot;, sex: &quot;男&quot; },
+];
 
-&gt; find必有return并且他找到以后就不会往下执行了，也就是说要是有2个符合条件的，他只能找到第一个,返回的不是数组
+let arr2 = arr.filter((content, index) =&gt; {
+    return content.sex == &quot;男&quot;
+})
+console.log(arr2);
+//场景 二
+//假定有一个数组(A)过滤掉不满足一下条件的。
+//条件：性别男，并且年龄大于20的
+let arr = [
+    { id: 1, age: 23, name: &quot;哈哈&quot;, sex: &quot;男&quot; },
+    { id: 2, age: 20, name: &quot;呵呵&quot;, sex: &quot;女&quot; },
+    { id: 3, age: 15, name: &quot;嘿嘿&quot;, sex: &quot;女&quot; },
+    { id: 4, age: 11, name: &quot;啪啪&quot;, sex: &quot;男&quot; },
+];
+let arr3 = arr.filter((item, index) =&gt; {
+    return item.sex === &quot;男&quot; &amp;&amp; item.age &gt; 20
+})
+console.log(arr3);
 
-***
-</code></pre><p>/<em>假定有一个对象数组A找到符合条件的对象</em>/<br>let arr2 = [<br>    { id: 1, age: 23, name: “哈哈”, sex: “男” },<br>    { id: 2, age: 20, name: “呵呵”, sex: “女” },<br>    { id: 3, age: 15, name: “嘿嘿2”, sex: “女” },<br>    { id: 4, age: 23, name: “啪啪2”, sex: “男” },<br>];<br>let arr3 = arr2.find((item, index) =&gt; {<br>    return item.age == 23;<br>})<br>console.log(arr3);  //   { id: 1, age: 23, name: “哈哈”, sex: “男” }, 符合的第二个就找不到<br>/<em>场景2有一个对象数组A，根据指定对象的条件找到数组中符合条件的对象</em>/<br>/<em>假定有一个对象数组A找到符合条件的对象</em>/<br>let arr2 = [<br>    { id: 1, age: 23, name: “哈哈”, sex: “男” },<br>    { id: 2, age: 20, name: “呵呵”, sex: “女” },<br>    { id: 3, age: 15, name: “嘿嘿2”, sex: “女” },<br>    { id: 4, age: 23, name: “啪啪2”, sex: “男” },<br>];<br>let arr = { id: 1, title: “Node.js” }<br>let arr3 = arr2.find((item, index) =&gt; {<br>    return arr.id == item.id;<br>})<br>console.log(arr3);</p>
-<pre><code>
-#### every和some
+//场景三
+//假定两个数组(a,b)根据A中id值，过滤掉B数组中不符合的数据
+let arr = [
+    { id: 1, age: 23, name: &quot;哈哈&quot;, sex: &quot;男&quot; },
+    { id: 2, age: 20, name: &quot;呵呵&quot;, sex: &quot;女&quot; }
+];
+let arr2 = [
+    { id: 1, age: 23, name: &quot;哈哈&quot;, sex: &quot;男&quot; },
+    { id: 2, age: 20, name: &quot;呵呵&quot;, sex: &quot;女&quot; },
+    { id: 3, age: 15, name: &quot;嘿嘿2&quot;, sex: &quot;女&quot; },
+    { id: 4, age: 11, name: &quot;啪啪2&quot;, sex: &quot;男&quot; },
+];
 
-* every和some返回就是布尔值
-* every指的是每一项都要求符合条件就是逻辑与&amp;&amp;一假都假
-* some 指的是有一个符合就可以了||一真都真
-</code></pre><p>let computers = [<br>    { “name”: “APPLE”, ram: 16 },<br>    { “name”: “IBM”, ram: 4 },<br>    { “name”: “Acer”, ram: 32 }<br>];<br>let state = true;<br>let somestate = false;<br>let every = computers.every(function(item, index) {<br>    return item.ram &gt; 2;<br>})<br>console.log(every);</p>
-<pre><code>
-#### (5) reduce 一般求综合的时候使用 2个参数，前面第一个是回调函数，第二个是all的初始值。回调函数的参数也不一样。第一个是合集，第二个是每一个分项。reduce必须有return
-比如:</code></pre><p>/<em>场景一</em>/<br>/<em>计算数组中所有值得和</em>/<br>let arr = [1, 2, 3];<br>let b = arr.reduce(function(all, item) {<br>    return all + item;<br>}, 0);<br>console.log(b);<br>//老办法<br>let a = 0;<br>arr.forEach(function(item, index) {<br>    a += item;<br>})<br>console.log(a);</p>
-<pre><code>再比如:
-</code></pre><p>/<em>场景二</em>/<br>/<em>假将数组中某个属性抽离到另外的数组中</em>/<br>let a2 = [<br>    { color: “red”, id: 1 },<br>    { color: “blue”, id: 2 },<br>    { color: “yellow”, id: 3 },<br>    { color: “green”, id: 4 }<br>];<br>let b3 = a2.reduce(function(all2, item) {<br>    all2.push(item.color);<br>    return all2;<br>}, []);<br>console.log(b3);</p>
-<pre><code>
-
-
-</code></pre>
+function filter(arr, arr2) {
+    let result = [];
+    arr2.filter((content, index) =&gt; {
+        result.push(arr.filter((item, index2) =&gt; {
+            return item.age == content.age &amp;&amp; item.name == content.name;
+        })[0]);
+    })
+    let result2 = result.filter((item, index) =&gt; {
+        return item
+    })
+    return result2;
+}
+console.log(filter(arr, arr2));
+//场景四
+//去掉undefined
+let arr4 = [1, 2, 3, undefined, undefined];
+let arr3 = arr4.filter((content, index) =&gt; {
+    return content;
+})
+console.log(arr3);</code></pre><blockquote>
+<p>无论是 map 还是 filter 他返回的都是一个新的数组</p>
+</blockquote>
+<h4 id="4-find-找到符合条件的"><a href="#4-find-找到符合条件的" class="headerlink" title="(4) find 找到符合条件的"></a>(4) find 找到符合条件的</h4><blockquote>
+<p>find 必有 return 并且他找到以后就不会往下执行了，也就是说要是有 2 个符合条件的，他只能找到第一个,返回的不是数组</p>
+</blockquote>
+<hr>
+<pre><code>/*假定有一个对象数组A找到符合条件的对象*/
+let arr2 = [
+    { id: 1, age: 23, name: &quot;哈哈&quot;, sex: &quot;男&quot; },
+    { id: 2, age: 20, name: &quot;呵呵&quot;, sex: &quot;女&quot; },
+    { id: 3, age: 15, name: &quot;嘿嘿2&quot;, sex: &quot;女&quot; },
+    { id: 4, age: 23, name: &quot;啪啪2&quot;, sex: &quot;男&quot; },
+];
+let arr3 = arr2.find((item, index) =&gt; {
+    return item.age == 23;
+})
+console.log(arr3);  //   { id: 1, age: 23, name: &quot;哈哈&quot;, sex: &quot;男&quot; }, 符合的第二个就找不到
+/*场景2有一个对象数组A，根据指定对象的条件找到数组中符合条件的对象*/
+/*假定有一个对象数组A找到符合条件的对象*/
+let arr2 = [
+    { id: 1, age: 23, name: &quot;哈哈&quot;, sex: &quot;男&quot; },
+    { id: 2, age: 20, name: &quot;呵呵&quot;, sex: &quot;女&quot; },
+    { id: 3, age: 15, name: &quot;嘿嘿2&quot;, sex: &quot;女&quot; },
+    { id: 4, age: 23, name: &quot;啪啪2&quot;, sex: &quot;男&quot; },
+];
+let arr = { id: 1, title: &quot;Node.js&quot; }
+let arr3 = arr2.find((item, index) =&gt; {
+    return arr.id == item.id;
+})
+console.log(arr3);</code></pre><h4 id="every-和-some"><a href="#every-和-some" class="headerlink" title="every 和 some"></a>every 和 some</h4><ul>
+<li>every 和 some 返回就是布尔值</li>
+<li>every 指的是每一项都要求符合条件就是逻辑与&amp;&amp;一假都假</li>
+<li>some 指的是有一个符合就可以了||一真都真</li>
+</ul>
+<pre><code>let computers = [
+    { &quot;name&quot;: &quot;APPLE&quot;, ram: 16 },
+    { &quot;name&quot;: &quot;IBM&quot;, ram: 4 },
+    { &quot;name&quot;: &quot;Acer&quot;, ram: 32 }
+];
+let state = true;
+let somestate = false;
+let every = computers.every(function(item, index) {
+    return item.ram &gt; 2;
+})
+console.log(every);</code></pre><h4 id="5-reduce-一般求综合的时候使用-2-个参数，前面第一个是回调函数，第二个是-all-的初始值。回调函数的参数也不一样。第一个是合集，第二个是每一个分项。reduce-必须有-return"><a href="#5-reduce-一般求综合的时候使用-2-个参数，前面第一个是回调函数，第二个是-all-的初始值。回调函数的参数也不一样。第一个是合集，第二个是每一个分项。reduce-必须有-return" class="headerlink" title="(5) reduce 一般求综合的时候使用 2 个参数，前面第一个是回调函数，第二个是 all 的初始值。回调函数的参数也不一样。第一个是合集，第二个是每一个分项。reduce 必须有 return"></a>(5) reduce 一般求综合的时候使用 2 个参数，前面第一个是回调函数，第二个是 all 的初始值。回调函数的参数也不一样。第一个是合集，第二个是每一个分项。reduce 必须有 return</h4><p>比如:</p>
+<pre><code>/*场景一*/
+/*计算数组中所有值得和*/
+let arr = [1, 2, 3];
+let b = arr.reduce(function(all, item) {
+    return all + item;
+}, 0);
+console.log(b);
+//老办法
+let a = 0;
+arr.forEach(function(item, index) {
+    a += item;
+})
+console.log(a);</code></pre><p>再比如:</p>
+<pre><code>/*场景二*/
+/*假将数组中某个属性抽离到另外的数组中*/
+let a2 = [
+    { color: &quot;red&quot;, id: 1 },
+    { color: &quot;blue&quot;, id: 2 },
+    { color: &quot;yellow&quot;, id: 3 },
+    { color: &quot;green&quot;, id: 4 }
+];
+let b3 = a2.reduce(function(all2, item) {
+    all2.push(item.color);
+    return all2;
+}, []);
+console.log(b3);</code></pre>
             </div>
             <hr/>
 
@@ -624,6 +743,10 @@ map第三种写法
                             
                                 <a href="/tags/ES6/">
                                     <span class="chip bg-color">ES6</span>
+                                </a>
+                            
+                                <a href="/tags/Javascript/">
+                                    <span class="chip bg-color">Javascript</span>
                                 </a>
                             
                         </div>
@@ -706,6 +829,10 @@ map第三种写法
                         <span class="chip bg-color">ES6</span>
                     </a>
                     
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -753,6 +880,10 @@ map第三种写法
                     
                     <a href="/tags/ES6/">
                         <span class="chip bg-color">ES6</span>
+                    </a>
+                    
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
                     </a>
                     
                 </div>
@@ -903,7 +1034,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >107.2k</span
+        >107.4k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span

@@ -5,16 +5,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="ES6(十二) ES6知识划分, Javascript Python Js">
-    <meta name="description" content="本节重点讲解知识划分(1) Let 和Const的区别
+    <meta name="description" content="本节重点讲解知识划分(1) Let 和 Const 的区别
 只能声明一次
-Let能修改Const无法修改
+Let 能修改 Const 无法修改
 在块级作用域里面它出不来{}
 
 (2) 箭头函数
 如果只有一个参数那么()可以省略
-如果函数体内只有一个return 那么{}可以省略
-
-">
+如果函数体内只有一个 return 那么{}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -434,6 +432,10 @@ Let能修改Const无法修改
                                 <span class="chip bg-color">ES6</span>
                             </a>
                         
+                            <a href="/tags/Javascript/">
+                                <span class="chip bg-color">Javascript</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -468,7 +470,7 @@ Let能修改Const无法修改
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        636
+                        641
                     </div>
                     
 
@@ -491,14 +493,14 @@ Let能修改Const无法修改
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="本节重点讲解知识划分"><a href="#本节重点讲解知识划分" class="headerlink" title="本节重点讲解知识划分"></a>本节重点讲解知识划分</h2><h2 id="1-Let-和Const的区别"><a href="#1-Let-和Const的区别" class="headerlink" title="(1) Let 和Const的区别"></a>(1) Let 和Const的区别</h2><ul>
+                <h2 id="本节重点讲解知识划分"><a href="#本节重点讲解知识划分" class="headerlink" title="本节重点讲解知识划分"></a>本节重点讲解知识划分</h2><h2 id="1-Let-和-Const-的区别"><a href="#1-Let-和-Const-的区别" class="headerlink" title="(1) Let 和 Const 的区别"></a>(1) Let 和 Const 的区别</h2><ul>
 <li>只能声明一次</li>
-<li>Let能修改Const无法修改</li>
+<li>Let 能修改 Const 无法修改</li>
 <li>在块级作用域里面它出不来{}</li>
 </ul>
 <h2 id="2-箭头函数"><a href="#2-箭头函数" class="headerlink" title="(2) 箭头函数"></a>(2) 箭头函数</h2><ul>
 <li>如果只有一个参数那么()可以省略</li>
-<li>如果函数体内只有一个return 那么{}可以省略</li>
+<li>如果函数体内只有一个 return 那么{}可以省略</li>
 </ul>
 <h2 id="3-解构赋值"><a href="#3-解构赋值" class="headerlink" title="(3)解构赋值"></a>(3)解构赋值</h2><ul>
 <li>声明和赋值不能分开</li>
@@ -506,14 +508,14 @@ Let能修改Const无法修改
 <li>右边必须是个东西，比如对象，数组之类的</li>
 </ul>
 <h2 id="4-数组开始"><a href="#4-数组开始" class="headerlink" title="(4) 数组开始"></a>(4) 数组开始</h2><ul>
-<li>重点记住4个 fmfr</li>
+<li>重点记住 4 个 fmfr</li>
 <li>f ——- foreach 就是单纯的循环</li>
 </ul>
 <pre><code>let arr = [2,3,4];
 arr.foreach((item,index)=&gt;{
   console.log(item);
 })</code></pre><ul>
-<li>m——-map 就是映射，有map就有return</li>
+<li>m——-map 就是映射，有 map 就有 return</li>
 </ul>
 <pre><code>let score = [19, 85, 99, 25, 90];
 let arr2 = score.map(item =&gt; {
@@ -544,7 +546,7 @@ let arr3 = [
 ];
 let arr4 = arr3.filter(json =&gt; json.price &gt; 10000);
 console.log(arr4);</code></pre><ul>
-<li>r —reduce 汇总 reduce里面3个参数 总数，单独，次数</li>
+<li>r —reduce 汇总 reduce 里面 3 个参数 总数，单独，次数</li>
 </ul>
 <pre><code>let huizong = [12, 69, 180, 8763];
 let huizong2 = huizong.reduce((result2, item2, index) =&gt; {
@@ -561,17 +563,17 @@ let pingjun = huizong.reduce((result, item, index) =&gt; {
 console.log(pingjun);</code></pre><h2 id="5-字符串方法"><a href="#5-字符串方法" class="headerlink" title="(5)字符串方法"></a>(5)字符串方法</h2><ul>
 <li>startsWith</li>
 <li>endsWith</li>
-<li>字符串模板 <code>${}</code><pre><code>let str = &#39;asdfghytridal&#39;;
+<li>字符串模板 <code>${}</code></li>
+</ul>
+<pre><code>let str = &#39;asdfghytridal&#39;;
 let str1 = 123;
 let str2 = `a${str1}`;
 window.alert(str2);
 alert(str.startsWith(&#39;asd&#39;));
-alert(str.endsWith(&quot;dal&quot;));</code></pre></li>
-</ul>
-<h2 id="6-ES6面向对象"><a href="#6-ES6面向对象" class="headerlink" title="(6) ES6面向对象"></a>(6) ES6面向对象</h2><ul>
-<li>多了class</li>
-<li>多了extends</li>
-<li>多了super</li>
+alert(str.endsWith(&quot;dal&quot;));</code></pre><h2 id="6-ES6-面向对象"><a href="#6-ES6-面向对象" class="headerlink" title="(6) ES6 面向对象"></a>(6) ES6 面向对象</h2><ul>
+<li>多了 class</li>
+<li>多了 extends</li>
+<li>多了 super</li>
 </ul>
 <pre><code>class User {
   constructor(name, pass) {
@@ -602,7 +604,7 @@ u2.showPass();
 let u1 = new User(&#39;blue&#39;, &#39;123456&#39;);
 u1.showName();
 u1.showPass();</code></pre><h2 id="7-JSON"><a href="#7-JSON" class="headerlink" title="(7)JSON"></a>(7)JSON</h2><ul>
-<li>第一个对象<br>名字和值(key和value)一样的 留一个就行</li>
+<li>第一个对象<br>名字和值(key 和 value)一样的 留一个就行</li>
 <li>第二个简写<br>可以去掉:function</li>
 </ul>
 <pre><code> let a = 12;
@@ -613,31 +615,31 @@ console.log(json);
 show:function(){}
 show(){...}  //去掉了:和function
 //3JSON标准格式 &#39;{&quot;a&quot;:1,&quot;b&quot;:2}&#39;</code></pre><h2 id="8-Promise"><a href="#8-Promise" class="headerlink" title="(8) Promise"></a>(8) Promise</h2><ul>
-<li>promise必有then(成功执行的方法，失败执行的方法)<pre><code>let p = new Promise((resolve, reject) =&gt; {
-  //resolve 表示成功了
-  //reject 表示拒绝了
-  $.ajax({
-    url: &quot;js/arr.text&quot;,
-    dataType: &#39;json&#39;,
-    success(res) {
-      resolve(res);
-    },
-    error(err) {
-      reject(err);
-    }
-  })
-}).then(
-  //第一个表示成功了调用 resolve 
-  (arr) =&gt; {
-    alert(&quot;成功了&quot; + arr);
-  },
-  //第二个表示失败了回调 reject
-  () =&gt; {
-    alert(&quot;失败了&quot;);
-  }
-)</code></pre></li>
+<li>promise 必有 then(成功执行的方法，失败执行的方法)</li>
 </ul>
-
+<pre><code>let p = new Promise((resolve, reject) =&gt; {
+    //resolve 表示成功了
+    //reject 表示拒绝了
+    $.ajax({
+      url: &quot;js/arr.text&quot;,
+      dataType: &#39;json&#39;,
+      success(res) {
+        resolve(res);
+      },
+      error(err) {
+        reject(err);
+      }
+    })
+  }).then(
+    //第一个表示成功了调用 resolve
+    (arr) =&gt; {
+      alert(&quot;成功了&quot; + arr);
+    },
+    //第二个表示失败了回调 reject
+    () =&gt; {
+      alert(&quot;失败了&quot;);
+    }
+  )</code></pre>
             </div>
             <hr/>
 
@@ -702,6 +704,10 @@ show(){...}  //去掉了:和function
                             
                                 <a href="/tags/ES6/">
                                     <span class="chip bg-color">ES6</span>
+                                </a>
+                            
+                                <a href="/tags/Javascript/">
+                                    <span class="chip bg-color">Javascript</span>
                                 </a>
                             
                         </div>
@@ -786,6 +792,10 @@ show(){...}  //去掉了:和function
                         <span class="chip bg-color">ES6</span>
                     </a>
                     
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -833,6 +843,10 @@ show(){...}  //去掉了:和function
                     
                     <a href="/tags/ES6/">
                         <span class="chip bg-color">ES6</span>
+                    </a>
+                    
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
                     </a>
                     
                 </div>
@@ -983,7 +997,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >107.2k</span
+        >107.4k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span

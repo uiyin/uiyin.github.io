@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="keywords" content="ES6(二) 变量, Javascript Python Js">
     <meta name="description" content="(一) 本节知识点
-let命令
+let 命令
 块级作用域
-const命令
+const 命令
 顶层对象的属性
-global对象
+global 对象
 
-(二) LET知识点汇总(1) let命令ES6新增了let命令，用来声明变量，他的用法类似var 但是所声明的变量，只是在let命令所在的代码">
+(二) LET 知识点汇总(1) let 命令ES6 新增了 let 命令，用来声明变量，他的用法类似 var 但是所声明的变量，只是在 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -432,6 +432,10 @@ global对象
                                 <span class="chip bg-color">ES6</span>
                             </a>
                         
+                            <a href="/tags/Javascript/">
+                                <span class="chip bg-color">Javascript</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -473,7 +477,7 @@ global对象
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        10 分
+                        11 分
                     </div>
                     
                 
@@ -490,262 +494,266 @@ global对象
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="一-本节知识点"><a href="#一-本节知识点" class="headerlink" title="(一) 本节知识点"></a>(一) 本节知识点</h2><ul>
-<li>let命令</li>
+<li>let 命令</li>
 <li>块级作用域</li>
-<li>const命令</li>
+<li>const 命令</li>
 <li>顶层对象的属性</li>
-<li>global对象</li>
+<li>global 对象</li>
 </ul>
-<h2 id="二-LET知识点汇总"><a href="#二-LET知识点汇总" class="headerlink" title="(二) LET知识点汇总"></a>(二) LET知识点汇总</h2><h4 id="1-let命令"><a href="#1-let命令" class="headerlink" title="(1) let命令"></a>(1) let命令</h4><p>ES6新增了let命令，用来声明变量，他的用法类似var 但是所声明的变量，只是在let命令所在的代码块内有效<br>比如</p>
+<h2 id="二-LET-知识点汇总"><a href="#二-LET-知识点汇总" class="headerlink" title="(二) LET 知识点汇总"></a>(二) LET 知识点汇总</h2><h4 id="1-let-命令"><a href="#1-let-命令" class="headerlink" title="(1) let 命令"></a>(1) let 命令</h4><p>ES6 新增了 let 命令，用来声明变量，他的用法类似 var 但是所声明的变量，只是在 let 命令所在的代码块内有效<br>比如</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
-        <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-        <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">10</span>
+  <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">1</span>
 <span class="token punctuation">}</span>
-a  <span class="token comment" spellcheck="true">//语法错误</span>
+a <span class="token comment" spellcheck="true">//语法错误</span>
 b <span class="token comment" spellcheck="true">//1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码在代码块之中，分别用let和var声明了两个变量，然后在代码块之外调用这两个变量，结果let声明的变量报错误，var声明的变量返回了正确的值。let声明的变量只在它所在的代码块内有效<br>for循环的计数器就很合适使用let命令</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">  <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
+<p>上面代码在代码块之中，分别用 let 和 var 声明了两个变量，然后在代码块之外调用这两个变量，结果 let 声明的变量报错误，var 声明的变量返回了正确的值。let 声明的变量只在它所在的代码块内有效<br>for 循环的计数器就很合适使用 let 命令</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment" spellcheck="true">//TODOLIST</span>
 <span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">//语法错误，i 出不来</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码中，计数器i只在for循环体内有效，在循环外引用就会报错<br>下面的代码如果使用var 最后输出的就是10</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//语法错误，i 出不来</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面代码中，计数器 i 只在 for 循环体内有效，在循环外引用就会报错<br>下面的代码如果使用 var 最后输出的就是 10</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+  a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-a<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码中变量i时var 声明的，全局范围内都有效，所以全局只有一个变量i每一次循环，变量i的值都会发生改变，而循环内被赋给数组a的函数内部的console.log(i);里面的i指向的就是全局的i,也就是说所有数组a的成员里面的i，都指向是同一个i,导致运行时输出的是最后一轮i的值，也就是10<br>如果使用let,声明的变量仅仅在块级作用域内有效，最后输出的就是6</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+a<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面代码中变量 i 时 var 声明的，全局范围内都有效，所以全局只有一个变量 i 每一次循环，变量 i 的值都会发生改变，而循环内被赋给数组 a 的函数内部的 console.log(i);里面的 i 指向的就是全局的 i,也就是说所有数组 a 的成员里面的 i，都指向是同一个 i,导致运行时输出的是最后一轮 i 的值，也就是 10<br>如果使用 let,声明的变量仅仅在块级作用域内有效，最后输出的就是 6</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+  a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-a<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码中,变量i是let声明的，当前i只在本循环内有效，所以每一次循环的i都是一个新的变量，最后输出的就是6.因为是新的变量，JS内部会记住上一轮循环的值，初始化本轮的变量i，就在上一轮循环的基础上进行计算。<br>另外for循环还有一个特别之处就是设置循环变量的那部分是一个父作用域,而循环体内部是一个单独的作用域</p>
+a<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面代码中,变量 i 是 let 声明的，当前 i 只在本循环内有效，所以每一次循环的 i 都是一个新的变量，最后输出的就是 6.因为是新的变量，JS 内部会记住上一轮循环的值，初始化本轮的变量 i，就在上一轮循环的基础上进行计算。<br>另外 for 循环还有一个特别之处就是设置循环变量的那部分是一个父作用域,而循环体内部是一个单独的作用域</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token string">"abc"</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token string">'abc'</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true">//abc</span>
 <span class="token comment" spellcheck="true">//abc</span>
 <span class="token comment" spellcheck="true">//abc</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码正确运行，输出了3次abc，这表明函数内部的变量i与循环i不在同一个作用域.函数内部的变量i更像是全局的变量i，而循环i则是子循环体</p>
-<h4 id="2-不存在变量提升"><a href="#2-不存在变量提升" class="headerlink" title="(2)不存在变量提升"></a>(2)不存在变量提升</h4><p>var命令会发生”变量提升”现象，即变量可以在声明之前使用，值就是undefined,这种现象非常奇怪，一般情况是变量应该在声明语句之后才可以使用<br>为了纠正这种现象，let改变了语法行为，他所声明的变量一定要在声明后使用，否则报错<br>例如 :</p>
+<p>上面代码正确运行，输出了 3 次 abc，这表明函数内部的变量 i 与循环 i 不在同一个作用域.函数内部的变量 i 更像是全局的变量 i，而循环 i 则是子循环体</p>
+<h4 id="2-不存在变量提升"><a href="#2-不存在变量提升" class="headerlink" title="(2)不存在变量提升"></a>(2)不存在变量提升</h4><p>var 命令会发生”变量提升”现象，即变量可以在声明之前使用，值就是 undefined,这种现象非常奇怪，一般情况是变量应该在声明语句之后才可以使用<br>为了纠正这种现象，let 改变了语法行为，他所声明的变量一定要在声明后使用，否则报错<br>例如 :</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//var 情况</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//undefined</span>
-<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//undefined</span>
+<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token number">2</span>
 <span class="token comment" spellcheck="true">//let情况</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>bar<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//报错，语法错误</span>
-<span class="token keyword">let</span> bar <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码中,变量foo使用var来声明,会发生变量提升，即脚本开始运行时，变量foo已经存在了，但是没有值，所以会输出undefined,变量bar用let命令声明,不会发生变量提升。这表示在声明之前变量var不存在</p>
-<h4 id="3-暂时性死区"><a href="#3-暂时性死区" class="headerlink" title="(3) 暂时性死区"></a>(3) 暂时性死区</h4><p>只要快级作用域内存在let命令，他所声明的变量就绑定在这个区域，不在接受外部的影响</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-   tmp <span class="token operator">=</span> <span class="token string">'abc'</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//语法错误，因为块级作用域已经定义了let而变量使用不能再let之前使用</span>
-   <span class="token keyword">let</span> tmp<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码中存在全局变量tmp.但是块级作用域内又声明了一个局部变量tmp导致后者绑定这个块级作用域，所以在let变量声明之前，对tmp赋值就会报错</p>
-<p>es6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域，凡是声明之前就是用这些变量，就会报错。</p>
-<p>一句话:在代码块内，使用let命令声明变量之前，该变量都是不可用的。这在语法上乘坐TDZ(暂时性死区)</p>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>bar<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//报错，语法错误</span>
+<span class="token keyword">let</span> bar <span class="token operator">=</span> <span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面代码中,变量 foo 使用 var 来声明,会发生变量提升，即脚本开始运行时，变量 foo 已经存在了，但是没有值，所以会输出 undefined,变量 bar 用 let 命令声明,不会发生变量提升。这表示在声明之前变量 var 不存在</p>
+<h4 id="3-暂时性死区"><a href="#3-暂时性死区" class="headerlink" title="(3) 暂时性死区"></a>(3) 暂时性死区</h4><p>只要快级作用域内存在 let 命令，他所声明的变量就绑定在这个区域，不在接受外部的影响</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token number">123</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  tmp <span class="token operator">=</span> <span class="token string">'abc'</span> <span class="token comment" spellcheck="true">//语法错误，因为块级作用域已经定义了let而变量使用不能再let之前使用</span>
+  <span class="token keyword">let</span> tmp
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面代码中存在全局变量 tmp.但是块级作用域内又声明了一个局部变量 tmp 导致后者绑定这个块级作用域，所以在 let 变量声明之前，对 tmp 赋值就会报错</p>
+<p>es6 明确规定，如果区块中存在 let 和 const 命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域，凡是声明之前就是用这些变量，就会报错。</p>
+<p>一句话:在代码块内，使用 let 命令声明变量之前，该变量都是不可用的。这在语法上乘坐 TDZ(暂时性死区)</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">//TDZ 开始</span>
-    tmp <span class="token operator">=</span> <span class="token string">"abc"</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//语法错误</span>
-    <span class="token keyword">let</span> tmp<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//TDZ结束</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//undefined</span>
-    tmp <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//123</span>
+  <span class="token comment" spellcheck="true">//TDZ 开始</span>
+  tmp <span class="token operator">=</span> <span class="token string">'abc'</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//语法错误</span>
+  <span class="token keyword">let</span> tmp <span class="token comment" spellcheck="true">//TDZ结束</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//undefined</span>
+  tmp <span class="token operator">=</span> <span class="token number">123</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//123</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>在上面代码中，在使用let命令声明变量tmp之前，都属于tmp的”死区”<br>“暂时性死区” 也意味着typeof不再是一个百分百安全的操作</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> x <span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//语法错误</span>
-<span class="token keyword">let</span> x<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>上面代码中x使用了let命令来声明，在声明之前，都属于x的死区。只要用到该变量就会报错误，因此typeof运行的时候就会爆出一个语法错误<br>而作为比较，如果一个变量根本没有被声明，使用typeof反而不会报错</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> K  <span class="token comment" spellcheck="true">//undefined</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>上面代码中K是一个不存在的变量名，结果返回的就是undefined所以在没有let之前typeof是百分百安全的，永远不会报错。但是现在不行了。变量一定要在声明之后使用，否则就报错<br>有些死区很隐蔽，不太容易被发现比如</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span>x<span class="token operator">=</span>y<span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
- <span class="token keyword">return</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<p>在上面代码中，在使用 let 命令声明变量 tmp 之前，都属于 tmp 的”死区”<br>“暂时性死区” 也意味着 typeof 不再是一个百分百安全的操作</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> x <span class="token comment" spellcheck="true">//语法错误</span>
+<span class="token keyword">let</span> x<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>上面代码中 x 使用了 let 命令来声明，在声明之前，都属于 x 的死区。只要用到该变量就会报错误，因此 typeof 运行的时候就会爆出一个语法错误<br>而作为比较，如果一个变量根本没有被声明，使用 typeof 反而不会报错</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> K <span class="token comment" spellcheck="true">//undefined</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>上面代码中 K 是一个不存在的变量名，结果返回的就是 undefined 所以在没有 let 之前 typeof 是百分百安全的，永远不会报错。但是现在不行了。变量一定要在声明之后使用，否则就报错<br>有些死区很隐蔽，不太容易被发现比如</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span>x <span class="token operator">=</span> y<span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span>
 <span class="token punctuation">}</span>
 <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//报错</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码中使用bar函数之所以报错因为参数X默认值等于另外一个参数Y，而此时Y还没有被声明，属于死区，如果y的默认值是x,这样就不会报错了。因为此时x已经声明了.</p>
+<p>上面代码中使用 bar 函数之所以报错因为参数 X 默认值等于另外一个参数 Y，而此时 Y 还没有被声明，属于死区，如果 y 的默认值是 x,这样就不会报错了。因为此时 x 已经声明了.</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span>x <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> y <span class="token operator">=</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span>
 <span class="token punctuation">}</span>
-<span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>另外下面的代码也会报错</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> x <span class="token operator">=</span> x<span class="token punctuation">;</span>
-<span class="token keyword">let</span> x <span class="token operator">=</span> x<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//语法错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>上面代码也会报错误，因为使用let声明变量时候，只要变量在没有声明之前使用，就会报错。上面这行就属于这个情况。在变量x的声明语句还没有执行完成前，就去取X的值，导致报错x未定义。</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> x <span class="token operator">=</span> x
+<span class="token keyword">let</span> x <span class="token operator">=</span> x <span class="token comment" spellcheck="true">//语法错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>上面代码也会报错误，因为使用 let 声明变量时候，只要变量在没有声明之前使用，就会报错。上面这行就属于这个情况。在变量 x 的声明语句还没有执行完成前，就去取 X 的值，导致报错 x 未定义。</p>
 <blockquote>
 <p>总之 暂时性死区的本质就是一进入当前作用域，所要使用的变量就存在了但是不可获取。只有等到变量声明的那一行代码出现，才可以获取和使用。</p>
 </blockquote>
-<h4 id="4-不允许重复声明"><a href="#4-不允许重复声明" class="headerlink" title="(4)不允许重复声明"></a>(4)不允许重复声明</h4><p>let不允许在相同的作用域内，重复声明同一个变量。</p>
+<h4 id="4-不允许重复声明"><a href="#4-不允许重复声明" class="headerlink" title="(4)不允许重复声明"></a>(4)不允许重复声明</h4><p>let 不允许在相同的作用域内，重复声明同一个变量。</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//报错</span>
-<span class="token keyword">function</span> <span class="token function">abc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
- <span class="token keyword">let</span> a<span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">abc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">10</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span>
 <span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true">//报错</span>
-<span class="token keyword">function</span> <span class="token function">abc2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-<span class="token keyword">let</span> a<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">abc2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">10</span>
+  <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">1</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>因此不能再函数内部重新声明参数</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">abc</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span><span class="token punctuation">{</span>
-   <span class="token keyword">let</span> arg<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//报错</span>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">abc</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> arg <span class="token comment" spellcheck="true">//报错</span>
 <span class="token punctuation">}</span>
-<span class="token keyword">function</span> <span class="token function">abc2</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token keyword">function</span> <span class="token function">abc2</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token punctuation">{</span>
-    <span class="token keyword">let</span>  arg<span class="token punctuation">;</span>
- <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> arg
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <hr>
 <h2 id="三-块级作用域"><a href="#三-块级作用域" class="headerlink" title="(三) 块级作用域"></a>(三) 块级作用域</h2><ul>
 <li>(1)为什么需要块级作用域</li>
 </ul>
-<p>ES5只有全局作用域和块级作用域，没有块级作用域。这带来很多不合理的场景</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
-  <span class="token punctuation">{</span>
-     <span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token string">"Hello world"</span><span class="token punctuation">;</span>
+<p>ES5 只有全局作用域和块级作用域，没有块级作用域。这带来很多不合理的场景</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token string">'Hello world'</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//undefined</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面的代码是:if代码块的外部使用外层的tmp变量，内部使用内层的tmp变量，但是函数f执行后，输出结果为undefined原因在于变量提升。导致内存的tmp变量覆盖了外层的tmp变量</p>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//undefined</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面的代码是:if 代码块的外部使用外层的 tmp 变量，内部使用内层的 tmp 变量，但是函数 f 执行后，输出结果为 undefined 原因在于变量提升。导致内存的 tmp 变量覆盖了外层的 tmp 变量</p>
 <p>第二种场景 :用来计数的循环变量泄露为全局变量</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token string">"hello"</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token string">'hello'</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>(2) ES6的块级作用域</li>
+<li>(2) ES6 的块级作用域</li>
 </ul>
-<p>let实际上为JS新增了块级作用域</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">let</span> n <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">let</span> n <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<p>let 实际上为 JS 新增了块级作用域</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> n <span class="token operator">=</span> <span class="token number">5</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> n <span class="token operator">=</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
-<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//5</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面的函数有两个代码块，都声明了变量n,运行后输出5，这表示外层代码块不受内层代码块的影响，如果两次都用的是var定义n，最后输出的值是10</p>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//5</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面的函数有两个代码块，都声明了变量 n,运行后输出 5，这表示外层代码块不受内层代码块的影响，如果两次都用的是 var 定义 n，最后输出的值是 10</p>
 <p>ES6 允许块级作用域的任意嵌套</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token string">"name"</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>上面代码使用了一个5层的块级作用域，外层作用域无法读取内层作用域的变量</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
-<span class="token punctuation">{</span><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">"hahaha"</span><span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//报错误</span>
-<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
+  <span class="token punctuation">{</span>
+    <span class="token punctuation">{</span>
+      <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token string">'name'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面代码使用了一个 5 层的块级作用域，外层作用域无法读取内层作用域的变量</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
+  <span class="token punctuation">{</span>
+    <span class="token punctuation">{</span>
+      <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">'hahaha'</span>
+      <span class="token punctuation">}</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//报错误</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>内层作用域可以定义外层作用域的同名变量</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
-  <span class="token keyword">let</span> name<span class="token operator">=</span><span class="token string">"Hello world"</span>
-  <span class="token punctuation">{</span><span class="token keyword">let</span> name2 <span class="token operator">=</span> <span class="token string">"Hello world"</span><span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
+  <span class="token punctuation">{</span>
+    <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">'Hello world'</span>
+      <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> name2 <span class="token operator">=</span> <span class="token string">'Hello world'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>块级作用域的出现，实际上使得广泛应用的立即执行函数表达式，不必再要了。比如闭包</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-   <span class="token comment" spellcheck="true">//TDOLIST</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">//TDOLIST</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>(3) 块级作用域与函数声明</li>
 </ul>
-<p>ES5规定 函数只能在顶层作用域和函数作用域里面声明，不能再块级作用域中声明</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
- <span class="token comment" spellcheck="true">//情况一</span>
-<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-   <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  <span class="token punctuation">}</span>
+<p>ES5 规定 函数只能在顶层作用域和函数作用域里面声明，不能再块级作用域中声明</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//情况一</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true">//情况二</span>
-<span class="token keyword">try</span><span class="token punctuation">{</span>
-   <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment" spellcheck="true">//....</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面的两种函数声明，根据 ES5 写法都是非法的。<br>但是浏览器没有遵守这个决定，为了兼容以前的旧代码，还是支持在块级作用域之中声明函数的。因此两种情况都能运行，不会报错.</p>
+<p>ES6 引入了块级作用域，规定块级作用域中，函数声明语句的行为类似 let,在块级作用域之外不可引用</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Iam outside!!'</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面的两种函数声明，根据ES5写法都是非法的。<br>但是浏览器没有遵守这个决定，为了兼容以前的旧代码，还是支持在块级作用域之中声明函数的。因此两种情况都能运行，不会报错.</p>
-<p>ES6引入了块级作用域，规定块级作用域中，函数声明语句的行为类似let,在块级作用域之外不可引用</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Iam outside!!"</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
-<span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-   <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Iam inside"</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+<span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Iam inside'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面代码在 ES5 中运行，会得到 Iam inside 因为在 if 内声明的函数 f 会被提升到函数头部。实际代码如下:</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Iam OutSide'</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
-<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码在ES5中运行，会得到Iam inside 因为在if内声明的函数f会被提升到函数头部。实际代码如下:</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Iam OutSide"</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
-<span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-     <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Iam inSide"</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
-   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
-  <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
-<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>ES6就不一样了，运行后会报错误</p>
+<span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Iam inSide'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>ES6 就不一样了，运行后会报错误</p>
 <ul>
 <li>允许在块级作用域内声明函数</li>
-<li>函数声明类似var 即会提升到全局作用域或者函数作用域的头部</li>
+<li>函数声明类似 var 即会提升到全局作用域或者函数作用域的头部</li>
 <li>同时函数声明还会提升到所在的块级作用域的头部。</li>
 </ul>
-<p>在ES6浏览器会这样，但是其他浏览器还是会按照let走,所以尽量不要再块级作用域</p>
+<p>在 ES6 浏览器会这样，但是其他浏览器还是会按照 let 走,所以尽量不要再块级作用域</p>
 <hr>
-<h4 id="三-const命令"><a href="#三-const命令" class="headerlink" title="(三)const命令"></a>(三)const命令</h4><ul>
+<h4 id="三-const-命令"><a href="#三-const-命令" class="headerlink" title="(三)const 命令"></a>(三)const 命令</h4><ul>
 <li>基本用法:<br>const 声明一个只读的常量，一旦声明常量的值就不能改变</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> PI <span class="token operator">=</span> <span class="token number">3.1415</span><span class="token punctuation">;</span>
-PI <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//语法错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>const声明的变量不得改变值。这意味着const一旦声明变量，就必须立马使用它，立即初始化。不能留到以后赋值。</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> PI <span class="token operator">=</span> <span class="token number">3.1415</span>
+PI <span class="token operator">=</span> <span class="token number">3</span> <span class="token comment" spellcheck="true">//语法错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>const 声明的变量不得改变值。这意味着 const 一旦声明变量，就必须立马使用它，立即初始化。不能留到以后赋值。</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> foo<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//语法错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>上面代码表示对于const来说只声明不赋值，就会报错。const作用域和let命令相同，只是在声明所在的块级作用域有效。</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-<span class="token keyword">const</span> max <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<p>上面代码表示对于 const 来说只声明不赋值，就会报错。const 作用域和 let 命令相同，只是在声明所在的块级作用域有效。</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> max <span class="token operator">=</span> <span class="token number">5</span>
 <span class="token punctuation">}</span>
-max  <span class="token comment" spellcheck="true">//语法错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>const命令声明的常量也不是提升，同样存在暂时性死区。只能在声明的位置后面使用</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>max<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> max <span class="token operator">=</span> <span class="token number">5</span> <span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//报语法错误</span>
+max <span class="token comment" spellcheck="true">//语法错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>const 命令声明的常量也不是提升，同样存在暂时性死区。只能在声明的位置后面使用</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>max<span class="token punctuation">)</span>
+  <span class="token keyword">const</span> max <span class="token operator">=</span> <span class="token number">5</span> <span class="token comment" spellcheck="true">//报语法错误</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本质const实际上保证的不是变量的值不得改动，而是变量指向的那个内存地址不得改动。对于值传递的，值就保存在变量指向那个内存地址，因此等同于常量。对于地址传递的主要是对象和数组，变量指向的内存地址保存的仅仅是一个指针.const保证指针是固定的。</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> foo <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<p>本质 const 实际上保证的不是变量的值不得改动，而是变量指向的那个内存地址不得改动。对于值传递的，值就保存在变量指向那个内存地址，因此等同于常量。对于地址传递的主要是对象和数组，变量指向的内存地址保存的仅仅是一个指针.const 保证指针是固定的。</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> foo <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true">//为foo添加一个属性。可以成功</span>
-foo<span class="token punctuation">.</span>prop <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
-foo<span class="token punctuation">.</span>prop  <span class="token comment" spellcheck="true">//123</span>
+foo<span class="token punctuation">.</span>prop <span class="token operator">=</span> <span class="token number">123</span>
+foo<span class="token punctuation">.</span>prop <span class="token comment" spellcheck="true">//123</span>
 <span class="token comment" spellcheck="true">//将foo指向另一个对象，就会报错</span>
-foo <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//语法错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+foo <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">//语法错误</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>另外一个例子:</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-a<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//可执行</span>
-a<span class="token punctuation">.</span>length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//可执行</span>
-a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Dave"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//报错</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面代码中，常量a是一个数组，这个数组本身是可写的，但是如果将另一个数组赋值给a就会报错<br>如果真想冻结应该是用object.freeze方法</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> foo <span class="token operator">=</span> object<span class="token punctuation">.</span><span class="token function">freeze</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-foo<span class="token punctuation">.</span>prop <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//报错</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+a<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//可执行</span>
+a<span class="token punctuation">.</span>length <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment" spellcheck="true">//可执行</span>
+a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Dave'</span><span class="token punctuation">]</span> <span class="token comment" spellcheck="true">//报错</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面代码中，常量 a 是一个数组，这个数组本身是可写的，但是如果将另一个数组赋值给 a 就会报错<br>如果真想冻结应该是用 object.freeze 方法</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> foo <span class="token operator">=</span> object<span class="token punctuation">.</span><span class="token function">freeze</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+foo<span class="token punctuation">.</span>prop <span class="token operator">=</span> <span class="token number">123</span> <span class="token comment" spellcheck="true">//报错</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -811,6 +819,10 @@ foo<span class="token punctuation">.</span>prop <span class="token operator">=</
                             
                                 <a href="/tags/ES6/">
                                     <span class="chip bg-color">ES6</span>
+                                </a>
+                            
+                                <a href="/tags/Javascript/">
+                                    <span class="chip bg-color">Javascript</span>
                                 </a>
                             
                         </div>
@@ -893,6 +905,10 @@ foo<span class="token punctuation">.</span>prop <span class="token operator">=</
                         <span class="chip bg-color">ES6</span>
                     </a>
                     
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -940,6 +956,10 @@ foo<span class="token punctuation">.</span>prop <span class="token operator">=</
                     
                     <a href="/tags/ES6/">
                         <span class="chip bg-color">ES6</span>
+                    </a>
+                    
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
                     </a>
                     
                 </div>
@@ -1090,7 +1110,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >107.2k</span
+        >107.4k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-05-03T11:30:32.768Z</updated>
+  <updated>2020-05-03T11:49:12.640Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://jsopy.gitee.io/2020/03/21/es612/"/>
     <id>https://jsopy.gitee.io/2020/03/21/es612/</id>
     <published>2020-03-21T13:26:47.000Z</published>
-    <updated>2020-05-03T11:30:32.768Z</updated>
+    <updated>2020-05-03T11:49:12.640Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;h2 id=&quot;本节重点讲解知识划分&quot;&gt;&lt;a href=&quot;#本节重点讲解知识划分&quot; class=&quot;headerlink&quot; title=&quot;本节重点讲解知识划分&quot;&gt;&lt;/a&gt;本节重点讲解知识划分&lt;/h2&gt;&lt;h2 id=&quot;1-Let-和Const的区别&quot;&gt;&lt;a
+          &lt;h2 id=&quot;本节重点讲解知识划分&quot;&gt;&lt;a href=&quot;#本节重点讲解知识划分&quot; class=&quot;headerlink&quot; title=&quot;本节重点讲解知识划分&quot;&gt;&lt;/a&gt;本节重点讲解知识划分&lt;/h2&gt;&lt;h2 id=&quot;1-Let-和-Const-的区别&quot;&gt;&lt;a
         
       
     
@@ -41,6 +41,8 @@
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -48,7 +50,7 @@
     <link href="https://jsopy.gitee.io/2020/03/20/es611/"/>
     <id>https://jsopy.gitee.io/2020/03/20/es611/</id>
     <published>2020-03-20T13:26:47.000Z</published>
-    <updated>2020-05-03T11:29:04.418Z</updated>
+    <updated>2020-05-03T11:49:07.267Z</updated>
     
     <summary type="html">
     
@@ -57,7 +59,7 @@
         
         
           &lt;h2 id=&quot;本节知识点&quot;&gt;&lt;a href=&quot;#本节知识点&quot; class=&quot;headerlink&quot; title=&quot;本节知识点&quot;&gt;&lt;/a&gt;本节知识点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;async &lt;/li&gt;
+&lt;li&gt;async&lt;/li&gt;
 &lt;li&gt;await&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2
@@ -72,6 +74,8 @@
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -79,7 +83,7 @@
     <link href="https://jsopy.gitee.io/2020/03/19/es610/"/>
     <id>https://jsopy.gitee.io/2020/03/19/es610/</id>
     <published>2020-03-19T13:26:47.000Z</published>
-    <updated>2020-05-03T11:27:01.449Z</updated>
+    <updated>2020-05-03T11:49:02.054Z</updated>
     
     <summary type="html">
     
@@ -99,6 +103,8 @@
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -106,7 +112,7 @@
     <link href="https://jsopy.gitee.io/2020/03/18/es69/"/>
     <id>https://jsopy.gitee.io/2020/03/18/es69/</id>
     <published>2020-03-18T13:26:47.000Z</published>
-    <updated>2020-05-03T11:24:50.850Z</updated>
+    <updated>2020-05-03T11:48:57.605Z</updated>
     
     <summary type="html">
     
@@ -114,7 +120,7 @@
       
         
         
-          &lt;h2 id=&quot;set结构&quot;&gt;&lt;a href=&quot;#set结构&quot; class=&quot;headerlink&quot; title=&quot;set结构&quot;&gt;&lt;/a&gt;set结构&lt;/h2&gt;&lt;p&gt;map,set 结构 都可以用foreach循环出来。&lt;br&gt;set 不允许插入重复的值，&lt;br&gt;map
+          &lt;h2 id=&quot;set-结构&quot;&gt;&lt;a href=&quot;#set-结构&quot; class=&quot;headerlink&quot; title=&quot;set 结构&quot;&gt;&lt;/a&gt;set 结构&lt;/h2&gt;&lt;p&gt;map,set 结构 都可以用 foreach 循环出来。&lt;br&gt;set
         
       
     
@@ -125,6 +131,8 @@
     
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
   </entry>
   
@@ -133,7 +141,7 @@
     <link href="https://jsopy.gitee.io/2020/03/17/es68/"/>
     <id>https://jsopy.gitee.io/2020/03/17/es68/</id>
     <published>2020-03-17T13:26:47.000Z</published>
-    <updated>2020-05-03T11:23:34.169Z</updated>
+    <updated>2020-05-03T11:48:52.289Z</updated>
     
     <summary type="html">
     
@@ -141,9 +149,9 @@
       
         
         
-          &lt;h2 id=&quot;map结构&quot;&gt;&lt;a href=&quot;#map结构&quot; class=&quot;headerlink&quot; title=&quot;map结构&quot;&gt;&lt;/a&gt;map结构&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/*数据结构map*/
+          &lt;h2 id=&quot;map-结构&quot;&gt;&lt;a href=&quot;#map-结构&quot; class=&quot;headerlink&quot; title=&quot;map 结构&quot;&gt;&lt;/a&gt;map 结构&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/*数据结构map*/
 /*键值对:与对象不同的是键和值可以使任意类型*/
-const map1
+const
         
       
     
@@ -155,6 +163,8 @@ const map1
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -162,7 +172,7 @@ const map1
     <link href="https://jsopy.gitee.io/2020/03/16/es67/"/>
     <id>https://jsopy.gitee.io/2020/03/16/es67/</id>
     <published>2020-03-16T13:26:47.000Z</published>
-    <updated>2020-05-03T11:22:16.841Z</updated>
+    <updated>2020-05-03T11:48:46.739Z</updated>
     
     <summary type="html">
     
@@ -185,6 +195,8 @@ const map1
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -192,7 +204,7 @@ const map1
     <link href="https://jsopy.gitee.io/2020/03/15/es66/"/>
     <id>https://jsopy.gitee.io/2020/03/15/es66/</id>
     <published>2020-03-15T13:26:47.000Z</published>
-    <updated>2020-05-03T11:17:45.048Z</updated>
+    <updated>2020-05-03T11:48:31.006Z</updated>
     
     <summary type="html">
     
@@ -201,7 +213,7 @@ const map1
         
         
           &lt;h2 id=&quot;本节知识点&quot;&gt;&lt;a href=&quot;#本节知识点&quot; class=&quot;headerlink&quot; title=&quot;本节知识点&quot;&gt;&lt;/a&gt;本节知识点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;展开运算符  …
+&lt;li&gt;展开运算符 …
         
       
     
@@ -212,6 +224,8 @@ const map1
     
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
   </entry>
   
@@ -220,7 +234,7 @@ const map1
     <link href="https://jsopy.gitee.io/2020/03/14/es65/"/>
     <id>https://jsopy.gitee.io/2020/03/14/es65/</id>
     <published>2020-03-14T13:26:47.000Z</published>
-    <updated>2020-05-03T11:16:11.122Z</updated>
+    <updated>2020-05-03T11:48:24.011Z</updated>
     
     <summary type="html">
     
@@ -228,7 +242,12 @@ const map1
       
         
         
-          &lt;h2 id=&quot;本节知识点&quot;&gt;&lt;a href=&quot;#本节知识点&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;本节知识点&quot;&gt;&lt;a href=&quot;#本节知识点&quot; class=&quot;headerlink&quot; title=&quot;本节知识点&quot;&gt;&lt;/a&gt;本节知识点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;字符串模板&lt;/li&gt;
+&lt;li&gt;箭头函数&lt;/li&gt;
+&lt;li&gt;字面量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2
         
       
     
@@ -240,6 +259,8 @@ const map1
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -247,7 +268,7 @@ const map1
     <link href="https://jsopy.gitee.io/2020/03/13/es64/"/>
     <id>https://jsopy.gitee.io/2020/03/13/es64/</id>
     <published>2020-03-13T13:26:47.000Z</published>
-    <updated>2020-05-03T11:14:39.929Z</updated>
+    <updated>2020-05-03T11:48:17.619Z</updated>
     
     <summary type="html">
     
@@ -267,6 +288,8 @@ const map1
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -274,7 +297,7 @@ const map1
     <link href="https://jsopy.gitee.io/2020/03/12/es63/"/>
     <id>https://jsopy.gitee.io/2020/03/12/es63/</id>
     <published>2020-03-12T13:26:47.000Z</published>
-    <updated>2020-05-03T11:13:10.985Z</updated>
+    <updated>2020-05-03T11:48:12.250Z</updated>
     
     <summary type="html">
     
@@ -294,6 +317,8 @@ const map1
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -301,7 +326,7 @@ const map1
     <link href="https://jsopy.gitee.io/2020/03/11/es62/"/>
     <id>https://jsopy.gitee.io/2020/03/11/es62/</id>
     <published>2020-03-11T13:26:47.000Z</published>
-    <updated>2020-05-03T11:09:06.937Z</updated>
+    <updated>2020-05-03T11:48:06.163Z</updated>
     
     <summary type="html">
     
@@ -309,7 +334,10 @@ const map1
       
         
         
-          &lt;h2 id=&quot;一-本节知识点&quot;&gt;&lt;a href=&quot;#一-本节知识点&quot; class=&quot;headerlink&quot; title=&quot;(一) 本节知识点&quot;&gt;&lt;/a&gt;(一)
+          &lt;h2 id=&quot;一-本节知识点&quot;&gt;&lt;a href=&quot;#一-本节知识点&quot; class=&quot;headerlink&quot; title=&quot;(一) 本节知识点&quot;&gt;&lt;/a&gt;(一) 本节知识点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;let 命令&lt;/li&gt;
+&lt;li&gt;块级作用域&lt;/li&gt;
+&lt;li&gt;const
         
       
     
@@ -320,6 +348,8 @@ const map1
     
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
   </entry>
   
@@ -328,7 +358,7 @@ const map1
     <link href="https://jsopy.gitee.io/2020/03/10/es61/"/>
     <id>https://jsopy.gitee.io/2020/03/10/es61/</id>
     <published>2020-03-10T13:26:47.000Z</published>
-    <updated>2020-05-03T10:57:02.011Z</updated>
+    <updated>2020-05-03T11:48:00.524Z</updated>
     
     <summary type="html">
     
@@ -336,7 +366,8 @@ const map1
       
         
         
-          &lt;h2 id=&quot;1-搭建环境&quot;&gt;&lt;a href=&quot;#1-搭建环境&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;1-搭建环境&quot;&gt;&lt;a href=&quot;#1-搭建环境&quot; class=&quot;headerlink&quot; title=&quot;(1)搭建环境&quot;&gt;&lt;/a&gt;(1)搭建环境&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;因为在 es6 的语法在 es5 中大部分不支持。所以必须要装一个 babel 的转化为
         
       
     
@@ -348,6 +379,8 @@ const map1
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -355,7 +388,7 @@ const map1
     <link href="https://jsopy.gitee.io/2020/03/09/es6all/"/>
     <id>https://jsopy.gitee.io/2020/03/09/es6all/</id>
     <published>2020-03-09T12:26:47.000Z</published>
-    <updated>2020-05-03T11:45:43.129Z</updated>
+    <updated>2020-05-03T11:47:50.690Z</updated>
     
     <summary type="html">
     
@@ -374,6 +407,8 @@ const map1
     
     
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
   </entry>
   

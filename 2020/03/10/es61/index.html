@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="keywords" content="ES6(一) 搭建环境, Javascript Python Js">
     <meta name="description" content="(1)搭建环境
-因为在es6的语法在es5中大部分不支持。所以必须要装一个babel的转化为es5,这样才可以。不过随着时代的发展。迟早都会支持es6
+因为在 es6 的语法在 es5 中大部分不支持。所以必须要装一个 babel 的转化为 es5,这样才可以。不过随着时代的发展。迟早都会支持 es6
 
-(2)搭建环境步骤概述ECMA6 是ECMA5的进化版 ，现在流行的框架都用的是ECM">
+(2)搭建环境步骤概述ECMA6 是 ECMA5 的进化版 ，现在流行">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -428,6 +428,10 @@
                                 <span class="chip bg-color">ES6</span>
                             </a>
                         
+                            <a href="/tags/Javascript/">
+                                <span class="chip bg-color">Javascript</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -462,7 +466,7 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        762
+                        773
                     </div>
                     
 
@@ -486,56 +490,56 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="(1)搭建环境"></a>(1)搭建环境</h2><ul>
-<li>因为在es6的语法在es5中大部分不支持。所以必须要装一个babel的转化为es5,这样才可以。不过随着时代的发展。迟早都会支持es6</li>
+<li>因为在 es6 的语法在 es5 中大部分不支持。所以必须要装一个 babel 的转化为 es5,这样才可以。不过随着时代的发展。迟早都会支持 es6</li>
 </ul>
-<h2 id="2-搭建环境步骤"><a href="#2-搭建环境步骤" class="headerlink" title="(2)搭建环境步骤"></a>(2)搭建环境步骤</h2><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>ECMA6 是ECMA5的进化版 ，现在流行的框架都用的是ECMA6的语法，所以有必要去学习一下<br>但是ECMA支持度不太好，他只能支持IE10+ 谷歌，火狐等最先进的版本。所以我们要把这种语法转化成ECMA5.0的语法，要是使用webpack的话，他有自动编译的功能。除了Webpack，我们还可以使用Babel来完成。这节课我们就是用babel把ES6转化成ES5</p>
+<h2 id="2-搭建环境步骤"><a href="#2-搭建环境步骤" class="headerlink" title="(2)搭建环境步骤"></a>(2)搭建环境步骤</h2><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>ECMA6 是 ECMA5 的进化版 ，现在流行的框架都用的是 ECMA6 的语法，所以有必要去学习一下<br>但是 ECMA 支持度不太好，他只能支持 IE10+ 谷歌，火狐等最先进的版本。所以我们要把这种语法转化成 ECMA5.0 的语法，要是使用 webpack 的话，他有自动编译的功能。除了 Webpack，我们还可以使用 Babel 来完成。这节课我们就是用 babel 把 ES6 转化成 ES5</p>
 <h2 id="环境的搭建也可以说是转化"><a href="#环境的搭建也可以说是转化" class="headerlink" title="环境的搭建也可以说是转化"></a>环境的搭建也可以说是转化</h2><ul>
-<li><p>(一)  创建 一个项目的工程。并在目录下面创建2个文件夹。一个是src一个是dist</p>
-<blockquote>
-<p>src  书写ES6代码的文件夹，写的JS程序都放在这里<br>dist 利用babel编译的ES5代码的文件夹。在HTML页面需要引入这里的js文件</p>
-</blockquote>
-</li>
+<li>(一) 创建 一个项目的工程。并在目录下面创建 2 个文件夹。一个是 src 一个是 dist</li>
 </ul>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><ul>
-<li>(二)  文件夹建立好以后，我们新建一个index.html文件</li>
+<blockquote>
+<p>src 书写 ES6 代码的文件夹，写的 JS 程序都放在这里<br>dist 利用 babel 编译的 ES5 代码的文件夹。在 HTML 页面需要引入这里的 js 文件</p>
+</blockquote>
+<p>##</p>
+<ul>
+<li>(二) 文件夹建立好以后，我们新建一个 index.html 文件</li>
 </ul>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>initial-scale<span class="token punctuation">=</span>1.0,maximum-scale<span class="token punctuation">=</span>1.0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>initial-scale<span class="token punctuation">=</span>1.0,maximum-scale<span class="token punctuation">=</span>1.0<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>ECMA6环境的搭建<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./dist/index.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-  Hello World !
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    Hello World !
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>需要注意的是我们引入的是dist目录下的文件。也就是引入的是我们编译好后的文件</p>
-<pre class="line-numbers language-html"><code class="language-html"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./dist/index.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>需要注意的是我们引入的是 dist 目录下的文件。也就是引入的是我们编译好后的文件</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./dist/index.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ul>
-<li>(三)  编写index.js文件 在src的目录下面新建一个index.js的文件这样方便对应</li>
+<li>(三) 编写 index.js 文件 在 src 的目录下面新建一个 index.js 的文件这样方便对应</li>
 </ul>
-<p>在index.js里面敲一个最简单的</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> a <span class="token operator">=</span><span class="token number">2</span> <span class="token punctuation">;</span>
-window<span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>这里我用了left来声明变量，就是为了测试ESMA6的语法</p>
-<h2 id="初始化项目-安装babel-cli-和babel-preset-es2015这两个包"><a href="#初始化项目-安装babel-cli-和babel-preset-es2015这两个包" class="headerlink" title="初始化项目 安装babel-cli 和babel-preset-es2015这两个包"></a>初始化项目 安装babel-cli 和babel-preset-es2015这两个包</h2><ul>
-<li>(一) 第一步要先安装babel-cli 和babel-preset-es2015这两个包 </li>
+<p>在 index.js 里面敲一个最简单的</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">2</span>
+window<span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>这里我用了 left 来声明变量，就是为了测试 ESMA6 的语法</p>
+<h2 id="初始化项目-安装-babel-cli-和-babel-preset-es2015-这两个包"><a href="#初始化项目-安装-babel-cli-和-babel-preset-es2015-这两个包" class="headerlink" title="初始化项目 安装 babel-cli 和 babel-preset-es2015 这两个包"></a>初始化项目 安装 babel-cli 和 babel-preset-es2015 这两个包</h2><ul>
+<li>(一) 第一步要先安装 babel-cli 和 babel-preset-es2015 这两个包</li>
 </ul>
-<p>在安装babel之前我们需要npm来初始化项目 npm init即可</p>
+<p>在安装 babel 之前我们需要 npm 来初始化项目 npm init 即可</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">npm init  <span class="token operator">-</span>y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后我们安装babel-cli,只是这样还不能成功安装。</p>
+<p>然后我们安装 babel-cli,只是这样还不能成功安装。</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">npm install <span class="token operator">-</span>g babel<span class="token operator">-</span>cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>接着 安装babel-preset -es2015 这个包</p>
+<p>接着 安装 babel-preset -es2015 这个包</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">npm install babel<span class="token operator">-</span>preset<span class="token operator">-</span>es2015 <span class="token operator">--</span>save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>装完后检查一下 package.json下面是否有</p>
+<p>装完后检查一下 package.json 下面是否有</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">  <span class="token string">"dependencies"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
     <span class="token string">"babel-cli"</span><span class="token punctuation">:</span> <span class="token string">"^6.26.0"</span><span class="token punctuation">,</span>
     <span class="token string">"babel-preset-es2015"</span><span class="token punctuation">:</span> <span class="token string">"^6.24.1"</span>
   <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>(二) 第二部 在根目录下面新建一个后缀名是.babelrc文件</li>
+<li>(二) 第二部 在根目录下面新建一个后缀名是.babelrc 文件</li>
 </ul>
 <p>在里面写入</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
@@ -545,7 +549,7 @@ window<span class="token punctuation">.</span><span class="token function">alert
 <ul>
 <li>(三) 第三部 简化操作命令</li>
 </ul>
-<p>在package.json里面找到</p>
+<p>在 package.json 里面找到</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token string">"scripts"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
     <span class="token string">"test"</span><span class="token punctuation">:</span> <span class="token string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>
   <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -557,7 +561,7 @@ window<span class="token punctuation">.</span><span class="token function">alert
 <pre class="line-numbers language-javascript"><code class="language-javascript">npm run build <span class="token comment" spellcheck="true">//来进行转换了</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>当然了你 要是需要很多文件，也可以自己敲指令那样就没有第三部了。直接在里面敲</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">babel src<span class="token operator">/</span>index<span class="token punctuation">.</span>js <span class="token operator">-</span>o dist<span class="token operator">/</span>index<span class="token punctuation">.</span>js  <span class="token comment" spellcheck="true">/*参照对应的文件和路径*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>以上就是ES6环境搭建转化为ES5的方法</p>
+<p>以上就是 ES6 环境搭建转化为 ES5 的方法</p>
 
             </div>
             <hr/>
@@ -623,6 +627,10 @@ window<span class="token punctuation">.</span><span class="token function">alert
                             
                                 <a href="/tags/ES6/">
                                     <span class="chip bg-color">ES6</span>
+                                </a>
+                            
+                                <a href="/tags/Javascript/">
+                                    <span class="chip bg-color">Javascript</span>
                                 </a>
                             
                         </div>
@@ -705,6 +713,10 @@ window<span class="token punctuation">.</span><span class="token function">alert
                         <span class="chip bg-color">ES6</span>
                     </a>
                     
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -752,6 +764,10 @@ window<span class="token punctuation">.</span><span class="token function">alert
                     
                     <a href="/tags/ES6/">
                         <span class="chip bg-color">ES6</span>
+                    </a>
+                    
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
                     </a>
                     
                 </div>
@@ -902,7 +918,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >107.2k</span
+        >107.4k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
