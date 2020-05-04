@@ -30,9 +30,9 @@
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
-<link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-09
+                    2020-05-04
                 </div>
                 
 
@@ -463,7 +463,7 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        2.2k
+                        2.3k
                     </div>
                     
 
@@ -950,6 +950,9 @@ message <span class="token operator">=</span> <span class="token punctuation">(<
 最后结果
 <span class="token number">200</span>
 要是使用message<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">300</span> 会直接报错<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>特别注意的就是元祖中不能只有一个元素比如(2) 这样是不行的,因为 Python 分不清小括号和元组的区别</p>
+</blockquote>
 <h3 id="遍历元祖中所有的值"><a href="#遍历元祖中所有的值" class="headerlink" title="遍历元祖中所有的值"></a>遍历元祖中所有的值</h3><pre class="line-numbers language-python"><code class="language-python">
 message <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
 <span class="token keyword">for</span> item <span class="token keyword">in</span> message<span class="token punctuation">:</span>
