@@ -461,7 +461,7 @@ def 函数名:
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-04
+                    2020-05-05
                 </div>
                 
 
@@ -469,14 +469,14 @@ def 函数名:
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        408
+                        672
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -580,6 +580,53 @@ re<span class="token punctuation">(</span><span class="token punctuation">)</spa
 
 <span class="token comment" spellcheck="true"># 结果</span>
 <span class="token comment" spellcheck="true"># 哈哈哈</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="函数的另外一种匿名函数"><a href="#函数的另外一种匿名函数" class="headerlink" title="函数的另外一种匿名函数"></a>函数的另外一种匿名函数</h3><ul>
+<li><p>在 Python 中有些时候不需要显示的定义函数,直接传入匿名函数更方便</p>
+</li>
+<li><p>在 Python 中匿名函数通过关键字 lambda 来支持 冒号前面的 x 表示函数参数</p>
+</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+f <span class="token operator">=</span> <span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token operator">*</span>x
+
+<span class="token comment" spellcheck="true"># 等价于</span>
+
+<span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> x<span class="token operator">*</span>x
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true"># 只不过他没有名字罢了</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="map-和-reduce-函数"><a href="#map-和-reduce-函数" class="headerlink" title="map 和 reduce 函数"></a>map 和 reduce 函数</h3><ul>
+<li>map(参数一,参数二) map 的作用就是 参数二就是参数一里面的参数,参数一必须十函数</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> x<span class="token operator">*</span>x
+r <span class="token operator">=</span> map<span class="token punctuation">(</span>f<span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 结果就是</span>
+<span class="token comment" spellcheck="true"># list(r)</span>
+<span class="token comment" spellcheck="true"># [1,4,9]</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>reduce 函数就是把一个函数作用在一个序列[x1,x2,x3,…]上,这个函数必须接收两个参数 reduce 把结果和序列的下一个元素做累积运算,其效果就是</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+reduce<span class="token punctuation">(</span>f<span class="token punctuation">,</span><span class="token punctuation">[</span>x1<span class="token punctuation">,</span>x2<span class="token punctuation">,</span>x3<span class="token punctuation">,</span>x4<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">=</span> f<span class="token punctuation">(</span>f<span class="token punctuation">(</span>f<span class="token punctuation">(</span>x1<span class="token punctuation">,</span>x2<span class="token punctuation">)</span><span class="token punctuation">,</span>x3<span class="token punctuation">)</span><span class="token punctuation">,</span>x4<span class="token punctuation">)</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>比方说对一个序列求和,既可以用 reduce 来实现</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> functiontools <span class="token keyword">import</span> reduce
+
+<span class="token keyword">def</span> <span class="token function">add</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> x <span class="token operator">+</span> y
+reduce<span class="token punctuation">(</span>add<span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 结果就是25</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -924,7 +971,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >107.5k</span
+        >107.8k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
