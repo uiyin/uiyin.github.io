@@ -4,11 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TypeScript(四) Symbol-ES6 新基础类型, Javascript Python Js">
-    <meta name="description" content="Symbol-ES6 新基础类型概述
-Symbol 是 ES6 新增的一种数据类型,它和 number,string,boolean,null,undefined,object 一样.它用来表示独一无二的值,通过 Symbol 函数生成
+    <meta name="keywords" content="Python 面向对象高级编程, Javascript Python Js">
+    <meta name="description" content="面向对象高级编程
+春花不红不如草，少年不美不如老。
 
-">
+限制实例的属性 slot
+使用__slots__这样不允许私自增加属性
+
+
+class Student(obj):
+    __slot__ = (&#39;name&#39;,&#39;age&#39;) #使用元祖">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +21,7 @@ Symbol 是 ES6 新增的一种数据类型,它和 number,string,boolean,null,und
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>TypeScript(四) Symbol-ES6 新基础类型 | JSOPY</title>
+    <title>Python 面向对象高级编程 | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -306,13 +311,13 @@ Symbol 是 ES6 新增的一种数据类型,它和 number,string,boolean,null,und
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        TypeScript(四) Symbol-ES6 新基础类型
+                        Python 面向对象高级编程
                     </div>
                 </div>
             </div>
@@ -424,12 +429,8 @@ Symbol 是 ES6 新增的一种数据类型,它和 number,string,boolean,null,und
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Javascript/">
-                                <span class="chip bg-color">Javascript</span>
-                            </a>
-                        
-                            <a href="/tags/TypeScript/">
-                                <span class="chip bg-color">TypeScript</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -440,8 +441,8 @@ Symbol 是 ES6 新增的一种数据类型,它和 number,string,boolean,null,und
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/TypeScript/" class="post-category">
-                                TypeScript
+                            <a href="/categories/python/" class="post-category">
+                                python
                             </a>
                         
                     </div>
@@ -452,13 +453,13 @@ Symbol 是 ES6 新增的一种数据类型,它和 number,string,boolean,null,und
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-17
+                    2020-03-22
                 </div>
                 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-22
+                    2020-05-05
                 </div>
                 
 
@@ -466,7 +467,7 @@ Symbol 是 ES6 新增的一种数据类型,它和 number,string,boolean,null,und
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        919
+                        868
                     </div>
                     
 
@@ -489,124 +490,193 @@ Symbol 是 ES6 新增的一种数据类型,它和 number,string,boolean,null,und
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Symbol-ES6-新基础类型"><a href="#Symbol-ES6-新基础类型" class="headerlink" title="Symbol-ES6 新基础类型"></a>Symbol-ES6 新基础类型</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><blockquote>
-<p>Symbol 是 ES6 新增的一种数据类型,它和 number,string,boolean,null,undefined,object 一样.它用来表示独一无二的值,通过 Symbol 函数生成</p>
+                <h1 id="面向对象高级编程"><a href="#面向对象高级编程" class="headerlink" title="面向对象高级编程"></a>面向对象高级编程</h1><blockquote>
+<p>春花不红不如草，少年不美不如老。</p>
 </blockquote>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
-<li>我们使用 Symbol 函数生成一个 symbol 类型的值 s</li>
+<h2 id="限制实例的属性-slot"><a href="#限制实例的属性-slot" class="headerlink" title="限制实例的属性 slot"></a>限制实例的属性 slot</h2><ul>
+<li>使用__slots__这样不允许私自增加属性</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> s <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">typeof</span> s <span class="token comment" spellcheck="true">//结果symbol</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    __slot__ <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#使用元祖定义允许绑定的属性名称</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>然后测试一下</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+s <span class="token operator">=</span> Student<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+s<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Mike'</span>
+
+s<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">18</span>
+
+s<span class="token punctuation">.</span>score <span class="token operator">=</span> <span class="token number">25</span>
+
+<span class="token comment" spellcheck="true"># 这样直接报错</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>由于 ‘score’ 没有放到<strong>slot</strong>中,所以不能绑定 score 属性,所以报错误</p>
 <blockquote>
-<p>注意 Symbol 前面不能加 new 关键字,直接调用即可创建一个独一无二的 symbol 类型的值</p>
+<p>要注意的是 __slot__定义的属性仅仅对当前类的实例起作用,对继承的子类是不起作用的</p>
 </blockquote>
 <ul>
-<li>我们也可以创建 symbol 类型的时候传入一个参数,这个参数需要是字符串,如果传入的不是字符串,它会优先调用 toString 方法转为字符串</li>
+<li>比如</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> s1 <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'lison'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> s2 <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'lison'</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s1 <span class="token operator">===</span> s2<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>上述例子中使用 Symbol 方法创建了两个 symbol 值,方法都传入了相同的字符串”lison”,但是 s1===s2 却是 false.所以说明 Symbol 会返回一个独一无二的值,这个值和任何值都不等</p>
-</blockquote>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">class</span> <span class="token class-name">GraduateStudent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <span class="token keyword">pass</span>
+ g <span class="token operator">=</span> GraduateStudent<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ g<span class="token punctuation">.</span>score <span class="token operator">=</span> <span class="token number">9999</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="property-装饰器负责把方法当成限制属性调用的"><a href="#property-装饰器负责把方法当成限制属性调用的" class="headerlink" title="@property 装饰器负责把方法当成限制属性调用的"></a>@property 装饰器负责把方法当成限制属性调用的</h2><ul>
+<li>@property 属性</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+   @property
+  <span class="token keyword">def</span> <span class="token function">score</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> self<span class="token punctuation">.</span>_score
+   @score<span class="token punctuation">.</span>setter
+   <span class="token keyword">def</span> <span class="token function">score</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     <span class="token keyword">if</span> <span class="token operator">not</span> isinstance<span class="token punctuation">(</span>value<span class="token punctuation">,</span>int<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       <span class="token keyword">raise</span> ValueError<span class="token punctuation">(</span><span class="token string">'score must be an integer!'</span><span class="token punctuation">)</span>
+     <span class="token keyword">if</span> value<span class="token operator">&lt;</span><span class="token number">0</span> <span class="token operator">or</span> value<span class="token operator">></span><span class="token number">100</span><span class="token punctuation">:</span>
+       <span class="token keyword">raise</span> ValueError<span class="token punctuation">(</span><span class="token string">'score must be between 0 to 100 !'</span><span class="token punctuation">)</span>
+     self<span class="token punctuation">.</span>_score <span class="token operator">=</span> value
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>@property 的实现比较复杂,它是把一个 getter 方法变成属性,只需要加上@property 就可以了</p>
+<p>@property 本身又创建了另外一个装饰器@score.setter 负责把一个 setter 方法变成属性在赋值.于是我们就拥有了一个可控的操作</p>
+<pre class="line-numbers language-python"><code class="language-python">
+s <span class="token operator">=</span> Student<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+s<span class="token punctuation">.</span>score <span class="token operator">=</span> <span class="token number">60</span> <span class="token comment" spellcheck="true"># OK 实际转化为s.set_score(60)</span>
+
+s<span class="token punctuation">.</span>score  <span class="token comment" spellcheck="true"># OK 实际转化为s.get_score()</span>
+
+<span class="token comment" spellcheck="true"># 结果 60</span>
+
+s<span class="token punctuation">.</span>score <span class="token operator">=</span> <span class="token number">999</span>
+
+<span class="token comment" spellcheck="true"># 这样就报错误</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>可以简单理解为 Symbol 值为字符串类型的值,但是它不可以和其他类型的值进行运算,但是可以传为字符串和布尔类型</li>
+<li>@property 还可以定义只读属性,只定义 getter 方法,不定义 setter 方法就是个只读属性</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> s1 <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'lision'</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s1<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// 'Symbol(lision)'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>转化</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> s <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'lison'</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// 'Symbol(lison)'</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">Boolean</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//true</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">!</span>s<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="作为属性名"><a href="#作为属性名" class="headerlink" title="作为属性名"></a>作为属性名</h2><blockquote>
-<p>在 ES6 中你可以使用一个变量作为属性名,但是表达式必须放到方括号里</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    @property
+    <span class="token keyword">def</span> <span class="token function">birth</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>_birthday
+    @birth<span class="token punctuation">.</span>setter
+     <span class="token keyword">def</span> <span class="token function">birth</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       self<span class="token punctuation">.</span>_birth <span class="token operator">=</span> value
+    @property
+      <span class="token keyword">def</span> <span class="token function">age</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token number">2015</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>_birth
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面的 birth 就是可读写的 下面的 age 只能是可读的属性</p>
+<blockquote>
+<p>@property 广泛应用在类的定义中,可以让调用者写出简短的代码,同时保证对参数进行必要的检查</p>
 </blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> prop <span class="token operator">=</span> <span class="token string">'name'</span>
-<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token punctuation">[</span>prop<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">'Lison'</span>
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="多重继承"><a href="#多重继承" class="headerlink" title="多重继承"></a>多重继承</h2><ul>
+<li>有的时候我们需要一个类继承好多个基类,用法类似</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">class</span> <span class="token class-name">Man</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Woman</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">(</span>Man<span class="token punctuation">,</span>Woman<span class="token punctuation">)</span><span class="token punctuation">:</span>
+   <span class="token keyword">pass</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>通过多重继承一个子类就可以同时获取多个父类的所有功能</p>
+<h2 id="定制类"><a href="#定制类" class="headerlink" title="定制类"></a>定制类</h2><ul>
+<li>__str__ 返回一个用户看的懂的字符串,它必须和 print 结合使用</li>
+</ul>
+<p>我们先定义了一个 Student 类,打印实例</p>
+<pre class="line-numbers language-python"><code class="language-python">
+ <span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       self<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+
+     <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">'Student object(name:%s'</span> <span class="token operator">%</span>self<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>Student<span class="token punctuation">(</span><span class="token string">'Mike'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>而 Symbol 值可以作为属性名,因为 Symbol 值是独一无二的所以当它作为属性名的时候不会和其他任何属性名重复</li>
+<li>__call__ 一个对象实例可以又自己的属性和方法,当我们调用实例方法后,我们用 instance.method()来调用,自己掉自己</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">'lison'</span>
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// {Symbol():'lison'}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这个时候打出来的对象有一个属性名是 symbol 值,我们如果想访问这个属性值,就只能用 name，必须加[]</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 'lison'</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// undefined</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>后面学到 ES6 的类(Class)的时候,会利用此特性实现私有属性和私有方法</p>
-</blockquote>
-<h2 id="属性名的遍历"><a href="#属性名的遍历" class="headerlink" title="属性名的遍历"></a>属性名的遍历</h2><blockquote>
-<p>使用 Symbol 类型值作为属性名,这个属性不会被 for..in 遍历到,也不会被 Object.keys(),Object.getOwnPropertyNames()、JSON.stringify()获取到</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">'lison'</span><span class="token punctuation">,</span>
-  age<span class="token punctuation">:</span> <span class="token number">18</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> key <span class="token keyword">in</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">// => 'age'</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// ['age']</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">getOwnPropertyNames</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// ['age']</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// '{ "age": 18 }'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="我们可以使用-Object-getOwnPropertySymbols-方法获取对象的所有-symbol-类型的属性名-他返回的类型是一个数组"><a href="#我们可以使用-Object-getOwnPropertySymbols-方法获取对象的所有-symbol-类型的属性名-他返回的类型是一个数组" class="headerlink" title="我们可以使用 Object.getOwnPropertySymbols 方法获取对象的所有 symbol 类型的属性名,他返回的类型是一个数组"></a>我们可以使用 Object.getOwnPropertySymbols 方法获取对象的所有 symbol 类型的属性名,他返回的类型是一个数组</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">'lisa'</span><span class="token punctuation">,</span>
-  age<span class="token punctuation">:</span> <span class="token number">18</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> SymbolPropNames <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">getOwnPropertySymbols</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>SymbolPropNames<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// [Symbol(name)]</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">[</span>SymbolPropNames<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// lisa</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="也可以使用第二种方法-ES6-提供的-Reflect-对象的静态方法-Reflect-ownKeys，它可以返回所有类型的属性名-Symbol-也会被返回"><a href="#也可以使用第二种方法-ES6-提供的-Reflect-对象的静态方法-Reflect-ownKeys，它可以返回所有类型的属性名-Symbol-也会被返回" class="headerlink" title="也可以使用第二种方法 ES6 提供的 Reflect 对象的静态方法 Reflect.ownKeys，它可以返回所有类型的属性名,Symbol 也会被返回"></a>也可以使用第二种方法 ES6 提供的 Reflect 对象的静态方法 Reflect.ownKeys，它可以返回所有类型的属性名,Symbol 也会被返回</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'lisa'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">'lision'</span><span class="token punctuation">,</span>
-  age<span class="token punctuation">:</span> <span class="token number">18</span>
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Reflect<span class="token punctuation">.</span><span class="token function">ownKeys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">//['age',Symbol(lisa)]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Symbol-for-和-Symbol-keyFor"><a href="#Symbol-for-和-Symbol-keyFor" class="headerlink" title="Symbol.for()和 Symbol.keyFor()"></a>Symbol.for()和 Symbol.keyFor()</h2><blockquote>
-<p>Symbol 包含两个静态方法 for 和 keyFor</p>
-</blockquote>
-<h3 id="1-Symbol-for"><a href="#1-Symbol-for" class="headerlink" title="1.Symbol.for()"></a>1.Symbol.for()</h3><ul>
-<li>我们知道使用 Symbol 方法创建的 symbol 值是独一无二的,每一个值都不和任意其他值相等,而我们使用 Symbol.for 方法的时候 它会检查有没有使用该字符串调用 Symbol.for 方法创建的 Symbol 值，如果有则返回,如果没有则新建</li>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+         self<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+     <span class="token keyword">def</span> <span class="token function">__call__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+         <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'My name is $s'</span> <span class="token operator">%</span> self<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 调用方式</span>
+<span class="token comment" spellcheck="true"># s = Student('Mike')</span>
+<span class="token comment" spellcheck="true"># s()  # self参数不要传入</span>
+<span class="token comment" spellcheck="true"># My name is Mike</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>调用了 call 方法你完全可以把类当作一个方法,自己调自己</p>
+<h2 id="classmethod-和-staticmethod-区别"><a href="#classmethod-和-staticmethod-区别" class="headerlink" title="@classmethod 和@staticmethod 区别"></a>@classmethod 和@staticmethod 区别</h2><ul>
+<li>看代码</li>
 </ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> s1 <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'lisa'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> s2 <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'lisa'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> s3 <span class="token operator">=</span> Symbol<span class="token punctuation">.</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token string">'lisa'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> s4 <span class="token operator">=</span> Symbol<span class="token punctuation">.</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token string">'lisa'</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s1 <span class="token operator">===</span> s2<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//false 不相等</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s3 <span class="token operator">===</span> s4<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//true 相等</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>特别注意 使用该方法创建的 symbol 值后会在全局范围进行注册</p>
-</blockquote>
-<h3 id="2-Symbol-keyFor-反转获取到参数"><a href="#2-Symbol-keyFor-反转获取到参数" class="headerlink" title="2.Symbol.keyFor()反转获取到参数"></a>2.Symbol.keyFor()反转获取到参数</h3><blockquote>
-<p>该方法传入了一个 symbol 值,返回该值在全局注册的键名</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> sym <span class="token operator">=</span> Symbol<span class="token punctuation">.</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token string">'lisa'</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Symbol<span class="token punctuation">.</span><span class="token function">keyFor</span><span class="token punctuation">(</span>sym<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//结果就是lisa</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li><p>Symbol 独一无二</p>
-</li>
-<li><p>Symbol.for()和 Symbol.keyFor()使用</p>
-</li>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">class</span> <span class="token class-name">test</span><span class="token punctuation">:</span>
+
+    class_name <span class="token operator">=</span> <span class="token string">"test"</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>class_name <span class="token operator">=</span> name
+
+    <span class="token keyword">def</span> <span class="token function">my_print</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>value <span class="token operator">+</span> <span class="token string">" "</span> <span class="token operator">+</span>self<span class="token punctuation">.</span>class_name<span class="token punctuation">)</span>
+
+    @staticmethod
+    <span class="token keyword">def</span> <span class="token function">my_static_print</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span>
+
+    @classmethod
+    <span class="token keyword">def</span> <span class="token function">my_class_print</span><span class="token punctuation">(</span>cls<span class="token punctuation">,</span> val<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>val <span class="token operator">+</span><span class="token string">" "</span><span class="token operator">+</span> cls<span class="token punctuation">.</span>class_name<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+     my_test <span class="token operator">=</span> test<span class="token punctuation">(</span><span class="token string">"xxx"</span><span class="token punctuation">)</span>
+
+     test<span class="token punctuation">.</span>my_static_print<span class="token punctuation">(</span><span class="token string">"static print"</span><span class="token punctuation">)</span>
+     test<span class="token punctuation">.</span>my_class_print<span class="token punctuation">(</span><span class="token string">"class print"</span><span class="token punctuation">)</span>
+     my_test<span class="token punctuation">.</span>my_static_print<span class="token punctuation">(</span><span class="token string">"static print"</span><span class="token punctuation">)</span>
+     my_test<span class="token punctuation">.</span>my_class_print<span class="token punctuation">(</span><span class="token string">"class print"</span><span class="token punctuation">)</span>
+     my_test<span class="token punctuation">.</span>my_print<span class="token punctuation">(</span><span class="token string">"my_print"</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>最后结果</li>
 </ul>
+<pre class="line-numbers language-python"><code class="language-python">
+static <span class="token keyword">print</span>
+<span class="token keyword">class</span> <span class="token class-name">print</span> test
+static <span class="token keyword">print</span>
+<span class="token keyword">class</span> <span class="token class-name">print</span> test
+my_print xxx
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>总结</li>
+</ul>
+<p>classmathod 必须要传入一个 cls 参数,这个参数就代表类本身,后面跟的是值</p>
+<p>staticmethod 则完全没必要</p>
+<ul>
+<li>记忆</li>
+</ul>
+<p>如果你定义了一个方法它的返回值和类的属性以及实例无关,结果永远不变 那就用@staticmethod</p>
+<p>如果你定义了一个方法它的返回值只和类的属性有关,结果可变.那就用@classmethod</p>
 
             </div>
             <hr/>
@@ -632,7 +702,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2019/12/17/typescriptbasic4/">https://jsopy.gitee.io/2019/12/17/typescriptbasic4/</a>
+                    <a href="https://jsopy.gitee.io/2020/03/22/pythonresult22/">https://jsopy.gitee.io/2020/03/22/pythonresult22/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -670,12 +740,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Javascript/">
-                                    <span class="chip bg-color">Javascript</span>
-                                </a>
-                            
-                                <a href="/tags/TypeScript/">
-                                    <span class="chip bg-color">TypeScript</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -716,50 +782,48 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/12/18/typescriptbasic5/">
+                <a href="/2020/03/22/pythonresult22/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="TypeScript(五) Typescript 深入学习枚举">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Python 面向对象高级编程">
                         
-                        <span class="card-title">TypeScript(五) Typescript 深入学习枚举</span>
+                        <span class="card-title">Python 面向对象高级编程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript(五) Typescript 深入学习枚举
+                            本文主要是记录python基础学习笔记
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/TypeScript/" class="post-category">
-                                    TypeScript
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/TypeScript/">
-                        <span class="chip bg-color">TypeScript</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -773,31 +837,31 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/16/typescriptbasic3/">
+                <a href="/2020/03/21/es612/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="TypeScript(三) TS中补充的六个类型">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="ES6(十二) ES6知识划分">
                         
-                        <span class="card-title">TypeScript(三) TS中补充的六个类型</span>
+                        <span class="card-title">ES6(十二) ES6知识划分</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript(三) TS中补充的六个类型
+                            本文主要是记录ES6的学习
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-21
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/TypeScript/" class="post-category">
-                                    TypeScript
+                            <a href="/categories/ES6/" class="post-category">
+                                    ES6
                                 </a>
                             
                             
@@ -807,12 +871,12 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
+                    <a href="/tags/ES6/">
+                        <span class="chip bg-color">ES6</span>
                     </a>
                     
-                    <a href="/tags/TypeScript/">
-                        <span class="chip bg-color">TypeScript</span>
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
                     </a>
                     
                 </div>
