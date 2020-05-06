@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-05-05T09:05:55.847Z</updated>
+  <updated>2020-05-06T12:50:20.874Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,236 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 错误机制</title>
+    <link href="https://jsopy.gitee.io/2020/03/30/pythonnew7/"/>
+    <id>https://jsopy.gitee.io/2020/03/30/pythonnew7/</id>
+    <published>2020-03-30T13:26:47.000Z</published>
+    <updated>2020-05-06T12:50:20.874Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;错误处理-异常机制&quot;&gt;&lt;a href=&quot;#错误处理-异常机制&quot; class=&quot;headerlink&quot; title=&quot;错误处理,异常机制&quot;&gt;&lt;/a&gt;错误处理,异常机制&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;理想的书籍是智慧的钥匙
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 函数</title>
+    <link href="https://jsopy.gitee.io/2020/03/29/pythonnew6/"/>
+    <id>https://jsopy.gitee.io/2020/03/29/pythonnew6/</id>
+    <published>2020-03-29T13:26:47.000Z</published>
+    <updated>2020-05-06T12:50:14.030Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;函数&quot;&gt;&lt;a href=&quot;#函数&quot; class=&quot;headerlink&quot; title=&quot;函数&quot;&gt;&lt;/a&gt;函数&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;希望是人生的乳母。—— 科策布&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;函数的定义&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 模块</title>
+    <link href="https://jsopy.gitee.io/2020/03/28/pythonnew5/"/>
+    <id>https://jsopy.gitee.io/2020/03/28/pythonnew5/</id>
+    <published>2020-03-28T13:26:47.000Z</published>
+    <updated>2020-05-06T12:50:08.493Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;模块&quot;&gt;&lt;a href=&quot;#模块&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 控制流</title>
+    <link href="https://jsopy.gitee.io/2020/03/27/pythonnew4/"/>
+    <id>https://jsopy.gitee.io/2020/03/27/pythonnew4/</id>
+    <published>2020-03-27T13:26:47.000Z</published>
+    <updated>2020-05-06T12:28:18.292Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;控制流&quot;&gt;&lt;a href=&quot;#控制流&quot; class=&quot;headerlink&quot; title=&quot;控制流&quot;&gt;&lt;/a&gt;控制流&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本来，生命只有一次，对于谁都是宝贵的。——普列姆昌德&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 列表</title>
+    <link href="https://jsopy.gitee.io/2020/03/26/pythonnew3/"/>
+    <id>https://jsopy.gitee.io/2020/03/26/pythonnew3/</id>
+    <published>2020-03-26T13:26:47.000Z</published>
+    <updated>2020-05-06T12:27:44.260Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot; title=&quot;列表&quot;&gt;&lt;/a&gt;列表&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;崇高的理想就象生长在高山上的鲜花。如果要搞下它，勤奋才能是攀登的绳索
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 字符串</title>
+    <link href="https://jsopy.gitee.io/2020/03/25/pythonnew2/"/>
+    <id>https://jsopy.gitee.io/2020/03/25/pythonnew2/</id>
+    <published>2020-03-25T13:26:47.000Z</published>
+    <updated>2020-05-06T12:26:43.720Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;字符串&quot;&gt;&lt;a href=&quot;#字符串&quot; class=&quot;headerlink&quot; title=&quot;字符串&quot;&gt;&lt;/a&gt;字符串&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;知识犹如人体的血液一样宝贵 –高士其&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 变量和类型</title>
+    <link href="https://jsopy.gitee.io/2020/03/24/pythonnew1/"/>
+    <id>https://jsopy.gitee.io/2020/03/24/pythonnew1/</id>
+    <published>2020-03-24T13:26:47.000Z</published>
+    <updated>2020-05-06T12:26:16.854Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;变量和类型&quot;&gt;&lt;a href=&quot;#变量和类型&quot; class=&quot;headerlink&quot; title=&quot;变量和类型&quot;&gt;&lt;/a&gt;变量和类型&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;不经一番彻骨寒,怎得梅花扑鼻香 — 宋帆&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python知识点总结</title>
+    <link href="https://jsopy.gitee.io/2020/03/23/pythonnewall/"/>
+    <id>https://jsopy.gitee.io/2020/03/23/pythonnewall/</id>
+    <published>2020-03-23T12:26:47.000Z</published>
+    <updated>2020-05-06T12:51:47.470Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;目录分类&quot;&gt;&lt;a href=&quot;#目录分类&quot; class=&quot;headerlink&quot; title=&quot;目录分类&quot;&gt;&lt;/a&gt;目录分类&lt;/h2&gt;&lt;h3 id=&quot;python-变量和类型-一&quot;&gt;&lt;a href=&quot;#python-变量和类型-一&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 面向对象高级编程</title>
@@ -377,239 +607,6 @@ const
       <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
     
       <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ES6(一) 搭建环境</title>
-    <link href="https://jsopy.gitee.io/2020/03/10/es61/"/>
-    <id>https://jsopy.gitee.io/2020/03/10/es61/</id>
-    <published>2020-03-10T13:26:47.000Z</published>
-    <updated>2020-05-03T11:48:00.524Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;1-搭建环境&quot;&gt;&lt;a href=&quot;#1-搭建环境&quot; class=&quot;headerlink&quot; title=&quot;(1)搭建环境&quot;&gt;&lt;/a&gt;(1)搭建环境&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;因为在 es6 的语法在 es5 中大部分不支持。所以必须要装一个 babel 的转化为
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ES6" scheme="https://jsopy.gitee.io/categories/ES6/"/>
-    
-    
-      <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ES6学习笔记</title>
-    <link href="https://jsopy.gitee.io/2020/03/09/es6all/"/>
-    <id>https://jsopy.gitee.io/2020/03/09/es6all/</id>
-    <published>2020-03-09T12:26:47.000Z</published>
-    <updated>2020-05-03T11:47:50.690Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;ES6-一-搭建环境&quot;&gt;&lt;a href=&quot;#ES6-一-搭建环境&quot; class=&quot;headerlink&quot; title=&quot;ES6(一) 搭建环境&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.jsopy.com/2020/03/10/ES61/&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ES6" scheme="https://jsopy.gitee.io/categories/ES6/"/>
-    
-    
-      <category term="ES6" scheme="https://jsopy.gitee.io/tags/ES6/"/>
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用宝塔面板将hexo部署到阿里云</title>
-    <link href="https://jsopy.gitee.io/2020/03/08/setuphexo/"/>
-    <id>https://jsopy.gitee.io/2020/03/08/setuphexo/</id>
-    <published>2020-03-08T12:26:47.000Z</published>
-    <updated>2020-05-02T13:16:30.217Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;起因是因为码云给我发来邮件,说我的仓库已经 500M 了,要么花钱扩充,要么不能增加。而自己的网站却有 40G
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="https://jsopy.gitee.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://jsopy.gitee.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flask 知识点小汇总</title>
-    <link href="https://jsopy.gitee.io/2020/03/07/flask5/"/>
-    <id>https://jsopy.gitee.io/2020/03/07/flask5/</id>
-    <published>2020-03-07T12:26:47.000Z</published>
-    <updated>2020-05-01T22:30:36.809Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Flask-知识点小汇总&quot;&gt;&lt;a href=&quot;#Flask-知识点小汇总&quot; class=&quot;headerlink&quot; title=&quot;Flask 知识点小汇总&quot;&gt;&lt;/a&gt;Flask
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flask 模板</title>
-    <link href="https://jsopy.gitee.io/2020/03/06/flask4/"/>
-    <id>https://jsopy.gitee.io/2020/03/06/flask4/</id>
-    <published>2020-03-06T12:26:47.000Z</published>
-    <updated>2020-05-01T22:30:14.946Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;模板&quot;&gt;&lt;a href=&quot;#模板&quot; class=&quot;headerlink&quot; title=&quot;模板&quot;&gt;&lt;/a&gt;模板&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;春花不红不如草，少年不美不如老。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flask 程序的基本结构</title>
-    <link href="https://jsopy.gitee.io/2020/03/05/flask3/"/>
-    <id>https://jsopy.gitee.io/2020/03/05/flask3/</id>
-    <published>2020-03-05T12:26:47.000Z</published>
-    <updated>2020-05-01T13:09:52.256Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;程序的基本结构&quot;&gt;&lt;a href=&quot;#程序的基本结构&quot; class=&quot;headerlink&quot; title=&quot;程序的基本结构&quot;&gt;&lt;/a&gt;程序的基本结构&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;当我活着，我要做生命的主宰，而不做它的奴隶。
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flask 安装虚拟环境和 Flask</title>
-    <link href="https://jsopy.gitee.io/2020/03/04/flask2/"/>
-    <id>https://jsopy.gitee.io/2020/03/04/flask2/</id>
-    <published>2020-03-04T12:26:47.000Z</published>
-    <updated>2020-04-29T12:46:44.063Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Flask-安装虚拟环境和-Flask&quot;&gt;&lt;a href=&quot;#Flask-安装虚拟环境和-Flask&quot; class=&quot;headerlink&quot; title=&quot;Flask 安装虚拟环境和 Flask&quot;&gt;&lt;/a&gt;Flask 安装虚拟环境和
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 装饰器</title>
-    <link href="https://jsopy.gitee.io/2020/03/03/pythonresult21/"/>
-    <id>https://jsopy.gitee.io/2020/03/03/pythonresult21/</id>
-    <published>2020-03-03T13:26:47.000Z</published>
-    <updated>2020-04-26T10:51:49.986Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python-装饰器&quot;&gt;&lt;a href=&quot;#Python-装饰器&quot; class=&quot;headerlink&quot; title=&quot;Python 装饰器&quot;&gt;&lt;/a&gt;Python
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
     
   </entry>
   
