@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-05-10T13:27:10.656Z</updated>
+  <updated>2020-05-15T08:24:54.001Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue 中使用 jsonedit</title>
+    <link href="https://jsopy.gitee.io/2020/04/24/vuecha10/"/>
+    <id>https://jsopy.gitee.io/2020/04/24/vuecha10/</id>
+    <published>2020-04-24T13:26:47.000Z</published>
+    <updated>2020-05-15T08:24:54.001Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue-中使用-jsonedit&quot;&gt;&lt;a href=&quot;#Vue-中使用-jsonedit&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用 jsonedit&quot;&gt;&lt;/a&gt;Vue 中使用
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>React 基础笔记(React 安装 Antd)(二十二)</title>
@@ -532,34 +561,6 @@
         
         
           &lt;h1 id=&quot;深入理解迭代器和生成器&quot;&gt;&lt;a href=&quot;#深入理解迭代器和生成器&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 内置函数</title>
-    <link href="https://jsopy.gitee.io/2020/04/04/pythonnew12/"/>
-    <id>https://jsopy.gitee.io/2020/04/04/pythonnew12/</id>
-    <published>2020-04-04T13:26:47.000Z</published>
-    <updated>2020-05-09T13:34:49.080Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;内置函数&quot;&gt;&lt;a href=&quot;#内置函数&quot; class=&quot;headerlink&quot; title=&quot;内置函数&quot;&gt;&lt;/a&gt;内置函数&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;没有激流就称不上勇进，没有山峰则谈不上攀登。
         
       
     

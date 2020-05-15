@@ -4,9 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue中使用Stripe, Javascript Python Js">
-    <meta name="description" content="Vue 中使用 Stripe 来验证信用卡安装npm i vue-stripe-elements-plus --save
-第二部在开始的 index.html 引入 v3&amp;lt;script src=&#34;https://js.stripe.c">
+    <meta name="keywords" content="Vue 中使用 jsonedit, Javascript Python Js">
+    <meta name="description" content="Vue 中使用 jsonedit
+伟人都是在逆境中锻炼出来的，平静的湖面不会练出出众的水手。 –佚名
+
+首先第一步安装 jsonedit
+npm install jsoneditor
+
+第二步写一个父组件
+父组件的含义就是调用真正的 edi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>vue中使用Stripe | JSOPY</title>
+    <title>Vue 中使用 jsonedit | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,13 +310,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        vue中使用Stripe
+                        Vue 中使用 jsonedit
                     </div>
                 </div>
             </div>
@@ -450,13 +456,13 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-18
+                    2020-04-24
                 </div>
                 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-02
+                    2020-05-15
                 </div>
                 
 
@@ -464,14 +470,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        435
+                        685
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        3 分
                     </div>
                     
                 
@@ -487,168 +493,227 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Vue-中使用-Stripe-来验证信用卡"><a href="#Vue-中使用-Stripe-来验证信用卡" class="headerlink" title="Vue 中使用 Stripe 来验证信用卡"></a>Vue 中使用 Stripe 来验证信用卡</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-javascript"><code class="language-javascript">npm i vue<span class="token operator">-</span>stripe<span class="token operator">-</span>elements<span class="token operator">-</span>plus <span class="token operator">--</span>save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="第二部在开始的-index-html-引入-v3"><a href="#第二部在开始的-index-html-引入-v3" class="headerlink" title="第二部在开始的 index.html 引入 v3"></a>第二部在开始的 index.html 引入 v3</h2><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://js.stripe.com/v3/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="重点两个参数"><a href="#重点两个参数" class="headerlink" title="重点两个参数"></a>重点两个参数</h2><blockquote>
-<p>stripe 必须要你自己设定 options 必须要有参数可以参照下面的链接</p>
+                <h1 id="Vue-中使用-jsonedit"><a href="#Vue-中使用-jsonedit" class="headerlink" title="Vue 中使用 jsonedit"></a>Vue 中使用 jsonedit</h1><blockquote>
+<p>伟人都是在逆境中锻炼出来的，平静的湖面不会练出出众的水手。 –佚名</p>
 </blockquote>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe.js#element-options" target="_blank" rel="noopener">https://stripe.com/docs/stripe.js#element-options</a></p>
-</blockquote>
-<h2 id="验证信用卡号，CVC，过期日期"><a href="#验证信用卡号，CVC，过期日期" class="headerlink" title="验证信用卡号，CVC，过期日期"></a>验证信用卡号，CVC，过期日期</h2><blockquote>
-<p>验证 Number,cvc,过期时间</p>
-</blockquote>
-<blockquote>
-<p>完整版</p>
-</blockquote>
+<h2 id="首先第一步安装-jsonedit"><a href="#首先第一步安装-jsonedit" class="headerlink" title="首先第一步安装 jsonedit"></a>首先第一步安装 jsonedit</h2><pre class="line-numbers language-python"><code class="language-python">
+npm install jsoneditor
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="第二步写一个父组件"><a href="#第二步写一个父组件" class="headerlink" title="第二步写一个父组件"></a>第二步写一个父组件</h2><ul>
+<li><p>父组件的含义就是调用真正的 edit 控件</p>
+</li>
+<li><p>它必须给子组件传递两个参数 一个是 onChange 事件,一个是 json</p>
+</li>
+</ul>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>credit-card-inputs<span class="token punctuation">"</span></span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>{ complete }<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>card-number</span>
-      <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stripe-element card-number<span class="token punctuation">"</span></span>
-      <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cardNumber<span class="token punctuation">"</span></span>
-      <span class="token attr-name">:stripe</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stripe<span class="token punctuation">"</span></span>
-      <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span>
-      <span class="token attr-name">@change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>number <span class="token punctuation">=</span> $event.complete<span class="token punctuation">"</span></span>
-    <span class="token punctuation">/></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>card-expiry</span>
-      <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stripe-element card-expiry<span class="token punctuation">"</span></span>
-      <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cardExpiry<span class="token punctuation">"</span></span>
-      <span class="token attr-name">:stripe</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stripe<span class="token punctuation">"</span></span>
-      <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span>
-      <span class="token attr-name">@change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>expiry <span class="token punctuation">=</span> $event.complete<span class="token punctuation">"</span></span>
-    <span class="token punctuation">/></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>card-cvc</span>
-      <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stripe-element card-cvc<span class="token punctuation">"</span></span>
-      <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cardCvc<span class="token punctuation">"</span></span>
-      <span class="token attr-name">:stripe</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stripe<span class="token punctuation">"</span></span>
-      <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span>
-      <span class="token attr-name">@change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cvc <span class="token punctuation">=</span> $event.complete<span class="token punctuation">"</span></span>
-    <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Jsonedit</span> <span class="token attr-name">:onChange</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>onChange<span class="token punctuation">"</span></span> <span class="token attr-name">:json</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>json<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>handleclick<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>提交<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
-  <span class="token keyword">import</span> <span class="token punctuation">{</span> CardNumber<span class="token punctuation">,</span> CardExpiry<span class="token punctuation">,</span> CardCvc <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-stripe-elements-plus'</span>
-
+  <span class="token keyword">import</span> Jsonedit <span class="token keyword">from</span> <span class="token string">'@/views/JsonEdit'</span>
   <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-    props<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'stripe'</span><span class="token punctuation">,</span> <span class="token string">'options'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> _this <span class="token operator">=</span> <span class="token keyword">this</span>
+      <span class="token comment" spellcheck="true">//模拟异步</span>
+      <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        _this<span class="token punctuation">.</span>json <span class="token operator">=</span> _this<span class="token punctuation">.</span>json2
+        _this<span class="token punctuation">.</span>finalresult <span class="token operator">=</span> _this<span class="token punctuation">.</span>json2
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword">return</span> <span class="token punctuation">{</span>
-        complete<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        number<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        expiry<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        cvc<span class="token punctuation">:</span> <span class="token boolean">false</span>
+        json<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        json2<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          name<span class="token punctuation">:</span> <span class="token string">'hahaha'</span><span class="token punctuation">,</span>
+          num<span class="token punctuation">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+          flag<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          name2<span class="token punctuation">:</span> <span class="token string">'hahaha'</span><span class="token punctuation">,</span>
+          num2<span class="token punctuation">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+          flag2<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          name3<span class="token punctuation">:</span> <span class="token string">'hahaha'</span><span class="token punctuation">,</span>
+          num3<span class="token punctuation">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+          flag3<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          name4<span class="token punctuation">:</span> <span class="token string">'hahaha'</span><span class="token punctuation">,</span>
+          num4<span class="token punctuation">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+          flag4<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          name5<span class="token punctuation">:</span> <span class="token string">'hahaha'</span><span class="token punctuation">,</span>
+          num5<span class="token punctuation">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+          flag5<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        finalresult<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
       <span class="token punctuation">}</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    components<span class="token punctuation">:</span> <span class="token punctuation">{</span> CardNumber<span class="token punctuation">,</span> CardExpiry<span class="token punctuation">,</span> CardCvc <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      Jsonedit<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
     methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      <span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>complete <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>number <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>expiry <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>cvc
-
-        <span class="token comment" spellcheck="true">// field completed, find field to focus next</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>number<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>expiry<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>cardExpiry<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>cvc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>cardCvc<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>expiry<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>cvc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>cardCvc<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>number<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>cardNumber<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-        <span class="token comment" spellcheck="true">// no focus magic for the CVC field as it gets complete with three</span>
-        <span class="token comment" spellcheck="true">// numbers, but can also have four</span>
-      <span class="token punctuation">}</span>
+      <span class="token function">onChange</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>finalresult <span class="token operator">=</span> value
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">handleclick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'这里面像后台发送走数据'</span><span class="token punctuation">)</span>
+        <span class="token keyword">let</span> result <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>finalresult<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    watch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      <span class="token function">number</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token function">expiry</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token function">cvc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
   <span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
-  <span class="token selector"><span class="token class">.credit-card-inputs.complete</span> </span><span class="token punctuation">{</span>
-    <span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">2</span>px solid green<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="支持的方法"><a href="#支持的方法" class="headerlink" title="支持的方法"></a>支持的方法</h2><ul>
-<li>createToken()</li>
-</ul>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>less<span class="token punctuation">"</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">></span></span><span class="token style language-css"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-create-token" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-create-token</a></p>
+<p>这里最后的 finalresult 其实就是最后的结果 handleclick 就是最后发送走数据的事件。settimeout 就是模拟异步操作</p>
 </blockquote>
-<ul>
-<li>createSource()</li>
+<h2 id="第三步-子组件-核心"><a href="#第三步-子组件-核心" class="headerlink" title="第三步 子组件(核心)"></a>第三步 子组件(核心)</h2><ul>
+<li>必须引入 jsonedit 包</li>
 </ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-create-source" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-create-source</a></p>
-</blockquote>
-<ul>
-<li>retrieveSource()</li>
-</ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-retrieve-source" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-retrieve-source</a></p>
-</blockquote>
-<ul>
-<li>paymentRequest()</li>
-</ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-payment-request" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-payment-request</a></p>
-</blockquote>
-<ul>
-<li>redirectToCheckout()</li>
-</ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-redirect-to-checkout" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-redirect-to-checkout</a></p>
-</blockquote>
-<ul>
-<li>retrievePaymentIntent()</li>
-</ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-retrieve-payment-intent" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-retrieve-payment-intent</a></p>
-</blockquote>
-<ul>
-<li>handleCardPayment()</li>
-</ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-handle-card-payment" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-handle-card-payment</a></p>
-</blockquote>
-<ul>
-<li>handleCardSetup()</li>
-</ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-handle-card-setup" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-handle-card-setup</a></p>
-</blockquote>
-<ul>
-<li>handleCardAction()</li>
-</ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-handle-card-action" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-handle-card-action</a></p>
-</blockquote>
-<ul>
-<li>confirmPaymentIntent()</li>
-</ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-confirm-payment-intent" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-confirm-payment-intent</a></p>
-</blockquote>
-<ul>
-<li>createPaymentMethod()</li>
-</ul>
-<blockquote>
-<p><a href="https://stripe.com/docs/stripe-js/reference#stripe-create-payment-method" target="_blank" rel="noopener">https://stripe.com/docs/stripe-js/reference#stripe-create-payment-method</a></p>
-</blockquote>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Object.keys(json)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>jsoneditor<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>jsoneditorclass<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+  <span class="token keyword">import</span> JSONEditor <span class="token keyword">from</span> <span class="token string">'jsoneditor/dist/jsoneditor.min.js'</span>
+  <span class="token keyword">import</span> <span class="token string">'jsoneditor/dist/jsoneditor.min.css'</span>
+  <span class="token keyword">import</span> _ <span class="token keyword">from</span> <span class="token string">'lodash'</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'json-editor'</span><span class="token punctuation">,</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        editor<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      json<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            search<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            mainMenuBar<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            language<span class="token punctuation">:</span> <span class="token string">'zh-CN'</span><span class="token punctuation">,</span>
+            schema<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+              title<span class="token punctuation">:</span> <span class="token string">'款式数据管理'</span><span class="token punctuation">,</span>
+              description<span class="token punctuation">:</span> <span class="token string">'Object containing employee details'</span><span class="token punctuation">,</span>
+              type<span class="token punctuation">:</span> <span class="token string">'object'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            autocomplete<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+              getOptions<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token punctuation">[</span>
+                  <span class="token string">'apple'</span><span class="token punctuation">,</span>
+                  <span class="token string">'banana'</span><span class="token punctuation">,</span>
+                  <span class="token string">'hello'</span><span class="token punctuation">,</span>
+                  <span class="token string">'ok'</span><span class="token punctuation">,</span>
+                  <span class="token string">'haha'</span><span class="token punctuation">,</span>
+                  <span class="token string">'good'</span><span class="token punctuation">,</span>
+                  <span class="token string">'perfect'</span><span class="token punctuation">,</span>
+                  <span class="token string">'apple2'</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            onCreateMenu<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>items<span class="token punctuation">,</span> node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">const</span> path <span class="token operator">=</span> node<span class="token punctuation">.</span>path
+              console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'items:'</span><span class="token punctuation">,</span> items<span class="token punctuation">,</span> <span class="token string">'node:'</span><span class="token punctuation">,</span> node<span class="token punctuation">)</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>path<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>items<span class="token punctuation">.</span>length <span class="token operator">!=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  items<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                  items<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                  <span class="token keyword">delete</span> items<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>submenu
+                  <span class="token keyword">delete</span> items<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>submenu
+                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                  <span class="token keyword">delete</span> items<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>submenu
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span>
+              <span class="token keyword">return</span> items
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      onChange<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> Function<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    watch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      json<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token function">handler</span><span class="token punctuation">(</span>newJson<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>editor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>editor<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span>newJson<span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        deep<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">_onChange</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>onChange <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>editor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">onChange</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>editor<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> container <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>jsoneditor
+      <span class="token keyword">const</span> options <span class="token operator">=</span> _<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span>
+        <span class="token punctuation">{</span>
+          onChange<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_onChange<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>options
+      <span class="token punctuation">)</span>
+
+      <span class="token keyword">this</span><span class="token punctuation">.</span>editor <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONEditor</span><span class="token punctuation">(</span>container<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>editor<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>json<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">beforeDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>editor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>editor<span class="token punctuation">.</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>editor <span class="token operator">=</span> <span class="token keyword">null</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>less<span class="token punctuation">"</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">></span></span><span class="token style language-css">
+  <span class="token selector"><span class="token class">.jsoneditorclass</span> </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">700</span>px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li><p>Object.keys()就是必须 json 里面有数据,没数据的话就是个空对象</p>
+</li>
+<li><p>它从父组件继承了 3 样 json,options ,onChange</p>
+</li>
+<li><p>json 就是要渲染的数据</p>
+</li>
+<li><p>onChange 就是最后改变的结果发送走</p>
+</li>
+<li><p>重点是 options</p>
+</li>
+</ul>
+<h2 id="options-重点解读"><a href="#options-重点解读" class="headerlink" title="options 重点解读"></a>options 重点解读</h2><ul>
+<li><p>mainMenuBar:开启会显示菜单栏</p>
+</li>
+<li><p>search : 默认为 true 要是开启的话会有搜索框</p>
+</li>
+<li><p>language: 可以 zh-CN 和 en 切换</p>
+</li>
+<li><p>schema :控制开始的头目描述以及数据类型</p>
+</li>
+<li><p>autocomplete: 自动补全用户输入 a 就是提示你要已经喜好的选项</p>
+</li>
+<li><p>onCreateMenu:用于左边的点击创建按钮</p>
+</li>
+</ul>
+<blockquote>
+<p>当 item.length 为 1 的时候表示空对象它必须只能有一个按钮就是插入</p>
+</blockquote>
+<h2 id="以上就是基本的用法更多的-api-请参考-jsoneditor"><a href="#以上就是基本的用法更多的-api-请参考-jsoneditor" class="headerlink" title="以上就是基本的用法更多的 api 请参考 jsoneditor"></a>以上就是基本的用法更多的 api 请参考 jsoneditor</h2>
             </div>
             <hr/>
 
@@ -673,7 +738,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2019/11/18/vuecha6/">https://jsopy.gitee.io/2019/11/18/vuecha6/</a>
+                    <a href="https://jsopy.gitee.io/2020/04/24/vuecha10/">https://jsopy.gitee.io/2020/04/24/vuecha10/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -757,29 +822,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/11/20/vuecha7/">
+                <a href="/2020/04/24/vuecha10/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="vue中使用数学计算">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Vue 中使用 jsonedit">
                         
-                        <span class="card-title">vue中使用数学计算</span>
+                        <span class="card-title">Vue 中使用 jsonedit</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            vue中使用数学计算
+                            Vue 中使用 jsonedit
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -792,6 +858,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -814,31 +881,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/16/vuecha5/">
+                <a href="/2020/04/23/reactbasic22/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="vue中使用Ueedit富文本">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="React 基础笔记(React 安装 Antd)(二十二)">
                         
-                        <span class="card-title">vue中使用Ueedit富文本</span>
+                        <span class="card-title">React 基础笔记(React 安装 Antd)(二十二)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            vue中使用富文本编辑器
+                            本文主要是记录React学习
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue/" class="post-category">
-                                    Vue
+                            <a href="/categories/React/" class="post-category">
+                                    React
                                 </a>
                             
                             
@@ -852,8 +919,8 @@
                         <span class="chip bg-color">Javascript</span>
                     </a>
                     
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
+                    <a href="/tags/React/">
+                        <span class="chip bg-color">React</span>
                     </a>
                     
                 </div>
