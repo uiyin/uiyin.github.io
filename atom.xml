@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-05-15T08:24:54.001Z</updated>
+  <updated>2020-05-23T13:00:24.907Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue学记笔记(九) 卡槽</title>
+    <link href="https://jsopy.gitee.io/2020/04/25/vue9/"/>
+    <id>https://jsopy.gitee.io/2020/04/25/vue9/</id>
+    <published>2020-04-25T13:10:45.000Z</published>
+    <updated>2020-05-23T13:00:24.907Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;卡槽-slot&quot;&gt;&lt;a href=&quot;#卡槽-slot&quot; class=&quot;headerlink&quot; title=&quot;卡槽 slot&quot;&gt;&lt;/a&gt;卡槽 slot&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;一个人时,安静而丰盛.两个人时,温暖而踏实
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue 中使用 jsonedit</title>
@@ -534,33 +564,6 @@
         
           &lt;h2 id=&quot;生成器&quot;&gt;&lt;a href=&quot;#生成器&quot; class=&quot;headerlink&quot; title=&quot;生成器&quot;&gt;&lt;/a&gt;生成器&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;驾驭命运的舵是奋斗。不抱有一丝幻想，不放弃一点机会，不停止一日努力
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 迭代器</title>
-    <link href="https://jsopy.gitee.io/2020/04/05/pythonnew13/"/>
-    <id>https://jsopy.gitee.io/2020/04/05/pythonnew13/</id>
-    <published>2020-04-05T13:26:47.000Z</published>
-    <updated>2020-05-09T14:10:30.420Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;深入理解迭代器和生成器&quot;&gt;&lt;a href=&quot;#深入理解迭代器和生成器&quot; class=&quot;headerlink&quot;
         
       
     
