@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-05-23T13:00:24.907Z</updated>
+  <updated>2020-05-24T12:06:06.643Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>vue学记笔记(九) 卡槽</title>
-    <link href="https://jsopy.gitee.io/2020/04/25/vue9/"/>
-    <id>https://jsopy.gitee.io/2020/04/25/vue9/</id>
-    <published>2020-04-25T13:10:45.000Z</published>
-    <updated>2020-05-23T13:00:24.907Z</updated>
+    <title>CSS3学习笔记</title>
+    <link href="https://jsopy.gitee.io/2020/05/17/css3all/"/>
+    <id>https://jsopy.gitee.io/2020/05/17/css3all/</id>
+    <published>2020-05-17T12:26:47.000Z</published>
+    <updated>2020-05-24T12:06:06.643Z</updated>
     
     <summary type="html">
     
@@ -29,29 +29,26 @@
       
         
         
-          &lt;h1 id=&quot;卡槽-slot&quot;&gt;&lt;a href=&quot;#卡槽-slot&quot; class=&quot;headerlink&quot; title=&quot;卡槽 slot&quot;&gt;&lt;/a&gt;卡槽 slot&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;一个人时,安静而丰盛.两个人时,温暖而踏实
+          &lt;h1 id=&quot;CSS3-一-HTML5-语义标签&quot;&gt;&lt;a href=&quot;#CSS3-一-HTML5-语义标签&quot; class=&quot;headerlink&quot; title=&quot;CSS3(一) HTML5 语义标签&quot;&gt;&lt;/a&gt;&lt;a
         
       
     
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Vue 中使用 jsonedit</title>
-    <link href="https://jsopy.gitee.io/2020/04/24/vuecha10/"/>
-    <id>https://jsopy.gitee.io/2020/04/24/vuecha10/</id>
-    <published>2020-04-24T13:26:47.000Z</published>
-    <updated>2020-05-15T08:24:54.001Z</updated>
+    <title>CSS3(二十一) CSS3 自定义时钟和炫酷导航</title>
+    <link href="https://jsopy.gitee.io/2020/05/16/css321/"/>
+    <id>https://jsopy.gitee.io/2020/05/16/css321/</id>
+    <published>2020-05-16T13:26:47.000Z</published>
+    <updated>2020-05-24T11:22:30.022Z</updated>
     
     <summary type="html">
     
@@ -59,28 +56,26 @@
       
         
         
-          &lt;h1 id=&quot;Vue-中使用-jsonedit&quot;&gt;&lt;a href=&quot;#Vue-中使用-jsonedit&quot; class=&quot;headerlink&quot; title=&quot;Vue 中使用 jsonedit&quot;&gt;&lt;/a&gt;Vue 中使用
+          &lt;h2 id=&quot;自定义时钟&quot;&gt;&lt;a href=&quot;#自定义时钟&quot; class=&quot;headerlink&quot; title=&quot;自定义时钟&quot;&gt;&lt;/a&gt;自定义时钟&lt;/h2&gt;&lt;h2 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
     
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>React 基础笔记(React 安装 Antd)(二十二)</title>
-    <link href="https://jsopy.gitee.io/2020/04/23/reactbasic22/"/>
-    <id>https://jsopy.gitee.io/2020/04/23/reactbasic22/</id>
-    <published>2020-04-23T12:26:47.000Z</published>
-    <updated>2020-05-10T13:27:10.656Z</updated>
+    <title>CSS3(二十) CSS3 字帖和画卷</title>
+    <link href="https://jsopy.gitee.io/2020/05/15/css320/"/>
+    <id>https://jsopy.gitee.io/2020/05/15/css320/</id>
+    <published>2020-05-15T13:26:47.000Z</published>
+    <updated>2020-05-24T11:20:29.187Z</updated>
     
     <summary type="html">
     
@@ -88,29 +83,27 @@
       
         
         
-          &lt;h2 id=&quot;安装-React-一&quot;&gt;&lt;a href=&quot;#安装-React-一&quot; class=&quot;headerlink&quot; title=&quot;安装 React(一)&quot;&gt;&lt;/a&gt;安装 React(一)&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;本篇十基于 React16.9
+          &lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&amp;lt;!DOCTYPE html&gt;&lt;/span&gt;
+&lt;span
         
       
     
     </summary>
     
     
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 收发邮件</title>
-    <link href="https://jsopy.gitee.io/2020/04/22/pythonnew30/"/>
-    <id>https://jsopy.gitee.io/2020/04/22/pythonnew30/</id>
-    <published>2020-04-22T13:26:47.000Z</published>
-    <updated>2020-05-09T13:43:50.655Z</updated>
+    <title>CSS3(十九) CSS3 折纸和轮播</title>
+    <link href="https://jsopy.gitee.io/2020/05/14/css319/"/>
+    <id>https://jsopy.gitee.io/2020/05/14/css319/</id>
+    <published>2020-05-14T13:26:47.000Z</published>
+    <updated>2020-05-24T11:18:41.642Z</updated>
     
     <summary type="html">
     
@@ -118,26 +111,27 @@
       
         
         
-          &lt;h2 id=&quot;Python-邮件&quot;&gt;&lt;a href=&quot;#Python-邮件&quot; class=&quot;headerlink&quot; title=&quot;Python 邮件&quot;&gt;&lt;/a&gt;Python 邮件&lt;/h2&gt;&lt;h2 id=&quot;邮件的三种协议&quot;&gt;&lt;a href=&quot;#邮件的三种协议&quot;
+          &lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&amp;lt;!DOCTYPE html&gt;&lt;/span&gt;
+&lt;span
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 操作图像</title>
-    <link href="https://jsopy.gitee.io/2020/04/21/pythonnew29/"/>
-    <id>https://jsopy.gitee.io/2020/04/21/pythonnew29/</id>
-    <published>2020-04-21T13:26:47.000Z</published>
-    <updated>2020-05-09T13:43:21.155Z</updated>
+    <title>CSS3(十八) CSS3 立体3D效果轮播图</title>
+    <link href="https://jsopy.gitee.io/2020/05/13/css318/"/>
+    <id>https://jsopy.gitee.io/2020/05/13/css318/</id>
+    <published>2020-05-13T13:26:47.000Z</published>
+    <updated>2020-05-24T11:15:14.662Z</updated>
     
     <summary type="html">
     
@@ -145,26 +139,29 @@
       
         
         
-          &lt;h1 id=&quot;Python-操作图像&quot;&gt;&lt;a href=&quot;#Python-操作图像&quot; class=&quot;headerlink&quot; title=&quot;Python 操作图像&quot;&gt;&lt;/a&gt;Python
+          &lt;ul&gt;
+&lt;li&gt;代码如下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&amp;lt;!DOCTYPE
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 多线程(了解)</title>
-    <link href="https://jsopy.gitee.io/2020/04/20/pythonnew28/"/>
-    <id>https://jsopy.gitee.io/2020/04/20/pythonnew28/</id>
-    <published>2020-04-20T13:26:47.000Z</published>
-    <updated>2020-05-09T13:43:04.946Z</updated>
+    <title>CSS3(十七) CSS3 3D效果轮播图</title>
+    <link href="https://jsopy.gitee.io/2020/05/12/css317/"/>
+    <id>https://jsopy.gitee.io/2020/05/12/css317/</id>
+    <published>2020-05-12T13:26:47.000Z</published>
+    <updated>2020-05-24T11:12:51.398Z</updated>
     
     <summary type="html">
     
@@ -172,26 +169,27 @@
       
         
         
-          &lt;h1 id=&quot;多线程-了解-和打开其他应用程序&quot;&gt;&lt;a href=&quot;#多线程-了解-和打开其他应用程序&quot; class=&quot;headerlink&quot;
+          &lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&amp;lt;!DOCTYPE html&gt;&lt;/span&gt;
+&lt;span
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python time时间和计划任务</title>
-    <link href="https://jsopy.gitee.io/2020/04/19/pythonnew27/"/>
-    <id>https://jsopy.gitee.io/2020/04/19/pythonnew27/</id>
-    <published>2020-04-19T13:26:47.000Z</published>
-    <updated>2020-05-09T13:42:41.294Z</updated>
+    <title>CSS3(十六) CSS3 3D效果应用</title>
+    <link href="https://jsopy.gitee.io/2020/05/11/css316/"/>
+    <id>https://jsopy.gitee.io/2020/05/11/css316/</id>
+    <published>2020-05-11T13:26:47.000Z</published>
+    <updated>2020-05-24T11:11:05.480Z</updated>
     
     <summary type="html">
     
@@ -199,26 +197,26 @@
       
         
         
-          &lt;h1 id=&quot;时间-计划任务和启动程序&quot;&gt;&lt;a href=&quot;#时间-计划任务和启动程序&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;3D-旋转&quot;&gt;&lt;a href=&quot;#3D-旋转&quot; class=&quot;headerlink&quot; title=&quot;3D 旋转&quot;&gt;&lt;/a&gt;3D 旋转&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 处理pdf和word</title>
-    <link href="https://jsopy.gitee.io/2020/04/18/pythonnew26/"/>
-    <id>https://jsopy.gitee.io/2020/04/18/pythonnew26/</id>
-    <published>2020-04-18T13:26:47.000Z</published>
-    <updated>2020-05-09T13:42:17.499Z</updated>
+    <title>CSS3(十五) CSS3 3D效果基础版本</title>
+    <link href="https://jsopy.gitee.io/2020/05/10/css315/"/>
+    <id>https://jsopy.gitee.io/2020/05/10/css315/</id>
+    <published>2020-05-10T13:26:47.000Z</published>
+    <updated>2020-05-24T11:08:36.968Z</updated>
     
     <summary type="html">
     
@@ -226,26 +224,27 @@
       
         
         
-          &lt;h1 id=&quot;处理-PDF-和-Word-文档&quot;&gt;&lt;a href=&quot;#处理-PDF-和-Word-文档&quot; class=&quot;headerlink&quot; title=&quot;处理 PDF 和 Word 文档&quot;&gt;&lt;/a&gt;处理 PDF 和 Word
+          &lt;h2 id=&quot;3D-变换-3-个属性&quot;&gt;&lt;a href=&quot;#3D-变换-3-个属性&quot; class=&quot;headerlink&quot; title=&quot;3D 变换,3 个属性&quot;&gt;&lt;/a&gt;3D 变换,3 个属性&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;transform-style:
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 处理excel表格(数据方向)</title>
-    <link href="https://jsopy.gitee.io/2020/04/17/pythonnew25/"/>
-    <id>https://jsopy.gitee.io/2020/04/17/pythonnew25/</id>
-    <published>2020-04-17T13:26:47.000Z</published>
-    <updated>2020-05-09T13:41:48.519Z</updated>
+    <title>CSS3(十四) CSS3 2D变换</title>
+    <link href="https://jsopy.gitee.io/2020/05/09/css314/"/>
+    <id>https://jsopy.gitee.io/2020/05/09/css314/</id>
+    <published>2020-05-09T13:26:47.000Z</published>
+    <updated>2020-05-24T10:56:05.948Z</updated>
     
     <summary type="html">
     
@@ -253,26 +252,29 @@
       
         
         
-          &lt;h1 id=&quot;处理-Excel-电子表格&quot;&gt;&lt;a href=&quot;#处理-Excel-电子表格&quot; class=&quot;headerlink&quot; title=&quot;处理 Excel 电子表格&quot;&gt;&lt;/a&gt;处理 Excel
+          &lt;h2 id=&quot;2D-变换&quot;&gt;&lt;a href=&quot;#2D-变换&quot; class=&quot;headerlink&quot; title=&quot;2D 变换&quot;&gt;&lt;/a&gt;2D 变换&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;transform&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;rotate()旋转函数
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 爬虫入门抓取信息</title>
-    <link href="https://jsopy.gitee.io/2020/04/16/pythonnew24/"/>
-    <id>https://jsopy.gitee.io/2020/04/16/pythonnew24/</id>
-    <published>2020-04-16T13:26:47.000Z</published>
-    <updated>2020-05-09T13:40:57.149Z</updated>
+    <title>CSS3(十三) CSS3 关键帧</title>
+    <link href="https://jsopy.gitee.io/2020/05/08/css313/"/>
+    <id>https://jsopy.gitee.io/2020/05/08/css313/</id>
+    <published>2020-05-08T13:26:47.000Z</published>
+    <updated>2020-05-24T10:47:12.461Z</updated>
     
     <summary type="html">
     
@@ -280,26 +282,27 @@
       
         
         
-          &lt;h1 id=&quot;从-Web-中抓取信息&quot;&gt;&lt;a href=&quot;#从-Web-中抓取信息&quot; class=&quot;headerlink&quot; title=&quot;从 Web 中抓取信息&quot;&gt;&lt;/a&gt;从 Web
+          &lt;h2 id=&quot;关键帧–keyframes&quot;&gt;&lt;a href=&quot;#关键帧–keyframes&quot; class=&quot;headerlink&quot; title=&quot;关键帧–keyframes&quot;&gt;&lt;/a&gt;关键帧–keyframes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;类似于
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python BUG调试</title>
-    <link href="https://jsopy.gitee.io/2020/04/15/pythonnew23/"/>
-    <id>https://jsopy.gitee.io/2020/04/15/pythonnew23/</id>
-    <published>2020-04-15T13:26:47.000Z</published>
-    <updated>2020-05-09T13:40:30.892Z</updated>
+    <title>CSS3(十二) CSS3 过渡</title>
+    <link href="https://jsopy.gitee.io/2020/05/07/css312/"/>
+    <id>https://jsopy.gitee.io/2020/05/07/css312/</id>
+    <published>2020-05-07T13:26:47.000Z</published>
+    <updated>2020-05-24T11:59:24.754Z</updated>
     
     <summary type="html">
     
@@ -307,29 +310,26 @@
       
         
         
-          &lt;h1 id=&quot;调试&quot;&gt;&lt;a href=&quot;#调试&quot; class=&quot;headerlink&quot; title=&quot;调试&quot;&gt;&lt;/a&gt;调试&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;学问是异常珍贵的东西，从任何源泉吸收都不可耻。——阿卜·日·法拉兹&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2
+          &lt;h2 id=&quot;CSS3-过渡效果-transition&quot;&gt;&lt;a href=&quot;#CSS3-过渡效果-transition&quot; class=&quot;headerlink&quot; title=&quot;CSS3 过渡效果:transition&quot;&gt;&lt;/a&gt;CSS3
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 组织文件</title>
-    <link href="https://jsopy.gitee.io/2020/04/14/pythonnew22/"/>
-    <id>https://jsopy.gitee.io/2020/04/14/pythonnew22/</id>
-    <published>2020-04-14T13:26:47.000Z</published>
-    <updated>2020-05-09T13:40:04.979Z</updated>
+    <title>CSS3(十一) CSS3 渐变</title>
+    <link href="https://jsopy.gitee.io/2020/05/06/css311/"/>
+    <id>https://jsopy.gitee.io/2020/05/06/css311/</id>
+    <published>2020-05-06T13:26:47.000Z</published>
+    <updated>2020-05-24T10:35:01.713Z</updated>
     
     <summary type="html">
     
@@ -337,29 +337,28 @@
       
         
         
-          &lt;h1 id=&quot;组织文件&quot;&gt;&lt;a href=&quot;#组织文件&quot; class=&quot;headerlink&quot; title=&quot;组织文件&quot;&gt;&lt;/a&gt;组织文件&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;我这个人走得很慢，但是我从不后退。——亚伯拉罕·林肯&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2
+          &lt;h2 id=&quot;渐变&quot;&gt;&lt;a href=&quot;#渐变&quot; class=&quot;headerlink&quot; title=&quot;渐变&quot;&gt;&lt;/a&gt;渐变&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;指的是从一种颜色慢慢过渡到另外一种颜色&lt;/li&gt;
+&lt;li&gt;渐变必须加前缀。-webkit-
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 读写文件</title>
-    <link href="https://jsopy.gitee.io/2020/04/13/pythonnew21/"/>
-    <id>https://jsopy.gitee.io/2020/04/13/pythonnew21/</id>
-    <published>2020-04-13T13:26:47.000Z</published>
-    <updated>2020-05-09T13:39:32.049Z</updated>
+    <title>CSS3(十) CSS3 圆角 边框</title>
+    <link href="https://jsopy.gitee.io/2020/05/05/css310/"/>
+    <id>https://jsopy.gitee.io/2020/05/05/css310/</id>
+    <published>2020-05-05T13:26:47.000Z</published>
+    <updated>2020-05-24T10:32:10.311Z</updated>
     
     <summary type="html">
     
@@ -367,29 +366,29 @@
       
         
         
-          &lt;h1 id=&quot;读写文件&quot;&gt;&lt;a href=&quot;#读写文件&quot; class=&quot;headerlink&quot; title=&quot;读写文件&quot;&gt;&lt;/a&gt;读写文件&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;我们唯一不会改正的缺点是软弱。——拉罗什福科&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2
+          &lt;h2 id=&quot;圆角&quot;&gt;&lt;a href=&quot;#圆角&quot; class=&quot;headerlink&quot; title=&quot;圆角&quot;&gt;&lt;/a&gt;圆角&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;基本概念&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;border-radius: 1-4 个数字/1-4
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 正则表达式</title>
-    <link href="https://jsopy.gitee.io/2020/04/12/pythonnew20/"/>
-    <id>https://jsopy.gitee.io/2020/04/12/pythonnew20/</id>
-    <published>2020-04-12T13:26:47.000Z</published>
-    <updated>2020-05-09T13:38:47.931Z</updated>
+    <title>CSS3(九) CSS3 背景</title>
+    <link href="https://jsopy.gitee.io/2020/05/04/css39/"/>
+    <id>https://jsopy.gitee.io/2020/05/04/css39/</id>
+    <published>2020-05-04T13:26:47.000Z</published>
+    <updated>2020-05-24T10:26:57.729Z</updated>
     
     <summary type="html">
     
@@ -397,26 +396,30 @@
       
         
         
-          &lt;h1 id=&quot;正则表达式&quot;&gt;&lt;a href=&quot;#正则表达式&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;多背景&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用逗号分开&lt;ul&gt;
+&lt;li&gt;background: url(1.jpg)
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 小招数</title>
-    <link href="https://jsopy.gitee.io/2020/04/11/pythonnew19/"/>
-    <id>https://jsopy.gitee.io/2020/04/11/pythonnew19/</id>
-    <published>2020-04-11T13:26:47.000Z</published>
-    <updated>2020-05-09T13:38:29.795Z</updated>
+    <title>CSS3(八) CSS3 FLEX布局</title>
+    <link href="https://jsopy.gitee.io/2020/05/03/css38/"/>
+    <id>https://jsopy.gitee.io/2020/05/03/css38/</id>
+    <published>2020-05-03T13:26:47.000Z</published>
+    <updated>2020-05-24T10:24:26.145Z</updated>
     
     <summary type="html">
     
@@ -424,26 +427,27 @@
       
         
         
-          &lt;h1 id=&quot;Python-小招数-常用特性&quot;&gt;&lt;a href=&quot;#Python-小招数-常用特性&quot; class=&quot;headerlink&quot; title=&quot;Python 小招数: 常用特性&quot;&gt;&lt;/a&gt;Python 小招数:
+          &lt;h2 id=&quot;Flex-布局&quot;&gt;&lt;a href=&quot;#Flex-布局&quot; class=&quot;headerlink&quot; title=&quot;Flex 布局&quot;&gt;&lt;/a&gt;Flex 布局&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;布局的传统方案是基于盒模型,依赖 display 属性+float
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 装饰器</title>
-    <link href="https://jsopy.gitee.io/2020/04/10/pythonnew18/"/>
-    <id>https://jsopy.gitee.io/2020/04/10/pythonnew18/</id>
-    <published>2020-04-10T13:26:47.000Z</published>
-    <updated>2020-05-09T13:38:09.936Z</updated>
+    <title>CSS3(七) CSS3 颜色文字和字体</title>
+    <link href="https://jsopy.gitee.io/2020/05/02/css37/"/>
+    <id>https://jsopy.gitee.io/2020/05/02/css37/</id>
+    <published>2020-05-02T13:26:47.000Z</published>
+    <updated>2020-05-24T10:15:51.808Z</updated>
     
     <summary type="html">
     
@@ -451,26 +455,28 @@
       
         
         
-          &lt;h1 id=&quot;Python-装饰器&quot;&gt;&lt;a href=&quot;#Python-装饰器&quot; class=&quot;headerlink&quot; title=&quot;Python 装饰器&quot;&gt;&lt;/a&gt;Python
+          &lt;h2 id=&quot;颜色模式&quot;&gt;&lt;a href=&quot;#颜色模式&quot; class=&quot;headerlink&quot; title=&quot;颜色模式&quot;&gt;&lt;/a&gt;颜色模式&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在 CSS3 里面新增加了&lt;a href=&quot;&quot;&gt;rgba&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;r red 红色
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 函数式进阶</title>
-    <link href="https://jsopy.gitee.io/2020/04/09/pythonnew17/"/>
-    <id>https://jsopy.gitee.io/2020/04/09/pythonnew17/</id>
-    <published>2020-04-09T13:26:47.000Z</published>
-    <updated>2020-05-09T13:37:52.882Z</updated>
+    <title>CSS3(六) CSS3 伪类和锚点</title>
+    <link href="https://jsopy.gitee.io/2020/05/01/css36/"/>
+    <id>https://jsopy.gitee.io/2020/05/01/css36/</id>
+    <published>2020-05-01T13:26:47.000Z</published>
+    <updated>2020-05-24T10:09:34.114Z</updated>
     
     <summary type="html">
     
@@ -478,26 +484,26 @@
       
         
         
-          &lt;h1 id=&quot;函数式编程&quot;&gt;&lt;a href=&quot;#函数式编程&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;伪类一-target-仿造锚点&quot;&gt;&lt;a href=&quot;#伪类一-target-仿造锚点&quot; class=&quot;headerlink&quot; title=&quot;伪类一 : target 仿造锚点&quot;&gt;&lt;/a&gt;伪类一 : target 仿造锚点&lt;/h2&gt;&lt;p&gt;CSS3 里面利用
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 类进阶</title>
-    <link href="https://jsopy.gitee.io/2020/04/08/pythonnew16/"/>
-    <id>https://jsopy.gitee.io/2020/04/08/pythonnew16/</id>
-    <published>2020-04-08T13:26:47.000Z</published>
-    <updated>2020-05-09T13:36:53.618Z</updated>
+    <title>CSS3(五) CSS3结构选择器</title>
+    <link href="https://jsopy.gitee.io/2020/04/30/css35/"/>
+    <id>https://jsopy.gitee.io/2020/04/30/css35/</id>
+    <published>2020-04-30T13:26:47.000Z</published>
+    <updated>2020-05-24T09:58:01.573Z</updated>
     
     <summary type="html">
     
@@ -505,29 +511,27 @@
       
         
         
-          &lt;h1 id=&quot;类进阶&quot;&gt;&lt;a href=&quot;#类进阶&quot; class=&quot;headerlink&quot; title=&quot;类进阶&quot;&gt;&lt;/a&gt;类进阶&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;受苦的人,没有悲观的权力 – 尼采&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2
+          &lt;h1 id=&quot;CSS3-结构性伪类&quot;&gt;&lt;a href=&quot;#CSS3-结构性伪类&quot; class=&quot;headerlink&quot; title=&quot;CSS3 结构性伪类&quot;&gt;&lt;/a&gt;CSS3 结构性伪类&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;E:nth-child(n)表示 E 的父元素中的第 n
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 生成式</title>
-    <link href="https://jsopy.gitee.io/2020/04/07/pythonnew15/"/>
-    <id>https://jsopy.gitee.io/2020/04/07/pythonnew15/</id>
-    <published>2020-04-07T13:26:47.000Z</published>
-    <updated>2020-05-09T13:36:32.616Z</updated>
+    <title>CSS3(四) CSS3属性选择器</title>
+    <link href="https://jsopy.gitee.io/2020/04/29/css34/"/>
+    <id>https://jsopy.gitee.io/2020/04/29/css34/</id>
+    <published>2020-04-29T13:26:47.000Z</published>
+    <updated>2020-05-24T09:54:40.283Z</updated>
     
     <summary type="html">
     
@@ -535,26 +539,26 @@
       
         
         
-          &lt;h1 id=&quot;列表生成式-集合生成式-字典生成式&quot;&gt;&lt;a href=&quot;#列表生成式-集合生成式-字典生成式&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;学习-CSS3-之前必须要说明的几个问题&quot;&gt;&lt;a href=&quot;#学习-CSS3-之前必须要说明的几个问题&quot; class=&quot;headerlink&quot; title=&quot;学习 CSS3 之前必须要说明的几个问题&quot;&gt;&lt;/a&gt;学习 CSS3
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Python 生成器</title>
-    <link href="https://jsopy.gitee.io/2020/04/06/pythonnew14/"/>
-    <id>https://jsopy.gitee.io/2020/04/06/pythonnew14/</id>
-    <published>2020-04-06T13:26:47.000Z</published>
-    <updated>2020-05-09T13:35:55.445Z</updated>
+    <title>CSS3(三) CSS3响应式布局</title>
+    <link href="https://jsopy.gitee.io/2020/04/28/css33/"/>
+    <id>https://jsopy.gitee.io/2020/04/28/css33/</id>
+    <published>2020-04-28T13:26:47.000Z</published>
+    <updated>2020-05-24T09:49:41.214Z</updated>
     
     <summary type="html">
     
@@ -562,18 +566,20 @@
       
         
         
-          &lt;h2 id=&quot;生成器&quot;&gt;&lt;a href=&quot;#生成器&quot; class=&quot;headerlink&quot; title=&quot;生成器&quot;&gt;&lt;/a&gt;生成器&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;驾驭命运的舵是奋斗。不抱有一丝幻想，不放弃一点机会，不停止一日努力
+          &lt;h2 id=&quot;媒体类型&quot;&gt;&lt;a href=&quot;#媒体类型&quot; class=&quot;headerlink&quot; title=&quot;媒体类型&quot;&gt;&lt;/a&gt;媒体类型&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;all 所有媒体&lt;/li&gt;
+&lt;li&gt;braille 盲文触觉设备&lt;/li&gt;
+&lt;li&gt;embossed
         
       
     
     </summary>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/categories/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
     
     
-      <category term="python" scheme="https://jsopy.gitee.io/tags/python/"/>
+      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
     
   </entry>
   
