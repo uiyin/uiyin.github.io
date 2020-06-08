@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-06-08T13:12:17.406Z</updated>
+  <updated>2020-06-08T13:26:30.309Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小程序学习笔记</title>
+    <link href="https://jsopy.gitee.io/2020/05/29/xiaochengxuall/"/>
+    <id>https://jsopy.gitee.io/2020/05/29/xiaochengxuall/</id>
+    <published>2020-05-29T12:26:47.000Z</published>
+    <updated>2020-06-08T13:26:30.309Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Swiper-学习笔记&quot;&gt;&lt;a href=&quot;#Swiper-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Swiper 学习笔记&quot;&gt;&lt;/a&gt;Swiper 学习笔记&lt;/h2&gt;&lt;h3 id=&quot;Swiper-一-入门&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Swiper" scheme="https://jsopy.gitee.io/categories/Swiper/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="微信小程序" scheme="https://jsopy.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Swiper(七) Swiper常用属性和常用回调</title>
@@ -553,36 +582,6 @@
         
           &lt;h2 id=&quot;3D-变换-3-个属性&quot;&gt;&lt;a href=&quot;#3D-变换-3-个属性&quot; class=&quot;headerlink&quot; title=&quot;3D 变换,3 个属性&quot;&gt;&lt;/a&gt;3D 变换,3 个属性&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;transform-style:
-        
-      
-    
-    </summary>
-    
-    
-      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
-    
-    
-      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS3(十四) CSS3 2D变换</title>
-    <link href="https://jsopy.gitee.io/2020/05/09/css314/"/>
-    <id>https://jsopy.gitee.io/2020/05/09/css314/</id>
-    <published>2020-05-09T13:26:47.000Z</published>
-    <updated>2020-05-24T10:56:05.948Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;2D-变换&quot;&gt;&lt;a href=&quot;#2D-变换&quot; class=&quot;headerlink&quot; title=&quot;2D 变换&quot;&gt;&lt;/a&gt;2D 变换&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;transform&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;rotate()旋转函数
         
       
     
