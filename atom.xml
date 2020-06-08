@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-05-24T12:06:06.643Z</updated>
+  <updated>2020-06-08T12:26:27.471Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mark Down语法</title>
+    <link href="https://jsopy.gitee.io/2020/05/18/mdyufa/"/>
+    <id>https://jsopy.gitee.io/2020/05/18/mdyufa/</id>
+    <published>2020-05-18T13:26:47.000Z</published>
+    <updated>2020-06-08T12:26:27.471Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;本节主要是介绍 Markdown 语法的使用，方便后期记忆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;标题&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="MarkDown" scheme="https://jsopy.gitee.io/categories/MarkDown/"/>
+    
+    
+      <category term="MarkDown" scheme="https://jsopy.gitee.io/tags/MarkDown/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS3学习笔记</title>
@@ -540,36 +570,6 @@
         
         
           &lt;h2 id=&quot;学习-CSS3-之前必须要说明的几个问题&quot;&gt;&lt;a href=&quot;#学习-CSS3-之前必须要说明的几个问题&quot; class=&quot;headerlink&quot; title=&quot;学习 CSS3 之前必须要说明的几个问题&quot;&gt;&lt;/a&gt;学习 CSS3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="CSS3" scheme="https://jsopy.gitee.io/categories/CSS3/"/>
-    
-    
-      <category term="CSS3" scheme="https://jsopy.gitee.io/tags/CSS3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS3(三) CSS3响应式布局</title>
-    <link href="https://jsopy.gitee.io/2020/04/28/css33/"/>
-    <id>https://jsopy.gitee.io/2020/04/28/css33/</id>
-    <published>2020-04-28T13:26:47.000Z</published>
-    <updated>2020-05-24T09:49:41.214Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;媒体类型&quot;&gt;&lt;a href=&quot;#媒体类型&quot; class=&quot;headerlink&quot; title=&quot;媒体类型&quot;&gt;&lt;/a&gt;媒体类型&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;all 所有媒体&lt;/li&gt;
-&lt;li&gt;braille 盲文触觉设备&lt;/li&gt;
-&lt;li&gt;embossed
         
       
     
