@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-06-08T13:49:22.521Z</updated>
+  <updated>2020-06-13T07:02:50.153Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,170 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Canvas(五) 曲线的绘制</title>
+    <link href="https://jsopy.gitee.io/2020/06/13/canvas5/"/>
+    <id>https://jsopy.gitee.io/2020/06/13/canvas5/</id>
+    <published>2020-06-13T13:26:47.000Z</published>
+    <updated>2020-06-13T07:02:50.153Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;曲线的绘制-arc&quot;&gt;&lt;a href=&quot;#曲线的绘制-arc&quot; class=&quot;headerlink&quot; title=&quot;曲线的绘制 arc&quot;&gt;&lt;/a&gt;曲线的绘制 arc&lt;/h2&gt;&lt;h3 id=&quot;绘制圆弧&quot;&gt;&lt;a href=&quot;#绘制圆弧&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Canvas(四) 使用图片画布或者video</title>
+    <link href="https://jsopy.gitee.io/2020/06/12/canvas4/"/>
+    <id>https://jsopy.gitee.io/2020/06/12/canvas4/</id>
+    <published>2020-06-12T13:26:47.000Z</published>
+    <updated>2020-06-13T04:49:08.605Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;createPattern&quot;&gt;&lt;a href=&quot;#createPattern&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Canvas(三) 填充样式--渐变</title>
+    <link href="https://jsopy.gitee.io/2020/06/11/canvas3/"/>
+    <id>https://jsopy.gitee.io/2020/06/11/canvas3/</id>
+    <published>2020-06-11T13:26:47.000Z</published>
+    <updated>2020-06-13T04:30:03.526Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;fillStyle-线性渐变&quot;&gt;&lt;a href=&quot;#fillStyle-线性渐变&quot; class=&quot;headerlink&quot; title=&quot;fillStyle-线性渐变&quot;&gt;&lt;/a&gt;fillStyle-线性渐变&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;添加渐变线 var
+        
+      
+    
+    </summary>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Canvas(二) 图形变换</title>
+    <link href="https://jsopy.gitee.io/2020/06/10/canvas2/"/>
+    <id>https://jsopy.gitee.io/2020/06/10/canvas2/</id>
+    <published>2020-06-10T13:26:47.000Z</published>
+    <updated>2020-06-13T00:27:12.521Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Canvas-图形变换&quot;&gt;&lt;a href=&quot;#Canvas-图形变换&quot; class=&quot;headerlink&quot; title=&quot;Canvas 图形变换&quot;&gt;&lt;/a&gt;Canvas 图形变换&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;位移
+        
+      
+    
+    </summary>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Canvas(一) 线条</title>
+    <link href="https://jsopy.gitee.io/2020/06/09/canvas1/"/>
+    <id>https://jsopy.gitee.io/2020/06/09/canvas1/</id>
+    <published>2020-06-09T13:26:47.000Z</published>
+    <updated>2020-06-10T13:23:26.879Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;canvas-入门&quot;&gt;&lt;a href=&quot;#canvas-入门&quot; class=&quot;headerlink&quot; title=&quot;canvas 入门&quot;&gt;&lt;/a&gt;canvas 入门&lt;/h2&gt;&lt;h3 id=&quot;一-画布&quot;&gt;&lt;a href=&quot;#一-画布&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>canvas学习笔记</title>
+    <link href="https://jsopy.gitee.io/2020/06/08/canvasall/"/>
+    <id>https://jsopy.gitee.io/2020/06/08/canvasall/</id>
+    <published>2020-06-08T12:26:47.000Z</published>
+    <updated>2020-06-13T07:11:33.795Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Canvas-一-线条&quot;&gt;&lt;a href=&quot;#Canvas-一-线条&quot; class=&quot;headerlink&quot; title=&quot;Canvas(一) 线条&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.jsopy.com/2020/06/09/canvas1/&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
+    
+  </entry>
   
   <entry>
     <title>小程序(九) 小程序get请求和post请求</title>
@@ -437,182 +601,6 @@
       <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
       <category term="Swiper" scheme="https://jsopy.gitee.io/tags/Swiper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Swiper(三) Swiper-touch触发条件设置</title>
-    <link href="https://jsopy.gitee.io/2020/05/24/swiper3/"/>
-    <id>https://jsopy.gitee.io/2020/05/24/swiper3/</id>
-    <published>2020-05-24T13:26:47.000Z</published>
-    <updated>2020-06-08T12:55:30.717Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;1-本节知识点&quot;&gt;&lt;a href=&quot;#1-本节知识点&quot; class=&quot;headerlink&quot; title=&quot;(1) 本节知识点&quot;&gt;&lt;/a&gt;(1) 本节知识点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;触摸距离与 slide 滑动距离比率: touchRatio
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/categories/Swiper/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/tags/Swiper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Swiper(二) 基本配置</title>
-    <link href="https://jsopy.gitee.io/2020/05/23/swiper2/"/>
-    <id>https://jsopy.gitee.io/2020/05/23/swiper2/</id>
-    <published>2020-05-23T13:26:47.000Z</published>
-    <updated>2020-06-08T12:55:37.554Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;本节知识点&quot;&gt;&lt;a href=&quot;#本节知识点&quot; class=&quot;headerlink&quot; title=&quot;本节知识点&quot;&gt;&lt;/a&gt;本节知识点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;swiper 基本配置&lt;/li&gt;
-&lt;li&gt;如果 vue 中局部引入 swiper
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/categories/Swiper/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/tags/Swiper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Swiper(一) 入门</title>
-    <link href="https://jsopy.gitee.io/2020/05/22/swiper1/"/>
-    <id>https://jsopy.gitee.io/2020/05/22/swiper1/</id>
-    <published>2020-05-22T13:26:47.000Z</published>
-    <updated>2020-06-08T12:55:42.606Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;本节知识点&quot;&gt;&lt;a href=&quot;#本节知识点&quot; class=&quot;headerlink&quot; title=&quot;本节知识点&quot;&gt;&lt;/a&gt;本节知识点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Swiper 初始化&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;1-Swiper-初始化&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/categories/Swiper/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/tags/Swiper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Swiper学习笔记</title>
-    <link href="https://jsopy.gitee.io/2020/05/21/swiperall/"/>
-    <id>https://jsopy.gitee.io/2020/05/21/swiperall/</id>
-    <published>2020-05-21T12:26:47.000Z</published>
-    <updated>2020-06-08T13:21:43.807Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Swiper-学习笔记&quot;&gt;&lt;a href=&quot;#Swiper-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Swiper 学习笔记&quot;&gt;&lt;/a&gt;Swiper 学习笔记&lt;/h2&gt;&lt;h3 id=&quot;Swiper-一-入门&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/categories/Swiper/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/tags/Swiper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Less 语法</title>
-    <link href="https://jsopy.gitee.io/2020/05/20/less2/"/>
-    <id>https://jsopy.gitee.io/2020/05/20/less2/</id>
-    <published>2020-05-20T13:26:47.000Z</published>
-    <updated>2020-06-08T12:44:09.658Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Less-提升&quot;&gt;&lt;a href=&quot;#Less-提升&quot; class=&quot;headerlink&quot; title=&quot;Less 提升&quot;&gt;&lt;/a&gt;Less
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Less" scheme="https://jsopy.gitee.io/categories/Less/"/>
-    
-    
-      <category term="Less" scheme="https://jsopy.gitee.io/tags/Less/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Less 语法</title>
-    <link href="https://jsopy.gitee.io/2020/05/19/less1/"/>
-    <id>https://jsopy.gitee.io/2020/05/19/less1/</id>
-    <published>2020-05-19T13:26:47.000Z</published>
-    <updated>2020-06-08T12:37:14.004Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;本节知识点&quot;&gt;&lt;a href=&quot;#本节知识点&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Less" scheme="https://jsopy.gitee.io/categories/Less/"/>
-    
-    
-      <category term="Less" scheme="https://jsopy.gitee.io/tags/Less/"/>
     
   </entry>
   
