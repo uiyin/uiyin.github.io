@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-06-13T13:37:57.674Z</updated>
+  <updated>2020-06-15T14:00:45.368Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Canvas(七) Canvas高级内容</title>
+    <link href="https://jsopy.gitee.io/2020/06/15/canvas7/"/>
+    <id>https://jsopy.gitee.io/2020/06/15/canvas7/</id>
+    <published>2020-06-15T13:26:47.000Z</published>
+    <updated>2020-06-15T14:00:45.368Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;阴影&quot;&gt;&lt;a href=&quot;#阴影&quot; class=&quot;headerlink&quot; title=&quot;阴影&quot;&gt;&lt;/a&gt;阴影&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;context.shadowColor 阴影的颜色&lt;/li&gt;
+&lt;li&gt;context.shadowOffsetX X
+        
+      
+    
+    </summary>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
+    
+    
+      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
+    
+  </entry>
   
   <entry>
     <title>Canvas(六) 文字的渲染</title>
@@ -185,7 +214,7 @@
     <link href="https://jsopy.gitee.io/2020/06/08/canvasall/"/>
     <id>https://jsopy.gitee.io/2020/06/08/canvasall/</id>
     <published>2020-06-08T12:26:47.000Z</published>
-    <updated>2020-06-13T13:38:42.093Z</updated>
+    <updated>2020-06-15T14:04:00.809Z</updated>
     
     <summary type="html">
     
@@ -555,37 +584,6 @@
         
           &lt;h2 id=&quot;1-本节知识点&quot;&gt;&lt;a href=&quot;#1-本节知识点&quot; class=&quot;headerlink&quot; title=&quot;(1) 本节知识点&quot;&gt;&lt;/a&gt;(1) 本节知识点&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;swiper 切换效果 effect&lt;br&gt;–”slide”
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/categories/Swiper/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Swiper" scheme="https://jsopy.gitee.io/tags/Swiper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Swiper(五) Swiper分页器</title>
-    <link href="https://jsopy.gitee.io/2020/05/26/swiper5/"/>
-    <id>https://jsopy.gitee.io/2020/05/26/swiper5/</id>
-    <published>2020-05-26T13:26:47.000Z</published>
-    <updated>2020-06-08T13:05:24.206Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;1-本节知识点&quot;&gt;&lt;a href=&quot;#1-本节知识点&quot; class=&quot;headerlink&quot; title=&quot;(1) 本节知识点&quot;&gt;&lt;/a&gt;(1) 本节知识点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;使用分页器: pagination&lt;/li&gt;
-&lt;li&gt;分页器样式:
         
       
     
