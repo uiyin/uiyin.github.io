@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-06-19T15:03:16.928Z</updated>
+  <updated>2020-06-19T09:46:05.279Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,120 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Canvas(十六) canvas 衣服demo(配套Vue使用)</title>
-    <link href="https://jsopy.gitee.io/2020/06/24/canvas16/"/>
-    <id>https://jsopy.gitee.io/2020/06/24/canvas16/</id>
-    <published>2020-06-24T13:26:47.000Z</published>
-    <updated>2020-06-19T15:03:16.928Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;配套-vue-使用&quot;&gt;&lt;a href=&quot;#配套-vue-使用&quot; class=&quot;headerlink&quot; title=&quot;配套 vue 使用&quot;&gt;&lt;/a&gt;配套 vue 使用&lt;/h2&gt;&lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十五) canvas图像复制</title>
-    <link href="https://jsopy.gitee.io/2020/06/23/canvas15/"/>
-    <id>https://jsopy.gitee.io/2020/06/23/canvas15/</id>
-    <published>2020-06-23T13:26:47.000Z</published>
-    <updated>2020-06-19T14:43:50.217Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;图像复制-一般两个接口共同使用&quot;&gt;&lt;a href=&quot;#图像复制-一般两个接口共同使用&quot; class=&quot;headerlink&quot; title=&quot;图像复制 一般两个接口共同使用&quot;&gt;&lt;/a&gt;图像复制
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十四) canvas和鼠标交互</title>
-    <link href="https://jsopy.gitee.io/2020/06/22/canvas14/"/>
-    <id>https://jsopy.gitee.io/2020/06/22/canvas14/</id>
-    <published>2020-06-22T13:26:47.000Z</published>
-    <updated>2020-06-19T14:30:53.582Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;实现一个类似放大镜的效果&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十三) 离屏Canvas(添加水印)</title>
-    <link href="https://jsopy.gitee.io/2020/06/21/canvas13/"/>
-    <id>https://jsopy.gitee.io/2020/06/21/canvas13/</id>
-    <published>2020-06-21T13:26:47.000Z</published>
-    <updated>2020-06-19T12:12:37.452Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;添加水印 2 个 canvas&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
   
   <entry>
     <title>Canvas(十二) Canvas在画布中心缩放图像</title>
@@ -565,6 +451,130 @@
           &lt;h2 id=&quot;一-本节知识点&quot;&gt;&lt;a href=&quot;#一-本节知识点&quot; class=&quot;headerlink&quot; title=&quot;(一) 本节知识点&quot;&gt;&lt;/a&gt;(一) 本节知识点&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;小程序内嵌 JS 代码&lt;/li&gt;
 &lt;li&gt;小程序
+        
+      
+    
+    </summary>
+    
+    
+      <category term="微信小程序" scheme="https://jsopy.gitee.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="微信小程序" scheme="https://jsopy.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小程序(六) 小程序表单组件</title>
+    <link href="https://jsopy.gitee.io/2020/06/04/xiaochengxu6/"/>
+    <id>https://jsopy.gitee.io/2020/06/04/xiaochengxu6/</id>
+    <published>2020-06-04T13:26:47.000Z</published>
+    <updated>2020-06-08T13:44:13.489Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;小程序表单组件&quot;&gt;&lt;a href=&quot;#小程序表单组件&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="微信小程序" scheme="https://jsopy.gitee.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="微信小程序" scheme="https://jsopy.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小程序(五) 基础内容组件</title>
+    <link href="https://jsopy.gitee.io/2020/06/03/xiaochengxu5/"/>
+    <id>https://jsopy.gitee.io/2020/06/03/xiaochengxu5/</id>
+    <published>2020-06-03T13:26:47.000Z</published>
+    <updated>2020-06-08T13:42:41.452Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;基础内容组件的使用场景&quot;&gt;&lt;a href=&quot;#基础内容组件的使用场景&quot; class=&quot;headerlink&quot; title=&quot;基础内容组件的使用场景&quot;&gt;&lt;/a&gt;基础内容组件的使用场景&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;icon 图标组件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="微信小程序" scheme="https://jsopy.gitee.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="微信小程序" scheme="https://jsopy.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小程序(四) 小程序中的视图组件</title>
+    <link href="https://jsopy.gitee.io/2020/06/02/xiaochengxu4/"/>
+    <id>https://jsopy.gitee.io/2020/06/02/xiaochengxu4/</id>
+    <published>2020-06-02T13:26:47.000Z</published>
+    <updated>2020-06-08T13:40:54.337Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;小程序组件&quot;&gt;&lt;a href=&quot;#小程序组件&quot; class=&quot;headerlink&quot; title=&quot;小程序组件&quot;&gt;&lt;/a&gt;小程序组件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;视图容器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;一-视图容器&quot;&gt;&lt;a href=&quot;#一-视图容器&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="微信小程序" scheme="https://jsopy.gitee.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="微信小程序" scheme="https://jsopy.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小程序(三) 小程序中的JS</title>
+    <link href="https://jsopy.gitee.io/2020/06/01/xiaochengxu3/"/>
+    <id>https://jsopy.gitee.io/2020/06/01/xiaochengxu3/</id>
+    <published>2020-06-01T13:26:47.000Z</published>
+    <updated>2020-06-08T13:37:21.126Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;本节目标&quot;&gt;&lt;a href=&quot;#本节目标&quot; class=&quot;headerlink&quot; title=&quot;本节目标&quot;&gt;&lt;/a&gt;本节目标&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;了解小程序 JS 的基本情况&lt;/li&gt;
+&lt;li&gt;了解小程序 JS
         
       
     
