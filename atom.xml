@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-06-26T02:23:18.550Z</updated>
+  <updated>2020-06-26T02:31:51.620Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Axure9.0 (一)安装</title>
+    <link href="https://jsopy.gitee.io/2020/06/26/axure1/"/>
+    <id>https://jsopy.gitee.io/2020/06/26/axure1/</id>
+    <published>2020-06-26T13:26:47.000Z</published>
+    <updated>2020-06-26T02:31:51.620Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Axure9-0-使用&quot;&gt;&lt;a href=&quot;#Axure9-0-使用&quot; class=&quot;headerlink&quot; title=&quot;Axure9.0 使用&quot;&gt;&lt;/a&gt;Axure9.0 使用&lt;/h2&gt;&lt;h3 id=&quot;Axure9-0-安装&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Axure" scheme="https://jsopy.gitee.io/categories/Axure/"/>
+    
+    
+      <category term="Axure" scheme="https://jsopy.gitee.io/tags/Axure/"/>
+    
+  </entry>
   
   <entry>
     <title>Axure 学习笔记</title>
@@ -532,35 +559,6 @@
 &lt;li&gt;展示小程序 get 请求和 post 请求&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="微信小程序" scheme="https://jsopy.gitee.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="微信小程序" scheme="https://jsopy.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小程序(八) 自定义组件与传值</title>
-    <link href="https://jsopy.gitee.io/2020/06/06/xiaochengxu8/"/>
-    <id>https://jsopy.gitee.io/2020/06/06/xiaochengxu8/</id>
-    <published>2020-06-06T13:26:47.000Z</published>
-    <updated>2020-06-08T13:47:55.272Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一-本节主要是讲述利用微信小程序完成组件功能&quot;&gt;&lt;a href=&quot;#一-本节主要是讲述利用微信小程序完成组件功能&quot; class=&quot;headerlink&quot;
         
       
     
