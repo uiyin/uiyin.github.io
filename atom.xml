@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-06-27T02:26:31.204Z</updated>
+  <updated>2020-06-28T14:26:57.474Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Axure9.0 (三)添加情形判断条件</title>
+    <link href="https://jsopy.gitee.io/2020/06/28/axure3/"/>
+    <id>https://jsopy.gitee.io/2020/06/28/axure3/</id>
+    <published>2020-06-28T13:26:47.000Z</published>
+    <updated>2020-06-28T14:26:57.474Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Axure-判断条件&quot;&gt;&lt;a href=&quot;#Axure-判断条件&quot; class=&quot;headerlink&quot; title=&quot;Axure 判断条件&quot;&gt;&lt;/a&gt;Axure 判断条件&lt;/h2&gt;&lt;p&gt;显示就是真 不显示就是假&lt;/p&gt;
+&lt;p&gt;具体操作见视频不超过 2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Axure" scheme="https://jsopy.gitee.io/categories/Axure/"/>
+    
+    
+      <category term="Axure" scheme="https://jsopy.gitee.io/tags/Axure/"/>
+    
+  </entry>
   
   <entry>
     <title>Axure9.0 (二)添加事件</title>
@@ -76,7 +104,7 @@
     <link href="https://jsopy.gitee.io/2020/06/25/axureall/"/>
     <id>https://jsopy.gitee.io/2020/06/25/axureall/</id>
     <published>2020-06-25T12:26:47.000Z</published>
-    <updated>2020-06-27T02:20:45.678Z</updated>
+    <updated>2020-06-28T14:27:44.274Z</updated>
     
     <summary type="html">
     
@@ -530,33 +558,6 @@
         
         
           &lt;h2 id=&quot;canvas-入门&quot;&gt;&lt;a href=&quot;#canvas-入门&quot; class=&quot;headerlink&quot; title=&quot;canvas 入门&quot;&gt;&lt;/a&gt;canvas 入门&lt;/h2&gt;&lt;h3 id=&quot;一-画布&quot;&gt;&lt;a href=&quot;#一-画布&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>canvas学习笔记</title>
-    <link href="https://jsopy.gitee.io/2020/06/08/canvasall/"/>
-    <id>https://jsopy.gitee.io/2020/06/08/canvasall/</id>
-    <published>2020-06-08T12:26:47.000Z</published>
-    <updated>2020-06-19T15:03:54.699Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Canvas-一-线条&quot;&gt;&lt;a href=&quot;#Canvas-一-线条&quot; class=&quot;headerlink&quot; title=&quot;Canvas(一) 线条&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.jsopy.com/2020/06/09/canvas1/&quot;
         
       
     
