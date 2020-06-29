@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-06-28T14:26:57.474Z</updated>
+  <updated>2020-06-29T12:55:45.438Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Axure9.0 (四)添加局部变量和全局变量</title>
+    <link href="https://jsopy.gitee.io/2020/06/29/axure4/"/>
+    <id>https://jsopy.gitee.io/2020/06/29/axure4/</id>
+    <published>2020-06-29T13:26:47.000Z</published>
+    <updated>2020-06-29T12:55:45.438Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Axure-局部变量和全局变量&quot;&gt;&lt;a href=&quot;#Axure-局部变量和全局变量&quot; class=&quot;headerlink&quot; title=&quot;Axure 局部变量和全局变量&quot;&gt;&lt;/a&gt;Axure 局部变量和全局变量&lt;/h2&gt;&lt;iframe
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Axure" scheme="https://jsopy.gitee.io/categories/Axure/"/>
+    
+    
+      <category term="Axure" scheme="https://jsopy.gitee.io/tags/Axure/"/>
+    
+  </entry>
   
   <entry>
     <title>Axure9.0 (三)添加情形判断条件</title>
@@ -31,33 +58,6 @@
         
           &lt;h2 id=&quot;Axure-判断条件&quot;&gt;&lt;a href=&quot;#Axure-判断条件&quot; class=&quot;headerlink&quot; title=&quot;Axure 判断条件&quot;&gt;&lt;/a&gt;Axure 判断条件&lt;/h2&gt;&lt;p&gt;显示就是真 不显示就是假&lt;/p&gt;
 &lt;p&gt;具体操作见视频不超过 2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Axure" scheme="https://jsopy.gitee.io/categories/Axure/"/>
-    
-    
-      <category term="Axure" scheme="https://jsopy.gitee.io/tags/Axure/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Axure9.0 (四)添加局部变量和全局变量</title>
-    <link href="https://jsopy.gitee.io/2020/06/28/axure4/"/>
-    <id>https://jsopy.gitee.io/2020/06/28/axure4/</id>
-    <published>2020-06-28T13:26:47.000Z</published>
-    <updated>2020-06-29T12:53:39.997Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Axure-局部变量和全局变量&quot;&gt;&lt;a href=&quot;#Axure-局部变量和全局变量&quot; class=&quot;headerlink&quot; title=&quot;Axure 局部变量和全局变量&quot;&gt;&lt;/a&gt;Axure 局部变量和全局变量&lt;/h2&gt;&lt;iframe
         
       
     
