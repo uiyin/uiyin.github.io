@@ -465,7 +465,7 @@ api_test.js
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-07
+                    2020-07-08
                 </div>
                 
 
@@ -473,7 +473,7 @@ api_test.js
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        509
+                        568
                     </div>
                     
 
@@ -527,34 +527,34 @@ api_test.js
   homeurl<span class="token punctuation">:</span> <span class="token string">'这就是测试环境'</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> url<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-在根目录创建-3-个文件以-env-开头-具体的看图"><a href="#3-在根目录创建-3-个文件以-env-开头-具体的看图" class="headerlink" title="(3) 在根目录创建 3 个文件以.env 开头,具体的看图"></a>(3) 在根目录创建 3 个文件以.env 开头,具体的看图</h3><img src="/2020/06/30/vuecha11/111.jpg" class="" title="[图一]">
+<h3 id="3-在根目录创建-3-个文件以-env-开头-特别提醒是根目录-具体的看图"><a href="#3-在根目录创建-3-个文件以-env-开头-特别提醒是根目录-具体的看图" class="headerlink" title="(3) 在根目录创建 3 个文件以.env 开头,特别提醒是根目录 具体的看图"></a>(3) 在根目录创建 3 个文件以.env 开头,特别提醒是根目录 具体的看图</h3><img src="/2020/06/30/vuecha11/222.jpg" class="" title="[图一]">
 
 <h3 id="4-在对应的-env-文件里面写不同的代码"><a href="#4-在对应的-env-文件里面写不同的代码" class="headerlink" title="(4) 在对应的 env 文件里面写不同的代码"></a>(4) 在对应的 env 文件里面写不同的代码</h3><ul>
 <li>.env.development</li>
 </ul>
 <pre class="line-numbers language-javascript"><code class="language-javascript">NODE_ENV <span class="token operator">=</span> <span class="token string">'development'</span>
 
-VUE_APP_MODE <span class="token operator">=</span> <span class="token string">'开发'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+VUE_APP_MODE <span class="token operator">=</span> <span class="token string">'development'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>.env.production</li>
 </ul>
 <pre class="line-numbers language-javascript"><code class="language-javascript">NODE_ENV <span class="token operator">=</span> <span class="token string">'production'</span>
 
-VUE_APP_MODE <span class="token operator">=</span> <span class="token string">'生产'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+VUE_APP_MODE <span class="token operator">=</span> <span class="token string">'production'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>.env.test</li>
 </ul>
 <pre class="line-numbers language-javascript"><code class="language-javascript">NODE_ENV <span class="token operator">=</span> <span class="token string">'test'</span>
 
-VUE_APP_MODE <span class="token operator">=</span> <span class="token string">'测试'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+VUE_APP_MODE <span class="token operator">=</span> <span class="token string">'test'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="5-在根目录新建-config-js-文件"><a href="#5-在根目录新建-config-js-文件" class="headerlink" title="(5)在根目录新建 config.js 文件"></a>(5)在根目录新建 config.js 文件</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> ROOT
-<span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">==</span> <span class="token string">'development'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>VUE_APP_MODE <span class="token operator">==</span> <span class="token string">'development'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'开发环境'</span><span class="token punctuation">)</span>
   ROOT <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@/config/api_development.js'</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">==</span> <span class="token string">'production'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>VUE_APP_MODE <span class="token operator">==</span> <span class="token string">'production'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'生产环境'</span><span class="token punctuation">)</span>
   ROOT <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@/config/api_production.js'</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">==</span> <span class="token string">'test'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>VUE_APP_MODE <span class="token operator">==</span> <span class="token string">'test'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'测试环境'</span><span class="token punctuation">)</span>
   ROOT <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@/config/api_test.js'</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
@@ -583,60 +583,65 @@ VUE_APP_MODE <span class="token operator">=</span> <span class="token string">'�
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>less<span class="token punctuation">"</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">></span></span><span class="token style language-css"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="7-在-package-json-里面"><a href="#7-在-package-json-里面" class="headerlink" title="(7) 在 package.json 里面"></a>(7) 在 package.json 里面</h3><ul>
-<li>找到 scripts 里面写命令</li>
+<li>找到 scripts 里面写命令,命令多少看个人情况</li>
 </ul>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
   <span class="token string">"scripts"</span><span class="token punctuation">:</span><span class="token punctuation">{</span>
     <span class="token string">"serve"</span><span class="token punctuation">:</span><span class="token string">"vue-cli-service serve --mode development"</span><span class="token punctuation">,</span>
     <span class="token string">"build-stage"</span><span class="token punctuation">:</span><span class="token string">"vue-cli-service build --mode test"</span><span class="token punctuation">,</span>
     <span class="token string">"build-proud"</span><span class="token punctuation">:</span><span class="token string">"vue-cli-service build --mode production"</span><span class="token punctuation">,</span>
+    <span class="token string">"serve-production"</span><span class="token punctuation">:</span> <span class="token string">"vue-cli-service serve --mode production"</span><span class="token punctuation">,</span>
+    <span class="token string">"serve-development"</span><span class="token punctuation">:</span> <span class="token string">"vue-cli-service serve --mode development"</span><span class="token punctuation">,</span>
+    <span class="token string">"serve-stage"</span><span class="token punctuation">:</span> <span class="token string">"vue-cli-service serve --mode stage"</span><span class="token punctuation">,</span>
+    <span class="token string">"serve-test"</span><span class="token punctuation">:</span> <span class="token string">"vue-cli-service serve --mode test"</span><span class="token punctuation">,</span>
     <span class="token string">"lint"</span><span class="token punctuation">:</span><span class="token string">"vue-cli-service lint"</span>
   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="8-然后在依据不同的命令调用不同的方法"><a href="#8-然后在依据不同的命令调用不同的方法" class="headerlink" title="(8) 然后在依据不同的命令调用不同的方法"></a>(8) 然后在依据不同的命令调用不同的方法</h3><h2 id="Vuecli2-0-环境"><a href="#Vuecli2-0-环境" class="headerlink" title="Vuecli2.0 环境"></a>Vuecli2.0 环境</h2><h3 id="1-安装-cross-env"><a href="#1-安装-cross-env" class="headerlink" title="(1) 安装 cross-env"></a>(1) 安装 cross-env</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
-cnpm i cross<span class="token operator">-</span>env <span class="token operator">--</span>save<span class="token operator">-</span>dev
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="2-package-json-修改打包命令"><a href="#2-package-json-修改打包命令" class="headerlink" title="(2)package.json 修改打包命令"></a>(2)package.json 修改打包命令</h3><ul>
-<li>找到 scripts 里面加入</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token punctuation">{</span>
-  <span class="token string">"scripts"</span><span class="token punctuation">:</span><span class="token punctuation">{</span>
-    <span class="token string">"build-uat"</span><span class="token punctuation">:</span><span class="token string">"cross-env NODE_ENV=uat ENV_CONFIG=prod node build/build.js"</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="8-然后在依据不同的命令调用不同的方法"><a href="#8-然后在依据不同的命令调用不同的方法" class="headerlink" title="(8) 然后在依据不同的命令调用不同的方法"></a>(8) 然后在依据不同的命令调用不同的方法</h3><h2 id="Vuecli2-0-环境"><a href="#Vuecli2-0-环境" class="headerlink" title="Vuecli2.0 环境"></a>Vuecli2.0 环境</h2><h3 id="1-复制一份-build-build-js-文件命名为-build-build-test-js-修改这三处地方"><a href="#1-复制一份-build-build-js-文件命名为-build-build-test-js-修改这三处地方" class="headerlink" title="(1) 复制一份 build/build.js 文件命名为 build/build-test.js 修改这三处地方"></a>(1) 复制一份 build/build.js 文件命名为 build/build-test.js 修改这三处地方</h3><img src="/2020/06/30/vuecha11/444.jpg" class="" title="[图2]">
 
-<span class="token comment" spellcheck="true">// NODE_ENV 为不同域名环境 ENV_CONFIG为打包环境</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-config-添加环境-test-env-js"><a href="#3-config-添加环境-test-env-js" class="headerlink" title="(3) config 添加环境 test.env.js"></a>(3) config 添加环境 test.env.js</h3><pre class="line-numbers language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-  NODE_ENV<span class="token punctuation">:</span> <span class="token string">'"uat"'</span><span class="token punctuation">,</span>
-  ENV_CONFIG<span class="token punctuation">:</span> <span class="token string">'"prod"'</span><span class="token punctuation">,</span>
-  API_ADDRESS<span class="token punctuation">:</span> <span class="token string">'"https://testxxx.com"'</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="4-修改-config-中-dev-env-js"><a href="#4-修改-config-中-dev-env-js" class="headerlink" title="(4) 修改 config 中 dev.env.js"></a>(4) 修改 config 中 dev.env.js</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> merge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack-merge'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> testEnv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./test.env'</span><span class="token punctuation">)</span>
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>testEnv<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+<h3 id="2-复制一份-build-webpack-prod-conf-js-文件命名为-build-webpack-test-conf-js-修改这三处地方"><a href="#2-复制一份-build-webpack-prod-conf-js-文件命名为-build-webpack-test-conf-js-修改这三处地方" class="headerlink" title="(2)复制一份 build/webpack.prod.conf.js 文件命名为 build/webpack.test.conf.js 修改这三处地方"></a>(2)复制一份 build/webpack.prod.conf.js 文件命名为 build/webpack.test.conf.js 修改这三处地方</h3><img src="/2020/06/30/vuecha11/555.jpg" class="" title="[图3]">
+
+<h3 id="3-复制一份-config-prod-env-js-文件命名为-config-test-env-js"><a href="#3-复制一份-config-prod-env-js-文件命名为-config-test-env-js" class="headerlink" title="(3)复制一份 config/prod.env.js 文件命名为 config/test.env.js"></a>(3)复制一份 config/prod.env.js 文件命名为 config/test.env.js</h3><ul>
+<li>test.env.js</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token string">'use strict'</span>
+<span class="token keyword">const</span> merge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack-merge'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> devEnv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./dev.env'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>devEnv<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  NODE_ENV<span class="token punctuation">:</span> <span class="token string">'"testing"'</span><span class="token punctuation">,</span>
+  BASE_URL<span class="token punctuation">:</span> <span class="token string">'"https://test.com"'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>dev.env.js</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token string">'use strict'</span>
+<span class="token keyword">const</span> merge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack-merge'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> prodEnv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./prod.env'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>prodEnv<span class="token punctuation">,</span> <span class="token punctuation">{</span>
   NODE_ENV<span class="token punctuation">:</span> <span class="token string">'"development"'</span><span class="token punctuation">,</span>
-  ENV_CONFIG<span class="token punctuation">:</span> <span class="token string">'"dev"'</span><span class="token punctuation">,</span>
-  API_ADDRESS<span class="token punctuation">:</span> <span class="token string">'""'</span><span class="token punctuation">,</span>
+  BASE_URL<span class="token punctuation">:</span> <span class="token string">'"https://localhost:8080"'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>prod.env.js</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token string">'use strict'</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  NODE_ENV<span class="token punctuation">:</span> <span class="token string">'"production"'</span><span class="token punctuation">,</span>
+  BASE_URL<span class="token punctuation">:</span> <span class="token string">'"https://prod.com"'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4-在-package-json-文件里添加一条-npm-run-test-的启动项"><a href="#4-在-package-json-文件里添加一条-npm-run-test-的启动项" class="headerlink" title="(4) 在 package.json 文件里添加一条 npm run test 的启动项"></a>(4) 在 package.json 文件里添加一条 npm run test 的启动项</h3><img src="/2020/06/30/vuecha11/666.jpg" class="" title="[图4]">
+
+<h3 id="5-使用-可以在封装-axios-的时候带上-process-env-BASE-URL"><a href="#5-使用-可以在封装-axios-的时候带上-process-env-BASE-URL" class="headerlink" title="(5) 使用 可以在封装 axios 的时候带上 process.env.BASE_URL"></a>(5) 使用 可以在封装 axios 的时候带上 process.env.BASE_URL</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> Axios <span class="token keyword">from</span> <span class="token string">'axios'</span>
+
+<span class="token keyword">const</span> axios <span class="token operator">=</span> Axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  baseURL<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>BASE_URL<span class="token punctuation">,</span>
+  headers<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'application/json;charset=UTF-8'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> testEnv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./test.env'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="5-修改-build-中-utils-js"><a href="#5-修改-build-中-utils-js" class="headerlink" title="(5) 修改 build 中 utils.js"></a>(5) 修改 build 中 utils.js</h3><pre class="line-numbers language-javascript"><code class="language-javascript">exports<span class="token punctuation">.</span>assetsPath <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>_path<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> assetsSubDirectory <span class="token operator">=</span>
-    process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>ENV_CONFIG <span class="token operator">===</span> <span class="token string">'prod'</span>
-      <span class="token operator">?</span> config<span class="token punctuation">.</span>build<span class="token punctuation">.</span>assetsSubDirectory
-      <span class="token punctuation">:</span> config<span class="token punctuation">.</span>dev<span class="token punctuation">.</span>assetsSubDirectory
-  <span class="token keyword">return</span> path<span class="token punctuation">.</span>posix<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>assetsSubDirectory<span class="token punctuation">,</span> _path<span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="6-修改-build-中-webpack-base-conf-js"><a href="#6-修改-build-中-webpack-base-conf-js" class="headerlink" title="(6) 修改 build 中 webpack.base.conf.js"></a>(6) 修改 build 中 webpack.base.conf.js</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
-output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-   path<span class="token punctuation">:</span> config<span class="token punctuation">.</span>build<span class="token punctuation">.</span>assetsRoot<span class="token punctuation">,</span>
-   filename<span class="token punctuation">:</span> <span class="token string">'[name].js'</span><span class="token punctuation">,</span>
-   publicPath<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>ENV_CONFIG <span class="token operator">===</span> <span class="token string">'prod'</span>
-     <span class="token operator">?</span> config<span class="token punctuation">.</span>build<span class="token punctuation">.</span>assetsPublicPath
-     <span class="token punctuation">:</span> config<span class="token punctuation">.</span>dev<span class="token punctuation">.</span>assetsPublicPath
- <span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="7-修改-build-中的-webpack-prod-conf-js"><a href="#7-修改-build-中的-webpack-prod-conf-js" class="headerlink" title="(7) 修改 build 中的 webpack.prod.conf.js"></a>(7) 修改 build 中的 webpack.prod.conf.js</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> env <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config/'</span> <span class="token operator">+</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">+</span> <span class="token string">'.env'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<span class="token keyword">export</span> <span class="token keyword">default</span> axios<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -991,7 +996,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >174.3k</span
+        >174.4k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
