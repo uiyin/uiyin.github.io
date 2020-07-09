@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-07-08T13:03:11.321Z</updated>
+  <updated>2020-07-09T12:29:35.630Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,122 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>React区分生产环境和开发环境(一)</title>
+    <link href="https://jsopy.gitee.io/2020/07/04/reactcha1/"/>
+    <id>https://jsopy.gitee.io/2020/07/04/reactcha1/</id>
+    <published>2020-07-04T13:26:47.000Z</published>
+    <updated>2020-07-09T12:29:35.630Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;React-项目分环境打包&quot;&gt;&lt;a href=&quot;#React-项目分环境打包&quot; class=&quot;headerlink&quot; title=&quot;React 项目分环境打包&quot;&gt;&lt;/a&gt;React 项目分环境打包&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React插件学习笔记</title>
+    <link href="https://jsopy.gitee.io/2020/07/03/reactchaall/"/>
+    <id>https://jsopy.gitee.io/2020/07/03/reactchaall/</id>
+    <published>2020-07-03T12:26:47.000Z</published>
+    <updated>2020-07-09T12:19:35.592Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;React-插件学习笔记&quot;&gt;&lt;a href=&quot;#React-插件学习笔记&quot; class=&quot;headerlink&quot; title=&quot;React 插件学习笔记&quot;&gt;&lt;/a&gt;React 插件学习笔记&lt;/h2&gt;&lt;h3 id=&quot;React-区分生产环境和开发环境&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React插件" scheme="https://jsopy.gitee.io/categories/React%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React插件" scheme="https://jsopy.gitee.io/tags/React%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4(一) 入门与体验</title>
+    <link href="https://jsopy.gitee.io/2020/07/02/webpack1/"/>
+    <id>https://jsopy.gitee.io/2020/07/02/webpack1/</id>
+    <published>2020-07-02T13:26:47.000Z</published>
+    <updated>2020-07-09T11:32:49.319Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Webpack4-入门&quot;&gt;&lt;a href=&quot;#Webpack4-入门&quot; class=&quot;headerlink&quot; title=&quot;Webpack4 入门&quot;&gt;&lt;/a&gt;Webpack4 入门&lt;/h2&gt;&lt;h3 id=&quot;WebPack-究竟是什么&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4基础学记笔记</title>
+    <link href="https://jsopy.gitee.io/2020/07/01/webpackall/"/>
+    <id>https://jsopy.gitee.io/2020/07/01/webpackall/</id>
+    <published>2020-07-01T13:26:47.000Z</published>
+    <updated>2020-07-09T11:32:54.429Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Webpack4-基础学习笔记&quot;&gt;&lt;a href=&quot;#Webpack4-基础学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Webpack4 基础学习笔记&quot;&gt;&lt;/a&gt;Webpack4 基础学习笔记&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue中区分development和product和test</title>
@@ -450,115 +566,6 @@
           &lt;h2 id=&quot;阴影&quot;&gt;&lt;a href=&quot;#阴影&quot; class=&quot;headerlink&quot; title=&quot;阴影&quot;&gt;&lt;/a&gt;阴影&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;context.shadowColor 阴影的颜色&lt;/li&gt;
 &lt;li&gt;context.shadowOffsetX X
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(六) 文字的渲染</title>
-    <link href="https://jsopy.gitee.io/2020/06/14/canvas6/"/>
-    <id>https://jsopy.gitee.io/2020/06/14/canvas6/</id>
-    <published>2020-06-14T13:26:47.000Z</published>
-    <updated>2020-06-13T13:37:57.674Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;文字渲染基础&quot;&gt;&lt;a href=&quot;#文字渲染基础&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(五) 曲线的绘制</title>
-    <link href="https://jsopy.gitee.io/2020/06/13/canvas5/"/>
-    <id>https://jsopy.gitee.io/2020/06/13/canvas5/</id>
-    <published>2020-06-13T13:26:47.000Z</published>
-    <updated>2020-06-13T07:02:50.153Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;曲线的绘制-arc&quot;&gt;&lt;a href=&quot;#曲线的绘制-arc&quot; class=&quot;headerlink&quot; title=&quot;曲线的绘制 arc&quot;&gt;&lt;/a&gt;曲线的绘制 arc&lt;/h2&gt;&lt;h3 id=&quot;绘制圆弧&quot;&gt;&lt;a href=&quot;#绘制圆弧&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(四) 使用图片画布或者video</title>
-    <link href="https://jsopy.gitee.io/2020/06/12/canvas4/"/>
-    <id>https://jsopy.gitee.io/2020/06/12/canvas4/</id>
-    <published>2020-06-12T13:26:47.000Z</published>
-    <updated>2020-06-13T04:49:08.605Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;createPattern&quot;&gt;&lt;a href=&quot;#createPattern&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(三) 填充样式--渐变</title>
-    <link href="https://jsopy.gitee.io/2020/06/11/canvas3/"/>
-    <id>https://jsopy.gitee.io/2020/06/11/canvas3/</id>
-    <published>2020-06-11T13:26:47.000Z</published>
-    <updated>2020-06-13T04:30:03.526Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;fillStyle-线性渐变&quot;&gt;&lt;a href=&quot;#fillStyle-线性渐变&quot; class=&quot;headerlink&quot; title=&quot;fillStyle-线性渐变&quot;&gt;&lt;/a&gt;fillStyle-线性渐变&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;添加渐变线 var
         
       
     
