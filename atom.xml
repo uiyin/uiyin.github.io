@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-07-09T12:29:35.630Z</updated>
+  <updated>2020-07-11T13:06:02.430Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,210 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Webpack4(十) 使用Babel处理ES6语法</title>
+    <link href="https://jsopy.gitee.io/2020/07/11/webpack10/"/>
+    <id>https://jsopy.gitee.io/2020/07/11/webpack10/</id>
+    <published>2020-07-11T13:26:47.000Z</published>
+    <updated>2020-07-11T13:06:02.430Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Babel&quot;&gt;&lt;a href=&quot;#Babel&quot; class=&quot;headerlink&quot; title=&quot;Babel&quot;&gt;&lt;/a&gt;Babel&lt;/h2&gt;&lt;p&gt;因为在 IE 浏览器里面不支持 es6 写法 所以必须安装一个工具 babel 来转换 es6
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4(九) 使用热更新</title>
+    <link href="https://jsopy.gitee.io/2020/07/10/webpack9/"/>
+    <id>https://jsopy.gitee.io/2020/07/10/webpack9/</id>
+    <published>2020-07-10T13:26:47.000Z</published>
+    <updated>2020-07-11T13:05:51.047Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Hot-Module-Replacement&quot;&gt;&lt;a href=&quot;#Hot-Module-Replacement&quot; class=&quot;headerlink&quot; title=&quot;Hot Module Replacement&quot;&gt;&lt;/a&gt;Hot Module
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4(八) 使用WebpackDevServer提升效率</title>
+    <link href="https://jsopy.gitee.io/2020/07/09/webpack8/"/>
+    <id>https://jsopy.gitee.io/2020/07/09/webpack8/</id>
+    <published>2020-07-09T13:26:47.000Z</published>
+    <updated>2020-07-11T09:27:05.184Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;WebpackDevServer&quot;&gt;&lt;a href=&quot;#WebpackDevServer&quot; class=&quot;headerlink&quot; title=&quot;WebpackDevServer&quot;&gt;&lt;/a&gt;WebpackDevServer&lt;/h2&gt;&lt;p&gt;它的作用就是帮助你刷新页面
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4(七) SourceMap的配置</title>
+    <link href="https://jsopy.gitee.io/2020/07/08/webpack7/"/>
+    <id>https://jsopy.gitee.io/2020/07/08/webpack7/</id>
+    <published>2020-07-08T13:26:47.000Z</published>
+    <updated>2020-07-11T09:21:52.515Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;SourceMap-的配置&quot;&gt;&lt;a href=&quot;#SourceMap-的配置&quot; class=&quot;headerlink&quot; title=&quot;SourceMap 的配置&quot;&gt;&lt;/a&gt;SourceMap 的配置&lt;/h2&gt;&lt;p&gt;SourceMap
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4(六) 使用plugins打包和多入口</title>
+    <link href="https://jsopy.gitee.io/2020/07/07/webpack6/"/>
+    <id>https://jsopy.gitee.io/2020/07/07/webpack6/</id>
+    <published>2020-07-07T13:26:47.000Z</published>
+    <updated>2020-07-11T09:08:53.206Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;插件&quot;&gt;&lt;a href=&quot;#插件&quot; class=&quot;headerlink&quot; title=&quot;插件&quot;&gt;&lt;/a&gt;插件&lt;/h2&gt;&lt;p&gt;插件的作用就是别人写好的模块 我们为了使用方便,所以直接使用,比如自动生成 index.html&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4(五) webpack打包iconfont</title>
+    <link href="https://jsopy.gitee.io/2020/07/06/webpack5/"/>
+    <id>https://jsopy.gitee.io/2020/07/06/webpack5/</id>
+    <published>2020-07-06T13:26:47.000Z</published>
+    <updated>2020-07-11T08:29:10.817Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;webpack-打包-iconfont&quot;&gt;&lt;a href=&quot;#webpack-打包-iconfont&quot; class=&quot;headerlink&quot; title=&quot;webpack 打包 iconfont&quot;&gt;&lt;/a&gt;webpack 打包 iconfont&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4(四) loader的执行顺序和局部引入css</title>
+    <link href="https://jsopy.gitee.io/2020/07/05/webpack4/"/>
+    <id>https://jsopy.gitee.io/2020/07/05/webpack4/</id>
+    <published>2020-07-05T13:26:47.000Z</published>
+    <updated>2020-07-11T04:32:46.304Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;loader-执行顺序&quot;&gt;&lt;a href=&quot;#loader-执行顺序&quot; class=&quot;headerlink&quot; title=&quot;loader 执行顺序&quot;&gt;&lt;/a&gt;loader 执行顺序&lt;/h2&gt;&lt;p&gt;所有的 loader
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
   
   <entry>
     <title>React区分生产环境和开发环境(一)</title>
@@ -42,6 +246,64 @@
       <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
       <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4(三) loader-css以及增加前缀</title>
+    <link href="https://jsopy.gitee.io/2020/07/04/webpack3/"/>
+    <id>https://jsopy.gitee.io/2020/07/04/webpack3/</id>
+    <published>2020-07-04T13:26:47.000Z</published>
+    <updated>2020-07-11T08:54:40.296Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;css-loader&quot;&gt;&lt;a href=&quot;#css-loader&quot; class=&quot;headerlink&quot; title=&quot;css-loader&quot;&gt;&lt;/a&gt;css-loader&lt;/h2&gt;&lt;h3 id=&quot;1-安装-css-loader&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack4(二) loader入门</title>
+    <link href="https://jsopy.gitee.io/2020/07/03/webpack2/"/>
+    <id>https://jsopy.gitee.io/2020/07/03/webpack2/</id>
+    <published>2020-07-03T13:26:47.000Z</published>
+    <updated>2020-07-11T03:40:26.978Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;loader-概念&quot;&gt;&lt;a href=&quot;#loader-概念&quot; class=&quot;headerlink&quot; title=&quot;loader 概念&quot;&gt;&lt;/a&gt;loader 概念&lt;/h2&gt;&lt;p&gt;loader 就是 当 webpack 需要加载不同类型的文件需要提供的支持,比如
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
     
   </entry>
   
@@ -108,7 +370,7 @@
     <link href="https://jsopy.gitee.io/2020/07/01/webpackall/"/>
     <id>https://jsopy.gitee.io/2020/07/01/webpackall/</id>
     <published>2020-07-01T13:26:47.000Z</published>
-    <updated>2020-07-09T11:32:54.429Z</updated>
+    <updated>2020-07-11T13:10:50.434Z</updated>
     
     <summary type="html">
     
@@ -312,260 +574,6 @@
         
         
           &lt;h2 id=&quot;配套-vue-使用&quot;&gt;&lt;a href=&quot;#配套-vue-使用&quot; class=&quot;headerlink&quot; title=&quot;配套 vue 使用&quot;&gt;&lt;/a&gt;配套 vue 使用&lt;/h2&gt;&lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十五) canvas图像复制</title>
-    <link href="https://jsopy.gitee.io/2020/06/23/canvas15/"/>
-    <id>https://jsopy.gitee.io/2020/06/23/canvas15/</id>
-    <published>2020-06-23T13:26:47.000Z</published>
-    <updated>2020-06-19T14:43:50.217Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;图像复制-一般两个接口共同使用&quot;&gt;&lt;a href=&quot;#图像复制-一般两个接口共同使用&quot; class=&quot;headerlink&quot; title=&quot;图像复制 一般两个接口共同使用&quot;&gt;&lt;/a&gt;图像复制
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十四) canvas和鼠标交互</title>
-    <link href="https://jsopy.gitee.io/2020/06/22/canvas14/"/>
-    <id>https://jsopy.gitee.io/2020/06/22/canvas14/</id>
-    <published>2020-06-22T13:26:47.000Z</published>
-    <updated>2020-06-19T14:30:53.582Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;实现一个类似放大镜的效果&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十三) 离屏Canvas(添加水印)</title>
-    <link href="https://jsopy.gitee.io/2020/06/21/canvas13/"/>
-    <id>https://jsopy.gitee.io/2020/06/21/canvas13/</id>
-    <published>2020-06-21T13:26:47.000Z</published>
-    <updated>2020-06-19T12:12:37.452Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;添加水印 2 个 canvas&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十二) Canvas在画布中心缩放图像</title>
-    <link href="https://jsopy.gitee.io/2020/06/20/canvas12/"/>
-    <id>https://jsopy.gitee.io/2020/06/20/canvas12/</id>
-    <published>2020-06-20T13:26:47.000Z</published>
-    <updated>2020-06-19T09:46:05.279Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;缩放开始&quot;&gt;&lt;a href=&quot;#缩放开始&quot; class=&quot;headerlink&quot; title=&quot;缩放开始&quot;&gt;&lt;/a&gt;缩放开始&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十一) Canvas绘制图像</title>
-    <link href="https://jsopy.gitee.io/2020/06/19/canvas11/"/>
-    <id>https://jsopy.gitee.io/2020/06/19/canvas11/</id>
-    <published>2020-06-19T13:26:47.000Z</published>
-    <updated>2020-06-19T08:48:32.259Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;绘制图像-drawImage&quot;&gt;&lt;a href=&quot;#绘制图像-drawImage&quot; class=&quot;headerlink&quot; title=&quot;绘制图像 drawImage&quot;&gt;&lt;/a&gt;绘制图像
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十) Canvas图形库</title>
-    <link href="https://jsopy.gitee.io/2020/06/18/canvas10/"/>
-    <id>https://jsopy.gitee.io/2020/06/18/canvas10/</id>
-    <published>2020-06-18T13:26:47.000Z</published>
-    <updated>2020-06-19T04:41:50.943Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;图形库-一-canvasplus&quot;&gt;&lt;a href=&quot;#图形库-一-canvasplus&quot; class=&quot;headerlink&quot; title=&quot;图形库(一) canvasplus&quot;&gt;&lt;/a&gt;图形库(一) canvasplus&lt;/h2&gt;&lt;p&gt;链接: &lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(九) 使用Canvas交互和isPointInPath</title>
-    <link href="https://jsopy.gitee.io/2020/06/17/canvas9/"/>
-    <id>https://jsopy.gitee.io/2020/06/17/canvas9/</id>
-    <published>2020-06-17T13:26:47.000Z</published>
-    <updated>2020-06-19T04:34:15.927Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;clearRect-清除以前写的-Rect&quot;&gt;&lt;a href=&quot;#clearRect-清除以前写的-Rect&quot; class=&quot;headerlink&quot; title=&quot;clearRect(清除以前写的 Rect)&quot;&gt;&lt;/a&gt;clearRect(清除以前写的
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(八) Canvas 图形裁剪clip和路径方向和剪纸效果</title>
-    <link href="https://jsopy.gitee.io/2020/06/16/canvas8/"/>
-    <id>https://jsopy.gitee.io/2020/06/16/canvas8/</id>
-    <published>2020-06-16T13:26:47.000Z</published>
-    <updated>2020-06-19T02:35:56.303Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;剪辑区域&quot;&gt;&lt;a href=&quot;#剪辑区域&quot; class=&quot;headerlink&quot; title=&quot;剪辑区域&quot;&gt;&lt;/a&gt;剪辑区域&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;context.clip() 剪辑区域&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(七) Canvas阴影和图形相交</title>
-    <link href="https://jsopy.gitee.io/2020/06/15/canvas7/"/>
-    <id>https://jsopy.gitee.io/2020/06/15/canvas7/</id>
-    <published>2020-06-15T13:26:47.000Z</published>
-    <updated>2020-06-19T02:00:17.622Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;阴影&quot;&gt;&lt;a href=&quot;#阴影&quot; class=&quot;headerlink&quot; title=&quot;阴影&quot;&gt;&lt;/a&gt;阴影&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;context.shadowColor 阴影的颜色&lt;/li&gt;
-&lt;li&gt;context.shadowOffsetX X
         
       
     
