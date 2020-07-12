@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-07-11T13:06:02.430Z</updated>
+  <updated>2020-07-11T13:06:08.089Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Webpack4(十一) 配置React代码的打包</title>
+    <link href="https://jsopy.gitee.io/2020/07/12/webpack11/"/>
+    <id>https://jsopy.gitee.io/2020/07/12/webpack11/</id>
+    <published>2020-07-12T13:26:47.000Z</published>
+    <updated>2020-07-11T13:06:08.089Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;配置-React-代码的打包&quot;&gt;&lt;a href=&quot;#配置-React-代码的打包&quot; class=&quot;headerlink&quot; title=&quot;配置 React 代码的打包&quot;&gt;&lt;/a&gt;配置 React 代码的打包&lt;/h2&gt;&lt;h3 id=&quot;安装-react-dom&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
+    
+  </entry>
   
   <entry>
     <title>Webpack4(十) 使用Babel处理ES6语法</title>
@@ -557,33 +586,6 @@
     
     
       <category term="Axure" scheme="https://jsopy.gitee.io/tags/Axure/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas(十六) canvas 衣服demo(配套Vue使用)</title>
-    <link href="https://jsopy.gitee.io/2020/06/24/canvas16/"/>
-    <id>https://jsopy.gitee.io/2020/06/24/canvas16/</id>
-    <published>2020-06-24T13:26:47.000Z</published>
-    <updated>2020-06-19T15:03:16.928Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;配套-vue-使用&quot;&gt;&lt;a href=&quot;#配套-vue-使用&quot; class=&quot;headerlink&quot; title=&quot;配套 vue 使用&quot;&gt;&lt;/a&gt;配套 vue 使用&lt;/h2&gt;&lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/categories/canvas/"/>
-    
-    
-      <category term="canvas" scheme="https://jsopy.gitee.io/tags/canvas/"/>
     
   </entry>
   
