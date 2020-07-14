@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="React 基础笔记(React 安装 Antd)(二十二), Javascript Python Js">
     <meta name="description" content="安装 React(一)
-本篇十基于 React16.9 中的配置
+本篇是基于 React16.9 中的配置
 
 查看 npm 镜像源
 npm config get registry
@@ -462,7 +462,7 @@ npm config set registry https://registry.">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-10
+                    2020-07-14
                 </div>
                 
 
@@ -470,14 +470,14 @@ npm config set registry https://registry.">
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        347
+                        421
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -494,7 +494,7 @@ npm config set registry https://registry.">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="安装-React-一"><a href="#安装-React-一" class="headerlink" title="安装 React(一)"></a>安装 React(一)</h2><blockquote>
-<p>本篇十基于 React16.9 中的配置</p>
+<p>本篇是基于 React16.9 中的配置</p>
 </blockquote>
 <h3 id="查看-npm-镜像源"><a href="#查看-npm-镜像源" class="headerlink" title="查看 npm 镜像源"></a>查看 npm 镜像源</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
 npm config <span class="token keyword">get</span> registry
@@ -510,81 +510,143 @@ cd 名称
 
 npm run start
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="安装-antd-二"><a href="#安装-antd-二" class="headerlink" title="安装 antd(二)"></a>安装 antd(二)</h2><h3 id="i-安装-antd"><a href="#i-安装-antd" class="headerlink" title="(i) 安装 antd"></a>(i) 安装 antd</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
-yarn add antd
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="ii-修改文件"><a href="#ii-修改文件" class="headerlink" title="(ii) 修改文件"></a>(ii) 修改文件</h3><ul>
-<li>引入 react-app-rewired,这是一个可以自定义 react 项目配置的库,对于 Webpack 4 的 create-react-app 2.x</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-yarn add react<span class="token operator">-</span>app<span class="token operator">-</span>rewired <span class="token operator">-</span>D
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ul>
-<li>由于新的 <a href="mailto:react-app-rewired@2.x" target="_blank" rel="noopener">react-app-rewired@2.x</a> 版本的关系需要安装 customize-cra</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-yarn add customize<span class="token operator">-</span>cra <span class="token operator">-</span>D
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ul>
-<li>修改 package.json</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token comment" spellcheck="true">/* package.json */</span>
+<h2 id="安装-antd-二"><a href="#安装-antd-二" class="headerlink" title="安装 antd(二)"></a>安装 antd(二)</h2><h3 id="1-运行-git-命令"><a href="#1-运行-git-命令" class="headerlink" title="(1) 运行 git 命令"></a>(1) 运行 git 命令</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
+git init
 
-<span class="token comment" spellcheck="true">// 旧的</span>
-  <span class="token string">"scripts"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token string">"start"</span><span class="token punctuation">:</span> <span class="token string">"react-scripts start"</span><span class="token punctuation">,</span>
-    <span class="token string">"build"</span><span class="token punctuation">:</span> <span class="token string">"react-scripts build"</span><span class="token punctuation">,</span>
-    <span class="token string">"test"</span><span class="token punctuation">:</span> <span class="token string">"react-scripts test"</span><span class="token punctuation">,</span>
-    <span class="token string">"eject"</span><span class="token punctuation">:</span> <span class="token string">"react-scripts eject"</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+git add <span class="token punctuation">.</span>
 
-<span class="token comment" spellcheck="true">// 替换</span>
-<span class="token string">"scripts"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token string">"start"</span><span class="token punctuation">:</span> <span class="token string">"react-app-rewired start"</span><span class="token punctuation">,</span>
-    <span class="token string">"build"</span><span class="token punctuation">:</span> <span class="token string">"react-app-rewired build"</span><span class="token punctuation">,</span>
-    <span class="token string">"test"</span><span class="token punctuation">:</span> <span class="token string">"react-app-rewired test"</span>
+git commit <span class="token operator">-</span>m <span class="token string">"before ejecting"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-敲命令打开-webpack-配置"><a href="#2-敲命令打开-webpack-配置" class="headerlink" title="(2)敲命令打开 webpack 配置"></a>(2)敲命令打开 webpack 配置</h3><ul>
+<li>命令运行完以后项目会多出很多文件</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript">
+npm run eject
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="3-安装包依赖"><a href="#3-安装包依赖" class="headerlink" title="(3)安装包依赖"></a>(3)安装包依赖</h3><ul>
+<li>这里特别注意的就是只能安装 2.7.3 版本</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript">
+yarn add  less<span class="token operator">-</span>loader babel<span class="token operator">-</span>plugin<span class="token operator">-</span><span class="token keyword">import</span> <span class="token operator">-</span>D
+
+yarn add less@<span class="token number">2.7</span><span class="token punctuation">.</span><span class="token number">3</span> <span class="token operator">-</span>D
+
+yarn add antd <span class="token operator">-</span>S
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4-修改-webpack-config-js-文件"><a href="#4-修改-webpack-config-js-文件" class="headerlink" title="(4) 修改 webpack.config.js 文件"></a>(4) 修改 webpack.config.js 文件</h3><ul>
+<li>第一步</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> cssRegex <span class="token operator">=</span> <span class="token regex">/\.css$/</span>
+<span class="token keyword">const</span> cssModuleRegex <span class="token operator">=</span> <span class="token regex">/\.module\.css$/</span>
+<span class="token comment" spellcheck="true">//增加的代码</span>
+<span class="token keyword">const</span> lessRegex <span class="token operator">=</span> <span class="token regex">/\.less$/</span>
+<span class="token keyword">const</span> lessModuleRegex <span class="token operator">=</span> <span class="token regex">/\.module\.less$/</span>
+<span class="token comment" spellcheck="true">//增加结束</span>
+<span class="token keyword">const</span> sassRegex <span class="token operator">=</span> <span class="token regex">/\.(scss|sass)$/</span>
+<span class="token keyword">const</span> sassModuleRegex <span class="token operator">=</span> <span class="token regex">/\.module\.(scss|sass)$/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>第二步修改 loader 依赖,增加 less 依赖</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript">
+<span class="token punctuation">{</span>
+    test<span class="token punctuation">:</span> cssModuleRegex<span class="token punctuation">,</span>
+    use<span class="token punctuation">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      importLoaders<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      sourceMap<span class="token punctuation">:</span> isEnvProduction <span class="token operator">&amp;&amp;</span> shouldUseSourceMap<span class="token punctuation">,</span>
+      modules<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      getLocalIdent<span class="token punctuation">:</span> getCSSModuleLocalIdent
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="安装-babel-plugin-import-插件"><a href="#安装-babel-plugin-import-插件" class="headerlink" title="安装 babel-plugin-import 插件"></a>安装 babel-plugin-import 插件</h3><ul>
-<li>babel-plugin-import 是一个用于按需加载组件代码和样式的 babel 插件,在项目的根目录新建一个 config-overrides.js 用于修改默认配置,并添加以下内容</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token punctuation">{</span> override<span class="token punctuation">,</span> fixBabelImports <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'customize-cra'</span><span class="token punctuation">)</span>
+   <span class="token comment" spellcheck="true">//增加的代码</span>
+  <span class="token comment" spellcheck="true">// Opt-in support for SASS (using .scss or .sass extensions).</span>
+  <span class="token comment" spellcheck="true">// By default we support SASS Modules with the</span>
+  <span class="token comment" spellcheck="true">// extensions .module.scss or .module.sass</span>
+  <span class="token punctuation">{</span>
+    test<span class="token punctuation">:</span> lessRegex<span class="token punctuation">,</span>
+    exclude<span class="token punctuation">:</span> lessModuleRegex<span class="token punctuation">,</span>
+    use<span class="token punctuation">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span>
+      <span class="token punctuation">{</span>
+        importLoaders<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        sourceMap<span class="token punctuation">:</span> isEnvProduction <span class="token operator">&amp;&amp;</span> shouldUseSourceMap
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">'less-loader'</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
 
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">override</span><span class="token punctuation">(</span>
-  <span class="token function">fixBabelImports</span><span class="token punctuation">(</span><span class="token string">'import'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-    libraryName<span class="token punctuation">:</span> <span class="token string">'antd'</span><span class="token punctuation">,</span>
-    libraryDirectory<span class="token punctuation">:</span> <span class="token string">'es'</span><span class="token punctuation">,</span>
-    style<span class="token punctuation">:</span> <span class="token string">'css'</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="安装-less-和-less-loader"><a href="#安装-less-和-less-loader" class="headerlink" title="安装 less 和 less-loader"></a>安装 less 和 less-loader</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
-yarn add less less<span class="token operator">-</span>loader <span class="token operator">-</span>D
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+    sideEffects<span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    test<span class="token punctuation">:</span> lessModuleRegex<span class="token punctuation">,</span>
+    use<span class="token punctuation">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span>
+      <span class="token punctuation">{</span>
+        importLoaders<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        sourceMap<span class="token punctuation">:</span> isEnvProduction <span class="token operator">&amp;&amp;</span> shouldUseSourceMap<span class="token punctuation">,</span>
+        modules<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        getLocalIdent<span class="token punctuation">:</span> getCSSModuleLocalIdent
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">'less-loader'</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment" spellcheck="true">//增加结束</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>修改 config-overrides.js 文件,添加内容</li>
+<li>第三步修改 package.json</li>
 </ul>
 <pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token operator">-</span>  <span class="token keyword">const</span> <span class="token punctuation">{</span> override<span class="token punctuation">,</span> fixBabelImports <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'customize-cra'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">+</span> <span class="token keyword">const</span> <span class="token punctuation">{</span> override<span class="token punctuation">,</span> fixBabelImports<span class="token punctuation">,</span>addLessLoader <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'customize-cra'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">override</span><span class="token punctuation">(</span>
-    <span class="token function">fixBabelImports</span><span class="token punctuation">(</span><span class="token string">'import'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-        libraryName<span class="token punctuation">:</span> <span class="token string">'antd'</span><span class="token punctuation">,</span>
-        libraryDirectory<span class="token punctuation">:</span> <span class="token string">'es'</span><span class="token punctuation">,</span>
-        style<span class="token punctuation">:</span> <span class="token string">'css'</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
- <span class="token operator">+</span> <span class="token function">addLessLoader</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
- <span class="token operator">+</span>     javascriptEnabled<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
- <span class="token operator">+</span>     modifyVars<span class="token punctuation">:</span> <span class="token punctuation">{</span>
- <span class="token operator">+</span>       <span class="token string">'@primary-color'</span><span class="token punctuation">:</span> <span class="token string">'#1DA57A'</span>
- <span class="token operator">+</span>     <span class="token punctuation">}</span>
- <span class="token operator">+</span>  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>这样重新启动程序执行 yarn start 即可</p>
-</blockquote>
+<span class="token string">"babel"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"presets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token string">"react-app"</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">"plugins"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">[</span>
+        <span class="token string">"import"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token string">"libraryName"</span><span class="token punctuation">:</span> <span class="token string">"antd"</span><span class="token punctuation">,</span>
+          <span class="token string">"libraryDirectory"</span><span class="token punctuation">:</span> <span class="token string">"es"</span><span class="token punctuation">,</span>
+          <span class="token string">"style"</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>第四部修改 getStyleLoaders 方法</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>preProcessor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>preProcessor <span class="token operator">===</span> <span class="token string">'less-loader'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    loaders<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      loader<span class="token punctuation">:</span> require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>preProcessor<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        sourceMap<span class="token punctuation">:</span> isEnvProduction <span class="token operator">&amp;&amp;</span> shouldUseSourceMap<span class="token punctuation">,</span>
+        lessOptions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          <span class="token comment" spellcheck="true">// 如果使用less-loader@5，请移除 lessOptions 这一级直接配置选项。</span>
+          modifyVars<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'primary-color'</span><span class="token punctuation">:</span> <span class="token string">'#1DA57A'</span><span class="token punctuation">,</span>
+            <span class="token string">'link-color'</span><span class="token punctuation">:</span> <span class="token string">'#1DA57A'</span><span class="token punctuation">,</span>
+            <span class="token string">'border-radius-base'</span><span class="token punctuation">:</span> <span class="token string">'2px'</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          javascriptEnabled<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    loaders<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>
+      <span class="token punctuation">{</span>
+        loader<span class="token punctuation">:</span> require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'resolve-url-loader'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          sourceMap<span class="token punctuation">:</span> isEnvProduction <span class="token operator">&amp;&amp;</span> shouldUseSourceMap<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        loader<span class="token punctuation">:</span> require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>preProcessor<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          sourceMap<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">return</span> loaders<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这样就彻底完成了</p>
 <h2 id="使用-scss"><a href="#使用-scss" class="headerlink" title="使用 scss"></a>使用 scss</h2><ul>
 <li>scss 或者 sass</li>
 </ul>
@@ -944,7 +1006,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >180.2k</span
+        >180.4k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
