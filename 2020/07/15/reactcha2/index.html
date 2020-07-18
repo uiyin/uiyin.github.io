@@ -467,7 +467,7 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        385
+                        545
                     </div>
                     
 
@@ -619,6 +619,56 @@
   mapStateToProps<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//这里面放的是数据</span>
   mapDispatchToProps <span class="token comment" spellcheck="true">//里面放的是操作的数据的方法</span>
 <span class="token punctuation">)</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="5-封装-axios-改变-store-状态"><a href="#5-封装-axios-改变-store-状态" class="headerlink" title="(5) 封装 axios 改变 store 状态"></a>(5) 封装 axios 改变 store 状态</h3><ul>
+<li><p>stage 里面有个状态是 loadingFlag</p>
+</li>
+<li><p>ACTION_CHANGE_LOADING 改变状态控制状态</p>
+</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// request.js</span>
+<span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span>
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'../store/index.js'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ACTION_CHANGE_LOADING <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../store/actioncreaters'</span>
+<span class="token keyword">import</span> url <span class="token keyword">from</span> <span class="token string">'../config.js'</span>
+<span class="token comment" spellcheck="true">/** **** request拦截器==>对请求参数做处理 ******/</span>
+axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span>config<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 加载</span>
+    store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token function">ACTION_CHANGE_LOADING</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">let</span> value <span class="token operator">=</span> sessionStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'token'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token string">'123'</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>value<span class="token punctuation">)</span> config<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>Authorization <span class="token operator">=</span> value
+    <span class="token keyword">return</span> config
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">/** **** respone拦截器==>对响应做处理 ******/</span>
+axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token function">ACTION_CHANGE_LOADING</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> response
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 错误提醒</span>
+
+    store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token function">ACTION_CHANGE_LOADING</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> status <span class="token punctuation">}</span> <span class="token operator">=</span> error<span class="token punctuation">.</span>response
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>status <span class="token operator">===</span> <span class="token number">401</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// 清除token</span>
+      sessionStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> url<span class="token punctuation">.</span>homeurl
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>status <span class="token operator">===</span> <span class="token number">404</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> url<span class="token punctuation">.</span>homeurl
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">// 页面跳转</span>
+    <span class="token comment" spellcheck="true">//router.push('/login')</span>
+
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> axios<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -728,30 +778,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/15/reactcha2/">
+                <a href="/2020/07/16/reactantdall/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="React 动画使用lottie">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="React使用antd搭建后台管理系统的步骤">
                         
-                        <span class="card-title">React 动画使用lottie</span>
+                        <span class="card-title">React使用antd搭建后台管理系统的步骤</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            React 动画使用lottie
+                            React使用antd搭建后台管理系统的步骤
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-16
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -764,7 +813,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -977,7 +1025,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >180.8k</span
+        >183.6k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
