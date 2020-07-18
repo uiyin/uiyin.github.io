@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-07-11T13:06:08.089Z</updated>
+  <updated>2020-07-18T00:58:45.503Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,93 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>React 动画使用lottie</title>
+    <link href="https://jsopy.gitee.io/2020/07/15/reactcha2/"/>
+    <id>https://jsopy.gitee.io/2020/07/15/reactcha2/</id>
+    <published>2020-07-15T13:26:47.000Z</published>
+    <updated>2020-07-18T00:58:45.503Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;React-动画使用-lottie&quot;&gt;&lt;a href=&quot;#React-动画使用-lottie&quot; class=&quot;headerlink&quot; title=&quot;React 动画使用 lottie&quot;&gt;&lt;/a&gt;React 动画使用
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React区分生产环境和开发环境(一)</title>
+    <link href="https://jsopy.gitee.io/2020/07/14/reactcha1/"/>
+    <id>https://jsopy.gitee.io/2020/07/14/reactcha1/</id>
+    <published>2020-07-14T13:26:47.000Z</published>
+    <updated>2020-07-18T00:47:17.757Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;React-项目分环境打包&quot;&gt;&lt;a href=&quot;#React-项目分环境打包&quot; class=&quot;headerlink&quot; title=&quot;React 项目分环境打包&quot;&gt;&lt;/a&gt;React 项目分环境打包&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React插件学习笔记</title>
+    <link href="https://jsopy.gitee.io/2020/07/13/reactchaall/"/>
+    <id>https://jsopy.gitee.io/2020/07/13/reactchaall/</id>
+    <published>2020-07-13T12:26:47.000Z</published>
+    <updated>2020-07-18T00:59:37.277Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;React-插件学习笔记&quot;&gt;&lt;a href=&quot;#React-插件学习笔记&quot; class=&quot;headerlink&quot; title=&quot;React 插件学习笔记&quot;&gt;&lt;/a&gt;React 插件学习笔记&lt;/h2&gt;&lt;h3 id=&quot;React-区分生产环境和开发环境&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React插件" scheme="https://jsopy.gitee.io/categories/React%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React插件" scheme="https://jsopy.gitee.io/tags/React%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>Webpack4(十一) 配置React代码的打包</title>
@@ -250,35 +337,6 @@
   </entry>
   
   <entry>
-    <title>React区分生产环境和开发环境(一)</title>
-    <link href="https://jsopy.gitee.io/2020/07/04/reactcha1/"/>
-    <id>https://jsopy.gitee.io/2020/07/04/reactcha1/</id>
-    <published>2020-07-04T13:26:47.000Z</published>
-    <updated>2020-07-09T12:29:35.630Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;React-项目分环境打包&quot;&gt;&lt;a href=&quot;#React-项目分环境打包&quot; class=&quot;headerlink&quot; title=&quot;React 项目分环境打包&quot;&gt;&lt;/a&gt;React 项目分环境打包&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Webpack4(三) loader-css以及增加前缀</title>
     <link href="https://jsopy.gitee.io/2020/07/04/webpack3/"/>
     <id>https://jsopy.gitee.io/2020/07/04/webpack3/</id>
@@ -333,35 +391,6 @@
       <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
       <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React插件学习笔记</title>
-    <link href="https://jsopy.gitee.io/2020/07/03/reactchaall/"/>
-    <id>https://jsopy.gitee.io/2020/07/03/reactchaall/</id>
-    <published>2020-07-03T12:26:47.000Z</published>
-    <updated>2020-07-09T12:36:55.195Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;React-插件学习笔记&quot;&gt;&lt;a href=&quot;#React-插件学习笔记&quot; class=&quot;headerlink&quot; title=&quot;React 插件学习笔记&quot;&gt;&lt;/a&gt;React 插件学习笔记&lt;/h2&gt;&lt;h3 id=&quot;React-区分生产环境和开发环境&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React插件" scheme="https://jsopy.gitee.io/categories/React%E6%8F%92%E4%BB%B6/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React插件" scheme="https://jsopy.gitee.io/tags/React%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
@@ -549,33 +578,6 @@
         
         
           &lt;h2 id=&quot;Axure9-0-使用&quot;&gt;&lt;a href=&quot;#Axure9-0-使用&quot; class=&quot;headerlink&quot; title=&quot;Axure9.0 使用&quot;&gt;&lt;/a&gt;Axure9.0 使用&lt;/h2&gt;&lt;h3 id=&quot;Axure9-0-安装&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Axure" scheme="https://jsopy.gitee.io/categories/Axure/"/>
-    
-    
-      <category term="Axure" scheme="https://jsopy.gitee.io/tags/Axure/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Axure 学习笔记</title>
-    <link href="https://jsopy.gitee.io/2020/06/25/axureall/"/>
-    <id>https://jsopy.gitee.io/2020/06/25/axureall/</id>
-    <published>2020-06-25T12:26:47.000Z</published>
-    <updated>2020-06-29T13:00:45.175Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Axure9-0-一-安装及使用&quot;&gt;&lt;a href=&quot;#Axure9-0-一-安装及使用&quot; class=&quot;headerlink&quot; title=&quot;Axure9.0(一) 安装及使用&quot;&gt;&lt;/a&gt;&lt;a
         
       
     

@@ -4,8 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="React插件学习笔记, Javascript Python Js">
-    <meta name="description" content="React 插件学习笔记React 区分生产环境和开发环境">
+    <meta name="keywords" content="React 动画使用lottie, Javascript Python Js">
+    <meta name="description" content="React 动画使用 lottie
+核心思想是只要发送请求,没有收到包。就把 store 里面 loadingFlag 变成 true 收到包后在变成 false
+
+(1) 安装包依赖yarn add react-lottie -S
+(2)">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>React插件学习笔记 | JSOPY</title>
+    <title>React 动画使用lottie | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,13 +307,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        React插件学习笔记
+                        React 动画使用lottie
                     </div>
                 </div>
             </div>
@@ -425,8 +429,8 @@
                                 <span class="chip bg-color">Javascript</span>
                             </a>
                         
-                            <a href="/tags/React%E6%8F%92%E4%BB%B6/">
-                                <span class="chip bg-color">React插件</span>
+                            <a href="/tags/React/">
+                                <span class="chip bg-color">React</span>
                             </a>
                         
                     </div>
@@ -437,8 +441,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/React%E6%8F%92%E4%BB%B6/" class="post-category">
-                                React插件
+                            <a href="/categories/React/" class="post-category">
+                                React
                             </a>
                         
                     </div>
@@ -449,13 +453,13 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-03
+                    2020-07-15
                 </div>
                 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-09
+                    2020-07-18
                 </div>
                 
 
@@ -463,14 +467,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        19
+                        385
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -486,7 +490,136 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="React-插件学习笔记"><a href="#React-插件学习笔记" class="headerlink" title="React 插件学习笔记"></a>React 插件学习笔记</h2><h3 id="React-区分生产环境和开发环境"><a href="#React-区分生产环境和开发环境" class="headerlink" title="React 区分生产环境和开发环境"></a><a href="https://www.jsopy.com/2020/07/04/reactcha1/" target="_blank" rel="noopener">React 区分生产环境和开发环境</a></h3>
+                <h2 id="React-动画使用-lottie"><a href="#React-动画使用-lottie" class="headerlink" title="React 动画使用 lottie"></a>React 动画使用 lottie</h2><blockquote>
+<p>核心思想是只要发送请求,没有收到包。就把 store 里面 loadingFlag 变成 true 收到包后在变成 false</p>
+</blockquote>
+<h3 id="1-安装包依赖"><a href="#1-安装包依赖" class="headerlink" title="(1) 安装包依赖"></a>(1) 安装包依赖</h3><pre class="line-numbers language-javascript"><code class="language-javascript">yarn add react<span class="token operator">-</span>lottie <span class="token operator">-</span>S<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="2-封装基础-lottie-核心组件"><a href="#2-封装基础-lottie-核心组件" class="headerlink" title="(2) 封装基础 lottie 核心组件"></a>(2) 封装基础 lottie 核心组件</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> Lottie <span class="token keyword">from</span> <span class="token string">'react-lottie'</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> animationData <span class="token keyword">from</span> <span class="token string">'../../utils/data.json'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">LottieControl</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> isStopped<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> isPaused<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> loadingPosition <span class="token operator">=</span> <span class="token punctuation">{</span>
+      position<span class="token punctuation">:</span> <span class="token string">'fixed'</span><span class="token punctuation">,</span>
+      left<span class="token punctuation">:</span> <span class="token string">'50%'</span><span class="token punctuation">,</span>
+      top<span class="token punctuation">:</span> <span class="token string">'50%'</span><span class="token punctuation">,</span>
+      marginLeft<span class="token punctuation">:</span> <span class="token string">'-250px'</span><span class="token punctuation">,</span>
+      marginTop<span class="token punctuation">:</span> <span class="token string">'-250px'</span><span class="token punctuation">,</span>
+      zIndex<span class="token punctuation">:</span> <span class="token number">999</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> defaultOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+      loop<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      autoplay<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      animationData<span class="token punctuation">:</span> animationData<span class="token punctuation">.</span><span class="token keyword">default</span><span class="token punctuation">,</span>
+      rendererSettings<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        preserveAspectRatio<span class="token punctuation">:</span> <span class="token string">'xMidYMid slice'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span>Lottie
+          options<span class="token operator">=</span><span class="token punctuation">{</span>defaultOptions<span class="token punctuation">}</span>
+          height<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">400</span><span class="token punctuation">}</span>
+          width<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">400</span><span class="token punctuation">}</span>
+          style<span class="token operator">=</span><span class="token punctuation">{</span>loadingPosition<span class="token punctuation">}</span>
+          isStopped<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>loadingFlag<span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3-给-lottie-在套一层壳子最外层属于-page"><a href="#3-给-lottie-在套一层壳子最外层属于-page" class="headerlink" title="(3) 给 lottie 在套一层壳子最外层属于 page"></a>(3) 给 lottie 在套一层壳子最外层属于 page</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> Fragment <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> LoadingComponent <span class="token keyword">from</span> <span class="token string">'../components/Loading/loading.js'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> connect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-redux'</span>
+<span class="token keyword">class</span> <span class="token class-name">Loading</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> wrap <span class="token operator">=</span> <span class="token punctuation">{</span>
+      width<span class="token punctuation">:</span> <span class="token string">'100vw'</span><span class="token punctuation">,</span>
+      height<span class="token punctuation">:</span> <span class="token string">'100vh'</span><span class="token punctuation">,</span>
+      position<span class="token punctuation">:</span> <span class="token string">'fixed'</span><span class="token punctuation">,</span>
+      top<span class="token punctuation">:</span> <span class="token string">'0px'</span><span class="token punctuation">,</span>
+      bottom<span class="token punctuation">:</span> <span class="token string">'0px'</span><span class="token punctuation">,</span>
+      background<span class="token punctuation">:</span> <span class="token string">'rgba(0,0,0,0.7)'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Fragment<span class="token operator">></span>
+        <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token punctuation">{</span>wrap<span class="token punctuation">}</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>LoadingComponent
+            loadingFlag<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>loadingFlag<span class="token punctuation">}</span>
+          <span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>LoadingComponent<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Fragment<span class="token operator">></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> mapStateToProps <span class="token operator">=</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    loadingFlag<span class="token punctuation">:</span> state<span class="token punctuation">.</span>loadingFlag<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> mapDispatchToProps <span class="token operator">=</span> <span class="token punctuation">(</span>dispatch<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//最后利用store挂钩</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">connect</span><span class="token punctuation">(</span>
+  mapStateToProps<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//这里面放的是数据</span>
+  mapDispatchToProps <span class="token comment" spellcheck="true">//里面放的是操作的数据的方法</span>
+<span class="token punctuation">)</span><span class="token punctuation">(</span>Loading<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4-页面上引用的时候必须放到-app-里面"><a href="#4-页面上引用的时候必须放到-app-里面" class="headerlink" title="(4) 页面上引用的时候必须放到 app 里面"></a>(4) 页面上引用的时候必须放到 app 里面</h3><blockquote>
+<p>props.children 里面放的是路由</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> Fragment <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> Loading <span class="token keyword">from</span> <span class="token string">'./pages/Loading.js'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> connect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-redux'</span>
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      message<span class="token punctuation">:</span> <span class="token string">'加载'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> loadingFlag <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Fragment<span class="token operator">></span>
+        <span class="token punctuation">{</span>loadingFlag <span class="token operator">?</span> <span class="token operator">&lt;</span>Loading<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>Loading<span class="token operator">></span> <span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">}</span>
+
+        <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Fragment<span class="token operator">></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> mapStateToProps <span class="token operator">=</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    loadingFlag<span class="token punctuation">:</span> state<span class="token punctuation">.</span>loadingFlag<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> mapDispatchToProps <span class="token operator">=</span> <span class="token punctuation">(</span>dispatch<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//最后利用store挂钩</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">connect</span><span class="token punctuation">(</span>
+  mapStateToProps<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//这里面放的是数据</span>
+  mapDispatchToProps <span class="token comment" spellcheck="true">//里面放的是操作的数据的方法</span>
+<span class="token punctuation">)</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
             </div>
             <hr/>
 
@@ -511,7 +644,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2020/07/03/reactchaall/">https://jsopy.gitee.io/2020/07/03/reactchaall/</a>
+                    <a href="https://jsopy.gitee.io/2020/07/15/reactcha2/">https://jsopy.gitee.io/2020/07/15/reactcha2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -553,8 +686,8 @@
                                     <span class="chip bg-color">Javascript</span>
                                 </a>
                             
-                                <a href="/tags/React%E6%8F%92%E4%BB%B6/">
-                                    <span class="chip bg-color">React插件</span>
+                                <a href="/tags/React/">
+                                    <span class="chip bg-color">React</span>
                                 </a>
                             
                         </div>
@@ -595,41 +728,43 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/03/webpack2/">
+                <a href="/2020/07/15/reactcha2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Webpack4(二) loader入门">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="React 动画使用lottie">
                         
-                        <span class="card-title">Webpack4(二) loader入门</span>
+                        <span class="card-title">React 动画使用lottie</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Webpack4
+                            React 动画使用lottie
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Webpack4/" class="post-category">
-                                    Webpack4
+                            <a href="/categories/React/" class="post-category">
+                                    React
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -637,8 +772,8 @@
                         <span class="chip bg-color">Javascript</span>
                     </a>
                     
-                    <a href="/tags/Webpack4/">
-                        <span class="chip bg-color">Webpack4</span>
+                    <a href="/tags/React/">
+                        <span class="chip bg-color">React</span>
                     </a>
                     
                 </div>
@@ -652,31 +787,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/02/webpack1/">
+                <a href="/2020/07/14/reactcha1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Webpack4(一) 入门与体验">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="React区分生产环境和开发环境(一)">
                         
-                        <span class="card-title">Webpack4(一) 入门与体验</span>
+                        <span class="card-title">React区分生产环境和开发环境(一)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Webpack4
+                            React区分生产环境和开发环境(一)
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Webpack4/" class="post-category">
-                                    Webpack4
+                            <a href="/categories/React/" class="post-category">
+                                    React
                                 </a>
                             
                             
@@ -690,8 +825,8 @@
                         <span class="chip bg-color">Javascript</span>
                     </a>
                     
-                    <a href="/tags/Webpack4/">
-                        <span class="chip bg-color">Webpack4</span>
+                    <a href="/tags/React/">
+                        <span class="chip bg-color">React</span>
                     </a>
                     
                 </div>
@@ -842,7 +977,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >180.4k</span
+        >180.8k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span

@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="React区分生产环境和开发环境(一), Javascript Python Js">
-    <meta name="description" content="React 项目分环境打包(一) 在 package.json 文件中配置命令  &#34;scripts&#34;: {
-    &#34;start&#34;: &#34;react-scripts start&#34;,
-    &#34;build&#34;: &#34;react-scripts bu">
+    <meta name="keywords" content="React插件学习笔记, Javascript Python Js">
+    <meta name="description" content="React 插件学习笔记React 区分生产环境和开发环境React 使用 lottie">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>React区分生产环境和开发环境(一) | JSOPY</title>
+    <title>React插件学习笔记 | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -305,13 +303,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        React区分生产环境和开发环境(一)
+                        React插件学习笔记
                     </div>
                 </div>
             </div>
@@ -427,8 +425,8 @@
                                 <span class="chip bg-color">Javascript</span>
                             </a>
                         
-                            <a href="/tags/React/">
-                                <span class="chip bg-color">React</span>
+                            <a href="/tags/React%E6%8F%92%E4%BB%B6/">
+                                <span class="chip bg-color">React插件</span>
                             </a>
                         
                     </div>
@@ -439,8 +437,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/React/" class="post-category">
-                                React
+                            <a href="/categories/React%E6%8F%92%E4%BB%B6/" class="post-category">
+                                React插件
                             </a>
                         
                     </div>
@@ -451,13 +449,13 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-04
+                    2020-07-13
                 </div>
                 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-09
+                    2020-07-18
                 </div>
                 
 
@@ -465,14 +463,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        532
+                        23
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -488,134 +486,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="React-项目分环境打包"><a href="#React-项目分环境打包" class="headerlink" title="React 项目分环境打包"></a>React 项目分环境打包</h2><h3 id="一-在-package-json-文件中配置命令"><a href="#一-在-package-json-文件中配置命令" class="headerlink" title="(一) 在 package.json 文件中配置命令"></a>(一) 在 package.json 文件中配置命令</h3><pre class="line-numbers language-javascript"><code class="language-javascript">  <span class="token string">"scripts"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token string">"start"</span><span class="token punctuation">:</span> <span class="token string">"react-scripts start"</span><span class="token punctuation">,</span>
-    <span class="token string">"build"</span><span class="token punctuation">:</span> <span class="token string">"react-scripts build"</span><span class="token punctuation">,</span>
-    <span class="token string">"test"</span><span class="token punctuation">:</span> <span class="token string">"react-scripts test"</span><span class="token punctuation">,</span>
-    <span class="token string">"start:test"</span><span class="token punctuation">:</span> <span class="token string">"set REACT_APP_MODE=test&amp;&amp; react-scripts start"</span><span class="token punctuation">,</span>
-    <span class="token string">"start:stage"</span><span class="token punctuation">:</span> <span class="token string">"set REACT_APP_MODE=stage&amp;&amp; react-scripts start"</span><span class="token punctuation">,</span>
-    <span class="token string">"start:localhost"</span><span class="token punctuation">:</span> <span class="token string">"set REACT_APP_MODE=localhost&amp;&amp; react-scripts start"</span><span class="token punctuation">,</span>
-    <span class="token string">"build:dev"</span><span class="token punctuation">:</span> <span class="token string">"set REACT_APP_MODE=development&amp;&amp; react-scripts build"</span><span class="token punctuation">,</span>
-    <span class="token string">"build:pro"</span><span class="token punctuation">:</span> <span class="token string">"set REACT_APP_MODE=production&amp;&amp; react-scripts build"</span><span class="token punctuation">,</span>
-    <span class="token string">"eject"</span><span class="token punctuation">:</span> <span class="token string">"react-scripts eject"</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="二-在-src-目录下新建一个文件夹-config-里面写几个文件-src-目录"><a href="#二-在-src-目录下新建一个文件夹-config-里面写几个文件-src-目录" class="headerlink" title="(二) 在 src 目录下新建一个文件夹 config 里面写几个文件(src 目录)"></a>(二) 在 src 目录下新建一个文件夹 config 里面写几个文件(src 目录)</h3><ul>
-<li>api_development.js</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> url <span class="token operator">=</span> <span class="token punctuation">{</span>
-  homeurl<span class="token punctuation">:</span> <span class="token string">'www.development.com'</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> url<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>api_localhost.js</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> url <span class="token operator">=</span> <span class="token punctuation">{</span>
-  homeurl<span class="token punctuation">:</span> <span class="token string">'www.localhost.com'</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> url<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>api_production.js</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> url <span class="token operator">=</span> <span class="token punctuation">{</span>
-  homeurl<span class="token punctuation">:</span> <span class="token string">'www.production.com'</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> url<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>api_stage.js</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> url <span class="token operator">=</span> <span class="token punctuation">{</span>
-  homeurl<span class="token punctuation">:</span> <span class="token string">'www.stage.com'</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> url<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>api_test.js</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> url <span class="token operator">=</span> <span class="token punctuation">{</span>
-  homeurl<span class="token punctuation">:</span> <span class="token string">'www.test.com'</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> url<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="三-在-src-目录下在新建一个-config-js-文件"><a href="#三-在-src-目录下在新建一个-config-js-文件" class="headerlink" title="(三)在 src 目录下在新建一个 config.js 文件"></a>(三)在 src 目录下在新建一个 config.js 文件</h3><ul>
-<li>里面写</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> developmentapi <span class="token keyword">from</span> <span class="token string">'./config/api_development.js'</span>
-<span class="token keyword">import</span> productionapi <span class="token keyword">from</span> <span class="token string">'./config/api_production.js'</span>
-<span class="token keyword">import</span> testapi <span class="token keyword">from</span> <span class="token string">'./config/api_test.js'</span>
-<span class="token keyword">import</span> localhostapi <span class="token keyword">from</span> <span class="token string">'./config/api_localhost.js'</span>
-<span class="token keyword">import</span> stageapi <span class="token keyword">from</span> <span class="token string">'./config/api_stage.js'</span>
-<span class="token keyword">let</span> url
-<span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>REACT_APP_MODE <span class="token operator">===</span> <span class="token string">'development'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'开发环境'</span><span class="token punctuation">)</span>
-  url <span class="token operator">=</span> developmentapi
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>REACT_APP_MODE <span class="token operator">===</span> <span class="token string">'production'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'生产环境'</span><span class="token punctuation">)</span>
-  url <span class="token operator">=</span> productionapi
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>REACT_APP_MODE <span class="token operator">===</span> <span class="token string">'test'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'测试环境'</span><span class="token punctuation">)</span>
-  url <span class="token operator">=</span> testapi
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>REACT_APP_MODE <span class="token operator">===</span> <span class="token string">'localhost'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'localhost环境'</span><span class="token punctuation">)</span>
-  url <span class="token operator">=</span> localhostapi
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>REACT_APP_MODE <span class="token operator">===</span> <span class="token string">'stage'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'stage环境'</span><span class="token punctuation">)</span>
-  url <span class="token operator">=</span> stageapi
-<span class="token punctuation">}</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> url<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="四-在引用的页面直接引用-config-js-即可"><a href="#四-在引用的页面直接引用-config-js-即可" class="headerlink" title="(四) 在引用的页面直接引用 config.js 即可"></a>(四) 在引用的页面直接引用 config.js 即可</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> Fragment <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
-<span class="token keyword">import</span> url <span class="token keyword">from</span> <span class="token string">'./config.js'</span>
-<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
-  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
-      message<span class="token punctuation">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token operator">&lt;</span>Fragment<span class="token operator">></span>
-        <span class="token operator">&lt;</span>div<span class="token operator">></span><span class="token punctuation">{</span>url<span class="token punctuation">.</span>homeurl<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>Fragment<span class="token operator">></span>
-    <span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> App<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="五-然后敲不同的命令来调用不同的接口"><a href="#五-然后敲不同的命令来调用不同的接口" class="headerlink" title="(五) 然后敲不同的命令来调用不同的接口"></a>(五) 然后敲不同的命令来调用不同的接口</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
-npm run start<span class="token punctuation">:</span>test
-
-npm run start<span class="token punctuation">:</span>stage
-
-npm run build<span class="token punctuation">:</span>dev
-<span class="token punctuation">.</span>
-<span class="token punctuation">.</span>
-<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="还有第二种方法"><a href="#还有第二种方法" class="headerlink" title="还有第二种方法"></a>还有第二种方法</h2><h3 id="1-在项目的根目录新建-3-个文件对应的文件写下面的代码"><a href="#1-在项目的根目录新建-3-个文件对应的文件写下面的代码" class="headerlink" title="(1)在项目的根目录新建 3 个文件对应的文件写下面的代码"></a>(1)在项目的根目录新建 3 个文件对应的文件写下面的代码</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// .env.development 开发的配置文件</span>
-REACT_APP_BASE_URL <span class="token operator">=</span> <span class="token string">'https://xxxxx'</span>
-REACT_APP_ENV <span class="token operator">=</span> <span class="token string">'development'</span>
-
-<span class="token comment" spellcheck="true">// .env.test 测试的配置文件</span>
-REACT_APP_BASE_URL <span class="token operator">=</span> <span class="token string">'https://xxxxx'</span>
-REACT_APP_ENV <span class="token operator">=</span> <span class="token string">'test'</span>
-
-<span class="token comment" spellcheck="true">// .env.production 生产的配置文件</span>
-REACT_APP_BASE_URL <span class="token operator">=</span> <span class="token string">'https://xxxxx'</span>
-REACT_APP_ENV <span class="token operator">=</span> <span class="token string">'production'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-安装-cross-env"><a href="#2-安装-cross-env" class="headerlink" title="(2) 安装 cross-env"></a>(2) 安装 cross-env</h3><ul>
-<li>cross-env 为了定义全平台兼容的环境命令</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-npm install cross<span class="token operator">-</span>env <span class="token operator">-</span>D
-或
-yarn add cross<span class="token operator">-</span>env <span class="token operator">-</span>D
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-在-package-json-的-scripts-里面添加代码"><a href="#3-在-package-json-的-scripts-里面添加代码" class="headerlink" title="(3) 在 package.json 的 scripts 里面添加代码"></a>(3) 在 package.json 的 scripts 里面添加代码</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token string">"start:dev"</span><span class="token punctuation">:</span> <span class="token string">"cross-env REACT_APP_ENV=development react-app-rewired start"</span><span class="token punctuation">,</span>
-<span class="token string">"start:test"</span><span class="token punctuation">:</span> <span class="token string">"cross-env REACT_APP_ENV=test react-app-rewired start"</span><span class="token punctuation">,</span>
-<span class="token string">"start:prod"</span><span class="token punctuation">:</span> <span class="token string">"cross-env REACT_APP_ENV=production react-app-rewired start"</span><span class="token punctuation">,</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>最后依据不同的抢矿使用不同的命令</p>
-
+                <h2 id="React-插件学习笔记"><a href="#React-插件学习笔记" class="headerlink" title="React 插件学习笔记"></a>React 插件学习笔记</h2><h3 id="React-区分生产环境和开发环境"><a href="#React-区分生产环境和开发环境" class="headerlink" title="React 区分生产环境和开发环境"></a><a href="https://www.jsopy.com/2020/07/14/reactcha1/" target="_blank" rel="noopener">React 区分生产环境和开发环境</a></h3><h3 id="React-使用-lottie"><a href="#React-使用-lottie" class="headerlink" title="React 使用 lottie"></a><a href="https://www.jsopy.com/2020/07/15/reactcha2/" target="_blank" rel="noopener">React 使用 lottie</a></h3>
             </div>
             <hr/>
 
@@ -640,7 +511,7 @@ yarn add cross<span class="token operator">-</span>env <span class="token operat
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2020/07/04/reactcha1/">https://jsopy.gitee.io/2020/07/04/reactcha1/</a>
+                    <a href="https://jsopy.gitee.io/2020/07/13/reactchaall/">https://jsopy.gitee.io/2020/07/13/reactchaall/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -682,8 +553,8 @@ yarn add cross<span class="token operator">-</span>env <span class="token operat
                                     <span class="chip bg-color">Javascript</span>
                                 </a>
                             
-                                <a href="/tags/React/">
-                                    <span class="chip bg-color">React</span>
+                                <a href="/tags/React%E6%8F%92%E4%BB%B6/">
+                                    <span class="chip bg-color">React插件</span>
                                 </a>
                             
                         </div>
@@ -728,31 +599,31 @@ yarn add cross<span class="token operator">-</span>env <span class="token operat
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/05/webpack4/">
+                <a href="/2020/07/14/reactcha1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Webpack4(四) loader的执行顺序和局部引入css">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="React区分生产环境和开发环境(一)">
                         
-                        <span class="card-title">Webpack4(四) loader的执行顺序和局部引入css</span>
+                        <span class="card-title">React区分生产环境和开发环境(一)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Webpack4
+                            React区分生产环境和开发环境(一)
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-14
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Webpack4/" class="post-category">
-                                    Webpack4
+                            <a href="/categories/React/" class="post-category">
+                                    React
                                 </a>
                             
                             
@@ -766,8 +637,8 @@ yarn add cross<span class="token operator">-</span>env <span class="token operat
                         <span class="chip bg-color">Javascript</span>
                     </a>
                     
-                    <a href="/tags/Webpack4/">
-                        <span class="chip bg-color">Webpack4</span>
+                    <a href="/tags/React/">
+                        <span class="chip bg-color">React</span>
                     </a>
                     
                 </div>
@@ -781,13 +652,13 @@ yarn add cross<span class="token operator">-</span>env <span class="token operat
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/04/webpack3/">
+                <a href="/2020/07/12/webpack11/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Webpack4(三) loader-css以及增加前缀">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Webpack4(十一) 配置React代码的打包">
                         
-                        <span class="card-title">Webpack4(三) loader-css以及增加前缀</span>
+                        <span class="card-title">Webpack4(十一) 配置React代码的打包</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -798,7 +669,7 @@ yarn add cross<span class="token operator">-</span>env <span class="token operat
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
                             </span>
                         <span class="publish-author">
                             
@@ -971,7 +842,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >180.4k</span
+        >180.8k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
