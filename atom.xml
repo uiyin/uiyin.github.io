@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-07-18T02:16:12.245Z</updated>
+  <updated>2020-07-21T10:38:13.297Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flask项目(二) 细分红图</title>
+    <link href="https://jsopy.gitee.io/2020/07/21/flaskproject2/"/>
+    <id>https://jsopy.gitee.io/2020/07/21/flaskproject2/</id>
+    <published>2020-07-21T13:26:47.000Z</published>
+    <updated>2020-07-21T10:38:13.297Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;细致划分-利用红图&quot;&gt;&lt;a href=&quot;#细致划分-利用红图&quot; class=&quot;headerlink&quot; title=&quot;细致划分 利用红图&quot;&gt;&lt;/a&gt;细致划分
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/categories/Flask/"/>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flask项目(一) 架构与蓝图</title>
+    <link href="https://jsopy.gitee.io/2020/07/20/flaskproject1/"/>
+    <id>https://jsopy.gitee.io/2020/07/20/flaskproject1/</id>
+    <published>2020-07-20T13:26:47.000Z</published>
+    <updated>2020-07-21T10:33:37.102Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python-项目开始与蓝图&quot;&gt;&lt;a href=&quot;#Python-项目开始与蓝图&quot; class=&quot;headerlink&quot; title=&quot;Python 项目开始与蓝图&quot;&gt;&lt;/a&gt;Python 项目开始与蓝图&lt;/h1&gt;&lt;h2 id=&quot;首先安装虚拟环境&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/categories/Flask/"/>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flask 项目学习笔记</title>
+    <link href="https://jsopy.gitee.io/2020/07/19/flaskprojectall/"/>
+    <id>https://jsopy.gitee.io/2020/07/19/flaskprojectall/</id>
+    <published>2020-07-19T12:26:47.000Z</published>
+    <updated>2020-07-21T10:40:15.388Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Flask-分布&quot;&gt;&lt;a href=&quot;#Flask-分布&quot; class=&quot;headerlink&quot; title=&quot;Flask 分布&quot;&gt;&lt;/a&gt;Flask 分布&lt;/h2&gt;&lt;h3 id=&quot;Flask-项目-一-架构与蓝图&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/categories/Flask/"/>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
   
   <entry>
     <title>ReactAntd(二) 后台准备下半部分</title>
@@ -508,91 +589,6 @@
       <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
       <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Webpack4基础学记笔记</title>
-    <link href="https://jsopy.gitee.io/2020/07/01/webpackall/"/>
-    <id>https://jsopy.gitee.io/2020/07/01/webpackall/</id>
-    <published>2020-07-01T13:26:47.000Z</published>
-    <updated>2020-07-12T13:46:55.387Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Webpack4-基础学习笔记&quot;&gt;&lt;a href=&quot;#Webpack4-基础学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Webpack4 基础学习笔记&quot;&gt;&lt;/a&gt;Webpack4 基础学习笔记&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue中区分development和product和test</title>
-    <link href="https://jsopy.gitee.io/2020/06/30/vuecha11/"/>
-    <id>https://jsopy.gitee.io/2020/06/30/vuecha11/</id>
-    <published>2020-06-30T13:26:47.000Z</published>
-    <updated>2020-07-08T13:03:11.321Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Vuecli-3-0-环境下&quot;&gt;&lt;a href=&quot;#Vuecli-3-0-环境下&quot; class=&quot;headerlink&quot; title=&quot;Vuecli 3.0 环境下&quot;&gt;&lt;/a&gt;Vuecli 3.0 环境下&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Axure9.0 (四)添加局部变量和全局变量</title>
-    <link href="https://jsopy.gitee.io/2020/06/29/axure4/"/>
-    <id>https://jsopy.gitee.io/2020/06/29/axure4/</id>
-    <published>2020-06-29T13:26:47.000Z</published>
-    <updated>2020-06-29T12:55:45.438Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Axure-局部变量和全局变量&quot;&gt;&lt;a href=&quot;#Axure-局部变量和全局变量&quot; class=&quot;headerlink&quot; title=&quot;Axure 局部变量和全局变量&quot;&gt;&lt;/a&gt;Axure 局部变量和全局变量&lt;/h2&gt;&lt;iframe
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Axure" scheme="https://jsopy.gitee.io/categories/Axure/"/>
-    
-    
-      <category term="Axure" scheme="https://jsopy.gitee.io/tags/Axure/"/>
     
   </entry>
   
