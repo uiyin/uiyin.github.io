@@ -464,7 +464,7 @@ HTTP 请求一共有两种第一种 GET,第二种 POST
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-24
+                    2020-07-31
                 </div>
                 
 
@@ -472,7 +472,7 @@ HTTP 请求一共有两种第一种 GET,第二种 POST
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        655
+                        733
                     </div>
                     
 
@@ -588,6 +588,24 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
     app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="获取用户通过-URL-传递过来的数据"><a href="#获取用户通过-URL-传递过来的数据" class="headerlink" title="获取用户通过 URL 传递过来的数据"></a>获取用户通过 URL 传递过来的数据</h3><pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> request
+<span class="token keyword">from</span> flask_cors <span class="token keyword">import</span> CORS
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> jsonify
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/login/&lt;q>/&lt;isbn>'</span><span class="token punctuation">,</span>methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'GET'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">login</span><span class="token punctuation">(</span>q<span class="token punctuation">,</span>isbn<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> request<span class="token punctuation">.</span>method <span class="token operator">==</span><span class="token string">'GET'</span><span class="token punctuation">:</span>
+         <span class="token keyword">return</span> <span class="token string">"用户输入的是"</span><span class="token operator">+</span>q <span class="token operator">+</span><span class="token string">"尾号是"</span><span class="token operator">+</span>isbn
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+       <span class="token keyword">return</span> <span class="token string">'这是GET请求'</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    CORS<span class="token punctuation">(</span>app<span class="token punctuation">,</span>supports_credentials<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>获取用户上传的图片</li>
 </ul>
@@ -1041,7 +1059,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >184.9k</span
+        >185k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
