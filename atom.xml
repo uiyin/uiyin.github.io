@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-07-25T07:19:47.906Z</updated>
+  <updated>2020-08-01T08:35:19.542Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Requests 使用教程</title>
+    <link href="https://jsopy.gitee.io/2020/07/23/requests/"/>
+    <id>https://jsopy.gitee.io/2020/07/23/requests/</id>
+    <published>2020-07-23T13:26:47.000Z</published>
+    <updated>2020-08-01T08:35:19.542Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Requests-简介&quot;&gt;&lt;a href=&quot;#Requests-简介&quot; class=&quot;headerlink&quot; title=&quot;Requests 简介&quot;&gt;&lt;/a&gt;Requests 简介&lt;/h2&gt;&lt;p&gt;Requests
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Request" scheme="https://jsopy.gitee.io/categories/Request/"/>
+    
+    
+      <category term="Request" scheme="https://jsopy.gitee.io/tags/Request/"/>
+    
+  </entry>
   
   <entry>
     <title>Flask项目(三) 使用pycharm 安装flask</title>
@@ -546,35 +573,6 @@
         
         
           &lt;h2 id=&quot;css-loader&quot;&gt;&lt;a href=&quot;#css-loader&quot; class=&quot;headerlink&quot; title=&quot;css-loader&quot;&gt;&lt;/a&gt;css-loader&lt;/h2&gt;&lt;h3 id=&quot;1-安装-css-loader&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Webpack4(二) loader入门</title>
-    <link href="https://jsopy.gitee.io/2020/07/03/webpack2/"/>
-    <id>https://jsopy.gitee.io/2020/07/03/webpack2/</id>
-    <published>2020-07-03T13:26:47.000Z</published>
-    <updated>2020-07-11T03:40:26.978Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;loader-概念&quot;&gt;&lt;a href=&quot;#loader-概念&quot; class=&quot;headerlink&quot; title=&quot;loader 概念&quot;&gt;&lt;/a&gt;loader 概念&lt;/h2&gt;&lt;p&gt;loader 就是 当 webpack 需要加载不同类型的文件需要提供的支持,比如
         
       
     
