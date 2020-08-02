@@ -464,7 +464,7 @@ HTTP 请求一共有两种第一种 GET,第二种 POST
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-31
+                    2020-08-02
                 </div>
                 
 
@@ -472,14 +472,14 @@ HTTP 请求一共有两种第一种 GET,第二种 POST
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        733
+                        818
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        4 分
                     </div>
                     
                 
@@ -563,7 +563,7 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
     app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="获取用户发送的数据"><a href="#获取用户发送的数据" class="headerlink" title="获取用户发送的数据"></a>获取用户发送的数据</h3><ul>
-<li>利用 request 用户发送过来的数据, request.json</li>
+<li>利用 request 用户发送过来的数据, request.json,request.args</li>
 </ul>
 <pre class="line-numbers language-python"><code class="language-python">
 <span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
@@ -581,13 +581,18 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
         userdata <span class="token operator">=</span> request<span class="token punctuation">.</span>json
         <span class="token keyword">return</span> <span class="token string">'这是POST请求'</span><span class="token operator">+</span> userdata<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span>
     <span class="token keyword">else</span><span class="token punctuation">:</span>
-       <span class="token keyword">return</span> <span class="token string">'这是GET请求'</span>
+        <span class="token comment" spellcheck="true">#发送数据的类型类似 http://127.0.0.1:5000/v1/user/get?name = hello</span>
+         <span class="token keyword">print</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">'auth'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+         <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"-----------"</span><span class="token punctuation">)</span>
+         <span class="token keyword">print</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>args<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+         <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"--------------"</span><span class="token punctuation">)</span>
+         <span class="token keyword">return</span> <span class="token string">'这是GET请求'</span> <span class="token operator">+</span> request<span class="token punctuation">.</span>args<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span>
 
 <span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
     CORS<span class="token punctuation">(</span>app<span class="token punctuation">,</span>supports_credentials<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
     app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="获取用户通过-URL-传递过来的数据"><a href="#获取用户通过-URL-传递过来的数据" class="headerlink" title="获取用户通过 URL 传递过来的数据"></a>获取用户通过 URL 传递过来的数据</h3><pre class="line-numbers language-python"><code class="language-python">
 <span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
 <span class="token keyword">from</span> flask <span class="token keyword">import</span> request
@@ -707,6 +712,16 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
      CORS<span class="token punctuation">(</span>app<span class="token punctuation">,</span>supports_credentials<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
      app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="操作配置文件"><a href="#操作配置文件" class="headerlink" title="操作配置文件"></a>操作配置文件</h3><ul>
+<li><p>有的时候我们想获取到或者使用 app.config 里面的配置文件</p>
+</li>
+<li><p>这个时候必须使用 flask 下面的 current_app</p>
+</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> current_app
+<span class="token keyword">print</span><span class="token punctuation">(</span>current_app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">'SETTING_PAGE'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -1059,7 +1074,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >191.9k</span
+        >192k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
