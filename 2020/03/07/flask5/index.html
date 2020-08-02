@@ -472,7 +472,7 @@ HTTP 请求一共有两种第一种 GET,第二种 POST
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        818
+                        829
                     </div>
                     
 
@@ -586,13 +586,14 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
          <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"-----------"</span><span class="token punctuation">)</span>
          <span class="token keyword">print</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>args<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
          <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"--------------"</span><span class="token punctuation">)</span>
+         <span class="token keyword">print</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>args<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 利用to_dict 变成字典</span>
          <span class="token keyword">return</span> <span class="token string">'这是GET请求'</span> <span class="token operator">+</span> request<span class="token punctuation">.</span>args<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span>
 
 <span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
     CORS<span class="token punctuation">(</span>app<span class="token punctuation">,</span>supports_credentials<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
     app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="获取用户通过-URL-传递过来的数据"><a href="#获取用户通过-URL-传递过来的数据" class="headerlink" title="获取用户通过 URL 传递过来的数据"></a>获取用户通过 URL 传递过来的数据</h3><pre class="line-numbers language-python"><code class="language-python">
 <span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
 <span class="token keyword">from</span> flask <span class="token keyword">import</span> request
