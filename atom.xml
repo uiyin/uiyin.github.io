@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-08-02T03:51:38.552Z</updated>
+  <updated>2020-08-05T22:15:38.361Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flask项目(四) 使用Flask-WTForms进行表单验证</title>
+    <link href="https://jsopy.gitee.io/2020/07/28/flaskproject4/"/>
+    <id>https://jsopy.gitee.io/2020/07/28/flaskproject4/</id>
+    <published>2020-07-28T13:26:47.000Z</published>
+    <updated>2020-08-05T22:15:38.361Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;flask-wtf&quot;&gt;&lt;a href=&quot;#flask-wtf&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/categories/Flask/"/>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
   
   <entry>
     <title>ReactAntd(六) ANTD 导航第四种情况</title>
@@ -249,7 +276,7 @@
     <link href="https://jsopy.gitee.io/2020/07/19/flaskprojectall/"/>
     <id>https://jsopy.gitee.io/2020/07/19/flaskprojectall/</id>
     <published>2020-07-19T12:26:47.000Z</published>
-    <updated>2020-07-21T11:03:19.345Z</updated>
+    <updated>2020-08-05T22:15:02.442Z</updated>
     
     <summary type="html">
     
@@ -547,35 +574,6 @@
         
         
           &lt;h2 id=&quot;WebpackDevServer&quot;&gt;&lt;a href=&quot;#WebpackDevServer&quot; class=&quot;headerlink&quot; title=&quot;WebpackDevServer&quot;&gt;&lt;/a&gt;WebpackDevServer&lt;/h2&gt;&lt;p&gt;它的作用就是帮助你刷新页面
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Webpack4(七) SourceMap的配置</title>
-    <link href="https://jsopy.gitee.io/2020/07/08/webpack7/"/>
-    <id>https://jsopy.gitee.io/2020/07/08/webpack7/</id>
-    <published>2020-07-08T13:26:47.000Z</published>
-    <updated>2020-07-11T09:21:52.515Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;SourceMap-的配置&quot;&gt;&lt;a href=&quot;#SourceMap-的配置&quot; class=&quot;headerlink&quot; title=&quot;SourceMap 的配置&quot;&gt;&lt;/a&gt;SourceMap 的配置&lt;/h2&gt;&lt;p&gt;SourceMap
         
       
     
