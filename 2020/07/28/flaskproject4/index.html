@@ -462,7 +462,7 @@ pip install wtforms[email]
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-08-06
+                    2020-08-07
                 </div>
                 
 
@@ -470,7 +470,7 @@ pip install wtforms[email]
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        957
+                        927
                     </div>
                     
 
@@ -508,36 +508,33 @@ pip install wtforms<span class="token punctuation">[</span>email<span class="tok
 <li>新建一个文件起名叫 FlaskFormBasic</li>
 </ul>
 <pre class="line-numbers language-python"><code class="language-python">
-<span class="token comment" spellcheck="true"># coding utf-8#</span>
-<span class="token comment" spellcheck="true">#-----------------------------------------------</span>
-<span class="token comment" spellcheck="true"># Name: FlaskFormBasic</span>
-<span class="token comment" spellcheck="true"># Description</span>
-<span class="token comment" spellcheck="true"># Author: 雾烟云</span>
-<span class="token comment" spellcheck="true"># Date: 2020/8/5 0005</span>
-
-
 <span class="token comment" spellcheck="true"># coding=utf-8</span>
 
 <span class="token keyword">from</span> flask <span class="token keyword">import</span> request
 <span class="token keyword">from</span> wtforms <span class="token keyword">import</span> Form
+<span class="token keyword">import</span> json
 <span class="token comment" spellcheck="true"># request data 基础验证器</span>
 <span class="token keyword">class</span> <span class="token class-name">RequestBaseForm</span><span class="token punctuation">(</span>Form<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment" spellcheck="true"># 解析请求参数</span>
-    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">if</span> request<span class="token punctuation">.</span>method <span class="token operator">==</span> <span class="token string">"GET"</span><span class="token punctuation">:</span>
-            data <span class="token operator">=</span> request<span class="token punctuation">.</span>args<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
-            super<span class="token punctuation">(</span>RequestBaseForm<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>data<span class="token operator">=</span>data<span class="token punctuation">)</span>
-
-        <span class="token comment" spellcheck="true"># 解析非get请求的参数,如果是json则request.get_json()得到数据...</span>
-        <span class="token keyword">if</span> <span class="token string">"application/json"</span> <span class="token keyword">in</span> request<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"Content-Type"</span><span class="token punctuation">)</span> <span class="token operator">and</span> request<span class="token punctuation">.</span>method <span class="token operator">not</span> <span class="token keyword">in</span> <span class="token string">"GET"</span><span class="token punctuation">:</span>
-            data <span class="token operator">=</span> request<span class="token punctuation">.</span>get_json<span class="token punctuation">(</span>silent<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
-            super<span class="token punctuation">(</span>RequestBaseForm<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>data<span class="token operator">=</span>data<span class="token punctuation">)</span>
-        <span class="token keyword">elif</span> <span class="token string">"application/json"</span> <span class="token operator">not</span> <span class="token keyword">in</span> request<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"Content-Type"</span><span class="token punctuation">)</span> <span class="token operator">and</span> request<span class="token punctuation">.</span>method <span class="token operator">not</span> <span class="token keyword">in</span> <span class="token string">"GET"</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>customdata<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># todo 做个处理,如果请求进来的请求时form参数则else,如果是json则进行下列操作</span>
+        <span class="token keyword">if</span> <span class="token string">"application/json"</span> <span class="token keyword">in</span> request<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"Content-Type"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>customdata<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            data <span class="token operator">=</span> customdata<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">or</span> request<span class="token punctuation">.</span>get_json<span class="token punctuation">(</span>silent<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+            args <span class="token operator">=</span> request<span class="token punctuation">.</span>args<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            super<span class="token punctuation">(</span>RequestBaseForm<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>data<span class="token operator">=</span>data<span class="token punctuation">,</span> <span class="token operator">**</span>args<span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
             <span class="token comment" spellcheck="true"># application/x-www-form-urlencoded    or    multipart/form-data</span>
-            data <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
-            super<span class="token punctuation">(</span>RequestBaseForm<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>data<span class="token operator">=</span>data<span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>customdata<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            data <span class="token operator">=</span> customdata<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">or</span> request<span class="token punctuation">.</span>form<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            args <span class="token operator">=</span> request<span class="token punctuation">.</span>args<span class="token punctuation">.</span>to_dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            super<span class="token punctuation">(</span>RequestBaseForm<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>data<span class="token operator">=</span>data<span class="token punctuation">,</span> <span class="token operator">**</span>args<span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 对验证错误的参数抛出异常</span>
     <span class="token keyword">def</span> <span class="token function">validate_for_api</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>super<span class="token punctuation">(</span>RequestBaseForm<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">)</span>
             valid <span class="token operator">=</span> super<span class="token punctuation">(</span>RequestBaseForm<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>validate<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"---------------------"</span><span class="token punctuation">)</span>
             <span class="token keyword">if</span> <span class="token operator">not</span> valid<span class="token punctuation">:</span>
                   <span class="token comment" spellcheck="true"># form errors</span>
                   msg <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'code'</span><span class="token punctuation">:</span><span class="token number">400</span><span class="token punctuation">,</span><span class="token string">'result'</span><span class="token punctuation">:</span>self<span class="token punctuation">.</span>errors<span class="token punctuation">}</span>
@@ -547,7 +544,7 @@ pip install wtforms<span class="token punctuation">[</span>email<span class="tok
 
 
 
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="三-自定义验证"><a href="#三-自定义验证" class="headerlink" title="(三) 自定义验证"></a>(三) 自定义验证</h3><ul>
 <li><p>Email：验证上传的数据是否为邮箱</p>
 </li>
@@ -572,26 +569,36 @@ pip install wtforms<span class="token punctuation">[</span>email<span class="tok
 <span class="token comment" spellcheck="true"># Name: form</span>
 <span class="token comment" spellcheck="true"># Description</span>
 <span class="token comment" spellcheck="true"># Author: 雾烟云</span>
-<span class="token comment" spellcheck="true"># Date: 2020/8/4 0004</span>
+<span class="token comment" spellcheck="true"># Date: 2020/8/7 0007</span>
 <span class="token keyword">from</span> FlaskFormBasic <span class="token keyword">import</span> RequestBaseForm
 <span class="token keyword">from</span> wtforms <span class="token keyword">import</span> StringField<span class="token punctuation">,</span>PasswordField<span class="token punctuation">,</span>IntegerField<span class="token punctuation">,</span>DateField
-<span class="token keyword">from</span> wtforms<span class="token punctuation">.</span>validators <span class="token keyword">import</span> DataRequired<span class="token punctuation">,</span> Length<span class="token punctuation">,</span> Email<span class="token punctuation">,</span> NumberRange<span class="token punctuation">,</span> EqualTo<span class="token punctuation">,</span> Regexp<span class="token punctuation">,</span> ValidationError
-
-
+<span class="token keyword">from</span> wtforms<span class="token punctuation">.</span>validators <span class="token keyword">import</span> DataRequired<span class="token punctuation">,</span> Length<span class="token punctuation">,</span> Email<span class="token punctuation">,</span> NumberRange<span class="token punctuation">,</span> EqualTo<span class="token punctuation">,</span>ValidationError
+<span class="token keyword">from</span> flask_wtf<span class="token punctuation">.</span>file <span class="token keyword">import</span> FileField<span class="token punctuation">,</span>FileAllowed
+<span class="token keyword">import</span> re
 <span class="token keyword">class</span> <span class="token class-name">RegisterForm</span><span class="token punctuation">(</span>RequestBaseForm<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment" spellcheck="true">#表单控件要是text 就用StringField</span>
     <span class="token comment" spellcheck="true"># username 名称不能改变 这是前端发送过来的数据</span>
+    avatar <span class="token operator">=</span> FileField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>DataRequired<span class="token punctuation">(</span>message<span class="token operator">=</span><span class="token string">"文件必传"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>FileAllowed<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'jpg'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>message<span class="token operator">=</span><span class="token string">"只能是jpg"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
     username <span class="token operator">=</span> StringField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>DataRequired<span class="token punctuation">(</span>message<span class="token operator">=</span><span class="token string">"用户名不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>Length<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span>message<span class="token operator">=</span><span class="token string">"用户长度在6到10个之间!"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
     password <span class="token operator">=</span> PasswordField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>DataRequired<span class="token punctuation">(</span>message<span class="token operator">=</span><span class="token string">"密码不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>Length<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span>message<span class="token operator">=</span><span class="token string">"密码长度在3到8个之间!"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
     resetpassword <span class="token operator">=</span> PasswordField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>DataRequired<span class="token punctuation">(</span>message<span class="token operator">=</span><span class="token string">"密码不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>Length<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span>message<span class="token operator">=</span><span class="token string">"密码长度在3到8个之间!"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>EqualTo<span class="token punctuation">(</span><span class="token string">"password"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
     email <span class="token operator">=</span> StringField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>Email<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
     age <span class="token operator">=</span> IntegerField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>DataRequired<span class="token punctuation">(</span>message<span class="token operator">=</span><span class="token string">"年龄不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>NumberRange<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">120</span><span class="token punctuation">,</span> message<span class="token operator">=</span><span class="token string">'年龄范围错误'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
     user_birthday <span class="token operator">=</span> DateField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>DataRequired<span class="token punctuation">(</span>message<span class="token operator">=</span><span class="token string">"请输入用户生日"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-    phone <span class="token operator">=</span> IntegerField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>Regexp<span class="token punctuation">(</span>r<span class="token string">"1[38745]\d{9}"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    phone <span class="token operator">=</span> IntegerField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>DataRequired<span class="token punctuation">(</span>message<span class="token operator">=</span><span class="token string">"手机号不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">validate_phone</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> field<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        pattern <span class="token operator">=</span> re<span class="token punctuation">.</span>compile<span class="token punctuation">(</span>r<span class="token string">'^1[3456789]\d{9}'</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>field<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        result <span class="token operator">=</span> bool<span class="token punctuation">(</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>pattern<span class="token punctuation">,</span>str<span class="token punctuation">(</span>field<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>type<span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> result<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+        <span class="token keyword">else</span> <span class="token punctuation">:</span>
+            <span class="token keyword">raise</span> ValidationError<span class="token punctuation">(</span><span class="token string">"手机号错误"</span><span class="token punctuation">)</span>
     captcha <span class="token operator">=</span> StringField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>Length<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true">## 自定义验证器</span>
-    <span class="token comment" spellcheck="true"># 假设验证码为1234 自定义captcha验证器,函数名必须以validate开头</span>
-    <span class="token comment" spellcheck="true"># 所以在验证captcha的时候,除了验证Length,还会调用下面自定义的函数进行验证</span>
+    <span class="token comment" spellcheck="true"># ## 自定义验证器</span>
+    <span class="token comment" spellcheck="true"># # 假设验证码为1234 自定义captcha验证器,函数名必须以validate开头</span>
+    <span class="token comment" spellcheck="true"># # 所以在验证captcha的时候,除了验证Length,还会调用下面自定义的函数进行验证</span>
     <span class="token keyword">def</span> <span class="token function">validate_captcha</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>field<span class="token punctuation">)</span><span class="token punctuation">:</span>   <span class="token comment" spellcheck="true"># 针对具体的字段做验证</span>
         <span class="token comment" spellcheck="true"># 通过field.data获取数据</span>
         <span class="token keyword">if</span> field<span class="token punctuation">.</span>data <span class="token operator">==</span> <span class="token string">"1234"</span><span class="token punctuation">:</span>
@@ -599,84 +606,46 @@ pip install wtforms<span class="token punctuation">[</span>email<span class="tok
         <span class="token keyword">else</span><span class="token punctuation">:</span>
             <span class="token keyword">raise</span> ValidationError<span class="token punctuation">(</span><span class="token string">"验证码错误"</span><span class="token punctuation">)</span>
 
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="四-使用的时候"><a href="#四-使用的时候" class="headerlink" title="(四) 使用的时候"></a>(四) 使用的时候</h3><pre class="line-numbers language-python"><code class="language-python">
 <span class="token comment" spellcheck="true"># coding utf-8#</span>
 <span class="token comment" spellcheck="true">#-----------------------------------------------</span>
 <span class="token comment" spellcheck="true"># Name: app</span>
 <span class="token comment" spellcheck="true"># Description</span>
 <span class="token comment" spellcheck="true"># Author: 雾烟云</span>
-<span class="token comment" spellcheck="true"># Date: 2020/8/4 0004</span>
+<span class="token comment" spellcheck="true"># Date: 2020/8/7 0007</span>
 
-<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
-<span class="token keyword">from</span> flask <span class="token keyword">import</span> jsonify
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>request<span class="token punctuation">,</span>jsonify
+<span class="token keyword">from</span> werkzeug<span class="token punctuation">.</span>utils <span class="token keyword">import</span> secure_filename
+<span class="token keyword">from</span> werkzeug<span class="token punctuation">.</span>datastructures <span class="token keyword">import</span> CombinedMultiDict
 <span class="token keyword">from</span> form <span class="token keyword">import</span> RegisterForm
 
 app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
-app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">"SECRET_KEY"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"12345678"</span>
 
-@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">"/index"</span><span class="token punctuation">,</span>methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"POST"</span><span class="token punctuation">,</span><span class="token string">"GET"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    formvalidate <span class="token operator">=</span> RegisterForm<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">if</span> formvalidate<span class="token punctuation">.</span>validate_for_api<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span><span class="token punctuation">:</span>
-        <span class="token keyword">return</span> <span class="token boolean">True</span>
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span>formvalidate<span class="token punctuation">.</span>validate_for_api<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-
-<span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>
-    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>debug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>port<span class="token operator">=</span><span class="token number">5000</span><span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="五-文件上传"><a href="#五-文件上传" class="headerlink" title="(五)文件上传"></a>(五)文件上传</h3><ul>
-<li>路由函数</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python">
-<span class="token keyword">from</span> werkzeug<span class="token punctuation">.</span>utils <span class="token keyword">import</span> secure_filename
-
-
-<span class="token keyword">from</span> flask <span class="token keyword">import</span> send_from_directory  <span class="token comment" spellcheck="true"># 输出路径</span>
-
-@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/upload/'</span><span class="token punctuation">,</span> methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"POST"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">"/upload"</span><span class="token punctuation">,</span>methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"POST"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 <span class="token keyword">def</span> <span class="token function">upload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>CombinedMultiDict<span class="token punctuation">(</span><span class="token punctuation">[</span>request<span class="token punctuation">.</span>form<span class="token punctuation">,</span>request<span class="token punctuation">.</span>files<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    formvalidate <span class="token operator">=</span> RegisterForm<span class="token punctuation">(</span>CombinedMultiDict<span class="token punctuation">(</span><span class="token punctuation">[</span>request<span class="token punctuation">.</span>form<span class="token punctuation">,</span>request<span class="token punctuation">.</span>files<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 将文件与文件信息都传给form</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>formvalidate<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> formvalidate<span class="token punctuation">.</span>validate_for_api<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
         <span class="token comment" spellcheck="true"># 接受用户上传的数据</span>
-        avatar <span class="token operator">=</span> request<span class="token punctuation">.</span>files<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"avatar"</span><span class="token punctuation">)</span>        <span class="token comment" spellcheck="true"># 获取上传文件</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"寄哪里了"</span><span class="token punctuation">)</span>
+        avatar <span class="token operator">=</span> request<span class="token punctuation">.</span>files<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"avatar"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 获取上传文件</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>avatar<span class="token punctuation">)</span>
         <span class="token comment" spellcheck="true"># 保存文件</span>
         file_name <span class="token operator">=</span> secure_filename<span class="token punctuation">(</span>avatar<span class="token punctuation">.</span>filename<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 对文件名进行安全检测</span>
         avatar<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">"uploaded/"</span> <span class="token operator">+</span> file_name<span class="token punctuation">)</span>
-        <span class="token keyword">return</span> <span class="token string">"文件上传成功"</span>
+        <span class="token keyword">return</span> <span class="token string">"文件上传成功"</span><span class="token operator">+</span><span class="token string">"用户的邮箱是"</span><span class="token operator">+</span>request<span class="token punctuation">.</span>form<span class="token punctuation">[</span><span class="token string">'email'</span><span class="token punctuation">]</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span>formvalidate<span class="token punctuation">.</span>validate_for_api<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/show/&lt;file_name>/'</span><span class="token punctuation">)</span>
-<span class="token keyword">def</span> <span class="token function">show_image</span><span class="token punctuation">(</span>file_name<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">return</span> send_from_directory<span class="token punctuation">(</span><span class="token string">"uploaded/"</span><span class="token punctuation">,</span> filename<span class="token operator">=</span>file_name<span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>flask 验证</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python">
-<span class="token keyword">from</span> FlaskFormBasic <span class="token keyword">import</span> RequestBaseForm
-<span class="token keyword">from</span> wtforms <span class="token keyword">import</span> FileField
-<span class="token keyword">from</span> flask_wtf<span class="token punctuation">.</span>file <span class="token keyword">import</span> FileRequired<span class="token punctuation">,</span> FileAllowed    <span class="token comment" spellcheck="true"># 验证文件必须上传，以及上传的类型</span>
-<span class="token comment" spellcheck="true"># 定义上传表单验证</span>
-<span class="token keyword">class</span> <span class="token class-name">UploadForm</span><span class="token punctuation">(</span>RequestBaseForm<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    avatar <span class="token operator">=</span> FileField<span class="token punctuation">(</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>FileRequired<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> FileAllowed<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"jpg"</span><span class="token punctuation">,</span> <span class="token string">"png"</span><span class="token punctuation">,</span> <span class="token string">"gif"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>要是想控制上传文件的大小只能全局控制,这样大于 16M 就抛出异常</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python">
-<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span> Request
-
-app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
-app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">'MAX_CONTENT_LENGTH'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">16</span> <span class="token operator">*</span> <span class="token number">1024</span> <span class="token operator">*</span> <span class="token number">1024</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">"127.0.0.1"</span><span class="token punctuation">,</span>debug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>port<span class="token operator">=</span><span class="token number">5000</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="最后结果返回错误信息"><a href="#最后结果返回错误信息" class="headerlink" title="最后结果返回错误信息"></a>最后结果返回错误信息</h3><pre class="line-numbers language-python"><code class="language-python">
 <span class="token punctuation">{</span>
   <span class="token string">"code"</span><span class="token punctuation">:</span> <span class="token number">400</span><span class="token punctuation">,</span>
   <span class="token string">"result"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token string">"avaster"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
-      <span class="token string">"Invalid email address."</span>
-    <span class="token punctuation">]</span><span class="token punctuation">,</span>
     <span class="token string">"captcha"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
       <span class="token string">"密码必须是4位"</span><span class="token punctuation">,</span>
       <span class="token string">"验证码错误"</span>
@@ -698,7 +667,7 @@ app<span class="token punctuation">.</span>config<span class="token punctuation"
     <span class="token punctuation">]</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
