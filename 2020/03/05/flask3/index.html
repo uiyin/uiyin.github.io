@@ -464,7 +464,7 @@ Flas">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-01
+                    2020-08-07
                 </div>
                 
 
@@ -472,7 +472,7 @@ Flas">
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.8k
+                        1.9k
                     </div>
                     
 
@@ -710,6 +710,14 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
       abort<span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">)</span>
     <span class="token keyword">return</span> f<span class="token string">'&lt;h1>Hello{id}&lt;/h1>'</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>返回静态文件</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/returnstatic'</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">returnstatic</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> url_for<span class="token punctuation">(</span><span class="token string">'static'</span><span class="token punctuation">,</span>filename<span class="token operator">=</span><span class="token string">'路径'</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>abort 不会把控制权交还给其他调用的函数,而是抛出异常把控制权交给服务器</p>
 
             </div>
