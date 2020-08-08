@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-08-07T14:53:28.571Z</updated>
+  <updated>2020-08-08T12:13:27.636Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flask项目(五) 使用PyMySql 操作数据库</title>
+    <link href="https://jsopy.gitee.io/2020/07/29/flaskproject5/"/>
+    <id>https://jsopy.gitee.io/2020/07/29/flaskproject5/</id>
+    <published>2020-07-29T13:26:47.000Z</published>
+    <updated>2020-08-08T12:13:27.636Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;基础工作&quot;&gt;&lt;a href=&quot;#基础工作&quot; class=&quot;headerlink&quot; title=&quot;基础工作&quot;&gt;&lt;/a&gt;基础工作&lt;/h2&gt;&lt;h2 id=&quot;安装包&quot;&gt;&lt;a href=&quot;#安装包&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/categories/Flask/"/>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
   
   <entry>
     <title>Flask项目(四) 使用Flask-WTForms进行表单验证</title>
@@ -545,35 +572,6 @@
         
         
           &lt;h2 id=&quot;Hot-Module-Replacement&quot;&gt;&lt;a href=&quot;#Hot-Module-Replacement&quot; class=&quot;headerlink&quot; title=&quot;Hot Module Replacement&quot;&gt;&lt;/a&gt;Hot Module
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Webpack4(八) 使用WebpackDevServer提升效率</title>
-    <link href="https://jsopy.gitee.io/2020/07/09/webpack8/"/>
-    <id>https://jsopy.gitee.io/2020/07/09/webpack8/</id>
-    <published>2020-07-09T13:26:47.000Z</published>
-    <updated>2020-07-11T09:27:05.184Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;WebpackDevServer&quot;&gt;&lt;a href=&quot;#WebpackDevServer&quot; class=&quot;headerlink&quot; title=&quot;WebpackDevServer&quot;&gt;&lt;/a&gt;WebpackDevServer&lt;/h2&gt;&lt;p&gt;它的作用就是帮助你刷新页面
         
       
     
