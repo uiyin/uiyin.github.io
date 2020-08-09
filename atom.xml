@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-08-08T12:13:27.636Z</updated>
+  <updated>2020-08-09T02:32:03.100Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ReactAntd(七) ANTD Tab路由</title>
+    <link href="https://jsopy.gitee.io/2020/07/30/reactantd7/"/>
+    <id>https://jsopy.gitee.io/2020/07/30/reactantd7/</id>
+    <published>2020-07-30T13:26:47.000Z</published>
+    <updated>2020-08-09T02:32:03.100Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;本文主要是记录-ANTD-Tab-路由&quot;&gt;&lt;a href=&quot;#本文主要是记录-ANTD-Tab-路由&quot; class=&quot;headerlink&quot; title=&quot;本文主要是记录 ANTD Tab 路由&quot;&gt;&lt;/a&gt;本文主要是记录 ANTD Tab
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
   
   <entry>
     <title>Flask项目(五) 使用PyMySql 操作数据库</title>
@@ -389,7 +418,7 @@
     <link href="https://jsopy.gitee.io/2020/07/16/reactantdall/"/>
     <id>https://jsopy.gitee.io/2020/07/16/reactantdall/</id>
     <published>2020-07-16T12:26:47.000Z</published>
-    <updated>2020-08-02T03:52:48.899Z</updated>
+    <updated>2020-08-09T02:36:12.650Z</updated>
     
     <summary type="html">
     
@@ -543,35 +572,6 @@
         
         
           &lt;h2 id=&quot;Babel&quot;&gt;&lt;a href=&quot;#Babel&quot; class=&quot;headerlink&quot; title=&quot;Babel&quot;&gt;&lt;/a&gt;Babel&lt;/h2&gt;&lt;p&gt;因为在 IE 浏览器里面不支持 es6 写法 所以必须安装一个工具 babel 来转换 es6
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Webpack4(九) 使用热更新</title>
-    <link href="https://jsopy.gitee.io/2020/07/10/webpack9/"/>
-    <id>https://jsopy.gitee.io/2020/07/10/webpack9/</id>
-    <published>2020-07-10T13:26:47.000Z</published>
-    <updated>2020-07-11T13:05:51.047Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Hot-Module-Replacement&quot;&gt;&lt;a href=&quot;#Hot-Module-Replacement&quot; class=&quot;headerlink&quot; title=&quot;Hot Module Replacement&quot;&gt;&lt;/a&gt;Hot Module
         
       
     
