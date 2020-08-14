@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-08-09T02:32:03.100Z</updated>
+  <updated>2020-08-14T12:21:40.897Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flask项目(六) 使用PyMySql操作数据库高级篇</title>
+    <link href="https://jsopy.gitee.io/2020/07/31/flaskproject6/"/>
+    <id>https://jsopy.gitee.io/2020/07/31/flaskproject6/</id>
+    <published>2020-07-31T13:26:47.000Z</published>
+    <updated>2020-08-14T12:21:40.897Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;本篇将采用-mvc-的形式来使用数据库&quot;&gt;&lt;a href=&quot;#本篇将采用-mvc-的形式来使用数据库&quot; class=&quot;headerlink&quot; title=&quot;本篇将采用 mvc 的形式来使用数据库&quot;&gt;&lt;/a&gt;本篇将采用 mvc 的形式来使用数据库&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/categories/Flask/"/>
+    
+    
+      <category term="Flask" scheme="https://jsopy.gitee.io/tags/Flask/"/>
+    
+  </entry>
   
   <entry>
     <title>ReactAntd(七) ANTD Tab路由</title>
@@ -332,7 +359,7 @@
     <link href="https://jsopy.gitee.io/2020/07/19/flaskprojectall/"/>
     <id>https://jsopy.gitee.io/2020/07/19/flaskprojectall/</id>
     <published>2020-07-19T12:26:47.000Z</published>
-    <updated>2020-08-08T12:18:40.877Z</updated>
+    <updated>2020-08-14T12:24:26.917Z</updated>
     
     <summary type="html">
     
@@ -543,35 +570,6 @@
         
         
           &lt;h2 id=&quot;配置-React-代码的打包&quot;&gt;&lt;a href=&quot;#配置-React-代码的打包&quot; class=&quot;headerlink&quot; title=&quot;配置 React 代码的打包&quot;&gt;&lt;/a&gt;配置 React 代码的打包&lt;/h2&gt;&lt;h3 id=&quot;安装-react-dom&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/categories/Webpack4/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Webpack4" scheme="https://jsopy.gitee.io/tags/Webpack4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Webpack4(十) 使用Babel处理ES6语法</title>
-    <link href="https://jsopy.gitee.io/2020/07/11/webpack10/"/>
-    <id>https://jsopy.gitee.io/2020/07/11/webpack10/</id>
-    <published>2020-07-11T13:26:47.000Z</published>
-    <updated>2020-07-11T13:06:02.430Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Babel&quot;&gt;&lt;a href=&quot;#Babel&quot; class=&quot;headerlink&quot; title=&quot;Babel&quot;&gt;&lt;/a&gt;Babel&lt;/h2&gt;&lt;p&gt;因为在 IE 浏览器里面不支持 es6 写法 所以必须安装一个工具 babel 来转换 es6
         
       
     
