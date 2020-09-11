@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-09-10T22:12:31.095Z</updated>
+  <updated>2020-09-11T12:25:45.017Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,312 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>React 基础笔记(React在TS中父子传值写一个todolist)(三十五)</title>
+    <link href="https://jsopy.gitee.io/2020/09/06/reactbasic35/"/>
+    <id>https://jsopy.gitee.io/2020/09/06/reactbasic35/</id>
+    <published>2020-09-06T12:26:47.000Z</published>
+    <updated>2020-09-11T12:25:45.017Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;React-TS-中-写一个-Todolist&quot;&gt;&lt;a href=&quot;#React-TS-中-写一个-Todolist&quot; class=&quot;headerlink&quot; title=&quot;React TS 中 写一个 Todolist&quot;&gt;&lt;/a&gt;React TS 中 写一个
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ReactAntd(三十一) React-高级表格总结</title>
+    <link href="https://jsopy.gitee.io/2020/09/05/reactantd31/"/>
+    <id>https://jsopy.gitee.io/2020/09/05/reactantd31/</id>
+    <published>2020-09-05T13:26:47.000Z</published>
+    <updated>2020-09-11T12:11:01.378Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;把每个列的值合并值&quot;&gt;&lt;a href=&quot;#把每个列的值合并值&quot; class=&quot;headerlink&quot; title=&quot;把每个列的值合并值&quot;&gt;&lt;/a&gt;把每个列的值合并值&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;代码如下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ReactAntd(三十) React-表格列头合并</title>
+    <link href="https://jsopy.gitee.io/2020/09/04/reactantd30/"/>
+    <id>https://jsopy.gitee.io/2020/09/04/reactantd30/</id>
+    <published>2020-09-04T13:26:47.000Z</published>
+    <updated>2020-09-11T12:09:52.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;表格列头合并&quot;&gt;&lt;a href=&quot;#表格列头合并&quot; class=&quot;headerlink&quot; title=&quot;表格列头合并&quot;&gt;&lt;/a&gt;表格列头合并&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;children&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;line-numbers
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ReactAntd(二十九) React-表格滚动以及固定指定的列</title>
+    <link href="https://jsopy.gitee.io/2020/09/03/reactantd29/"/>
+    <id>https://jsopy.gitee.io/2020/09/03/reactantd29/</id>
+    <published>2020-09-03T13:26:47.000Z</published>
+    <updated>2020-09-11T12:01:44.918Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;表格滚动，固定指定的列&quot;&gt;&lt;a href=&quot;#表格滚动，固定指定的列&quot; class=&quot;headerlink&quot; title=&quot;表格滚动，固定指定的列&quot;&gt;&lt;/a&gt;表格滚动，固定指定的列&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;fixed
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ReactAntd(二十八) React-高级表格带备注</title>
+    <link href="https://jsopy.gitee.io/2020/09/02/reactantd28/"/>
+    <id>https://jsopy.gitee.io/2020/09/02/reactantd28/</id>
+    <published>2020-09-02T13:26:47.000Z</published>
+    <updated>2020-09-11T12:00:11.894Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Antd-高级表格带备注&quot;&gt;&lt;a href=&quot;#Antd-高级表格带备注&quot; class=&quot;headerlink&quot; title=&quot;Antd-高级表格带备注&quot;&gt;&lt;/a&gt;Antd-高级表格带备注&lt;/h2&gt;&lt;pre class=&quot;line-numbers
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ReactAntd(二十七) React-基础表格使用中文里面有操作按钮</title>
+    <link href="https://jsopy.gitee.io/2020/09/01/reactantd27/"/>
+    <id>https://jsopy.gitee.io/2020/09/01/reactantd27/</id>
+    <published>2020-09-01T13:26:47.000Z</published>
+    <updated>2020-09-11T11:58:14.621Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;带操作按钮的基础中文表格&quot;&gt;&lt;a href=&quot;#带操作按钮的基础中文表格&quot; class=&quot;headerlink&quot; title=&quot;带操作按钮的基础中文表格&quot;&gt;&lt;/a&gt;带操作按钮的基础中文表格&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ReactAntd(二十六) React-基础表格使用中文</title>
+    <link href="https://jsopy.gitee.io/2020/08/31/reactantd26/"/>
+    <id>https://jsopy.gitee.io/2020/08/31/reactantd26/</id>
+    <published>2020-08-31T13:26:47.000Z</published>
+    <updated>2020-09-11T11:56:53.294Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;使用表格里面基础信息变成中文&quot;&gt;&lt;a href=&quot;#使用表格里面基础信息变成中文&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ReactAntd(二十五) React-基础表格排序</title>
+    <link href="https://jsopy.gitee.io/2020/08/30/reactantd25/"/>
+    <id>https://jsopy.gitee.io/2020/08/30/reactantd25/</id>
+    <published>2020-08-30T13:26:47.000Z</published>
+    <updated>2020-09-11T11:55:34.409Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;表格排序&quot;&gt;&lt;a href=&quot;#表格排序&quot; class=&quot;headerlink&quot; title=&quot;表格排序&quot;&gt;&lt;/a&gt;表格排序&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;必须在列里面加一个舒徐 sorter 依据字段名排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ReactAntd(二十四) React-基础表格带CheckBox或者Radio选项</title>
+    <link href="https://jsopy.gitee.io/2020/08/29/reactantd24/"/>
+    <id>https://jsopy.gitee.io/2020/08/29/reactantd24/</id>
+    <published>2020-08-29T13:26:47.000Z</published>
+    <updated>2020-09-11T11:54:07.358Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;基础表格带-CheckBox-或者-Radio-选项&quot;&gt;&lt;a href=&quot;#基础表格带-CheckBox-或者-Radio-选项&quot; class=&quot;headerlink&quot; title=&quot;基础表格带 CheckBox 或者 Radio 选项&quot;&gt;&lt;/a&gt;基础表格带
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ReactAntd(二十三) React-基础表格</title>
+    <link href="https://jsopy.gitee.io/2020/08/28/reactantd23/"/>
+    <id>https://jsopy.gitee.io/2020/08/28/reactantd23/</id>
+    <published>2020-08-28T13:26:47.000Z</published>
+    <updated>2020-09-11T11:51:41.235Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;基础表格&quot;&gt;&lt;a href=&quot;#基础表格&quot; class=&quot;headerlink&quot; title=&quot;基础表格&quot;&gt;&lt;/a&gt;基础表格&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;表格两大部分&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第一个部分是列 columns
+        
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
+    
+  </entry>
   
   <entry>
     <title>ReactAntd(二十二) React-antd使用富文本</title>
@@ -293,296 +599,6 @@
         
         
           &lt;h1 id=&quot;React-折叠面板&quot;&gt;&lt;a href=&quot;#React-折叠面板&quot; class=&quot;headerlink&quot; title=&quot;React 折叠面板&quot;&gt;&lt;/a&gt;React 折叠面板&lt;/h1&gt;&lt;h2 id=&quot;引用的组件&quot;&gt;&lt;a href=&quot;#引用的组件&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(十四) React-Tabs 的使用</title>
-    <link href="https://jsopy.gitee.io/2020/08/17/reactantd14/"/>
-    <id>https://jsopy.gitee.io/2020/08/17/reactantd14/</id>
-    <published>2020-08-17T13:26:47.000Z</published>
-    <updated>2020-08-31T13:15:32.824Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;React-Tabs-的使用&quot;&gt;&lt;a href=&quot;#React-Tabs-的使用&quot; class=&quot;headerlink&quot; title=&quot;React-Tabs 的使用&quot;&gt;&lt;/a&gt;React-Tabs 的使用&lt;/h2&gt;&lt;h3 id=&quot;必须要引用的包&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(十三) ANTD-使用react-awesome-swiper</title>
-    <link href="https://jsopy.gitee.io/2020/08/16/reactantd13/"/>
-    <id>https://jsopy.gitee.io/2020/08/16/reactantd13/</id>
-    <published>2020-08-16T13:26:47.000Z</published>
-    <updated>2020-08-31T13:15:27.858Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;React-使用-awesome-swiper-使用&quot;&gt;&lt;a href=&quot;#React-使用-awesome-swiper-使用&quot; class=&quot;headerlink&quot; title=&quot;React 使用 awesome-swiper 使用&quot;&gt;&lt;/a&gt;React
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(十二) ANTD-Spin</title>
-    <link href="https://jsopy.gitee.io/2020/08/15/reactantd12/"/>
-    <id>https://jsopy.gitee.io/2020/08/15/reactantd12/</id>
-    <published>2020-08-15T13:26:47.000Z</published>
-    <updated>2020-08-31T13:15:21.572Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;React-Antd-Spin&quot;&gt;&lt;a href=&quot;#React-Antd-Spin&quot; class=&quot;headerlink&quot; title=&quot;React-Antd-Spin&quot;&gt;&lt;/a&gt;React-Antd-Spin&lt;/h1&gt;&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(十一) ANTD-Nofilication</title>
-    <link href="https://jsopy.gitee.io/2020/08/14/reactantd11/"/>
-    <id>https://jsopy.gitee.io/2020/08/14/reactantd11/</id>
-    <published>2020-08-14T13:26:47.000Z</published>
-    <updated>2020-08-31T13:15:14.751Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;React-Antd-Nofilication&quot;&gt;&lt;a href=&quot;#React-Antd-Nofilication&quot; class=&quot;headerlink&quot; title=&quot;React Antd - Nofilication&quot;&gt;&lt;/a&gt;React Antd -
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React 基础笔记(React懒加载)(三十一)</title>
-    <link href="https://jsopy.gitee.io/2020/08/13/reactbasic31/"/>
-    <id>https://jsopy.gitee.io/2020/08/13/reactbasic31/</id>
-    <published>2020-08-13T12:26:47.000Z</published>
-    <updated>2020-08-31T13:20:27.435Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;React-使用-lazy&quot;&gt;&lt;a href=&quot;#React-使用-lazy&quot; class=&quot;headerlink&quot; title=&quot;React 使用 lazy&quot;&gt;&lt;/a&gt;React 使用 lazy&lt;/h2&gt;&lt;h2 id=&quot;lay-懒加载-也可以是异步加载&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(十) ANTD-Modal</title>
-    <link href="https://jsopy.gitee.io/2020/08/12/reactantd10/"/>
-    <id>https://jsopy.gitee.io/2020/08/12/reactantd10/</id>
-    <published>2020-08-12T13:26:47.000Z</published>
-    <updated>2020-08-31T12:58:46.154Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;React-Antd-modal-总结&quot;&gt;&lt;a href=&quot;#React-Antd-modal-总结&quot; class=&quot;headerlink&quot; title=&quot;React-Antd-modal 总结&quot;&gt;&lt;/a&gt;React-Antd-modal 总结&lt;/h1&gt;&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(九) ANTD-Messages</title>
-    <link href="https://jsopy.gitee.io/2020/08/11/reactantd9/"/>
-    <id>https://jsopy.gitee.io/2020/08/11/reactantd9/</id>
-    <published>2020-08-11T13:26:47.000Z</published>
-    <updated>2020-08-31T12:53:52.463Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;React-Antd-messages&quot;&gt;&lt;a href=&quot;#React-Antd-messages&quot; class=&quot;headerlink&quot; title=&quot;React-Antd-messages&quot;&gt;&lt;/a&gt;React-Antd-messages&lt;/h1&gt;&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(八) ANTD Button</title>
-    <link href="https://jsopy.gitee.io/2020/08/10/reactantd8/"/>
-    <id>https://jsopy.gitee.io/2020/08/10/reactantd8/</id>
-    <published>2020-08-10T13:26:47.000Z</published>
-    <updated>2020-08-31T12:51:43.778Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Antd-框架之-Button-总结&quot;&gt;&lt;a href=&quot;#Antd-框架之-Button-总结&quot; class=&quot;headerlink&quot; title=&quot;Antd 框架之 Button 总结&quot;&gt;&lt;/a&gt;Antd 框架之 Button 总结&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React 基础笔记(React中使用TS)(三十二)</title>
-    <link href="https://jsopy.gitee.io/2020/08/09/reactbasic32/"/>
-    <id>https://jsopy.gitee.io/2020/08/09/reactbasic32/</id>
-    <published>2020-08-09T12:26:47.000Z</published>
-    <updated>2020-09-10T21:56:20.310Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;React-中使用-Typescript&quot;&gt;&lt;a href=&quot;#React-中使用-Typescript&quot; class=&quot;headerlink&quot; title=&quot;React 中使用 Typescript&quot;&gt;&lt;/a&gt;React 中使用
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React 基础笔记(React缓存PureComponent与memo)(三十)</title>
-    <link href="https://jsopy.gitee.io/2020/08/08/reactbasic30/"/>
-    <id>https://jsopy.gitee.io/2020/08/08/reactbasic30/</id>
-    <published>2020-08-08T12:26:47.000Z</published>
-    <updated>2020-08-31T12:39:47.190Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;React-PureComponent-与-React-memo&quot;&gt;&lt;a href=&quot;#React-PureComponent-与-React-memo&quot; class=&quot;headerlink&quot; title=&quot;React-PureComponent 与
         
       
     
