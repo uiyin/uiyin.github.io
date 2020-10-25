@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-09-23T12:16:21.611Z</updated>
+  <updated>2020-10-25T12:01:49.670Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,267 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue学记笔记(十八) Vue3.0之Teleport挂载节点</title>
+    <link href="https://jsopy.gitee.io/2020/09/23/vue18/"/>
+    <id>https://jsopy.gitee.io/2020/09/23/vue18/</id>
+    <published>2020-09-23T01:54:47.000Z</published>
+    <updated>2020-10-25T12:01:49.670Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Vue-3-0-Teleport&quot;&gt;&lt;a href=&quot;#Vue-3-0-Teleport&quot; class=&quot;headerlink&quot; title=&quot;Vue(3.0) Teleport&quot;&gt;&lt;/a&gt;Vue(3.0) Teleport&lt;/h2&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(十七) Vue3.0之卡槽</title>
+    <link href="https://jsopy.gitee.io/2020/09/22/vue17/"/>
+    <id>https://jsopy.gitee.io/2020/09/22/vue17/</id>
+    <published>2020-09-22T01:54:47.000Z</published>
+    <updated>2020-10-25T12:00:14.085Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Vue3-0-卡槽的使用和传值&quot;&gt;&lt;a href=&quot;#Vue3-0-卡槽的使用和传值&quot; class=&quot;headerlink&quot; title=&quot;Vue3.0 卡槽的使用和传值&quot;&gt;&lt;/a&gt;Vue3.0 卡槽的使用和传值&lt;/h3&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(十六) Vue3.0之使用context</title>
+    <link href="https://jsopy.gitee.io/2020/09/21/vue16/"/>
+    <id>https://jsopy.gitee.io/2020/09/21/vue16/</id>
+    <published>2020-09-21T01:54:47.000Z</published>
+    <updated>2020-10-25T11:58:55.350Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;在-Vue3-0-中使用-conText&quot;&gt;&lt;a href=&quot;#在-Vue3-0-中使用-conText&quot; class=&quot;headerlink&quot; title=&quot;在 Vue3.0 中使用 conText&quot;&gt;&lt;/a&gt;在 Vue3.0 中使用
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(十五) Vue3.0之使用props</title>
+    <link href="https://jsopy.gitee.io/2020/09/20/vue15/"/>
+    <id>https://jsopy.gitee.io/2020/09/20/vue15/</id>
+    <published>2020-09-20T01:54:47.000Z</published>
+    <updated>2020-10-25T11:56:37.871Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;setup-使用-props&quot;&gt;&lt;a href=&quot;#setup-使用-props&quot; class=&quot;headerlink&quot; title=&quot;setup 使用 props&quot;&gt;&lt;/a&gt;setup 使用 props&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(十四) Vue3.0之引入模块</title>
+    <link href="https://jsopy.gitee.io/2020/09/19/vue14/"/>
+    <id>https://jsopy.gitee.io/2020/09/19/vue14/</id>
+    <published>2020-09-19T01:54:47.000Z</published>
+    <updated>2020-10-25T11:53:43.175Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;引入模块&quot;&gt;&lt;a href=&quot;#引入模块&quot; class=&quot;headerlink&quot; title=&quot;引入模块&quot;&gt;&lt;/a&gt;引入模块&lt;/h2&gt;&lt;h3 id=&quot;在-vue3-0-里面特别加入了一个-hooks-模块的概念-可以直接引入&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(十三) Vue3.0之watch</title>
+    <link href="https://jsopy.gitee.io/2020/09/18/vue13/"/>
+    <id>https://jsopy.gitee.io/2020/09/18/vue13/</id>
+    <published>2020-09-18T01:54:47.000Z</published>
+    <updated>2020-10-25T11:51:42.022Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;watch&quot;&gt;&lt;a href=&quot;#watch&quot; class=&quot;headerlink&quot; title=&quot;watch&quot;&gt;&lt;/a&gt;watch&lt;/h2&gt;&lt;h3 id=&quot;在-vue3-0-里面使用-watch-也必须引用&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(十二) Vue3.0之生命周期</title>
+    <link href="https://jsopy.gitee.io/2020/09/17/vue12/"/>
+    <id>https://jsopy.gitee.io/2020/09/17/vue12/</id>
+    <published>2020-09-17T01:54:47.000Z</published>
+    <updated>2020-10-25T11:49:38.233Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;生命周期&quot;&gt;&lt;a href=&quot;#生命周期&quot; class=&quot;headerlink&quot; title=&quot;生命周期&quot;&gt;&lt;/a&gt;生命周期&lt;/h2&gt;&lt;h3 id=&quot;Vue3-0-中生命周期发生了变化请看对照表&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(十一) Vue3.0之reactive和toRefs</title>
+    <link href="https://jsopy.gitee.io/2020/09/16/vue11/"/>
+    <id>https://jsopy.gitee.io/2020/09/16/vue11/</id>
+    <published>2020-09-16T01:54:47.000Z</published>
+    <updated>2020-10-25T11:48:31.060Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;vue3-0-reactive-和-toRefs&quot;&gt;&lt;a href=&quot;#vue3-0-reactive-和-toRefs&quot; class=&quot;headerlink&quot; title=&quot;vue3.0 reactive 和 toRefs&quot;&gt;&lt;/a&gt;vue3.0
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue学记笔记(十) Vue3.0之setup与ref</title>
+    <link href="https://jsopy.gitee.io/2020/09/15/vue10/"/>
+    <id>https://jsopy.gitee.io/2020/09/15/vue10/</id>
+    <published>2020-09-15T01:54:47.000Z</published>
+    <updated>2020-10-25T11:48:27.310Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue3-0-一-setup-ref&quot;&gt;&lt;a href=&quot;#Vue3-0-一-setup-ref&quot; class=&quot;headerlink&quot; title=&quot;Vue3.0 (一) setup , ref&quot;&gt;&lt;/a&gt;Vue3.0 (一) setup ,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>使用通配符查询数据(LIKE)</title>
@@ -312,277 +573,6 @@
 &lt;li&gt;children&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十九) React-表格滚动以及固定指定的列</title>
-    <link href="https://jsopy.gitee.io/2020/09/03/reactantd29/"/>
-    <id>https://jsopy.gitee.io/2020/09/03/reactantd29/</id>
-    <published>2020-09-03T13:26:47.000Z</published>
-    <updated>2020-09-11T12:01:44.918Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;表格滚动，固定指定的列&quot;&gt;&lt;a href=&quot;#表格滚动，固定指定的列&quot; class=&quot;headerlink&quot; title=&quot;表格滚动，固定指定的列&quot;&gt;&lt;/a&gt;表格滚动，固定指定的列&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;fixed
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十八) React-高级表格带备注</title>
-    <link href="https://jsopy.gitee.io/2020/09/02/reactantd28/"/>
-    <id>https://jsopy.gitee.io/2020/09/02/reactantd28/</id>
-    <published>2020-09-02T13:26:47.000Z</published>
-    <updated>2020-09-11T12:00:11.894Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Antd-高级表格带备注&quot;&gt;&lt;a href=&quot;#Antd-高级表格带备注&quot; class=&quot;headerlink&quot; title=&quot;Antd-高级表格带备注&quot;&gt;&lt;/a&gt;Antd-高级表格带备注&lt;/h2&gt;&lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十七) React-基础表格使用中文里面有操作按钮</title>
-    <link href="https://jsopy.gitee.io/2020/09/01/reactantd27/"/>
-    <id>https://jsopy.gitee.io/2020/09/01/reactantd27/</id>
-    <published>2020-09-01T13:26:47.000Z</published>
-    <updated>2020-09-11T11:58:14.621Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;带操作按钮的基础中文表格&quot;&gt;&lt;a href=&quot;#带操作按钮的基础中文表格&quot; class=&quot;headerlink&quot; title=&quot;带操作按钮的基础中文表格&quot;&gt;&lt;/a&gt;带操作按钮的基础中文表格&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十六) React-基础表格使用中文</title>
-    <link href="https://jsopy.gitee.io/2020/08/31/reactantd26/"/>
-    <id>https://jsopy.gitee.io/2020/08/31/reactantd26/</id>
-    <published>2020-08-31T13:26:47.000Z</published>
-    <updated>2020-09-11T11:56:53.294Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;使用表格里面基础信息变成中文&quot;&gt;&lt;a href=&quot;#使用表格里面基础信息变成中文&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十五) React-基础表格排序</title>
-    <link href="https://jsopy.gitee.io/2020/08/30/reactantd25/"/>
-    <id>https://jsopy.gitee.io/2020/08/30/reactantd25/</id>
-    <published>2020-08-30T13:26:47.000Z</published>
-    <updated>2020-09-11T11:55:34.409Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;表格排序&quot;&gt;&lt;a href=&quot;#表格排序&quot; class=&quot;headerlink&quot; title=&quot;表格排序&quot;&gt;&lt;/a&gt;表格排序&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;必须在列里面加一个舒徐 sorter 依据字段名排序&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十四) React-基础表格带CheckBox或者Radio选项</title>
-    <link href="https://jsopy.gitee.io/2020/08/29/reactantd24/"/>
-    <id>https://jsopy.gitee.io/2020/08/29/reactantd24/</id>
-    <published>2020-08-29T13:26:47.000Z</published>
-    <updated>2020-09-11T11:54:07.358Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;基础表格带-CheckBox-或者-Radio-选项&quot;&gt;&lt;a href=&quot;#基础表格带-CheckBox-或者-Radio-选项&quot; class=&quot;headerlink&quot; title=&quot;基础表格带 CheckBox 或者 Radio 选项&quot;&gt;&lt;/a&gt;基础表格带
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十三) React-基础表格</title>
-    <link href="https://jsopy.gitee.io/2020/08/28/reactantd23/"/>
-    <id>https://jsopy.gitee.io/2020/08/28/reactantd23/</id>
-    <published>2020-08-28T13:26:47.000Z</published>
-    <updated>2020-09-11T11:51:41.235Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;基础表格&quot;&gt;&lt;a href=&quot;#基础表格&quot; class=&quot;headerlink&quot; title=&quot;基础表格&quot;&gt;&lt;/a&gt;基础表格&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;表格两大部分&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;第一个部分是列 columns
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十二) React-antd使用富文本</title>
-    <link href="https://jsopy.gitee.io/2020/08/27/reactantd22/"/>
-    <id>https://jsopy.gitee.io/2020/08/27/reactantd22/</id>
-    <published>2020-08-27T13:26:47.000Z</published>
-    <updated>2020-09-10T22:12:31.095Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Antd-使用-Ueditor-富文本&quot;&gt;&lt;a href=&quot;#Antd-使用-Ueditor-富文本&quot; class=&quot;headerlink&quot; title=&quot;Antd - 使用 Ueditor 富文本&quot;&gt;&lt;/a&gt;Antd - 使用 Ueditor
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十一) React-antd最后所有的表单汇总</title>
-    <link href="https://jsopy.gitee.io/2020/08/26/reactantd21/"/>
-    <id>https://jsopy.gitee.io/2020/08/26/reactantd21/</id>
-    <published>2020-08-26T13:26:47.000Z</published>
-    <updated>2020-09-21T13:22:21.387Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;最后综合版本-Upload-上传请看-antd-源代码&quot;&gt;&lt;a href=&quot;#最后综合版本-Upload-上传请看-antd-源代码&quot; class=&quot;headerlink&quot; title=&quot;最后综合版本,Upload 上传请看 antd
         
       
     
