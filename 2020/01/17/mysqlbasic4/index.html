@@ -458,7 +458,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-26
+                    2020-10-27
                 </div>
                 
 
@@ -612,7 +612,7 @@ CREATE TABLE Produce
   purchase_price  INTEGER     ,
   regist_date     Date        ,
   PRIMARY KEY (product_id)
-);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+)CHARACTER SET utf8 COLLATE utf8_general_ci;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h3><ul>
 <li>命名</li>
 </ul>
@@ -636,7 +636,12 @@ CREATE TABLE Produce
 <ul>
 <li>INTEGER 型</li>
 </ul>
-<p>用来指定存储整数的列的数据类型(数字型),不能存小数</p>
+<p>用来指定存储整数的列的数据类型(数字型),不能存小数 。N 表示字节位数 值的范围就是 -2 的(8N-1) 方到 2 的(8N-1)方-1</p>
+<p>要是只想要正整数可以变成无符号形,比如 unsigned 这样值的范围就是 0 到 2 的 8N 次方-1</p>
+<ul>
+<li>Float 型</li>
+</ul>
+<p>Float(m,n) m 表示总位数,n 表示小数点后面的精度 比如 float(4,2) -99.99 到 99.99</p>
 <ul>
 <li>CHAR 型</li>
 </ul>
@@ -1015,7 +1020,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >217.2k</span
+        >217.3k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
