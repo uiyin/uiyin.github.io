@@ -23,9 +23,8 @@
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
-
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/js/star.js"></script>
 <link rel="alternate" href="/atom.xml" title="JSOPY" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
@@ -299,7 +298,7 @@
 
 </header>
 
-    
+    <!-- 
     <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
@@ -340,8 +339,44 @@
 
     </div>
 </div>
-
-
+ -->
+<!--轮播-->
+<div class="bg-cover" style="background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col s12  m12  l12 " id="container">
+               
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+                <div class="title center-align">
+                    晓看天色暮看云
+                </div>
+                <div class="description center-align">
+                   从来没有真正的绝境,只有心灵的迷途
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  	$(function(){
+			var imgs=[
+			'images/lx_1.png',
+			'images/lx_2.png',
+			'images/lx_3.png',
+			'images/lx_4.png',
+			'images/lx_5.png',
+			'images/lx_6.png',
+			'images/lx_7.png',
+			];
+			meteorShowers.option(imgs);//配置流星雨传入流星图片数组
+			meteorShowers.start();//开始流星雨
+			//meteorShowers.stop();//停止流星雨
+			//meteorShowers.end();//结束流星雨
+		})
+</script>
+<!--轮播结束-->
 <main class="content">
 
     
@@ -437,12 +472,12 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/python/">
-                            <span class="chip bg-color">python</span>
-                        </a>
-                        
                         <a href="/tags/Flask/">
                             <span class="chip bg-color">Flask</span>
+                        </a>
+                        
+                        <a href="/tags/python/">
+                            <span class="chip bg-color">python</span>
                         </a>
                         
                     </div>
@@ -488,12 +523,12 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/python/">
-                            <span class="chip bg-color">python</span>
-                        </a>
-                        
                         <a href="/tags/Flask/">
                             <span class="chip bg-color">Flask</span>
+                        </a>
+                        
+                        <a href="/tags/python/">
+                            <span class="chip bg-color">python</span>
                         </a>
                         
                     </div>
