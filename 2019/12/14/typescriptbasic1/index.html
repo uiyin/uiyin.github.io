@@ -454,7 +454,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-04
+                    2020-11-06
                 </div>
                 
 
@@ -462,7 +462,7 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.5k
+                        1.6k
                     </div>
                     
 
@@ -486,7 +486,30 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="TypeScript-介绍和环境配置"><a href="#TypeScript-介绍和环境配置" class="headerlink" title="TypeScript 介绍和环境配置"></a>TypeScript 介绍和环境配置</h1><h2 id="TypeScript-介绍"><a href="#TypeScript-介绍" class="headerlink" title="TypeScript 介绍"></a>TypeScript 介绍</h2><p>TypeScript 是 Javascript 的一个超集。我们都知道 Javascript 是一门动态脚本语言,他不需要二进制代码运行。这个特性使得 Javascript 的所有调试必须都要在运行时候进行,在代码编译期间是无法提前知晓的。而 TypeScript 不同它可以在你编写代码的时候就对一些错误提示。它还能在你使用某个数据的时候,为你列出这个数据可以访问的属性和方法.多人协作的时候,一些接口的定义,方法的使用都可能因为个人的喜欢或者沟通不畅导致逻辑实现的差异。而如果引入了 TypeScript,则会对一些实现进行强校验.如果不按照接口实现,编译就没法通过,如果对代码质量要求高,可以将严格检查打开.</p>
-<h2 id="TypeScript-搭建开发环境"><a href="#TypeScript-搭建开发环境" class="headerlink" title="TypeScript 搭建开发环境"></a>TypeScript 搭建开发环境</h2><h3 id="1-安装-Node"><a href="#1-安装-Node" class="headerlink" title="(1) 安装 Node"></a>(1) 安装 Node</h3><h3 id="2-全局安装-tslint-模块"><a href="#2-全局安装-tslint-模块" class="headerlink" title="(2) 全局安装 tslint 模块"></a>(2) 全局安装 tslint 模块</h3><pre class="line-numbers language-javascript"><code class="language-javascript">npm install <span class="token operator">-</span>g tslint<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="TypeScript-搭建开发环境-简易版"><a href="#TypeScript-搭建开发环境-简易版" class="headerlink" title="TypeScript 搭建开发环境(简易版)"></a>TypeScript 搭建开发环境(简易版)</h2><h3 id="1-初始化"><a href="#1-初始化" class="headerlink" title="(1) 初始化"></a>(1) 初始化</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
+npm init <span class="token operator">-</span>y
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="2-初始化-typescript"><a href="#2-初始化-typescript" class="headerlink" title="(2) 初始化 typescript"></a>(2) 初始化 typescript</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
+tsc <span class="token operator">--</span>init
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="3-安装-typescript"><a href="#3-安装-typescript" class="headerlink" title="(3) 安装 typescript"></a>(3) 安装 typescript</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
+cnpm i typescript <span class="token operator">-</span>D
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="4-安装-ts-node"><a href="#4-安装-ts-node" class="headerlink" title="(4) 安装 ts-node"></a>(4) 安装 ts-node</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
+cnpm i ts<span class="token operator">-</span>node <span class="token operator">-</span>D
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="5-在-package-json-里面找到-script-并在里面写"><a href="#5-在-package-json-里面找到-script-并在里面写" class="headerlink" title="(5) 在 package.json 里面找到 script 并在里面写"></a>(5) 在 package.json 里面找到 script 并在里面写</h3><ul>
+<li>./src/app.ts 就是自己执行 ts 的路径,可以随意写入</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript">
+<span class="token string">"scripts"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"dev"</span><span class="token punctuation">:</span> <span class="token string">"ts-node ./src/app.ts"</span>
+  <span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="6-使用的时候"><a href="#6-使用的时候" class="headerlink" title="(6) 使用的时候"></a>(6) 使用的时候</h3><pre class="line-numbers language-javascript"><code class="language-javascript">
+npm run dev
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="TypeScript-搭建开发环境（复杂版）"><a href="#TypeScript-搭建开发环境（复杂版）" class="headerlink" title="TypeScript 搭建开发环境（复杂版）"></a>TypeScript 搭建开发环境（复杂版）</h2><h3 id="1-安装-Node"><a href="#1-安装-Node" class="headerlink" title="(1) 安装 Node"></a>(1) 安装 Node</h3><h3 id="2-全局安装-tslint-模块"><a href="#2-全局安装-tslint-模块" class="headerlink" title="(2) 全局安装 tslint 模块"></a>(2) 全局安装 tslint 模块</h3><pre class="line-numbers language-javascript"><code class="language-javascript">npm install <span class="token operator">-</span>g tslint<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="3-初始化项目"><a href="#3-初始化项目" class="headerlink" title="(3) 初始化项目"></a>(3) 初始化项目</h3><ul>
 <li><p>新建一个文件夹例如 TSweb</p>
 </li>
@@ -568,12 +591,12 @@ module<span class="token punctuation">.</span>exports <span class="token operato
   entry<span class="token punctuation">:</span> <span class="token string">'./src/index.ts'</span><span class="token punctuation">,</span>
   <span class="token comment" spellcheck="true">// 指定输出文件名</span>
   output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    filename<span class="token punctuation">:</span> <span class="token string">'main.js'</span>
+    filename<span class="token punctuation">:</span> <span class="token string">'main.js'</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   resolve<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 自动解析一下拓展，当我们要引入src/index.ts的时候，只需要写src/index即可</span>
     <span class="token comment" spellcheck="true">// 后面我们讲TS模块解析的时候，写src也可以</span>
-    extensions<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'.tsx'</span><span class="token punctuation">,</span> <span class="token string">'.ts'</span><span class="token punctuation">,</span> <span class="token string">'.js'</span><span class="token punctuation">]</span>
+    extensions<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'.tsx'</span><span class="token punctuation">,</span> <span class="token string">'.ts'</span><span class="token punctuation">,</span> <span class="token string">'.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 配置以.ts/.tsx结尾的文件都用ts-loader解析</span>
@@ -583,9 +606,9 @@ module<span class="token punctuation">.</span>exports <span class="token operato
       <span class="token punctuation">{</span>
         test<span class="token punctuation">:</span> <span class="token regex">/\.tsx?$/</span><span class="token punctuation">,</span>
         use<span class="token punctuation">:</span> <span class="token string">'ts-loader'</span><span class="token punctuation">,</span>
-        exclude<span class="token punctuation">:</span> <span class="token regex">/node_modules/</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">]</span>
+        exclude<span class="token punctuation">:</span> <span class="token regex">/node_modules/</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token comment" spellcheck="true">// 指定编译后是否生成source-map，这里判断如果是生产打包环境则不生产source-map</span>
   devtool<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">===</span> <span class="token string">'production'</span> <span class="token operator">?</span> <span class="token boolean">false</span> <span class="token punctuation">:</span> <span class="token string">'inline-source-map'</span><span class="token punctuation">,</span>
@@ -595,20 +618,20 @@ module<span class="token punctuation">.</span>exports <span class="token operato
     stats<span class="token punctuation">:</span> <span class="token string">'errors-only'</span><span class="token punctuation">,</span>
     compress<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
     host<span class="token punctuation">:</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>
-    port<span class="token punctuation">:</span> <span class="token number">8089</span>
+    port<span class="token punctuation">:</span> <span class="token number">8089</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token comment" spellcheck="true">// 这里用到两个插件，所以首先我们要记着安装</span>
   <span class="token comment" spellcheck="true">// npm install html-webpack-plugin clean-webpack-plugin -D</span>
   plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
     <span class="token comment" spellcheck="true">// 这里在编译之前先删除dist文件夹</span>
     <span class="token keyword">new</span> <span class="token class-name">CleanWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-      cleanOnceBeforeBuildPatterns<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'./dist'</span><span class="token punctuation">]</span>
+      cleanOnceBeforeBuildPatterns<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'./dist'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
     <span class="token comment" spellcheck="true">// 这里我们指定编译需要用模板，模板文件是./src/template/index.html，所以接下来我们要创建一个index.html文件</span>
     <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-      template<span class="token punctuation">:</span> <span class="token string">'./src/template/index.html'</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  <span class="token punctuation">]</span>
+      template<span class="token punctuation">:</span> <span class="token string">'./src/template/index.html'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>按照上面的步骤代码中的步骤一步步走，最后一步创建 index.html 时候，代码里面写</li>
@@ -1016,7 +1039,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >217.4k</span
+        >217.5k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
