@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2020-10-25T12:01:49.670Z</updated>
+  <updated>2021-01-02T13:33:38.157Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue 中导出表格合并单元格</title>
+    <link href="https://jsopy.gitee.io/2021/01/01/vuecha12/"/>
+    <id>https://jsopy.gitee.io/2021/01/01/vuecha12/</id>
+    <published>2021-01-01T13:26:47.000Z</published>
+    <updated>2021-01-02T13:33:38.157Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;VUE-中导出表格合并单元格&quot;&gt;&lt;a href=&quot;#VUE-中导出表格合并单元格&quot; class=&quot;headerlink&quot; title=&quot;VUE 中导出表格合并单元格&quot;&gt;&lt;/a&gt;VUE 中导出表格合并单元格&lt;/h2&gt;&lt;h3 id=&quot;一-安装依赖包&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>vue学记笔记(十八) Vue3.0之Teleport挂载节点</title>
@@ -541,38 +570,6 @@
 &lt;li&gt;代码如下&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(三十) React-表格列头合并</title>
-    <link href="https://jsopy.gitee.io/2020/09/04/reactantd30/"/>
-    <id>https://jsopy.gitee.io/2020/09/04/reactantd30/</id>
-    <published>2020-09-04T13:26:47.000Z</published>
-    <updated>2020-09-11T12:09:52.497Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;表格列头合并&quot;&gt;&lt;a href=&quot;#表格列头合并&quot; class=&quot;headerlink&quot; title=&quot;表格列头合并&quot;&gt;&lt;/a&gt;表格列头合并&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;children&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;line-numbers
         
       
     
