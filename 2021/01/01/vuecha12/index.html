@@ -9,8 +9,7 @@
 cnpm i lay-excel
 
 (二) 在组件里面引入import LAY_EXCEL from &#39;lay-excel&#39;
-(三)获取到数据后插入表头
-这里的 tabledata 就是表格中">
+(三)获取到数据后插入表头{% asset_img 1.jpg [">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -494,14 +493,16 @@ cnpm i lay-excel
 cnpm i lay<span class="token operator">-</span>excel
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="二-在组件里面引入"><a href="#二-在组件里面引入" class="headerlink" title="(二) 在组件里面引入"></a>(二) 在组件里面引入</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> LAY_EXCEL <span class="token keyword">from</span> <span class="token string">'lay-excel'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="三-获取到数据后插入表头"><a href="#三-获取到数据后插入表头" class="headerlink" title="(三)获取到数据后插入表头"></a>(三)获取到数据后插入表头</h3><ul>
+<h3 id="三-获取到数据后插入表头"><a href="#三-获取到数据后插入表头" class="headerlink" title="(三)获取到数据后插入表头"></a>(三)获取到数据后插入表头</h3>{% asset_img 1.jpg [如图] %}
+
+<ul>
 <li><p>这里的 tabledata 就是表格中的数据</p>
 </li>
-<li><p>插入的头部要依据自定义表头的规则来定<br>比如我这里表格的第一列就日期和配送信息<br>表格的第二列就姓名，地址如下图所示</p>
+<li><p>插入的头部要依据自定义表头的规则来定<br>比如我这里表格的第一列就日期和配送信息<br>表格的第二列就姓名，地址如图所示</p>
+</li>
+<li><p>代码如下</p>
 </li>
 </ul>
-{% asset_img 122.jpg [第一张] %}
-
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> result <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>_this<span class="token punctuation">.</span>tableData<span class="token punctuation">)</span><span class="token punctuation">)</span>
 result<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   date<span class="token punctuation">:</span> <span class="token string">'日期'</span><span class="token punctuation">,</span>
