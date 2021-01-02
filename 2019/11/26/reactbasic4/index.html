@@ -512,7 +512,7 @@
 ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这段代码最后的渲染结果就是 Sara</p>
 <ol>
-<li><p>调用 ReactDOM.render()函数传入<Welcome name="Sara">作为参数</p>
+<li><p>调用 ReactDOM.render()函数传入<Welcome name="Sara">作为参数</Welcome></p>
 </li>
 <li><p>React 调用 Welcome 组件,并将{name:’Sara’}作为 props 传入</p>
 </li>
@@ -522,7 +522,7 @@ ReactDOM<span class="token punctuation">.</span><span class="token function">ren
 </li>
 </ol>
 <blockquote>
-<p>特别注意: 组件名称必须以大写字母开头,React 会将以小写字母开头的组件视为原生 DOM 标签,例如<code>&lt;div/&gt;</code>代表 HTML 的 div 标签,而<Welcome/>则代表了一个组件,并且需要在作用域内使用 Welcome</p>
+<p>特别注意: 组件名称必须以大写字母开头,React 会将以小写字母开头的组件视为原生 DOM 标签,例如<code>&lt;div/&gt;</code>代表 HTML 的 div 标签,而<Welcome>则代表了一个组件,并且需要在作用域内使用 Welcome</Welcome></p>
 </blockquote>
 <h2 id="组合组件"><a href="#组合组件" class="headerlink" title="组合组件"></a>组合组件</h2><ul>
 <li><p>组件可以在其输出中引用其他组件。这就可以让我们用同一组件来抽象出任何层次的细节。按钮，表单，对话框。甚至整个屏幕的内容.在 React 应用程序中,这些都可以当作组件</p>

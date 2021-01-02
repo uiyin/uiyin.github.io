@@ -472,7 +472,7 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        5 分
+                        6 分
                     </div>
                     
                 
@@ -568,7 +568,7 @@ Hello<span class="token punctuation">,</span> <span class="token punctuation">{<
 </tr>
 </tbody></table>
 <blockquote>
-<p>特别说明的是 safe 默认情况下 出于安全考虑 Jinja2 会转义所有的变量,例如一个变量值是’<h1>hello</h1>‘ 它会把小于 大于号都转变类似 &amp;lt 之类的,很多情况下需要显示变量中存储的 HTML 代码,这个时候可使用 safe 过滤器</p>
+<p>特别说明的是 safe 默认情况下 出于安全考虑 Jinja2 会转义所有的变量,例如一个变量值是’</p><h1>hello</h1>‘ 它会把小于 大于号都转变类似 &amp;lt 之类的,很多情况下需要显示变量中存储的 HTML 代码,这个时候可使用 safe 过滤器<p></p>
 </blockquote>
 <h3 id="控制结构"><a href="#控制结构" class="headerlink" title="控制结构"></a>控制结构</h3><ul>
 <li>在模板中使用条件控制语句</li>
@@ -610,7 +610,7 @@ Hello<span class="token punctuation">,</span> <span class="token punctuation">{<
      <span class="token punctuation">{</span><span class="token operator">%</span> block body <span class="token operator">%</span><span class="token punctuation">}</span>
      <span class="token punctuation">{</span><span class="token operator">%</span> endblock <span class="token operator">%</span><span class="token punctuation">}</span>
   <span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>block 标签我们定义了名为 head ,title,body 的块</p>
 <pre class="line-numbers language-python"><code class="language-python">
 <span class="token punctuation">{</span><span class="token operator">%</span> extends <span class="token string">'base.html'</span> <span class="token operator">%</span><span class="token punctuation">}</span>
@@ -652,7 +652,7 @@ url_for<span class="token punctuation">(</span><span class="token string">'stati
 </ul>
 <pre class="line-numbers language-python"><code class="language-python">
 <span class="token punctuation">{</span><span class="token operator">%</span> block head <span class="token operator">%</span><span class="token punctuation">}</span>
-<span class="token operator">&lt;</span>link rel<span class="token operator">=</span><span class="token string">'shortcut icon'</span> href<span class="token operator">=</span><span class="token string">"{{url_for('static',filename='favicon.ico')}}"</span> type<span class="token operator">=</span><span class="token string">"image/x-icon"</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>link rel<span class="token operator">=</span><span class="token string">"shortcut icon"</span> href<span class="token operator">=</span><span class="token string">"{{url_for('static',filename='favicon.ico')}}"</span> type<span class="token operator">=</span><span class="token string">"image/x-icon"</span><span class="token operator">></span>
 <span class="token punctuation">{</span><span class="token operator">%</span> endblock <span class="token operator">%</span><span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="使用-Flask-Moment-本地化时间和日期-了解就好"><a href="#使用-Flask-Moment-本地化时间和日期-了解就好" class="headerlink" title="使用 Flask-Moment 本地化时间和日期(了解就好)"></a>使用 Flask-Moment 本地化时间和日期(了解就好)</h3><p>要想在服务器上只使用 UTC 时间。有一个使用 JS 开发的优秀客户端开源代码库,名为 moment.js 它可以在浏览器中渲染日期和时间。Flask-Moment 是一个 Flask 程序扩展,能把 moment.js 集成到模板中 Flask-Moment 可以使用 pip 安装</p>
