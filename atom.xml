@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2021-01-03T01:16:32.935Z</updated>
+  <updated>2021-01-10T08:39:17.073Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>REM 布局(响应式布局)</title>
+    <link href="https://jsopy.gitee.io/2021/01/10/rembuju/"/>
+    <id>https://jsopy.gitee.io/2021/01/10/rembuju/</id>
+    <published>2021-01-10T13:26:47.000Z</published>
+    <updated>2021-01-10T08:39:17.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第一步下载文件&quot;&gt;&lt;a href=&quot;#第一步下载文件&quot; class=&quot;headerlink&quot; title=&quot;第一步下载文件&quot;&gt;&lt;/a&gt;第一步下载文件&lt;/h2&gt;&lt;p&gt;名字 叫做 lib-flexible&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="REM" scheme="https://jsopy.gitee.io/categories/REM/"/>
+    
+    
+      <category term="REM" scheme="https://jsopy.gitee.io/tags/REM/"/>
+    
+  </entry>
   
   <entry>
     <title>python 切换版本</title>
@@ -549,35 +577,6 @@
     
     
       <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React 基础笔记(React在TS中父子传值写一个todolist)(三十五)</title>
-    <link href="https://jsopy.gitee.io/2020/09/06/reactbasic35/"/>
-    <id>https://jsopy.gitee.io/2020/09/06/reactbasic35/</id>
-    <published>2020-09-06T12:26:47.000Z</published>
-    <updated>2020-09-11T12:25:45.017Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;React-TS-中-写一个-Todolist&quot;&gt;&lt;a href=&quot;#React-TS-中-写一个-Todolist&quot; class=&quot;headerlink&quot; title=&quot;React TS 中 写一个 Todolist&quot;&gt;&lt;/a&gt;React TS 中 写一个
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
     
   </entry>
   
