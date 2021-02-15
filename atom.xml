@@ -45,6 +45,35 @@
   </entry>
   
   <entry>
+    <title>vue学记笔记(十九) Vue3.0之路由传参和vuex使用</title>
+    <link href="https://jsopy.gitee.io/2021/01/03/vue19/"/>
+    <id>https://jsopy.gitee.io/2021/01/03/vue19/</id>
+    <published>2021-01-03T01:54:47.000Z</published>
+    <updated>2021-02-15T10:32:15.340Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Vue-之路由传参&quot;&gt;&lt;a href=&quot;#Vue-之路由传参&quot; class=&quot;headerlink&quot; title=&quot;Vue 之路由传参&quot;&gt;&lt;/a&gt;Vue 之路由传参&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python 切换版本</title>
     <link href="https://jsopy.gitee.io/2021/01/02/newpython1/"/>
     <id>https://jsopy.gitee.io/2021/01/02/newpython1/</id>
@@ -363,11 +392,11 @@
   </entry>
   
   <entry>
-    <title>使用通配符查询数据(LIKE)</title>
-    <link href="https://jsopy.gitee.io/2020/09/14/mysqlbi7/"/>
-    <id>https://jsopy.gitee.io/2020/09/14/mysqlbi7/</id>
-    <published>2020-09-14T13:26:47.000Z</published>
-    <updated>2020-09-23T12:16:21.611Z</updated>
+    <title>React 基础笔记(React在TS中父子传值写一个todolist)(三十五)</title>
+    <link href="https://jsopy.gitee.io/2020/09/06/reactbasic35/"/>
+    <id>https://jsopy.gitee.io/2020/09/06/reactbasic35/</id>
+    <published>2020-09-06T12:26:47.000Z</published>
+    <updated>2020-09-11T12:25:45.017Z</updated>
     
     <summary type="html">
     
@@ -375,27 +404,28 @@
       
         
         
-          &lt;h2 id=&quot;使用通配符进行过滤&quot;&gt;&lt;a href=&quot;#使用通配符进行过滤&quot; class=&quot;headerlink&quot; title=&quot;使用通配符进行过滤&quot;&gt;&lt;/a&gt;使用通配符进行过滤&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;本章使用 LIKE
+          &lt;h2 id=&quot;React-TS-中-写一个-Todolist&quot;&gt;&lt;a href=&quot;#React-TS-中-写一个-Todolist&quot; class=&quot;headerlink&quot; title=&quot;React TS 中 写一个 Todolist&quot;&gt;&lt;/a&gt;React TS 中 写一个
         
       
     
     </summary>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
     
   </entry>
   
   <entry>
-    <title>组合WHERE子句</title>
-    <link href="https://jsopy.gitee.io/2020/09/13/mysqlbi6/"/>
-    <id>https://jsopy.gitee.io/2020/09/13/mysqlbi6/</id>
-    <published>2020-09-13T13:26:47.000Z</published>
-    <updated>2020-09-23T12:15:16.764Z</updated>
+    <title>ReactAntd(三十一) React-高级表格总结</title>
+    <link href="https://jsopy.gitee.io/2020/09/05/reactantd31/"/>
+    <id>https://jsopy.gitee.io/2020/09/05/reactantd31/</id>
+    <published>2020-09-05T13:26:47.000Z</published>
+    <updated>2020-09-11T12:11:01.378Z</updated>
     
     <summary type="html">
     
@@ -403,26 +433,31 @@
       
         
         
-          &lt;h2 id=&quot;Mysql-数据过滤&quot;&gt;&lt;a href=&quot;#Mysql-数据过滤&quot; class=&quot;headerlink&quot; title=&quot;Mysql-数据过滤&quot;&gt;&lt;/a&gt;Mysql-数据过滤&lt;/h2&gt;&lt;p&gt;本章说如何组合 WHERE
+          &lt;h2 id=&quot;把每个列的值合并值&quot;&gt;&lt;a href=&quot;#把每个列的值合并值&quot; class=&quot;headerlink&quot; title=&quot;把每个列的值合并值&quot;&gt;&lt;/a&gt;把每个列的值合并值&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;代码如下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre
         
       
     
     </summary>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
     
   </entry>
   
   <entry>
-    <title>WHERE 过滤</title>
-    <link href="https://jsopy.gitee.io/2020/09/12/mysqlbi5/"/>
-    <id>https://jsopy.gitee.io/2020/09/12/mysqlbi5/</id>
-    <published>2020-09-12T13:26:47.000Z</published>
-    <updated>2020-09-23T12:14:17.885Z</updated>
+    <title>ReactAntd(三十) React-表格列头合并</title>
+    <link href="https://jsopy.gitee.io/2020/09/04/reactantd30/"/>
+    <id>https://jsopy.gitee.io/2020/09/04/reactantd30/</id>
+    <published>2020-09-04T13:26:47.000Z</published>
+    <updated>2020-09-11T12:09:52.497Z</updated>
     
     <summary type="html">
     
@@ -430,26 +465,31 @@
       
         
         
-          &lt;h2 id=&quot;Mysql-过滤数据&quot;&gt;&lt;a href=&quot;#Mysql-过滤数据&quot; class=&quot;headerlink&quot; title=&quot;Mysql 过滤数据&quot;&gt;&lt;/a&gt;Mysql 过滤数据&lt;/h2&gt;&lt;h3 id=&quot;使用-WHERE-子句&quot;&gt;&lt;a
+          &lt;h2 id=&quot;表格列头合并&quot;&gt;&lt;a href=&quot;#表格列头合并&quot; class=&quot;headerlink&quot; title=&quot;表格列头合并&quot;&gt;&lt;/a&gt;表格列头合并&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;children&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;line-numbers
         
       
     
     </summary>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
     
   </entry>
   
   <entry>
-    <title>ORDERBY 第一个子句</title>
-    <link href="https://jsopy.gitee.io/2020/09/11/mysqlbi4/"/>
-    <id>https://jsopy.gitee.io/2020/09/11/mysqlbi4/</id>
-    <published>2020-09-11T13:26:47.000Z</published>
-    <updated>2020-09-23T12:13:08.049Z</updated>
+    <title>ReactAntd(二十九) React-表格滚动以及固定指定的列</title>
+    <link href="https://jsopy.gitee.io/2020/09/03/reactantd29/"/>
+    <id>https://jsopy.gitee.io/2020/09/03/reactantd29/</id>
+    <published>2020-09-03T13:26:47.000Z</published>
+    <updated>2020-09-11T12:01:44.918Z</updated>
     
     <summary type="html">
     
@@ -457,26 +497,29 @@
       
         
         
-          &lt;h2 id=&quot;Mysql-排序检索-第一个子句&quot;&gt;&lt;a href=&quot;#Mysql-排序检索-第一个子句&quot; class=&quot;headerlink&quot; title=&quot;Mysql 排序检索(第一个子句)&quot;&gt;&lt;/a&gt;Mysql 排序检索(第一个子句)&lt;/h2&gt;&lt;h2 id=&quot;子句&quot;&gt;&lt;a
+          &lt;h1 id=&quot;表格滚动，固定指定的列&quot;&gt;&lt;a href=&quot;#表格滚动，固定指定的列&quot; class=&quot;headerlink&quot; title=&quot;表格滚动，固定指定的列&quot;&gt;&lt;/a&gt;表格滚动，固定指定的列&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;fixed
         
       
     
     </summary>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
     
   </entry>
   
   <entry>
-    <title>SELECT 检索单个列</title>
-    <link href="https://jsopy.gitee.io/2020/09/10/mysqlbi3/"/>
-    <id>https://jsopy.gitee.io/2020/09/10/mysqlbi3/</id>
-    <published>2020-09-10T13:26:47.000Z</published>
-    <updated>2020-09-23T12:11:55.494Z</updated>
+    <title>ReactAntd(二十八) React-高级表格带备注</title>
+    <link href="https://jsopy.gitee.io/2020/09/02/reactantd28/"/>
+    <id>https://jsopy.gitee.io/2020/09/02/reactantd28/</id>
+    <published>2020-09-02T13:26:47.000Z</published>
+    <updated>2020-09-11T12:00:11.894Z</updated>
     
     <summary type="html">
     
@@ -484,26 +527,28 @@
       
         
         
-          &lt;h2 id=&quot;数据检索&quot;&gt;&lt;a href=&quot;#数据检索&quot; class=&quot;headerlink&quot; title=&quot;数据检索&quot;&gt;&lt;/a&gt;数据检索&lt;/h2&gt;&lt;h3 id=&quot;Select-语句&quot;&gt;&lt;a href=&quot;#Select-语句&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;Antd-高级表格带备注&quot;&gt;&lt;a href=&quot;#Antd-高级表格带备注&quot; class=&quot;headerlink&quot; title=&quot;Antd-高级表格带备注&quot;&gt;&lt;/a&gt;Antd-高级表格带备注&lt;/h2&gt;&lt;pre class=&quot;line-numbers
         
       
     
     </summary>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
     
   </entry>
   
   <entry>
-    <title>数据库的使用和链接</title>
-    <link href="https://jsopy.gitee.io/2020/09/09/mysqlbi2/"/>
-    <id>https://jsopy.gitee.io/2020/09/09/mysqlbi2/</id>
-    <published>2020-09-09T13:26:47.000Z</published>
-    <updated>2020-09-23T12:11:00.240Z</updated>
+    <title>ReactAntd(二十七) React-基础表格使用中文里面有操作按钮</title>
+    <link href="https://jsopy.gitee.io/2020/09/01/reactantd27/"/>
+    <id>https://jsopy.gitee.io/2020/09/01/reactantd27/</id>
+    <published>2020-09-01T13:26:47.000Z</published>
+    <updated>2020-09-11T11:58:14.621Z</updated>
     
     <summary type="html">
     
@@ -511,26 +556,31 @@
       
         
         
-          &lt;h2 id=&quot;Mysql-链接-以及使用数据库&quot;&gt;&lt;a href=&quot;#Mysql-链接-以及使用数据库&quot; class=&quot;headerlink&quot; title=&quot;Mysql 链接 以及使用数据库&quot;&gt;&lt;/a&gt;Mysql 链接
+          &lt;h2 id=&quot;带操作按钮的基础中文表格&quot;&gt;&lt;a href=&quot;#带操作按钮的基础中文表格&quot; class=&quot;headerlink&quot; title=&quot;带操作按钮的基础中文表格&quot;&gt;&lt;/a&gt;带操作按钮的基础中文表格&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre
         
       
     
     </summary>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
     
   </entry>
   
   <entry>
-    <title>数据库的概念</title>
-    <link href="https://jsopy.gitee.io/2020/09/08/mysqlbi1/"/>
-    <id>https://jsopy.gitee.io/2020/09/08/mysqlbi1/</id>
-    <published>2020-09-08T13:26:47.000Z</published>
-    <updated>2020-09-23T12:10:10.923Z</updated>
+    <title>ReactAntd(二十六) React-基础表格使用中文</title>
+    <link href="https://jsopy.gitee.io/2020/08/31/reactantd26/"/>
+    <id>https://jsopy.gitee.io/2020/08/31/reactantd26/</id>
+    <published>2020-08-31T13:26:47.000Z</published>
+    <updated>2020-09-11T11:56:53.294Z</updated>
     
     <summary type="html">
     
@@ -538,45 +588,19 @@
       
         
         
-          &lt;h2 id=&quot;什么是数据库&quot;&gt;&lt;a href=&quot;#什么是数据库&quot; class=&quot;headerlink&quot; title=&quot;什么是数据库&quot;&gt;&lt;/a&gt;什么是数据库&lt;/h2&gt;&lt;p&gt;数据库是一个以某种有组织的方式存储的数据集合.简单来说它就是一个文件柜.存放数据的物理位置&lt;/p&gt;
-&lt;h2
+          &lt;h2 id=&quot;使用表格里面基础信息变成中文&quot;&gt;&lt;a href=&quot;#使用表格里面基础信息变成中文&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
+      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
     
     
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Mysql必知必会</title>
-    <link href="https://jsopy.gitee.io/2020/09/07/mysqlbiall/"/>
-    <id>https://jsopy.gitee.io/2020/09/07/mysqlbiall/</id>
-    <published>2020-09-07T12:26:47.000Z</published>
-    <updated>2020-09-23T12:57:42.477Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;目录分类&quot;&gt;&lt;a href=&quot;#目录分类&quot; class=&quot;headerlink&quot; title=&quot;目录分类&quot;&gt;&lt;/a&gt;目录分类&lt;/h2&gt;&lt;h3 id=&quot;数据库的概念-一&quot;&gt;&lt;a href=&quot;#数据库的概念-一&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/categories/Mysql/"/>
-    
-    
-      <category term="Mysql" scheme="https://jsopy.gitee.io/tags/Mysql/"/>
+      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
     
   </entry>
   

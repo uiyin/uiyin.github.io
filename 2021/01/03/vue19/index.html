@@ -4,17 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TypeScript(五) Typescript 深入学习枚举, Javascript Python Js">
-    <meta name="description" content="Typescript 深入学习枚举数字枚举
-我们通过数字枚举
-
-enum Status {
-  Uploading,
-  Success,
-  Failed
-}
-console.log(Status.Uploading); // 0
-con">
+    <meta name="keywords" content="vue学记笔记(十九) Vue3.0之路由传参和vuex使用, Javascript Python Js">
+    <meta name="description" content="Vue 之路由传参在 vue3.0 里面使用路由必须要引入 useRouter 和 useRouteimport { useRoute, useRouter } from &#39;vue-router&#39;
+传递参数和获取参数秉承谁长谁先死,Rout">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +14,7 @@ con">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>TypeScript(五) Typescript 深入学习枚举 | JSOPY</title>
+    <title>vue学记笔记(十九) Vue3.0之路由传参和vuex使用 | JSOPY</title>
     <link rel="icon" type="image/png" href="/favicon2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,13 +303,13 @@ con">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        TypeScript(五) Typescript 深入学习枚举
+                        vue学记笔记(十九) Vue3.0之路由传参和vuex使用
                     </div>
                 </div>
             </div>
@@ -433,8 +425,8 @@ con">
                                 <span class="chip bg-color">Javascript</span>
                             </a>
                         
-                            <a href="/tags/TypeScript/">
-                                <span class="chip bg-color">TypeScript</span>
+                            <a href="/tags/Vue/">
+                                <span class="chip bg-color">Vue</span>
                             </a>
                         
                     </div>
@@ -445,8 +437,8 @@ con">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/TypeScript/" class="post-category">
-                                TypeScript
+                            <a href="/categories/Vue/" class="post-category">
+                                Vue
                             </a>
                         
                     </div>
@@ -457,13 +449,13 @@ con">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-18
+                    2021-01-03
                 </div>
                 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-22
+                    2021-02-15
                 </div>
                 
 
@@ -471,14 +463,14 @@ con">
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        683
+                        263
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -494,152 +486,78 @@ con">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Typescript-深入学习枚举"><a href="#Typescript-深入学习枚举" class="headerlink" title="Typescript 深入学习枚举"></a>Typescript 深入学习枚举</h1><h2 id="数字枚举"><a href="#数字枚举" class="headerlink" title="数字枚举"></a>数字枚举</h2><ul>
-<li>我们通过数字枚举</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Status <span class="token punctuation">{</span>
-  Uploading<span class="token punctuation">,</span>
-  Success<span class="token punctuation">,</span>
-  Failed
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Status<span class="token punctuation">.</span>Uploading<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 0</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Status<span class="token punctuation">[</span><span class="token string">"Success"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 1</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Status<span class="token punctuation">.</span>Failed<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>一个枚举值包含三个字段,这个采用的默认序号</p>
-<ul>
-<li>修改默认编号</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Color<span class="token punctuation">{</span>
-  Red <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span>
-  Blue<span class="token punctuation">,</span>
-  Yellow
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Color<span class="token punctuation">.</span>Red<span class="token operator">+</span><span class="token string">"||"</span><span class="token operator">+</span>Color<span class="token punctuation">.</span>Blue<span class="token operator">+</span><span class="token string">"||"</span><span class="token operator">+</span>Color<span class="token punctuation">.</span>Yellow<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">//结果就是2||3||4</span>
-<span class="token comment" spellcheck="true">//指定任意字段的索引值</span>
-<span class="token keyword">enum</span> Status<span class="token punctuation">{</span>
-  Success <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">,</span>
-  NotFound <span class="token operator">=</span> <span class="token number">404</span><span class="token punctuation">,</span>
-  Error <span class="token operator">=</span> <span class="token number">500</span>
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Status<span class="token punctuation">.</span>Success<span class="token punctuation">,</span>Status<span class="token punctuation">.</span>NotFound<span class="token punctuation">,</span>Status<span class="token punctuation">.</span>Error<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">//200 404 500</span>
-<span class="token comment" spellcheck="true">//指定部分字段,其他使用默认递增索引</span>
-<span class="token keyword">enum</span> Status2<span class="token punctuation">{</span>
- Ok<span class="token operator">=</span><span class="token number">200</span><span class="token punctuation">,</span>
- Created<span class="token punctuation">,</span>
- Accepted<span class="token punctuation">,</span>
- BadRequest<span class="token operator">=</span><span class="token number">400</span><span class="token punctuation">,</span>
- Unauthorized
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Status2<span class="token punctuation">.</span>Created<span class="token punctuation">,</span>Status2<span class="token punctuation">.</span>Accepted<span class="token punctuation">,</span>Status2<span class="token punctuation">.</span>Unauthorized<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// 201 202 401</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>数字枚举还可以使用计算值或者常量来代替，但是设置了以后必须要在后面设置初始值</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> getValue <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token number">0</span> <span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">enum</span> ErrorIndex<span class="token punctuation">{</span>
-  a <span class="token operator">=</span> <span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-  b <span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//error枚举成员必须具有初始化值</span>
-  c
-<span class="token punctuation">}</span>
-<span class="token keyword">enum</span> RightIndex<span class="token punctuation">{</span>
-  a <span class="token operator">=</span> <span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-  b <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//error枚举成员必须具有初始化值</span>
-  c
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>反向映射 反向反射只支持数字枚举,字符枚举是不支持的</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Status<span class="token punctuation">{</span>
-  Success <span class="token operator">=</span><span class="token number">200</span><span class="token punctuation">,</span>
-  NotFound <span class="token operator">=</span> <span class="token number">404</span><span class="token punctuation">,</span>
-  Error <span class="token operator">=</span> <span class="token number">500</span>
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Status<span class="token punctuation">[</span><span class="token string">"Success"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 200</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Status<span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Success</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Status<span class="token punctuation">[</span>Status<span class="token punctuation">[</span><span class="token string">"Success"</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Success</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="字符串枚举"><a href="#字符串枚举" class="headerlink" title="字符串枚举"></a>字符串枚举</h2><blockquote>
-<p>字符串枚举值要求每个字段的值都必须是字符串字面量,或者是该枚举值中另一个字符串枚举成员</p>
-</blockquote>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Message<span class="token punctuation">{</span>
-  Error <span class="token operator">=</span> <span class="token string">"Sorry,error"</span><span class="token punctuation">,</span>
-  Success <span class="token operator">=</span> Error<span class="token punctuation">,</span>
-  ClientError <span class="token operator">=</span> Error
-<span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Message<span class="token punctuation">.</span>Error<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Sorry ,error</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Message<span class="token punctuation">.</span>Success<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Sorry,error</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="异构枚举-不推荐使用"><a href="#异构枚举-不推荐使用" class="headerlink" title="异构枚举(不推荐使用)"></a>异构枚举(不推荐使用)</h2><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Result<span class="token punctuation">{</span>
-  Faild <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
-  Success <span class="token operator">=</span> <span class="token string">"Success"</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="枚举成员类型和联合枚举类型"><a href="#枚举成员类型和联合枚举类型" class="headerlink" title="枚举成员类型和联合枚举类型"></a>枚举成员类型和联合枚举类型</h2><blockquote>
-<p>如果枚举值所有成员的值都是字面量类型的值,那么这个枚举的每个成员和枚举值本身都可以作为类型使用</p>
-</blockquote>
-<ul>
-<li>我们可以把符合条件的枚举值的成员当作类型使用</li>
-</ul>
-<h3 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Animal <span class="token punctuation">{</span>
-  Dog<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>
-  Cat<span class="token operator">=</span><span class="token number">2</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">interface</span> <span class="token class-name">Dog</span><span class="token punctuation">{</span>
-  type<span class="token punctuation">:</span>Animal<span class="token punctuation">.</span>Dog
-<span class="token punctuation">}</span>
-<span class="token keyword">interface</span> <span class="token class-name">Cat</span><span class="token punctuation">{</span>
-  type<span class="token punctuation">:</span>Animal<span class="token punctuation">.</span>Cat
-<span class="token punctuation">}</span>
-<span class="token keyword">let</span> cat1<span class="token punctuation">:</span>Cat <span class="token operator">=</span> <span class="token punctuation">{</span>
-  type<span class="token punctuation">:</span>Animal<span class="token punctuation">.</span>Dog <span class="token comment" spellcheck="true">//error 报错</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">let</span> dog1<span class="token punctuation">:</span>Dog <span class="token operator">=</span> <span class="token punctuation">{</span>
-  type<span class="token punctuation">:</span>Animal<span class="token punctuation">.</span>Dog <span class="token comment" spellcheck="true">//能通过</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="联合枚举类型"><a href="#联合枚举类型" class="headerlink" title="联合枚举类型"></a>联合枚举类型</h3><ul>
-<li>当我们的枚举值符合条件时,这个枚举值就可以看作一个包含所有成员的联合类型</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Status<span class="token punctuation">{</span>
-  off<span class="token punctuation">,</span>
-  on
-<span class="token punctuation">}</span>
-<span class="token keyword">interface</span> <span class="token class-name">Light</span><span class="token punctuation">{</span>
-  status<span class="token punctuation">:</span>Status<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">enum</span> Animal<span class="token punctuation">{</span>
-  Dog<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>
-  Cat<span class="token operator">=</span><span class="token number">2</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> light1<span class="token punctuation">:</span>Light <span class="token operator">=</span> <span class="token punctuation">{</span>
-  status<span class="token punctuation">:</span>Animal<span class="token punctuation">.</span>Dog  <span class="token comment" spellcheck="true">//报错</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> light2<span class="token punctuation">:</span>Light <span class="token operator">=</span> <span class="token punctuation">{</span>
-  status<span class="token punctuation">:</span>Status<span class="token punctuation">.</span>off
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> light3<span class="token punctuation">:</span>Light <span class="token operator">=</span> <span class="token punctuation">{</span>
-  status<span class="token punctuation">:</span>Status<span class="token punctuation">.</span>on
+                <h2 id="Vue-之路由传参"><a href="#Vue-之路由传参" class="headerlink" title="Vue 之路由传参"></a>Vue 之路由传参</h2><h3 id="在-vue3-0-里面使用路由必须要引入-useRouter-和-useRoute"><a href="#在-vue3-0-里面使用路由必须要引入-useRouter-和-useRoute" class="headerlink" title="在 vue3.0 里面使用路由必须要引入 useRouter 和 useRoute"></a>在 vue3.0 里面使用路由必须要引入 useRouter 和 useRoute</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> useRoute<span class="token punctuation">,</span> useRouter <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-router'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="传递参数和获取参数"><a href="#传递参数和获取参数" class="headerlink" title="传递参数和获取参数"></a>传递参数和获取参数</h3><h4 id="秉承谁长谁先死-Router-长-所以他负责跳转-Route-负责接收数据"><a href="#秉承谁长谁先死-Router-长-所以他负责跳转-Route-负责接收数据" class="headerlink" title="秉承谁长谁先死,Router 长 所以他负责跳转,Route 负责接收数据"></a>秉承谁长谁先死,Router 长 所以他负责跳转,Route 负责接收数据</h4><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">useHooks</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> Router <span class="token operator">=</span> <span class="token function">useRouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//跳转</span>
+  <span class="token keyword">const</span> Route <span class="token operator">=</span> <span class="token function">useRoute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//获取到值</span>
+  <span class="token keyword">const</span> Routeid <span class="token operator">=</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Route<span class="token punctuation">.</span>query<span class="token punctuation">.</span>id
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> gotourl <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'执行了'</span><span class="token punctuation">)</span>
+    Router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      path<span class="token punctuation">:</span> <span class="token string">'/about'</span><span class="token punctuation">,</span>
+      query<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        id<span class="token punctuation">:</span> <span class="token string">'6666'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    gotourl<span class="token punctuation">,</span>
+    Routeid<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>上面例子定义接口 Light 的 status 字段的类型为枚举值,那么此时 status 的属性值必须为 Status.Off 和 Status.On 中的一个。相当于 status:Status.Off|| Status.On</p>
-</blockquote>
-<h2 id="const-enum"><a href="#const-enum" class="headerlink" title="const enum"></a>const enum</h2><p>有的时候我们不需要编译后对象，只需要取出值就行</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">enum</span> Status <span class="token punctuation">{</span>
-  Off<span class="token punctuation">,</span>
-  On
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> <span class="token keyword">enum</span> Animal <span class="token punctuation">{</span>
-  Dog<span class="token punctuation">,</span>
-  Cat
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> status <span class="token operator">=</span> Status<span class="token punctuation">.</span>On<span class="token punctuation">;</span>
-<span class="token keyword">const</span> animal <span class="token operator">=</span> Animal<span class="token punctuation">.</span>Dog<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li><p>数字类型的枚举,能反转</p>
-</li>
-<li><p>字符类型的枚举不能反转，只能是字面量或者内部的属性值</p>
-</li>
-</ul>
+<h2 id="Vue3-0-之-vuex"><a href="#Vue3-0-之-vuex" class="headerlink" title="Vue3.0 之 vuex"></a>Vue3.0 之 vuex</h2><h3 id="Vue3-0-使用-vuex-必须用-useStore-发射数据用-commit"><a href="#Vue3-0-使用-vuex-必须用-useStore-发射数据用-commit" class="headerlink" title="Vue3.0 使用 vuex 必须用 useStore,发射数据用 commit"></a>Vue3.0 使用 vuex 必须用 useStore,发射数据用 commit</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>content
+store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'changeContent'</span><span class="token punctuation">,</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>InputContent<span class="token punctuation">"</span></span> <span class="token attr-name">@change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>changevalue<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submitchange<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>提交<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript">
+  <span class="token keyword">import</span> <span class="token punctuation">{</span> defineComponent<span class="token punctuation">,</span> computed<span class="token punctuation">,</span> reactive<span class="token punctuation">,</span> toRefs <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+  <span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        InputContent<span class="token punctuation">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>content
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        changevalue<span class="token punctuation">:</span> <span class="token punctuation">(</span>e<span class="token punctuation">:</span> any<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'changeContent'</span><span class="token punctuation">,</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        submitchange<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> result <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">)</span><span class="token punctuation">)</span>
+          <span class="token keyword">const</span> inputcontent <span class="token operator">=</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>content
+          <span class="token keyword">let</span> id <span class="token operator">=</span> <span class="token number">0</span>
+          <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> result<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> result<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              id <span class="token operator">=</span> result<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>id <span class="token operator">+</span> <span class="token number">1</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+          <span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">{</span>
+            id<span class="token punctuation">,</span>
+            content<span class="token punctuation">:</span> inputcontent<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span>
+          result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+          store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'changeList'</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span>
+          store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'changeContent'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">toRefs</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>result<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span><span class="token punctuation">></span></span><span class="token style language-css"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -665,7 +583,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsopy.gitee.io/2019/12/18/typescriptbasic5/">https://jsopy.gitee.io/2019/12/18/typescriptbasic5/</a>
+                    <a href="https://jsopy.gitee.io/2021/01/03/vue19/">https://jsopy.gitee.io/2021/01/03/vue19/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -707,8 +625,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                     <span class="chip bg-color">Javascript</span>
                                 </a>
                             
-                                <a href="/tags/TypeScript/">
-                                    <span class="chip bg-color">TypeScript</span>
+                                <a href="/tags/Vue/">
+                                    <span class="chip bg-color">Vue</span>
                                 </a>
                             
                         </div>
@@ -753,31 +671,31 @@ console<span class="token punctuation">.</span><span class="token function">log<
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/12/19/typescriptbasic6/">
+                <a href="/2021/01/10/rembuju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="TypeScript(六) 使用类型断言达到预期">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="REM 布局(响应式布局)">
                         
-                        <span class="card-title">TypeScript(六) 使用类型断言达到预期</span>
+                        <span class="card-title">REM 布局(响应式布局)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript(六) 使用类型断言达到预期
+                            本文主要是记录响应式布局
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-10
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/TypeScript/" class="post-category">
-                                    TypeScript
+                            <a href="/categories/REM/" class="post-category">
+                                    REM
                                 </a>
                             
                             
@@ -787,12 +705,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/TypeScript/">
-                        <span class="chip bg-color">TypeScript</span>
+                    <a href="/tags/REM/">
+                        <span class="chip bg-color">REM</span>
                     </a>
                     
                 </div>
@@ -806,31 +720,31 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/17/typescriptbasic4/">
+                <a href="/2021/01/02/newpython1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="TypeScript(四) Symbol-ES6 新基础类型">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="python 切换版本">
                         
-                        <span class="card-title">TypeScript(四) Symbol-ES6 新基础类型</span>
+                        <span class="card-title">python 切换版本</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript(四) Symbol-ES6 新基础类型
+                            python 切换版本
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/TypeScript/" class="post-category">
-                                    TypeScript
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
@@ -840,12 +754,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
-                    <a href="/tags/TypeScript/">
-                        <span class="chip bg-color">TypeScript</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -996,7 +906,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         class="fas fa-chart-area"
       ></i
       >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >219.4k</span
+        >174.1k</span
       >&nbsp;字      
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
