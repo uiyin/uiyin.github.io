@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2021-01-10T08:39:17.073Z</updated>
+  <updated>2021-03-06T08:20:22.717Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Typescript 介绍和环境 (一)</title>
+    <link href="https://jsopy.gitee.io/2021/03/07/typescript1/"/>
+    <id>https://jsopy.gitee.io/2021/03/07/typescript1/</id>
+    <published>2021-03-07T13:26:47.000Z</published>
+    <updated>2021-03-06T08:20:22.717Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;理想必须要人们去实现它,它不但需要决心和勇敢&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;一-Typescript-究竟是什么&quot;&gt;&lt;a href=&quot;#一-Typescript-究竟是什么&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typescript学习笔记</title>
+    <link href="https://jsopy.gitee.io/2021/03/06/typescriptall/"/>
+    <id>https://jsopy.gitee.io/2021/03/06/typescriptall/</id>
+    <published>2021-03-06T12:26:47.000Z</published>
+    <updated>2021-03-06T07:52:17.534Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Typescript-学习笔记&quot;&gt;&lt;a href=&quot;#Typescript-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Typescript 学习笔记&quot;&gt;&lt;/a&gt;Typescript 学习笔记&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
+    
+  </entry>
   
   <entry>
     <title>REM 布局(响应式布局)</title>
@@ -528,67 +589,6 @@
         
         
           &lt;h2 id=&quot;Antd-高级表格带备注&quot;&gt;&lt;a href=&quot;#Antd-高级表格带备注&quot; class=&quot;headerlink&quot; title=&quot;Antd-高级表格带备注&quot;&gt;&lt;/a&gt;Antd-高级表格带备注&lt;/h2&gt;&lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十七) React-基础表格使用中文里面有操作按钮</title>
-    <link href="https://jsopy.gitee.io/2020/09/01/reactantd27/"/>
-    <id>https://jsopy.gitee.io/2020/09/01/reactantd27/</id>
-    <published>2020-09-01T13:26:47.000Z</published>
-    <updated>2020-09-11T11:58:14.621Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;带操作按钮的基础中文表格&quot;&gt;&lt;a href=&quot;#带操作按钮的基础中文表格&quot; class=&quot;headerlink&quot; title=&quot;带操作按钮的基础中文表格&quot;&gt;&lt;/a&gt;带操作按钮的基础中文表格&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十六) React-基础表格使用中文</title>
-    <link href="https://jsopy.gitee.io/2020/08/31/reactantd26/"/>
-    <id>https://jsopy.gitee.io/2020/08/31/reactantd26/</id>
-    <published>2020-08-31T13:26:47.000Z</published>
-    <updated>2020-09-11T11:56:53.294Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;使用表格里面基础信息变成中文&quot;&gt;&lt;a href=&quot;#使用表格里面基础信息变成中文&quot; class=&quot;headerlink&quot;
         
       
     
