@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2021-03-06T08:20:22.717Z</updated>
+  <updated>2021-03-23T11:47:04.679Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue 中自定义拖拽上传和点击上传</title>
+    <link href="https://jsopy.gitee.io/2021/03/23/vuecha13/"/>
+    <id>https://jsopy.gitee.io/2021/03/23/vuecha13/</id>
+    <published>2021-03-23T13:26:47.000Z</published>
+    <updated>2021-03-23T11:47:04.679Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;自己写的自定义上传&quot;&gt;&lt;a href=&quot;#自己写的自定义上传&quot; class=&quot;headerlink&quot; title=&quot;自己写的自定义上传&quot;&gt;&lt;/a&gt;自己写的自定义上传&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;实现的功能
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Typescript 介绍和环境 (一)</title>
@@ -560,35 +590,6 @@
         
           &lt;h1 id=&quot;表格滚动，固定指定的列&quot;&gt;&lt;a href=&quot;#表格滚动，固定指定的列&quot; class=&quot;headerlink&quot; title=&quot;表格滚动，固定指定的列&quot;&gt;&lt;/a&gt;表格滚动，固定指定的列&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;fixed
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十八) React-高级表格带备注</title>
-    <link href="https://jsopy.gitee.io/2020/09/02/reactantd28/"/>
-    <id>https://jsopy.gitee.io/2020/09/02/reactantd28/</id>
-    <published>2020-09-02T13:26:47.000Z</published>
-    <updated>2020-09-11T12:00:11.894Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Antd-高级表格带备注&quot;&gt;&lt;a href=&quot;#Antd-高级表格带备注&quot; class=&quot;headerlink&quot; title=&quot;Antd-高级表格带备注&quot;&gt;&lt;/a&gt;Antd-高级表格带备注&lt;/h2&gt;&lt;pre class=&quot;line-numbers
         
       
     
