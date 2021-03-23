@@ -47,6 +47,35 @@
   </entry>
   
   <entry>
+    <title>Typescript 数据类型 (二)</title>
+    <link href="https://jsopy.gitee.io/2021/03/08/typescript2/"/>
+    <id>https://jsopy.gitee.io/2021/03/08/typescript2/</id>
+    <published>2021-03-08T13:26:47.000Z</published>
+    <updated>2021-03-23T14:20:58.618Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;原始数据类型&quot;&gt;&lt;a href=&quot;#原始数据类型&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Typescript 介绍和环境 (一)</title>
     <link href="https://jsopy.gitee.io/2021/03/07/typescript1/"/>
     <id>https://jsopy.gitee.io/2021/03/07/typescript1/</id>
@@ -83,7 +112,7 @@
     <link href="https://jsopy.gitee.io/2021/03/06/typescriptall/"/>
     <id>https://jsopy.gitee.io/2021/03/06/typescriptall/</id>
     <published>2021-03-06T12:26:47.000Z</published>
-    <updated>2021-03-06T08:35:55.414Z</updated>
+    <updated>2021-03-23T14:22:36.736Z</updated>
     
     <summary type="html">
     
@@ -560,36 +589,6 @@
 &lt;li&gt;children&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://jsopy.gitee.io/categories/React/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="React" scheme="https://jsopy.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactAntd(二十九) React-表格滚动以及固定指定的列</title>
-    <link href="https://jsopy.gitee.io/2020/09/03/reactantd29/"/>
-    <id>https://jsopy.gitee.io/2020/09/03/reactantd29/</id>
-    <published>2020-09-03T13:26:47.000Z</published>
-    <updated>2020-09-11T12:01:44.918Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;表格滚动，固定指定的列&quot;&gt;&lt;a href=&quot;#表格滚动，固定指定的列&quot; class=&quot;headerlink&quot; title=&quot;表格滚动，固定指定的列&quot;&gt;&lt;/a&gt;表格滚动，固定指定的列&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;fixed
         
       
     
