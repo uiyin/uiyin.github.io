@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jsopy.gitee.io/"/>
-  <updated>2021-04-16T12:42:46.576Z</updated>
+  <updated>2021-04-16T13:49:12.867Z</updated>
   <id>https://jsopy.gitee.io/</id>
   
   <author>
@@ -15,6 +15,540 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Uniapp  路由跳转(十七)</title>
+    <link href="https://jsopy.gitee.io/2021/04/25/uniapp17/"/>
+    <id>https://jsopy.gitee.io/2021/04/25/uniapp17/</id>
+    <published>2021-04-25T13:26:47.000Z</published>
+    <updated>2021-04-16T13:49:12.867Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;路由跳转&quot;&gt;&lt;a href=&quot;#路由跳转&quot; class=&quot;headerlink&quot; title=&quot;路由跳转&quot;&gt;&lt;/a&gt;路由跳转&lt;/h2&gt;&lt;h3 id=&quot;navigateTo&quot;&gt;&lt;a href=&quot;#navigateTo&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp  动态修改标题和使用 swiper 轮播图组件(十六)</title>
+    <link href="https://jsopy.gitee.io/2021/04/24/uniapp16/"/>
+    <id>https://jsopy.gitee.io/2021/04/24/uniapp16/</id>
+    <published>2021-04-24T13:26:47.000Z</published>
+    <updated>2021-04-16T13:48:20.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;动态修改标题和使用-swiper-轮播图组件&quot;&gt;&lt;a href=&quot;#动态修改标题和使用-swiper-轮播图组件&quot; class=&quot;headerlink&quot; title=&quot;动态修改标题和使用 swiper 轮播图组件&quot;&gt;&lt;/a&gt;动态修改标题和使用 swiper
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp scrollview(十五)</title>
+    <link href="https://jsopy.gitee.io/2021/04/23/uniapp15/"/>
+    <id>https://jsopy.gitee.io/2021/04/23/uniapp15/</id>
+    <published>2021-04-23T13:26:47.000Z</published>
+    <updated>2021-04-16T13:47:31.576Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;scrollview-下拉刷新和上拉加载&quot;&gt;&lt;a href=&quot;#scrollview-下拉刷新和上拉加载&quot; class=&quot;headerlink&quot; title=&quot;scrollview 下拉刷新和上拉加载&quot;&gt;&lt;/a&gt;scrollview
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp uni-api框架(十四)</title>
+    <link href="https://jsopy.gitee.io/2021/04/22/uniapp14/"/>
+    <id>https://jsopy.gitee.io/2021/04/22/uniapp14/</id>
+    <published>2021-04-22T13:26:47.000Z</published>
+    <updated>2021-04-16T13:46:23.570Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;uni-api&quot;&gt;&lt;a href=&quot;#uni-api&quot; class=&quot;headerlink&quot; title=&quot;uni-api&quot;&gt;&lt;/a&gt;uni-api&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;原生的微信小程序都是不支持
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 项目开始(十三)</title>
+    <link href="https://jsopy.gitee.io/2021/04/21/uniapp13/"/>
+    <id>https://jsopy.gitee.io/2021/04/21/uniapp13/</id>
+    <published>2021-04-21T13:26:47.000Z</published>
+    <updated>2021-04-16T13:44:39.315Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;uni-ui-介绍&quot;&gt;&lt;a href=&quot;#uni-ui-介绍&quot; class=&quot;headerlink&quot; title=&quot;uni-ui 介绍&quot;&gt;&lt;/a&gt;uni-ui 介绍&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;安装
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 项目开始(十二)</title>
+    <link href="https://jsopy.gitee.io/2021/04/20/uniapp12/"/>
+    <id>https://jsopy.gitee.io/2021/04/20/uniapp12/</id>
+    <published>2021-04-20T13:26:47.000Z</published>
+    <updated>2021-04-16T14:00:33.566Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Uniapp-项目开始&quot;&gt;&lt;a href=&quot;#Uniapp-项目开始&quot; class=&quot;headerlink&quot; title=&quot;Uniapp 项目开始&quot;&gt;&lt;/a&gt;Uniapp 项目开始&lt;/h2&gt;&lt;h3 id=&quot;加入路由&quot;&gt;&lt;a href=&quot;#加入路由&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 常用声明周期(十一)</title>
+    <link href="https://jsopy.gitee.io/2021/04/19/uniapp11/"/>
+    <id>https://jsopy.gitee.io/2021/04/19/uniapp11/</id>
+    <published>2021-04-19T13:26:47.000Z</published>
+    <updated>2021-04-16T13:16:42.504Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;常用声明周期&quot;&gt;&lt;a href=&quot;#常用声明周期&quot; class=&quot;headerlink&quot; title=&quot;常用声明周期&quot;&gt;&lt;/a&gt;常用声明周期&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;uni-app 框架的声明周期结合了 Vue
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 组件中的插槽(十)</title>
+    <link href="https://jsopy.gitee.io/2021/04/18/uniapp10/"/>
+    <id>https://jsopy.gitee.io/2021/04/18/uniapp10/</id>
+    <published>2021-04-18T13:26:47.000Z</published>
+    <updated>2021-04-16T13:16:06.998Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;组件中的插槽&quot;&gt;&lt;a href=&quot;#组件中的插槽&quot; class=&quot;headerlink&quot; title=&quot;组件中的插槽&quot;&gt;&lt;/a&gt;组件中的插槽&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;标签其实也是数据的中的一种,想实现动态的给子组件传递标签,就可以使用插槽
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 全局共享数据(九)</title>
+    <link href="https://jsopy.gitee.io/2021/04/17/uniapp9/"/>
+    <id>https://jsopy.gitee.io/2021/04/17/uniapp9/</id>
+    <published>2021-04-17T13:26:47.000Z</published>
+    <updated>2021-04-16T13:15:29.993Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;全局共享数据&quot;&gt;&lt;a href=&quot;#全局共享数据&quot; class=&quot;headerlink&quot; title=&quot;全局共享数据&quot;&gt;&lt;/a&gt;全局共享数据&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;通过 Vue 的原型共享数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通过
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 组件传递参数(八)</title>
+    <link href="https://jsopy.gitee.io/2021/04/16/uniapp8/"/>
+    <id>https://jsopy.gitee.io/2021/04/16/uniapp8/</id>
+    <published>2021-04-16T13:26:47.000Z</published>
+    <updated>2021-04-16T13:14:23.917Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;组件传递参数&quot;&gt;&lt;a href=&quot;#组件传递参数&quot; class=&quot;headerlink&quot; title=&quot;组件传递参数&quot;&gt;&lt;/a&gt;组件传递参数&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;父传子 传递参数 通过属性的方式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;子向父传递参数
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 组件(七)</title>
+    <link href="https://jsopy.gitee.io/2021/04/15/uniapp7/"/>
+    <id>https://jsopy.gitee.io/2021/04/15/uniapp7/</id>
+    <published>2021-04-15T13:26:47.000Z</published>
+    <updated>2021-04-16T13:13:16.970Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;组件&quot;&gt;&lt;a href=&quot;#组件&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 事件的基本使用(六)</title>
+    <link href="https://jsopy.gitee.io/2021/04/14/uniapp6/"/>
+    <id>https://jsopy.gitee.io/2021/04/14/uniapp6/</id>
+    <published>2021-04-14T13:26:47.000Z</published>
+    <updated>2021-04-16T13:12:46.598Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;事件的基本使用&quot;&gt;&lt;a href=&quot;#事件的基本使用&quot; class=&quot;headerlink&quot; title=&quot;事件的基本使用&quot;&gt;&lt;/a&gt;事件的基本使用&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;注册事件
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 计算属性(五)</title>
+    <link href="https://jsopy.gitee.io/2021/04/13/uniapp5/"/>
+    <id>https://jsopy.gitee.io/2021/04/13/uniapp5/</id>
+    <published>2021-04-13T13:26:47.000Z</published>
+    <updated>2021-04-16T13:12:19.243Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;计算属性&quot;&gt;&lt;a href=&quot;#计算属性&quot; class=&quot;headerlink&quot; title=&quot;计算属性&quot;&gt;&lt;/a&gt;计算属性&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;计算属性可以理解为对 data
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 数据循环(四)</title>
+    <link href="https://jsopy.gitee.io/2021/04/12/uniapp4/"/>
+    <id>https://jsopy.gitee.io/2021/04/12/uniapp4/</id>
+    <published>2021-04-12T13:26:47.000Z</published>
+    <updated>2021-04-16T13:11:45.846Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;数据循环和数据条件&quot;&gt;&lt;a href=&quot;#数据循环和数据条件&quot; class=&quot;headerlink&quot; title=&quot;数据循环和数据条件&quot;&gt;&lt;/a&gt;数据循环和数据条件&lt;/h2&gt;&lt;h3 id=&quot;数据循环&quot;&gt;&lt;a href=&quot;#数据循环&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 基础语法(三)</title>
+    <link href="https://jsopy.gitee.io/2021/04/11/uniapp3/"/>
+    <id>https://jsopy.gitee.io/2021/04/11/uniapp3/</id>
+    <published>2021-04-11T13:26:47.000Z</published>
+    <updated>2021-04-16T13:11:13.753Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Uniapp-基础语法&quot;&gt;&lt;a href=&quot;#Uniapp-基础语法&quot; class=&quot;headerlink&quot; title=&quot;Uniapp 基础语法&quot;&gt;&lt;/a&gt;Uniapp
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 项目介绍和sass安装(二)</title>
+    <link href="https://jsopy.gitee.io/2021/04/10/uniapp2/"/>
+    <id>https://jsopy.gitee.io/2021/04/10/uniapp2/</id>
+    <published>2021-04-10T13:26:47.000Z</published>
+    <updated>2021-04-16T13:10:32.773Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Uniapp-项目目录介绍和-sass-安装&quot;&gt;&lt;a href=&quot;#Uniapp-项目目录介绍和-sass-安装&quot; class=&quot;headerlink&quot; title=&quot;Uniapp 项目目录介绍和 sass 安装&quot;&gt;&lt;/a&gt;Uniapp 项目目录介绍和 sass
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp 搭建项目(一)</title>
+    <link href="https://jsopy.gitee.io/2021/04/09/uniapp1/"/>
+    <id>https://jsopy.gitee.io/2021/04/09/uniapp1/</id>
+    <published>2021-04-09T13:26:47.000Z</published>
+    <updated>2021-04-16T13:09:05.270Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Uniapp-搭建项目&quot;&gt;&lt;a href=&quot;#Uniapp-搭建项目&quot; class=&quot;headerlink&quot; title=&quot;Uniapp 搭建项目&quot;&gt;&lt;/a&gt;Uniapp 搭建项目&lt;/h2&gt;&lt;h3 id=&quot;脚手架搭建项目&quot;&gt;&lt;a href=&quot;#脚手架搭建项目&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uniapp学习笔记</title>
+    <link href="https://jsopy.gitee.io/2021/04/08/uniappall/"/>
+    <id>https://jsopy.gitee.io/2021/04/08/uniappall/</id>
+    <published>2021-04-08T12:26:47.000Z</published>
+    <updated>2021-04-16T14:04:26.547Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Uniapp-学习笔记&quot;&gt;&lt;a href=&quot;#Uniapp-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Uniapp 学习笔记&quot;&gt;&lt;/a&gt;Uniapp 学习笔记&lt;/h2&gt;&lt;h3 id=&quot;Uniapp-搭建项目-一&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/categories/Uniapp/"/>
+    
+    
+      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
+    
+      <category term="Uniapp" scheme="https://jsopy.gitee.io/tags/Uniapp/"/>
+    
+  </entry>
   
   <entry>
     <title>Typescript 泛型 (十七)</title>
@@ -72,542 +606,6 @@
       <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
     
       <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 类 (十五)</title>
-    <link href="https://jsopy.gitee.io/2021/04/05/typescript15/"/>
-    <id>https://jsopy.gitee.io/2021/04/05/typescript15/</id>
-    <published>2021-04-05T13:26:47.000Z</published>
-    <updated>2021-04-16T12:41:22.850Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;类&quot;&gt;&lt;a href=&quot;#类&quot; class=&quot;headerlink&quot; title=&quot;类&quot;&gt;&lt;/a&gt;类&lt;/h2&gt;&lt;p&gt;传统方法中,Javascript 通过构造函数实现类的概念而在 ES6 中,引入了 class&lt;/p&gt;
-&lt;h3 id=&quot;类的概念&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 枚举 (十四)</title>
-    <link href="https://jsopy.gitee.io/2021/04/04/typescript14/"/>
-    <id>https://jsopy.gitee.io/2021/04/04/typescript14/</id>
-    <published>2021-04-04T13:26:47.000Z</published>
-    <updated>2021-04-16T12:40:46.711Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;枚举&quot;&gt;&lt;a href=&quot;#枚举&quot; class=&quot;headerlink&quot; title=&quot;枚举&quot;&gt;&lt;/a&gt;枚举&lt;/h2&gt;&lt;p&gt;枚举(Enum)类型用于取值被限定在一定范围内的场景,比如一周七天,颜色限定为红绿蓝等等&lt;/p&gt;
-&lt;h3 id=&quot;简单的例子&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 元组 (十三)</title>
-    <link href="https://jsopy.gitee.io/2021/04/03/typescript13/"/>
-    <id>https://jsopy.gitee.io/2021/04/03/typescript13/</id>
-    <published>2021-04-03T13:26:47.000Z</published>
-    <updated>2021-04-16T12:39:59.960Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;元组&quot;&gt;&lt;a href=&quot;#元组&quot; class=&quot;headerlink&quot; title=&quot;元组&quot;&gt;&lt;/a&gt;元组&lt;/h2&gt;&lt;p&gt;数组合并了相同类型的对象,而元组(Tuple)合并了不同类型的对象&lt;/p&gt;
-&lt;p&gt;元组是不能改变的,固定长度&lt;/p&gt;
-&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 字符串字面量类型 (十二)</title>
-    <link href="https://jsopy.gitee.io/2021/04/02/typescript12/"/>
-    <id>https://jsopy.gitee.io/2021/04/02/typescript12/</id>
-    <published>2021-04-02T13:26:47.000Z</published>
-    <updated>2021-04-16T12:39:32.317Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;字符串字面量类型&quot;&gt;&lt;a href=&quot;#字符串字面量类型&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 类型别名 (十一)</title>
-    <link href="https://jsopy.gitee.io/2021/04/01/typescript11/"/>
-    <id>https://jsopy.gitee.io/2021/04/01/typescript11/</id>
-    <published>2021-04-01T13:26:47.000Z</published>
-    <updated>2021-04-16T12:39:03.460Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;类型别名&quot;&gt;&lt;a href=&quot;#类型别名&quot; class=&quot;headerlink&quot; title=&quot;类型别名&quot;&gt;&lt;/a&gt;类型别名&lt;/h2&gt;&lt;p&gt;类型别名用来个一个类型起一个新名字&lt;/p&gt;
-&lt;p&gt;简单的例子:type 创建类型别名&lt;/p&gt;
-&lt;pre
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 内置对象 (十)</title>
-    <link href="https://jsopy.gitee.io/2021/03/31/typescript10/"/>
-    <id>https://jsopy.gitee.io/2021/03/31/typescript10/</id>
-    <published>2021-03-31T13:26:47.000Z</published>
-    <updated>2021-04-16T12:38:15.398Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;内置对象&quot;&gt;&lt;a href=&quot;#内置对象&quot; class=&quot;headerlink&quot; title=&quot;内置对象&quot;&gt;&lt;/a&gt;内置对象&lt;/h2&gt;&lt;h3 id=&quot;ECMAScript-的内置对象&quot;&gt;&lt;a href=&quot;#ECMAScript-的内置对象&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 声明文件 (九)</title>
-    <link href="https://jsopy.gitee.io/2021/03/30/typescript9/"/>
-    <id>https://jsopy.gitee.io/2021/03/30/typescript9/</id>
-    <published>2021-03-30T13:26:47.000Z</published>
-    <updated>2021-04-16T12:37:39.735Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;声明文件&quot;&gt;&lt;a href=&quot;#声明文件&quot; class=&quot;headerlink&quot; title=&quot;声明文件&quot;&gt;&lt;/a&gt;声明文件&lt;/h2&gt;&lt;p&gt;当使用第三方库的时候,我们需要引用它的声明文件,才能获得对应的代码补全,接口提示等功能&lt;/p&gt;
-&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 类型断言 (八)</title>
-    <link href="https://jsopy.gitee.io/2021/03/29/typescript8/"/>
-    <id>https://jsopy.gitee.io/2021/03/29/typescript8/</id>
-    <published>2021-03-29T13:26:47.000Z</published>
-    <updated>2021-04-16T12:37:07.525Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;类型断言&quot;&gt;&lt;a href=&quot;#类型断言&quot; class=&quot;headerlink&quot; title=&quot;类型断言&quot;&gt;&lt;/a&gt;类型断言&lt;/h2&gt;&lt;p&gt;类型断言 可以用来手动指定一个值的类型&lt;/p&gt;
-&lt;h3 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 函数的类型 (七)</title>
-    <link href="https://jsopy.gitee.io/2021/03/28/typescript7/"/>
-    <id>https://jsopy.gitee.io/2021/03/28/typescript7/</id>
-    <published>2021-03-28T13:26:47.000Z</published>
-    <updated>2021-04-16T12:36:19.227Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;函数的类型&quot;&gt;&lt;a href=&quot;#函数的类型&quot; class=&quot;headerlink&quot; title=&quot;函数的类型&quot;&gt;&lt;/a&gt;函数的类型&lt;/h2&gt;&lt;h3 id=&quot;函数声明&quot;&gt;&lt;a href=&quot;#函数声明&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 数组的类型 (六)</title>
-    <link href="https://jsopy.gitee.io/2021/03/27/typescript6/"/>
-    <id>https://jsopy.gitee.io/2021/03/27/typescript6/</id>
-    <published>2021-03-27T13:26:47.000Z</published>
-    <updated>2021-04-16T12:35:47.066Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;数组的类型&quot;&gt;&lt;a href=&quot;#数组的类型&quot; class=&quot;headerlink&quot; title=&quot;数组的类型&quot;&gt;&lt;/a&gt;数组的类型&lt;/h2&gt;&lt;p&gt;在 Typescript 中,数组类型有很多种定义的方式,比较灵活&lt;/p&gt;
-&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 接口 (五)</title>
-    <link href="https://jsopy.gitee.io/2021/03/26/typescript5/"/>
-    <id>https://jsopy.gitee.io/2021/03/26/typescript5/</id>
-    <published>2021-03-26T13:26:47.000Z</published>
-    <updated>2021-04-16T12:35:02.793Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;对象的类型-–-接口&quot;&gt;&lt;a href=&quot;#对象的类型-–-接口&quot; class=&quot;headerlink&quot; title=&quot;对象的类型 – 接口&quot;&gt;&lt;/a&gt;对象的类型 – 接口&lt;/h2&gt;&lt;p&gt;在 Typescript 中,我们使用接口(interface)
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 联合类型 (四)</title>
-    <link href="https://jsopy.gitee.io/2021/03/25/typescript4/"/>
-    <id>https://jsopy.gitee.io/2021/03/25/typescript4/</id>
-    <published>2021-03-25T13:26:47.000Z</published>
-    <updated>2021-04-16T12:34:26.880Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;联合类型&quot;&gt;&lt;a href=&quot;#联合类型&quot; class=&quot;headerlink&quot; title=&quot;联合类型&quot;&gt;&lt;/a&gt;联合类型&lt;/h2&gt;&lt;p&gt;联合类型(Union Types) 表示取值可以为多种类型中的一种&lt;/p&gt;
-&lt;h3 id=&quot;简单的例子&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 类型推论 (三)</title>
-    <link href="https://jsopy.gitee.io/2021/03/24/typescript3/"/>
-    <id>https://jsopy.gitee.io/2021/03/24/typescript3/</id>
-    <published>2021-03-24T13:26:47.000Z</published>
-    <updated>2021-04-16T12:33:37.569Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;类型推论&quot;&gt;&lt;a href=&quot;#类型推论&quot; class=&quot;headerlink&quot; title=&quot;类型推论&quot;&gt;&lt;/a&gt;类型推论&lt;/h2&gt;&lt;p&gt;如果没有明确的指定类型,那么 Typescript 会依照类型推论的规则推断出一个类型&lt;/p&gt;
-&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue 中自定义拖拽上传和点击上传</title>
-    <link href="https://jsopy.gitee.io/2021/03/23/vuecha13/"/>
-    <id>https://jsopy.gitee.io/2021/03/23/vuecha13/</id>
-    <published>2021-03-23T13:26:47.000Z</published>
-    <updated>2021-03-23T11:47:04.679Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;自己写的自定义上传&quot;&gt;&lt;a href=&quot;#自己写的自定义上传&quot; class=&quot;headerlink&quot; title=&quot;自己写的自定义上传&quot;&gt;&lt;/a&gt;自己写的自定义上传&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;实现的功能
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/categories/Vue/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Vue" scheme="https://jsopy.gitee.io/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 数据类型 (二)</title>
-    <link href="https://jsopy.gitee.io/2021/03/08/typescript2/"/>
-    <id>https://jsopy.gitee.io/2021/03/08/typescript2/</id>
-    <published>2021-03-08T13:26:47.000Z</published>
-    <updated>2021-03-23T14:20:58.618Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;原始数据类型&quot;&gt;&lt;a href=&quot;#原始数据类型&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript 介绍和环境 (一)</title>
-    <link href="https://jsopy.gitee.io/2021/03/07/typescript1/"/>
-    <id>https://jsopy.gitee.io/2021/03/07/typescript1/</id>
-    <published>2021-03-07T13:26:47.000Z</published>
-    <updated>2021-03-06T08:20:22.717Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;理想必须要人们去实现它,它不但需要决心和勇敢&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;一-Typescript-究竟是什么&quot;&gt;&lt;a href=&quot;#一-Typescript-究竟是什么&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typescript学习笔记</title>
-    <link href="https://jsopy.gitee.io/2021/03/06/typescriptall/"/>
-    <id>https://jsopy.gitee.io/2021/03/06/typescriptall/</id>
-    <published>2021-03-06T12:26:47.000Z</published>
-    <updated>2021-04-16T12:53:38.642Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Typescript-学习笔记&quot;&gt;&lt;a href=&quot;#Typescript-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Typescript 学习笔记&quot;&gt;&lt;/a&gt;Typescript 学习笔记&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/categories/Typescript/"/>
-    
-    
-      <category term="Javascript" scheme="https://jsopy.gitee.io/tags/Javascript/"/>
-    
-      <category term="Typescript" scheme="https://jsopy.gitee.io/tags/Typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>REM 布局(响应式布局)</title>
-    <link href="https://jsopy.gitee.io/2021/01/10/rembuju/"/>
-    <id>https://jsopy.gitee.io/2021/01/10/rembuju/</id>
-    <published>2021-01-10T13:26:47.000Z</published>
-    <updated>2021-01-10T08:39:17.073Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;第一步下载文件&quot;&gt;&lt;a href=&quot;#第一步下载文件&quot; class=&quot;headerlink&quot; title=&quot;第一步下载文件&quot;&gt;&lt;/a&gt;第一步下载文件&lt;/h2&gt;&lt;p&gt;名字 叫做 lib-flexible&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="REM" scheme="https://jsopy.gitee.io/categories/REM/"/>
-    
-    
-      <category term="REM" scheme="https://jsopy.gitee.io/tags/REM/"/>
     
   </entry>
   
